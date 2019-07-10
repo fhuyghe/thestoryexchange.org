@@ -1,0 +1,3 @@
+[submodule "site/web/app/themes/tse2019"]
+	path = site/web/app/themes/tse2019
+	url = git@github.com:13milliseconds/thestoryexchange2019.git
