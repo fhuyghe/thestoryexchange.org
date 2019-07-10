@@ -1,0 +1,537 @@
+2019-07-09 20:30:08
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:30:15
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:42:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:42:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:42:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:42:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:42:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:44:48
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 20:44:55
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:44:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:44:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:44:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:45:00
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:45:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:34
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_enable_background_optimization()</b>
+running test async handler
+2019-07-09 20:47:34
+<b>ewww_image_optimizer_install_table()</b>
+current collation: DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+upgrading table and checking collation for path, table exists
+path index size: 191
+images db upgrade results: 
+queue db upgrade results: 
+<b>ewww_image_optimizer_set_defaults()</b>
+2019-07-09 20:47:35
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+testing async handling, received 949c34123cf2a4e4ce2f985135830df4a1b2adc24905f53d2fd3f5df5b162932
+2019-07-09 20:47:37
+<b>ewww_image_optimizer_tool_init()</b>
+<b>ewww_image_optimizer_install_tools()</b>
+Checking/Installing tools in /srv/www/thestoryexchange.org/current/web/app/ewww/
+wp-content/ewww permissions: 0755
+<b>ewww_image_optimizer_install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/optipng-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/pngquant
+/srv/www/thestoryexchange.org/current/web/app/ewww/cwebp
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+Linux/UNIX style OS, checking permissions
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 0744
+permissions ok
+2019-07-09 20:47:39
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:41
+<b>ewww_image_optimizer_tool_init()</b>
+<b>ewww_image_optimizer_install_tools()</b>
+Checking/Installing tools in /srv/www/thestoryexchange.org/current/web/app/ewww/
+wp-content/ewww permissions: 0755
+<b>ewww_image_optimizer_install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/optipng-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/pngquant
+/srv/www/thestoryexchange.org/current/web/app/ewww/cwebp
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+Linux/UNIX style OS, checking permissions
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 0744
+permissions ok
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 20:47:43
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:52
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:47:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:22
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:24
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:28
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:28
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:28
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:50:29
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:36
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:38
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:54:43
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:49
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:49
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 20:58:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:01:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:02:00
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:02:04
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:02:05
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:02:05
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:02:07
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:03:50
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 21:03:58
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 21:04:01
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 21:11:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:34
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 21:11:43
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 21:11:46
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 21:11:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:47
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:11:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:12:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:18:44
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 21:18:47
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 21:19:29
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-09 21:19:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:19:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:20:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:20:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:20:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:20:02
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:35
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:35:52
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:41:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:41:55
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:41:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:39
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:42:47
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:05
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:09
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:16
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:17
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:19
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:46:20
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:22
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:24
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:32
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:34
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:38
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:38
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:38
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:47:39
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:51:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:15
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:17
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:20
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:22
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:49
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:54:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:47
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:58:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:34
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:36
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 21:59:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:04
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:06
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:00:11
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:02:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:02:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:03:02
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:03:02
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:03:02
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:03:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:06:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:06:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:05
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:09
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:09
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:07:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-09 22:30:04
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 22:30:52
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 22:30:53
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 22:31:40
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 22:31:41
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-09 22:32:13
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562774555
+2019-07-10 03:29:05
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:07
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:11
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:24
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:25
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:28
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:28
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-10 03:29:29
+<b>ewww_image_optimizer_gallery_support()</b>
