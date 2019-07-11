@@ -1,3 +1,5 @@
 trellis/.vault_pass
 site/.env
 site/web/app/themes/thestoryexchange2019/node_modules
+site/web/app/themes/thestoryexchange2019/vendor
+site/web/app/themes/thestoryexchange2019/.cache-loader

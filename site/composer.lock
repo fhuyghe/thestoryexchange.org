@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc7c56205e14f7c51c0301c2c7a19110",
+    "content-hash": "ee55c0f2621ea4ee3da75f858b74523e",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -708,15 +708,15 @@
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duplicate-post/",
-                "reference": "tags/3.2.2"
+                "reference": "tags/3.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1025,26 +1025,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/social-warfare/"
-        },
-        {
-            "name": "wpackagist-plugin/subheading",
-            "version": "1.8.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/subheading/",
-                "reference": "tags/1.8.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/subheading.1.8.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/subheading/"
         },
         {
             "name": "wpackagist-plugin/super-progressive-web-apps",
