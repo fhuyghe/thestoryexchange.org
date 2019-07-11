@@ -1,0 +1,29 @@
+footer.content-info{
+    background-color: theme-color(yellow);
+    padding: .5em 0;
+    font-size: .7em;
+    text-transform: uppercase;
+    
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    a{
+        color: theme-color(black);
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .menu{
+        list-style: none;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}

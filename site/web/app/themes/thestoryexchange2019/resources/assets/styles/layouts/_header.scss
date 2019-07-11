@@ -1,0 +1,154 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner{
+  margin-bottom: $section-padding;
+  overflow: visible;
+  background: theme-color(white);
+  z-index: 99;
+
+  .nav-primary{
+    border: 1px solid theme-color(grey);
+    overflow: visible;
+
+    .container{
+      display: flex;
+      justify-content: baseline;
+
+      .search{
+        font-size: .7em;
+        
+        form{
+          flex-flow: row;
+          height: 100%;
+
+          input{
+            border-radius: 0;
+            padding: 5px 10px;
+            height: 100%;
+          }
+
+          input[type='search']{
+            line-height: 0;
+            font-size: 1em;
+            border-width: 0 1px;
+          }
+
+          input[type='submit']{
+            background-color: theme-color(darkblue);
+            border: 0;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  
+    ul.nav{
+      font-size: .9em;
+
+      &> li{
+        position: relative;
+
+        &.menu-item-has-children{
+          &> a:after{
+            content: '▼';
+            display: inline-block;
+            padding-left: 5px;
+            font-size: .6em;
+          }
+        }
+
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3){
+          a{
+            color: theme-color(darkblue);
+          }
+        }
+
+        &:hover{
+
+          a{
+            color: theme-color(darkblue);
+            border-color: theme-color(darkblue);
+          }
+
+          ul.sub-menu{
+            opacity: 1;
+            display: block;
+          }
+        }
+        
+        &> a{
+          @extend .nav-link;
+          padding: .5rem 0;
+          margin-right: 1rem;
+          color: theme-color(black);
+          border-bottom: 3px solid transparent;
+        }
+  
+        ul.sub-menu{
+          position: absolute;
+          display: none;
+          opacity: 0;
+          left: 0;
+          list-style: none;
+          padding: 0;
+          background: theme-color(white);
+          border-top: 1px solid theme-color(grey);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-flow: column;
+          transition: opacity .25s;
+
+          a{
+            padding: .5em 1em;
+            white-space: nowrap;
+            display: inline-block;
+            color: theme-color(dark);
+            width: 100%;
+
+            &:hover{
+              background: theme-color(yellow);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  color: $black;
+  margin: $grid-gutter 0;
+
+  .title {
+    text-align: center;
+    z-index: 2;
+    line-height: 1.4em;
+
+    .name {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+
+    .description {
+      font-size: 1em;
+      color: theme-color(darkgrey);
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+}

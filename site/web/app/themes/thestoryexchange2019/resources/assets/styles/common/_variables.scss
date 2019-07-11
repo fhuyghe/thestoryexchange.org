@@ -1,0 +1,20 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc,
+  grey: #CECECE,
+  darkgrey: #565656,
+  darkblue: #4c8eb9,
+  black: #000000,
+  white: #ffffff,
+  yellow: #f4e977
+);
+
+// Padding
+$section-padding: 50px;
+$grid-gutter: 30px;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

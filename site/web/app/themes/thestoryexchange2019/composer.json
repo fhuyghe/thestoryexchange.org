@@ -1,0 +1,37 @@
+{
+  "name": "13milliseconds/thestoryexchange",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "WordPress theme for thestoryexchange.org, based on Roots/Sage",
+  "homepage": "https://thestoryexchange.org",
+  "authors": [
+    {
+      "name": "13milliseconds",
+      "email": "hello@13milliseconds.com",
+      "homepage": "https://github.com/13milliseconds"
+    }
+  ],
+  "keywords": ["wordpress"],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "~1.0",
+    "illuminate/support": "5.6.*",
+    "roots/sage-lib": "~9.0.9",
+    "soberwp/controller": "~2.1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8.0",
+    "roots/sage-installer": "~1.6"
+  },
+  "scripts": {
+    "test": ["phpcs"],
+    "post-create-project-cmd": [
+      "Roots\\Sage\\Installer\\ComposerScript::postCreateProject"
+    ]
+  }
+}
