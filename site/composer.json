@@ -61,6 +61,7 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
+    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
     "wpackagist-plugin/accelerated-mobile-pages":"^0.9",
     "wpackagist-plugin/user-photo":"^0.9.10",
