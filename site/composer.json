@@ -50,10 +50,6 @@
     {
       "type": "composer",
       "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
-    },
-    {
-      "type": "composer",
-      "url": "https://github.com/13milliseconds/thestoryexchange2019"
     }
   ],
   "require": {
@@ -64,7 +60,6 @@
     "roots/wordpress": "5.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "13milliseconds/thestoryexchange": "*",
     "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
     "wpackagist-plugin/accelerated-mobile-pages":"^0.9",
