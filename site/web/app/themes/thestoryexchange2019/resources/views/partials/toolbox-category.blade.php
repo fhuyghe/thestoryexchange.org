@@ -22,11 +22,7 @@ $link = get_site_url() . '/category/' . $cat->slug
 
             <div class="post">
                 <div class="thumbnail">
-                @if(wp_is_mobile())
-                    {!! the_post_thumbnail('200w') !!}
-                    @else 
-                    {!! the_post_thumbnail('200w') !!}
-                @endif
+                    {!! the_post_thumbnail('toolbox-thumb') !!}
                 </div>
 
                 <div class="info">

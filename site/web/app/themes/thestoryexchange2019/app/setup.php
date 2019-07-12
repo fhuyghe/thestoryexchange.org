@@ -129,4 +129,10 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+
+    /**
+     * Add custom image sizes
+     */
+    add_image_size( 'toolbox-thumb', 150 ); // 150 pixels wide (and unlimited height)
+    add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
 });

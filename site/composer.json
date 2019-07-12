@@ -64,6 +64,7 @@
     "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
     "wpackagist-plugin/accelerated-mobile-pages":"^0.9",
+    "wpackagist-plugin/amazon-s3-and-cloudfront":"^2.2",
     "wpackagist-plugin/user-photo":"^0.9.10",
     "wpackagist-plugin/akismet":"^4.1.1",
     "wpackagist-plugin/seo-slugs":"^1.0",

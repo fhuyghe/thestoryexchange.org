@@ -3438,3 +3438,571 @@ checkin already scheduled: 1562947355
 <b>ewww_image_optimizer_gallery_support()</b>
 2019-07-11 08:23:07
 <b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 08:27:05
+<b>ewww_image_optimizer_tool_init()</b>
+<b>ewww_image_optimizer_install_tools()</b>
+Checking/Installing tools in /srv/www/thestoryexchange.org/current/web/app/ewww/
+wp-content/ewww permissions: 0755
+<b>ewww_image_optimizer_install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/optipng-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/pngquant
+/srv/www/thestoryexchange.org/current/web/app/ewww/cwebp
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+Linux/UNIX style OS, checking permissions
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 0744
+permissions ok
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+<b>ewww_image_optimizer_notice_utils()</b>
+<b>ewww_image_optimizer_exec_check()</b>
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+<b>ewww_image_optimizer_path_check()</b>
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 21d8046e07cb298dfd2f3b1e321c67c378a4d35fa8adc3521acc42b5b8088d64
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: j at /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: Independent JPEG Group's JPEGTRAN, version 9b  17-Jan-2016
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_JPEGTRAN
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/optipng, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 4404076a4f9119d4dfbb7acb00eb65345e804186a019c7136d8f8e87fb0cb997
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: o at /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng: OptiPNG version 0.7.7
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_OPTIPNG
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 566f058b2043c4f3c8c049b0507bfa78dcb33dac52b132cade5f67bbb62d91e4
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: g at /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: LCDF Gifsicle 1.91
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_GIFSICLE
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+defining EWWW_IMAGE_OPTIMIZER_PNGOUT
+defining EWWW_IMAGE_OPTIMIZER_PNGQUANT
+defining EWWW_IMAGE_OPTIMIZER_CWEBP
+2019-07-11 08:27:20
+<b>ewww_image_optimizer_tool_init()</b>
+<b>ewww_image_optimizer_install_tools()</b>
+Checking/Installing tools in /srv/www/thestoryexchange.org/current/web/app/ewww/
+wp-content/ewww permissions: 0755
+<b>ewww_image_optimizer_install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/optipng-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/pngquant
+/srv/www/thestoryexchange.org/current/web/app/ewww/cwebp
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+Linux/UNIX style OS, checking permissions
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 0744
+permissions ok
+2019-07-11 08:27:21
+<b>ewww_image_optimizer_tool_init()</b>
+<b>ewww_image_optimizer_install_tools()</b>
+Checking/Installing tools in /srv/www/thestoryexchange.org/current/web/app/ewww/
+wp-content/ewww permissions: 0755
+<b>ewww_image_optimizer_install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/optipng-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/srv/www/thestoryexchange.org/current/web/app/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/pngquant
+/srv/www/thestoryexchange.org/current/web/app/ewww/cwebp
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+Linux/UNIX style OS, checking permissions
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 0744
+permissions ok
+<b>ewww_image_optimizer_check_permissions()</b>
+permissions for /srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 0744
+permissions ok
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+<b>ewww_image_optimizer_notice_utils()</b>
+<b>ewww_image_optimizer_exec_check()</b>
+<b>ewww_image_optimizer_skip_tools()</b>
+enabled: jpegtran
+enabled: optipng
+enabled: gifsicle
+<b>ewww_image_optimizer_path_check()</b>
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: 21d8046e07cb298dfd2f3b1e321c67c378a4d35fa8adc3521acc42b5b8088d64
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: j at /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+/srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran: Independent JPEG Group's JPEGTRAN, version 9b  17-Jan-2016
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_JPEGTRAN
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/optipng, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng: 4404076a4f9119d4dfbb7acb00eb65345e804186a019c7136d8f8e87fb0cb997
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: o at /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+/srv/www/thestoryexchange.org/current/web/app/ewww/optipng: OptiPNG version 0.7.7
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_OPTIPNG
+<b>ewww_image_optimizer_find_nix_binary()</b>
+found /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle, testing...
+<b>ewww_image_optimizer_md5check()</b>
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: 566f058b2043c4f3c8c049b0507bfa78dcb33dac52b132cade5f67bbb62d91e4
+checksum verified, binary is intact
+<b>ewww_image_optimizer_mimetype()</b>
+testing mimetype: /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+ewwwio type: application/x-executable
+<b>ewww_image_optimizer_tool_found()</b>
+testing case: g at /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+/srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle: LCDF Gifsicle 1.91
+optimizer found
+defining EWWW_IMAGE_OPTIMIZER_GIFSICLE
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/jpegtran
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/optipng
+using: /srv/www/thestoryexchange.org/current/web/app/ewww/gifsicle
+defining EWWW_IMAGE_OPTIMIZER_PNGOUT
+defining EWWW_IMAGE_OPTIMIZER_PNGQUANT
+defining EWWW_IMAGE_OPTIMIZER_CWEBP
+2019-07-11 08:27:27
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-11 08:27:39
+<b>ewww_image_optimizer_settings_script()</b>
+<b>ewww_image_optimizer_bulk_script()</b>
+<b>ewww_image_optimizer_webp_script()</b>
+2019-07-11 08:28:41
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 08:29:41
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 08:31:42
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 08:33:41
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 08:35:43
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 08:38:04
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:33:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:47
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:49
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:33:51
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:33:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:51
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:54
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:55
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:34:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:34:59
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:36:48
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:38:50
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:38:50
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:52
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:38:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:01
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:03
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:04
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:39:56
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:02
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:07
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:11
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:19
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:19
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:19
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:19
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:20
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:20
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:23
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:40:25
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:25
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:25
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:25
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:26
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:37
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:41
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:42
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:43
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:40:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:40
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:44
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:45
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:46
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:47
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:48
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:53
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:57
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:41:58
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:42:15
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:44:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:10
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:11
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:12
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:14
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:20
+<b>ewww_image_optimizer_gallery_support()</b>
+<b>ewww_image_optimizer_admin_init()</b>
+<b>ewww_image_optimizer_cloud_init()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>ewww_image_optimizer_exec_init()</b>
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+<b>EWWWIO_Tracking::schedule_send()</b>
+checkin already scheduled: 1562947355
+2019-07-11 09:44:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:44:21
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:13
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:14
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:18
+<b>ewww_image_optimizer_gallery_support()</b>
+2019-07-11 09:45:19
+<b>ewww_image_optimizer_gallery_support()</b>
