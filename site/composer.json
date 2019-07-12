@@ -50,11 +50,16 @@
     {
       "type": "composer",
       "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
     }
   ],
   "require": {
     "php": ">=7.1",
     "composer/installers": "^1.4",
+    "13milliseconds/wp-fastest-cache-premium": "^1.4",
     "vlucas/phpdotenv": "^3.0.0",
     "oscarotero/env": "^1.1.0",
     "roots/wordpress": "5.2",

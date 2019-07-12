@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "907dc8216109603ae390a756ab93243a",
+    "content-hash": "b86e67d2f5e031186a72dc9df98e3d81",
     "packages": [
+        {
+            "name": "13milliseconds/wp-fastest-cache-premium",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git",
+                "reference": "8c5593413a3ef6c214d9cef164d439292137467c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/wp-fastest-cache-premium/zipball/8c5593413a3ef6c214d9cef164d439292137467c",
+                "reference": "8c5593413a3ef6c214d9cef164d439292137467c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Original Plugin Author's Name",
+                    "homepage": "https://originalpluginurl.com"
+                }
+            ],
+            "description": "Using Fastest Cache with composer",
+            "homepage": "https://github.com/13milliseconds/wp-fastest-cache-premium",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/wp-fastest-cache-premium/tree/1.4.4",
+                "issues": "https://github.com/13milliseconds/wp-fastest-cache-premium/issues"
+            },
+            "time": "2019-07-12T22:23:40+00:00"
+        },
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
             "version": "5.7.12",
