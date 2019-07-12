@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/tse2019",
+  "publicPath": "/app/themes/thestoryexchange2019",
   "devUrl": "https://thestoryexchange.test",
   "proxyUrl": "https://localhost:3004",
   "cacheBusting": "[name]_[hash:8]",
