@@ -9,6 +9,7 @@
   z-index: 99;
 
   .nav-primary{
+    display: none;
     border: 1px solid theme-color(grey);
     overflow: visible;
 
@@ -51,6 +52,8 @@
         position: relative;
 
         &.menu-item-has-children{
+          cursor: default;
+          
           &> a:after{
             content: '▼';
             display: inline-block;
@@ -76,7 +79,7 @@
 
           ul.sub-menu{
             opacity: 1;
-            display: block;
+            display: flex;
           }
         }
         
@@ -98,7 +101,6 @@
           background: theme-color(white);
           border-top: 1px solid theme-color(grey);
           box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-          display: flex;
           flex-flow: column;
           transition: opacity .25s;
 
@@ -115,6 +117,12 @@
           }
         }
       }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .nav-primary{
+      display: block;
     }
   }
 }
