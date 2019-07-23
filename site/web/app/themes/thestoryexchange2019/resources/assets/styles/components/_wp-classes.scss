@@ -38,6 +38,7 @@
 /** Captions */
 .wp-caption {
   @extend .figure;
+  max-width: 100%;
 }
 
 .wp-caption img {

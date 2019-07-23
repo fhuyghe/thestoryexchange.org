@@ -11,6 +11,7 @@
         }
 
         &.feature-first{
+            //Featured article
             article:first-child{
                 @extend .col-md-12;
             
@@ -25,6 +26,10 @@
                 .entry-text{
                     @include media-breakpoint-up(md){
                         padding-left: $grid-gutter;
+
+                        h3{
+                            margin-top: 0;
+                        }
                     }
                 }
             }

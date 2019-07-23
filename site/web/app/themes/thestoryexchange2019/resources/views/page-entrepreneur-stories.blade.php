@@ -5,20 +5,20 @@
 @extends('layouts.app')
 
 @section('content')
-         <h1>{!! the_title() !!}</h1>
-        <p class="blurb">{!! the_field('blurb') !!}</p>
-        
-        <section id="latest" class="fourPosts">
-            <div class="wrap">
-                @component('partials/post-group', [
-                    'posts_per_page' => 4,
-                    'cat' => array(74), 
-                    'format' => 'vertical', 
-                    'featured_post' => true
-                ])@endcomponent
-            </div>
-            <a class="btn" href="<?php echo site_url(); ?>/category/role-models/">More Recent Stories</a>
-        </section>
+    <h1>{!! the_title() !!}</h1>
+    <p class="blurb">{!! the_field('blurb') !!}</p>
+    
+    <section id="latest" class="fourPosts">
+        <div class="wrap">
+            @component('partials/post-group', [
+                'posts_per_page' => 4,
+                'cat' => array(74), 
+                'format' => 'vertical', 
+                'featured_post' => true
+            ])@endcomponent
+        </div>
+        <a class="btn" href="<?php echo site_url(); ?>/category/role-models/">More Recent Stories</a>
+    </section>
     
         {{-- BUSINESSES DOING GOOD --}}
               
