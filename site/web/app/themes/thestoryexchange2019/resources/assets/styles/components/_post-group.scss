@@ -1,0 +1,33 @@
+.post-group{
+    flex-wrap: wrap;
+
+    article{
+        margin-bottom: $grid-gutter;
+    }
+
+    &.format-vertical{
+        article{
+            @extend .col-lg-4;
+        }
+
+        &.feature-first{
+            article:first-child{
+                @extend .col-md-12;
+            
+                .post-wrap{
+                    @extend .row;
+                    
+                    &> div{
+                        @extend .col-md-6;
+                    }
+                }
+    
+                .entry-text{
+                    @include media-breakpoint-up(md){
+                        padding-left: $grid-gutter;
+                    }
+                }
+            }
+        }
+    }
+}

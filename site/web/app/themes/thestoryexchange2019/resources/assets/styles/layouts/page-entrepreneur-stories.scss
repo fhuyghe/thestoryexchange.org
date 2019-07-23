@@ -1,0 +1,30 @@
+ .page-template-page-entrepreneur-stories{
+     .video-banner{
+         background: theme-color(lightgrey);
+         position: relative;
+
+         a.btn{
+            display: none;
+
+            @include media-breakpoint-up(md){
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+         }
+     }
+
+     #pastlists,
+     #partnerships{
+         .row{
+            margin-bottom: $grid-gutter;
+         }
+     }
+
+     #women-color-lgbt{
+         &> div{
+             margin-bottom: $grid-gutter;
+         }
+     }
+ }

@@ -133,9 +133,9 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 110px;
+  height: 50px;
   color: $black;
-  margin: $grid-gutter 0;
+  margin: 5px 0;
 
   .title {
     text-align: center;
@@ -149,8 +149,7 @@
     }
 
     .description {
-      font-size: 1em;
-      color: theme-color(darkgrey);
+      display: none;
     }
   }
 
@@ -158,5 +157,16 @@
     position: absolute;
     top: 0;
     height: 100%;
+  }
+
+  @include media-breakpoint-up(md){
+    margin: $grid-gutter 0;
+    height: 110px;
+
+    .description {
+      display: block;
+      font-size: 1em;
+      color: theme-color(darkgrey);
+    }
   }
 }

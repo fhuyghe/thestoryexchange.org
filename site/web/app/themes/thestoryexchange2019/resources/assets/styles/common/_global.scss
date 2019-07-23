@@ -32,6 +32,11 @@
 
     .wrap.container{
         flex: 1;
+        
+        section{
+            margin-top: $grid-gutter * 2;
+            margin-bottom: $grid-gutter * 2;
+        }
     }
 }
 
@@ -43,6 +48,22 @@ body{
 h1{
     font-size: 2em;
     margin-bottom: 1em;
+}
+
+h2{
+    &.blue-title{
+        display: inline-block;
+        padding: 5px 10px;
+        background: theme-color(blue);
+        color: theme-color(white);
+        margin-bottom: $grid-gutter;
+    }
+}
+
+h3{
+    font-size: 1.3em;
+    margin-bottom: 0.1em;
+    margin-top: .5em;
 }
 
 a{
@@ -63,6 +84,10 @@ a{
             background-color: darken(theme-color(yellow), 10%);
         }
     }
+}
+
+img{
+    max-width: 100%;
 }
 
 //Embed videos 
