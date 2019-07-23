@@ -1,0 +1,99 @@
+ .page.running-women-2018-elections{
+    .page-header{
+        max-width: 800px;
+        margin: 0 auto $grid-gutter;
+
+        h1{
+            margin-bottom: 0;
+        }
+
+        .subtitle{
+            font-size: 1.5em;
+        }
+    }
+
+    #intro{
+        max-width: 800px;
+        margin: $grid-gutter * 2 auto;
+
+        img{
+            margin-bottom: $grid-gutter;
+        }
+    }
+
+    #timeline{
+        .thumbnail{
+            margin-bottom: $grid-gutter;
+        }
+    }
+
+     #full-grey{
+         position: relative;
+
+         .background{
+            background: theme-color(lightgrey);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: scaleX(2);
+         }
+
+         .org-menu{
+             section{
+                margin-bottom: 0;
+             }
+
+             a{
+                 letter-spacing: .01em;
+                 color: theme-color(black);
+                 text-transform: uppercase;
+                 padding: 10px;
+                 display: inline-block;
+
+                 &.active,
+                 &:hover{
+                    background: theme-color(yellow);
+                 }
+             }
+
+             @include media-breakpoint-up(md){
+                &.fixed{
+                    section{
+                       position: fixed;
+                       top: 0px;
+                    }
+                }
+             }
+         }
+
+         .organization{
+             margin-bottom: 50px;
+
+             @include media-breakpoint-up(md){
+                margin-bottom: 100px;
+             }
+
+             h2{
+                text-transform: uppercase;
+                border-bottom: 4px solid theme-color(yellow);
+                display: inline-block;
+                margin-bottom: $grid-gutter;
+             }
+
+             img{
+                margin-bottom: 10px;
+            }
+
+             .org-description{
+                 margin-bottom: $grid-gutter;
+             }
+
+             .candidate_post{
+                 margin-bottom: $grid-gutter;
+             }
+         }
+     }
+ }

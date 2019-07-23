@@ -1,0 +1,16 @@
+section.category-header{
+    margin-top: 0;
+
+    h1{
+        margin-bottom: 10px;
+    }
+}
+
+.page-number{
+    font-size: 1.2em;
+    margin: auto;
+
+    &>*{
+        margin: 0 5px;
+    }
+}

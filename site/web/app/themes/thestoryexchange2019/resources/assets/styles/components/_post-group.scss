@@ -22,6 +22,10 @@
                         @extend .col-md-6;
                     }
                 }
+
+                .entry-thumbnail{
+                    padding-top: 25%;
+                }
     
                 .entry-text{
                     @include media-breakpoint-up(md){

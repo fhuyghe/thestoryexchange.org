@@ -13,6 +13,8 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/typography";
+
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -26,9 +28,11 @@
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
-@import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "layouts/template-advice-tips";
+@import "layouts/category";
 @import "layouts/category-entrepreneur-videos";
+@import "layouts/pages";
 @import "layouts/page-entrepreneur-stories";
+@import "layouts/page-running-women-2018-elections";
+@import "layouts/template-advice-tips";

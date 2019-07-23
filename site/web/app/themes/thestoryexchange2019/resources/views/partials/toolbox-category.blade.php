@@ -1,7 +1,7 @@
 <?php 
 $cat = get_category($id); 
 $icon = get_field('icon', 'category_' . $id);
-$link = get_site_url() . '/category/' . $cat->slug
+$link = home_url() . '/category/' . $cat->slug
 ?>
 
 <div class="toolbox-category container" id="<?php echo $cat->slug; ?>">

@@ -33,55 +33,23 @@
     .wrap.container{
         flex: 1;
         
-        section{
-            margin-top: $grid-gutter * 2;
-            margin-bottom: $grid-gutter * 2;
+        .main{
+            &>*:first-child{
+                margin-top: 0;
+            }
         }
     }
 }
 
-//Typography
-body{
-    font-family: 'Lato', sans-serif;
-}
+section{
+    margin-top: $grid-gutter * 2;
+    margin-bottom: $grid-gutter * 2;
 
-h1{
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-h2{
-    &.blue-title{
-        display: inline-block;
-        padding: 5px 10px;
-        background: theme-color(blue);
-        color: theme-color(white);
+    header{
         margin-bottom: $grid-gutter;
-    }
-}
 
-h3{
-    font-size: 1.3em;
-    margin-bottom: 0.1em;
-    margin-top: .5em;
-}
-
-a{
-    color: theme-color(darkblue);
-    
-    &:hover{
-        text-decoration: none;
-        color: inherit;
-    }
-
-    &.btn{
-        background: theme-color(yellow);
-        padding: 10px 25px;
-        border: 0;
-        border-radius: 0;
-
-        &:hover{
-            background-color: darken(theme-color(yellow), 10%);
+        h2{
+            margin-bottom: 5px;
         }
     }
 }
@@ -113,6 +81,8 @@ img{
     height: 100%;
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 .fill img {
     flex-shrink: 0;

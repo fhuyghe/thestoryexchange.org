@@ -1,0 +1,50 @@
+//Typography
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+h2{
+    &.blue-title{
+        display: inline-block;
+        padding: 5px 10px;
+        background: theme-color(blue);
+        color: theme-color(white);
+    }
+}
+
+h3{
+    font-size: 1.3em;
+    margin-bottom: 0.1em;
+    margin-top: .5em;
+}
+
+a{
+    color: theme-color(darkblue);
+    
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &.btn{
+        background: theme-color(yellow);
+        padding: 10px 25px;
+        border: 0;
+        border-radius: 0;
+
+        &:hover{
+            background-color: darken(theme-color(yellow), 10%);
+        }
+    }
+}
+
+p{
+    &.tagline{
+        font-size: 1.2em;
+    }
+}
