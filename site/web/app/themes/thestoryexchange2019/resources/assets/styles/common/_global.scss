@@ -81,13 +81,15 @@ img{
     height: 100%;
     width: 100%;
     position: absolute;
+    align-items: baseline;
     top: 0;
     left: 0;
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: auto;
+
+    img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+    }
 }

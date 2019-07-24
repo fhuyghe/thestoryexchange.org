@@ -163,10 +163,12 @@
     margin: $grid-gutter 0;
     height: 110px;
 
-    .description {
-      display: block;
-      font-size: 1em;
-      color: theme-color(darkgrey);
+    .title{
+      .description {
+        display: block;
+        font-size: 1em;
+        color: theme-color(darkgrey);
+      }
     }
   }
 }

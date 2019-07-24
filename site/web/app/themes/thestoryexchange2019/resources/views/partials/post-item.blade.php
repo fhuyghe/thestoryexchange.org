@@ -2,11 +2,7 @@
   <div class="post-wrap">
     @if ( has_post_thumbnail() )
       <div class="entry-thumbnail">
-          <div class="fill">
-          <a href="{!! the_permalink() !!}">
-            {!! the_post_thumbnail('medium') !!}
-          </a>
-          </div>
+          @include('partials/post-thumbnail')
       </div>
     @endif
     <div class="entry-text">
