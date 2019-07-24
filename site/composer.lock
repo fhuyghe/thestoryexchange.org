@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b86e67d2f5e031186a72dc9df98e3d81",
+    "content-hash": "24e9716817b46b6676087ec64004eae9",
     "packages": [
+        {
+            "name": "13milliseconds/spp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/SPP.git",
+                "reference": "017bb603afc3ca85ef9dc7ec742e121fa5976236"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/SPP/zipball/017bb603afc3ca85ef9dc7ec742e121fa5976236",
+                "reference": "017bb603afc3ca85ef9dc7ec742e121fa5976236",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Original Plugin Author's Name",
+                    "homepage": "https://originalpluginurl.com"
+                }
+            ],
+            "description": "Simple PodcastPress using composer",
+            "homepage": "https://github.com/13milliseconds/spp",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/SPP/tree/master",
+                "issues": "https://github.com/13milliseconds/SPP/issues"
+            },
+            "time": "2019-07-24T20:22:40+00:00"
+        },
         {
             "name": "13milliseconds/wp-fastest-cache-premium",
             "version": "1.4.4",
@@ -204,6 +240,23 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-offload-media",
+            "version": "2.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-offload-media&version=2.2.1&composer_key=D4A7ACB70D1F4E28E3BF5453A3FC8564",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "amazon-s3-and-cloudfront-pro"
+            }
         },
         {
             "name": "ffraenz/private-composer-installer",
@@ -658,15 +711,15 @@
         },
         {
             "name": "wpackagist-plugin/accelerated-mobile-pages",
-            "version": "0.9.97.63",
+            "version": "0.9.98.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/accelerated-mobile-pages/",
-                "reference": "tags/0.9.97.63"
+                "reference": "tags/0.9.98.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.97.63.zip",
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -698,15 +751,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "2.2",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/2.2"
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -878,15 +931,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "7.5.2",
+            "version": "7.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/7.5.2"
+                "reference": "tags/7.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1218,15 +1271,15 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.3.4",
+            "version": "7.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.3.4"
+                "reference": "tags/7.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1278,15 +1331,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-fastest-cache",
-            "version": "0.8.9.5",
+            "version": "0.8.9.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
-                "reference": "tags/0.8.9.5"
+                "reference": "tags/0.8.9.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1344,12 +1397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00"
+                "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a53a6f855cbff7edb078f87c72bb808c89443a00",
-                "reference": "a53a6f855cbff7edb078f87c72bb808c89443a00",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
+                "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
                 "shasum": ""
             },
             "conflict": {
@@ -1384,8 +1437,8 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1",
-                "drupal/drupal": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1",
+                "drupal/core": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1|>8.7.3,<8.7.5",
+                "drupal/drupal": ">=7,<7.67|>=8,<8.6.16|>=8.7,<8.7.1|>8.7.3,<8.7.5",
                 "erusev/parsedown": "<1.7.2",
                 "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.4",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
@@ -1452,7 +1505,7 @@
                 "silverstripe/userforms": "<3",
                 "simple-updates/phpwhois": "<=1",
                 "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
-                "simplesamlphp/simplesamlphp": "<1.15.2|>=1.16,<1.16.3",
+                "simplesamlphp/simplesamlphp": "<1.17.3",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "slim/slim": "<2.6",
                 "smarty/smarty": "<3.1.33",
@@ -1551,7 +1604,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-06-25T10:37:35+00:00"
+            "time": "2019-07-18T15:17:58+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1608,6 +1661,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "13milliseconds/spp": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

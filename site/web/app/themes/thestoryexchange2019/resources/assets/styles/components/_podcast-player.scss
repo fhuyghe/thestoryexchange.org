@@ -1,0 +1,35 @@
+.player_container{
+    margin: 0;
+
+    .audioplayer {
+        //top: 0!important;
+        //border: 1px solid theme-color(darkgrey);
+        //background-color: theme-color(white);
+        max-width: 400px;
+
+        .audioplayer-volume-adjust > div{
+            background-color: theme-color(lightgrey);
+        }
+    }
+    .spp_player_textabove,
+    .spp-powered-by,
+    .sppbuttons{
+        display: none;
+    }
+}
+
+.sppbuttons {
+    margin-top: 0;
+}
+.sppbuttons a,
+.spp-powered-by,
+.spp_player_textabove {
+    display: none;
+}
+.sppbuttons.bottom .button-itunes,
+.sppbuttons.bottom .button-stitcher {
+    width: 49%;
+    display: inline-block;
+    margin-left: 0px!important;
+    min-width: 0px !important;
+}
