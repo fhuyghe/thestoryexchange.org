@@ -47,9 +47,7 @@
             "version": "5.7.12",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.12",
-                "reference": null,
-                "shasum": null
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.12#v5.7.12"
             },
             "require": {
                 "composer/installers": "^1.4",
@@ -182,9 +180,7 @@
             "version": "1.9.8",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=1.9.8&composer_key=D4A7ACB70D1F4E28E3BF5453A3FC8564",
-                "reference": null,
-                "shasum": null
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=1.9.8&composer_key=D4A7ACB70D1F4E28E3BF5453A3FC8564"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -196,9 +192,7 @@
             "version": "1.4.14",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-media-files&version=1.4.14&composer_key=D4A7ACB70D1F4E28E3BF5453A3FC8564",
-                "reference": null,
-                "shasum": null
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-media-files&version=1.4.14&composer_key=D4A7ACB70D1F4E28E3BF5453A3FC8564"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -364,8 +358,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2",
-                "reference": "5.2",
-                "shasum": null
+                "reference": "5.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -666,9 +659,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.97.63.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.97.63.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -686,9 +677,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -706,9 +695,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -726,9 +713,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -746,9 +731,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-banners.zip?timestamp=1561476647",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/custom-banners.zip?timestamp=1561476647"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -766,9 +749,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.3.0.17.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.3.0.17.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -786,9 +767,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -806,9 +785,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.9.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.9.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -826,9 +803,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-smooth-scroll-links.zip?timestamp=1503029672",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/easy-smooth-scroll-links.zip?timestamp=1503029672"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -846,9 +821,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/editorial-calendar.3.7.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/editorial-calendar.3.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -866,9 +839,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.8.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.8.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -886,9 +857,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -906,9 +875,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailchimp.1.5.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/mailchimp.1.5.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -926,9 +893,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/official-facebook-pixel.1.7.25.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/official-facebook-pixel.1.7.25.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -946,9 +911,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.3.2.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/really-simple-ssl.3.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -966,9 +929,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/recent-posts-widget-extended.0.9.9.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/recent-posts-widget-extended.0.9.9.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -986,9 +947,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.4.2.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.4.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1006,9 +965,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.8.9.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.8.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1026,9 +983,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/seo-slugs.zip?timestamp=1177030224",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/seo-slugs.zip?timestamp=1177030224"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1046,9 +1001,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/shiftnav-responsive-mobile-menu.1.6.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/shiftnav-responsive-mobile-menu.1.6.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1066,9 +1019,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-tags.2.5.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/simple-tags.2.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1086,9 +1037,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-warfare.3.6.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/social-warfare.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1106,9 +1055,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/subheading.1.8.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/subheading.1.8.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1126,9 +1073,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/super-progressive-web-apps.2.0.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/super-progressive-web-apps.2.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1146,9 +1091,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/svg-support.2.3.15.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.3.15.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1166,9 +1109,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/testimonials-widget.3.5.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/testimonials-widget.3.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1186,9 +1127,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/upprev.3.4.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/upprev.3.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1206,9 +1145,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-photo.0.9.10.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/user-photo.0.9.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1226,9 +1163,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1246,9 +1181,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.5.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1266,9 +1199,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-disable.1.5.21.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-disable.1.5.21.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1286,9 +1217,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1306,9 +1235,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-maximum-execution-time-exceeded.zip?timestamp=1503458913",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-maximum-execution-time-exceeded.zip?timestamp=1503458913"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1326,9 +1253,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
