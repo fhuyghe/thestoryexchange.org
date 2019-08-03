@@ -14,3 +14,37 @@
         margin-bottom: $grid-gutter;
     }
 }
+.home .container {
+  width: 90%;
+  max-width: 1500px;
+  padding: 0;
+}
+
+.home .content {
+  display: flex;
+  flex-flow: row wrap;
+
+  .main {
+    flex: 1 1 71%;
+  }
+
+  .sidebar {
+    flex: 1 1 29%;
+    padding-left: $grid-gutter;
+  }
+}
+
+.page-home-icon {
+  @extend .col-lg-4;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+
+  .icon {
+    flex: 0 1 236px;
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+}

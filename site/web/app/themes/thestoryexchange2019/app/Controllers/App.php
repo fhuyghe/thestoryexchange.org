@@ -6,6 +6,10 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
+    use Partials\PostGroup;
+    use Partials\Icon;
+    use Partials\Banner;
+
     public function siteName()
     {
         return get_bloginfo('name');
