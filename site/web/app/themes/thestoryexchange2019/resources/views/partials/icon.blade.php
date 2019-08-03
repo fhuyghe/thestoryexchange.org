@@ -4,7 +4,7 @@
 <div class="page-home-icon">
   <div class="icon">
     <a href="{!! $icon['link'] !!}">
-      <img src="{!! $icon['image'] !!}" />
+      <img src="{!! $icon['image'] !!}" width="275" height="275"/>
     </a>
   </div>
   <h3>{!! $icon['title'] !!}</h3>
