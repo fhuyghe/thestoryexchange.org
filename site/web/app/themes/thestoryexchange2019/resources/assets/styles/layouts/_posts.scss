@@ -1,0 +1,17 @@
+.single{
+    .content{
+        margin-bottom: $grid-gutter * 3;
+
+        .page-header,
+        h1, 
+        h2,
+        h4,
+        h4,
+        h5,
+        h6,
+        p,
+        ul{
+            max-width: 800px;
+        }
+    }
+}

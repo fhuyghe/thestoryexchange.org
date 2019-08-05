@@ -7,8 +7,10 @@
 @section('content')
           
     <section class="page-header">
-        <h1>{!! the_title() !!}</h1>
-        {!! the_content() !!}
+        @while(have_posts()) @php the_post() @endphp
+            <h1>{!! the_title() !!}</h1>
+            {!! the_content() !!}
+        @endwhile
     </section>
 
     <section id="video-posts">     

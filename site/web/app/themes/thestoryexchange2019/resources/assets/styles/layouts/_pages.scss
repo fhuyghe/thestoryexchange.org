@@ -2,6 +2,36 @@
     padding: 0 $grid-gutter;
 }
 
+.page-template-default{
+    .content{
+        margin-bottom: $grid-gutter * 3;
+
+        .page-header,
+        h1, 
+        h2,
+        h4,
+        h4,
+        h5,
+        h6,
+        p,
+        ul{
+            max-width: 800px;
+        }
+    }
+}
+
+.page-header{
+    margin: 0 auto $grid-gutter;
+
+    h1{
+        margin-bottom: $grid-gutter / 2;
+    }
+
+    .subtitle{
+        font-size: 1.5em;
+    }
+}
+
 //Women in the news
 #politics-leadership{
     .content{

@@ -19,6 +19,7 @@
 
       .search{
         font-size: .7em;
+        padding: 5px;
         
         form{
           flex-flow: row;
@@ -33,13 +34,13 @@
           input[type='search']{
             line-height: 0;
             font-size: 1em;
-            border-width: 0 1px;
+            border-width: 1px;
           }
 
           input[type='submit']{
             background-color: theme-color(darkblue);
             border: 0;
-            font-size: 1.3em;
+            font-size: 1em;
           }
         }
       }

@@ -5,22 +5,25 @@ body{
 
 h1{
     font-size: 2em;
-    margin-bottom: 1em;
+    margin: 0 auto 1em;
 }
 
 h2{
+    margin: auto;
+
     &.blue-title{
         display: inline-block;
         padding: 5px 10px;
         background: theme-color(blue);
         color: theme-color(white);
+        font-size: 1.5em;
+        margin-bottom: 25px;
     }
 }
 
 h3{
     font-size: 1.3em;
-    margin-bottom: 0.1em;
-    margin-top: .5em;
+    margin: 0.1em auto .5em;
 }
 
 a{
@@ -45,7 +48,7 @@ a{
 
 p{
     line-height: 1.8;
-    margin: 0 0 1.5em;
+    margin: 0 auto 1.5em;
 
     &.tagline{
         font-size: 1.2em;

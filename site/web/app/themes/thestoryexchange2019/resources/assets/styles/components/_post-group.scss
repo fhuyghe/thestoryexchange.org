@@ -35,4 +35,20 @@
             }
         }
     }
+
+    &.format-horizontal{
+        article{
+            .post-wrap{
+                display: flex;
+
+                .entry-thumbnail{
+                    flex: 0 0 250px;
+                }
+
+                .entry-text{
+                    padding-left: $grid-gutter;
+                }
+            }
+        }   
+    }
 }
