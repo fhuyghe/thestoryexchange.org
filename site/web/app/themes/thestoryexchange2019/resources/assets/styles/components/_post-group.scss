@@ -14,15 +14,15 @@
             //Featured article
             article:first-child{
                 @extend .col-md-12;
-            
+
                 .post-wrap{
                     @extend .row;
-                    
+
                     &> div{
                         @extend .col-md-6;
                     }
                 }
-    
+
                 .entry-text{
                     @include media-breakpoint-up(md){
                         padding-left: $grid-gutter;
@@ -36,6 +36,7 @@
         }
     }
 
+<<<<<<< HEAD
     &.format-horizontal{
         article{
             .post-wrap{
@@ -52,3 +53,21 @@
         }   
     }
 }
+=======
+    &.format-horizontal {
+      article {
+        @extend .col-lg-12;
+        /* test */
+      }
+
+      .post-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+
+      .entry-thumbnail {
+        @extend .col-md-3;
+      }
+    }
+}
+>>>>>>> f264d057c45841ada40b4567add73abc562d1cfc
