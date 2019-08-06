@@ -36,38 +36,22 @@
         }
     }
 
-<<<<<<< HEAD
-    &.format-horizontal{
+    &.format-horizontal {
         article{
-            .post-wrap{
-                display: flex;
+            @extend .col-lg-12;
 
-                .entry-thumbnail{
+            .post-wrap {
+                display: flex;
+                flex-flow: row nowrap;
+
+                .entry-thumbnail {
                     flex: 0 0 250px;
                 }
 
-                .entry-text{
+                .entry-text {
                     padding-left: $grid-gutter;
                 }
             }
         }   
     }
 }
-=======
-    &.format-horizontal {
-      article {
-        @extend .col-lg-12;
-        /* test */
-      }
-
-      .post-wrap {
-        display: flex;
-        flex-flow: row nowrap;
-      }
-
-      .entry-thumbnail {
-        @extend .col-md-3;
-      }
-    }
-}
->>>>>>> f264d057c45841ada40b4567add73abc562d1cfc

@@ -26,6 +26,10 @@ h3{
     margin: 0.1em auto .5em;
 }
 
+h5{
+    margin: 1em auto 1em;
+}
+
 a{
     color: theme-color(darkblue);
     
@@ -52,5 +56,13 @@ p{
 
     &.tagline{
         font-size: 1.2em;
+    }
+}
+
+ul{
+    margin: 0 auto;
+
+    li{
+        margin-bottom: 1em;
     }
 }

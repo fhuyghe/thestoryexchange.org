@@ -86,7 +86,6 @@ img{
     height: 100%;
     width: 100%;
     position: absolute;
-    align-items: baseline;
     top: 0;
     left: 0;
 
@@ -94,7 +93,7 @@ img{
         flex-shrink: 0;
         min-width: 100%;
         min-height: 100%;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 }

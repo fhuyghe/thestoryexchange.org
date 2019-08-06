@@ -1,6 +1,6 @@
 .social-icons {
   position: absolute;
-  right: 0;
+  right: $grid-gutter;
   bottom: 0;
 
   .social {
@@ -8,5 +8,13 @@
     font-size: 1.5em;
     padding: 0 5px;
     transition: .5s;
+
+    &:hover{
+      color: theme-color(blue);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
   }
 }

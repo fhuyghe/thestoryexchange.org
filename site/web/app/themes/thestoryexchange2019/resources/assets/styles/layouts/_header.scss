@@ -8,9 +8,15 @@
   background: theme-color(white);
   z-index: 99;
 
+  .container{
+    max-width: none;
+  }
+
   .nav-primary{
     display: none;
-    border: 1px solid theme-color(grey);
+    border-color: theme-color(grey);
+    border-style: solid;
+    border-width: 1px 0;
     overflow: visible;
 
     .container{
@@ -48,6 +54,10 @@
   
     ul.nav{
       font-size: .9em;
+
+      li{
+        margin-bottom: 0;
+      }
 
       &> li{
         position: relative;
@@ -138,8 +148,11 @@
   color: $black;
   margin: 5px 0;
 
+  a{
+    color: theme-color(black);
+  }
+
   .title {
-    text-align: center;
     z-index: 2;
     line-height: 1.4em;
 
@@ -156,13 +169,23 @@
 
   img {
     position: absolute;
-    top: 0;
-    height: 100%;
+    left: 70px;
+    top: 10%;
+    height: 80%;
   }
 
   @include media-breakpoint-up(md){
-    margin: $grid-gutter 0;
+    margin: $grid-gutter auto;
     height: 110px;
+    text-align: center;
+
+    img{
+      z-index: -1;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 0;
+      height: 100%;
+    }
 
     .title{
       .description {
