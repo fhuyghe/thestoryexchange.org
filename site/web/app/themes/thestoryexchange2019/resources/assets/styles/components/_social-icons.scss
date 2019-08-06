@@ -1,6 +1,6 @@
 .social-icons {
   position: absolute;
-  right: 0;
+  right: $grid-gutter;
   bottom: 0;
 
   .social {
@@ -9,13 +9,17 @@
     padding: 0 5px;
     transition: .5s;
 
-    &:hover {
-      color: theme-color(darkblue);
+    // FIX for replaced icons
+    .svg-inline--fa {
+      width: .7em;
+    }
+
+    &:hover{
+      color: theme-color(blue);
     }
   }
 
-  // FIX for replaced icons
-  .svg-inline--fa {
-    width: .7em;
+  @include media-breakpoint-down(sm) {
+    display: none;
   }
 }
