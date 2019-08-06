@@ -9,6 +9,11 @@
     padding: 0 5px;
     transition: .5s;
 
+    // FIX for replaced icons
+    .svg-inline--fa {
+      width: .7em;
+    }
+
     &:hover{
       color: theme-color(blue);
     }

@@ -5,9 +5,50 @@
         margin-bottom: $grid-gutter;
     }
 
+    &.format-vertical,
+    &.format-horizontal {
+      .post-image-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-down(sm) {
+          background-image: none !important;
+        }
+
+        @include media-breakpoint-up(md) {
+          img {
+            display: none !important;
+          }
+        }
+      }
+    }
+
     &.format-vertical{
+      flex-direction: row;
+      padding: 0 7.5px;
+
         article{
-            @extend .col-lg-4;
+            @extend .col-md-4;
+            display: flex;
+            flex-flow: column;
+            padding: 0 7.5px;
+        }
+
+        .post-wrap {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1 0 100%;
+
+          .entry-thumbnail {
+            overflow: hidden;
+
+            @include media-breakpoint-up(md){
+              margin-bottom: 30px;
+            }
+          }
         }
 
         &.feature-first{
@@ -37,21 +78,73 @@
     }
 
     &.format-horizontal {
-        article{
-            @extend .col-lg-12;
+      .thumbnail {
+        position: static;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 0;
+      }
 
-            .post-wrap {
-                display: flex;
-                flex-flow: row nowrap;
+      .fill {
+        position: relative;
 
-                .entry-thumbnail {
-                    flex: 0 0 250px;
-                }
+        a { width: 100%; }
+      }
 
-                .entry-text {
-                    padding-left: $grid-gutter;
-                }
-            }
-        }   
+      article {
+        @extend .col-lg-12;
+      }
+
+      .post-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+
+        @include media-breakpoint-down(sm) {
+          flex-flow: row wrap;
+        }
+      }
+
+      .entry-thumbnail {
+        @extend .col-md-4;
+        padding: 0;
+        min-height: 180px;
+      }
+
+      .entry-text {
+        @include media-breakpoint-up(md) {
+            padding-left: $grid-gutter;
+        }
+      }
+
+      .entry-content p {
+        margin-bottom: 0;
+      }
+    }
+
+    &.format-featured {
+      article {
+        margin: 0 15px;
+        background-color: theme-color(darkblue);
+        color: theme-color(white);
+
+        &:hover {
+          background-color: lighten(theme-color(darkblue), 2);
+        }
+
+        a {
+          color: inherit;
+        }
+
+        p {
+          margin: 0;
+          max-width: none;
+          font-size: 1.1em;
+          letter-spacing: 1.2;
+        }
+
+        .entry-text {
+          padding: 20px;
+        }
+      }
     }
 }
