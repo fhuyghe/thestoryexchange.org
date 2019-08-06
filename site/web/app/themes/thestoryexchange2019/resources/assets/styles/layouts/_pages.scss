@@ -2,3 +2,111 @@
     padding: 0 $grid-gutter;
 }
 
+.page-template-default{
+    .content{
+        margin-bottom: $grid-gutter * 3;
+
+        .page-header,
+        h1, 
+        h2,
+        h4,
+        h4,
+        h5,
+        h6,
+        p,
+        ul{
+            max-width: 800px;
+        }
+    }
+}
+
+.page-header{
+    margin: 0 auto $grid-gutter;
+
+    h1{
+        margin-bottom: $grid-gutter / 2;
+    }
+
+    .subtitle{
+        font-size: 1.5em;
+    }
+}
+
+//Women in the news
+#politics-leadership{
+    .content{
+        text-align: center;
+    }
+
+    .icon{
+        max-width: 200px;
+        margin: auto;
+        margin-bottom: $grid-gutter;
+    }
+}
+.home .container {
+  width: 90%;
+  max-width: 1500px;
+  padding: 0;
+  margin: 0 auto;
+
+  section:first-of-type {
+    margin-top: 0;
+  }
+
+  &.brand {
+    height: auto;
+
+    .header-icon {
+      padding: 20px;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: 0;
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.home .content {
+  display: flex;
+  flex-flow: row wrap;
+
+  .main {
+    flex: 1 1 71%;
+  }
+
+  .sidebar {
+    flex: 1 1 29%;
+    padding-left: $grid-gutter;
+  }
+}
+
+.page-home-icon {
+  @extend .col-lg-4;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+
+  .icon {
+    flex: 0 1 auto;
+
+    img {
+      display: block;
+    }
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+}

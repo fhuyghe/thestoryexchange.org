@@ -9,6 +9,7 @@
   z-index: 99;
 
   .nav-primary{
+    display: none;
     border: 1px solid theme-color(grey);
     overflow: visible;
 
@@ -18,6 +19,7 @@
 
       .search{
         font-size: .7em;
+        padding: 5px;
         
         form{
           flex-flow: row;
@@ -32,13 +34,13 @@
           input[type='search']{
             line-height: 0;
             font-size: 1em;
-            border-width: 0 1px;
+            border-width: 1px;
           }
 
           input[type='submit']{
             background-color: theme-color(darkblue);
             border: 0;
-            font-size: 1.3em;
+            font-size: 1em;
           }
         }
       }
@@ -51,6 +53,8 @@
         position: relative;
 
         &.menu-item-has-children{
+          cursor: default;
+          
           &> a:after{
             content: '▼';
             display: inline-block;
@@ -76,7 +80,7 @@
 
           ul.sub-menu{
             opacity: 1;
-            display: block;
+            display: flex;
           }
         }
         
@@ -98,7 +102,6 @@
           background: theme-color(white);
           border-top: 1px solid theme-color(grey);
           box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-          display: flex;
           flex-flow: column;
           transition: opacity .25s;
 
@@ -117,6 +120,12 @@
       }
     }
   }
+
+  @include media-breakpoint-up(md) {
+    .nav-primary{
+      display: block;
+    }
+  }
 }
 
 .brand {
@@ -125,9 +134,9 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 110px;
+  height: 50px;
   color: $black;
-  margin: $grid-gutter 0;
+  margin: 5px 0;
 
   .title {
     text-align: center;
@@ -141,8 +150,7 @@
     }
 
     .description {
-      font-size: 1em;
-      color: theme-color(darkgrey);
+      display: none;
     }
   }
 
@@ -150,5 +158,18 @@
     position: absolute;
     top: 0;
     height: 100%;
+  }
+
+  @include media-breakpoint-up(md){
+    margin: $grid-gutter 0;
+    height: 110px;
+
+    .title{
+      .description {
+        display: block;
+        font-size: 1em;
+        color: theme-color(darkgrey);
+      }
+    }
   }
 }

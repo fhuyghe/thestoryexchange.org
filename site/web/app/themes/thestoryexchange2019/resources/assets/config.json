@@ -1,4 +1,5 @@
 {
+  "headers": { "Access-Control-Allow-Origin": "*" },
   "entry": {
     "main": [
       "./scripts/main.js",
@@ -10,7 +11,7 @@
   },
   "publicPath": "/app/themes/thestoryexchange2019",
   "devUrl": "https://thestoryexchange.test",
-  "proxyUrl": "https://localhost:3004",
+  "proxyUrl": "https://localhost:3002",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",

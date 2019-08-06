@@ -1,0 +1,31 @@
+article.post-item{
+    .thumbnail{
+        margin-bottom: $grid-gutter / 2;
+        height: 0;
+        padding-top: 70%;
+        position: relative;
+
+        a{
+            background-color: theme-color(blue);
+            
+            &:hover{
+                img{
+                    opacity: .8;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+            transition: .25s;
+        }
+    }
+
+    .entry-text{
+        .post-title{
+            font-size: 1.3em;
+        }
+    }
+}

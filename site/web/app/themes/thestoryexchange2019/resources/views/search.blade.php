@@ -10,9 +10,11 @@
     {!! get_search_form(false) !!}
   @endif
 
-  @while(have_posts()) @php the_post() @endphp
-    @include('partials.content-search')
-  @endwhile
+  <div class="post-group format-horizontal">
+    @while(have_posts()) @php the_post() @endphp
+      @include('partials.content-search')
+    @endwhile
+  </div>
 
   {!! get_the_posts_navigation() !!}
 @endsection

@@ -5,8 +5,11 @@ footer.content-info{
     text-transform: uppercase;
     
     .container{
-        display: flex;
         justify-content: center;
+
+        section{
+            margin: 0;
+        }
     }
 
     a{

@@ -97,3 +97,16 @@ add_filter('get_search_form', function () {
     echo template('partials.searchform');
     return $form;
   });
+
+add_filter('sage/display_sidebar', function ($display) {
+    static $display;
+
+    $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      $display,
+      is_home(),
+      is_front_page()
+    ]);
+
+    return $display;
+});
