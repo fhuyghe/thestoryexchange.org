@@ -72,5 +72,36 @@
             padding-left: $grid-gutter;
         }
       }
+
+      .entry-content p {
+        margin-bottom: 0;
+      }
+    }
+
+    &.format-featured {
+      article {
+        margin: 0 auto;
+        background-color: theme-color(darkblue);
+        color: theme-color(white);
+
+        &:hover {
+          background-color: lighten(theme-color(darkblue), 2);
+        }
+
+        a {
+          color: inherit;
+        }
+
+        p {
+          margin: 0;
+          max-width: none;
+          font-size: 1.1em;
+          letter-spacing: 1.2;
+        }
+
+        .entry-text {
+          padding: 20px;
+        }
+      }
     }
 }
