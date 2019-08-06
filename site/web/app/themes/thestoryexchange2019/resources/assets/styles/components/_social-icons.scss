@@ -8,5 +8,14 @@
     font-size: 1.5em;
     padding: 0 5px;
     transition: .5s;
+
+    &:hover {
+      color: theme-color(darkblue);
+    }
+  }
+
+  // FIX for replaced icons
+  .svg-inline--fa {
+    width: .7em;
   }
 }
