@@ -6,8 +6,28 @@
     }
 
     &.format-vertical{
+      flex-flow: row;
+      padding: 0 7.5px;
+
         article{
-            @extend .col-lg-4;
+            @extend .col-md-4;
+            display: flex;
+            flex-flow: column;
+            padding: 0 7.5px;
+        }
+
+        .post-wrap {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1 0 100%;
+
+          .entry-thumbnail {
+            overflow: hidden;
+
+            @include media-breakpoint-up(md){
+              margin-bottom: 30px;
+            }
+          }
         }
 
         &.feature-first{
@@ -36,21 +56,21 @@
         }
     }
 
-    &.format-horizontal{
-      article {
-        @extend .col-lg-12;
-        padding: 0;
-      }
-
+    &.format-horizontal {
       .thumbnail {
         height: auto;
         padding: 0;
+        margin-bottom: 0;
       }
 
       .fill {
         position: relative;
 
         a { width: 100%; }
+      }
+
+      article {
+        @extend .col-lg-12;
       }
 
       .post-wrap {
@@ -63,7 +83,7 @@
       }
 
       .entry-thumbnail {
-        @extend .col-md-3;
+        @extend .col-md-4;
         padding: 0;
       }
 
@@ -80,7 +100,7 @@
 
     &.format-featured {
       article {
-        margin: 0 auto;
+        margin: 0 15px;
         background-color: theme-color(darkblue);
         color: theme-color(white);
 

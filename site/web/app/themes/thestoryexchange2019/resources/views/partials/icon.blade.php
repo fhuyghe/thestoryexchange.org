@@ -3,7 +3,7 @@
 @endphp
 <div class="page-home-icon">
   <div class="icon">
-    <a href="{!! $icon['link'] !!}">
+    <a href="{!! $icon['link'] !!}" class="icon-link">
       <img src="{!! $icon['image'] !!}" width="275" height="275"/>
     </a>
   </div>
