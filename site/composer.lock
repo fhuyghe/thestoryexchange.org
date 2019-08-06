@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24e9716817b46b6676087ec64004eae9",
+    "content-hash": "8b21e2565de54272f2a9c68f733567f2",
     "packages": [
         {
-            "name": "13milliseconds/spp",
+            "name": "13milliseconds/simple-podcast-press",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:13milliseconds/SPP.git",
-                "reference": "017bb603afc3ca85ef9dc7ec742e121fa5976236"
+                "url": "git@github.com:13milliseconds/simple-podcast-press.git",
+                "reference": "3654321e07fee22a03924c50fbe14f75fdc52464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/13milliseconds/SPP/zipball/017bb603afc3ca85ef9dc7ec742e121fa5976236",
-                "reference": "017bb603afc3ca85ef9dc7ec742e121fa5976236",
+                "url": "https://api.github.com/repos/13milliseconds/simple-podcast-press/zipball/3654321e07fee22a03924c50fbe14f75fdc52464",
+                "reference": "3654321e07fee22a03924c50fbe14f75fdc52464",
                 "shasum": ""
             },
             "require": {
@@ -31,16 +31,16 @@
                 }
             ],
             "description": "Simple PodcastPress using composer",
-            "homepage": "https://github.com/13milliseconds/spp",
+            "homepage": "https://github.com/13milliseconds/simple-podcast-press",
             "keywords": [
                 "plugin",
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/13milliseconds/SPP/tree/master",
-                "issues": "https://github.com/13milliseconds/SPP/issues"
+                "source": "https://github.com/13milliseconds/simple-podcast-press/tree/master",
+                "issues": "https://github.com/13milliseconds/simple-podcast-press/issues"
             },
-            "time": "2019-07-24T20:22:40+00:00"
+            "time": "2019-08-06T22:15:36+00:00"
         },
         {
             "name": "13milliseconds/wp-fastest-cache-premium",
@@ -594,16 +594,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.11.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "82ebae02209c21113908c229e9883c419720738a"
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
-                "reference": "82ebae02209c21113908c229e9883c419720738a",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
                 "shasum": ""
             },
             "require": {
@@ -615,7 +615,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -632,12 +632,12 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                },
-                {
                     "name": "Gert de Pagter",
                     "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -648,7 +648,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-02-06T07:57:58+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -704,18 +704,22 @@
         },
         {
             "name": "wpackagist-plugin/accelerated-mobile-pages",
-            "version": "0.9.98.1",
+            "version": "0.9.98.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/accelerated-mobile-pages/",
-                "reference": "tags/0.9.98.1"
+                "reference": "tags/0.9.98.4"
             },
             "dist": {
                 "type": "zip",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.97.63.zip"
 =======
                 "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.1.zip",
+=======
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.4.zip",
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
                 "reference": null,
                 "shasum": null
 >>>>>>> befba140e53352088da71fdd682272faa405da4c
@@ -842,15 +846,21 @@
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
-            "version": "1.9.2",
+            "version": "1.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
-                "reference": "tags/1.9.2"
+                "reference": "tags/1.10"
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.9.2.zip"
+=======
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.10.zip",
+                "reference": null,
+                "shasum": null
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -860,15 +870,21 @@
         },
         {
             "name": "wpackagist-plugin/easy-smooth-scroll-links",
-            "version": "2.1.1",
+            "version": "2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/easy-smooth-scroll-links/",
-                "reference": "trunk"
+                "reference": "tags/2.2"
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/easy-smooth-scroll-links.zip?timestamp=1503029672"
+=======
+                "url": "https://downloads.wordpress.org/plugin/easy-smooth-scroll-links.2.2.zip",
+                "reference": null,
+                "shasum": null
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -914,18 +930,22 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "7.5.3",
+            "version": "7.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/7.5.3"
+                "reference": "tags/7.6"
             },
             "dist": {
                 "type": "zip",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.2.zip"
 =======
                 "url": "https://downloads.wordpress.org/plugin/jetpack.7.5.3.zip",
+=======
+                "url": "https://downloads.wordpress.org/plugin/jetpack.7.6.zip",
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
                 "reference": null,
                 "shasum": null
 >>>>>>> befba140e53352088da71fdd682272faa405da4c
@@ -1028,15 +1048,21 @@
         },
         {
             "name": "wpackagist-plugin/schema-and-structured-data-for-wp",
-            "version": "1.8.9.1",
+            "version": "1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/schema-and-structured-data-for-wp/",
-                "reference": "tags/1.8.9.1"
+                "reference": "tags/1.9"
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.8.9.1.zip"
+=======
+                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.9.zip",
+                "reference": null,
+                "shasum": null
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1226,18 +1252,22 @@
         },
         {
             "name": "wpackagist-plugin/wordfence",
-            "version": "7.3.5",
+            "version": "7.3.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/7.3.5"
+                "reference": "tags/7.3.6"
             },
             "dist": {
                 "type": "zip",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.4.zip"
 =======
                 "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.5.zip",
+=======
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.3.6.zip",
+>>>>>>> fae7f9e25f5644bb2a3e2fab819de7ad466b751f
                 "reference": null,
                 "shasum": null
 >>>>>>> befba140e53352088da71fdd682272faa405da4c
@@ -1616,7 +1646,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "13milliseconds/spp": 20,
+        "13milliseconds/simple-podcast-press": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

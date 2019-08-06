@@ -4,21 +4,16 @@ article.post-item{
         height: 0;
         padding-top: 70%;
         position: relative;
+        background-color: theme-color(blue);
 
-        a{
-            background-color: theme-color(blue);
-            
-            &:hover{
-                img{
-                    opacity: .8;
-                    transform: scale(1.1);
-                }
+        &:hover{
+            img{
+                opacity: .8;
+                transform: scale(1.05);
             }
         }
 
         img{
-            max-width: 100%;
-            height: auto;
             transition: .25s;
         }
     }
