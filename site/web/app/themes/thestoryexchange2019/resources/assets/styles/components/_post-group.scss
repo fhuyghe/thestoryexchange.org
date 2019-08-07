@@ -58,6 +58,8 @@
 
                 .post-wrap{
                     @extend .row;
+                    flex-direction: row;
+                    flex: auto;
 
                     &> div{
                         @extend .col-md-6;
