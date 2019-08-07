@@ -6,16 +6,13 @@ Template Name: 1000 Stories
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-<div class="row">
-    <div class="col-lg-8">
         <section class="page-header">
                 <h1>{!! the_title() !!}</h1>
                 <p>{!! the_field('subtitle') !!}</p>
-            
         </section>
         
-        <div id="1000Stories-Map" style="padding-top: 35px; clear: both; display: block;">
-            <iframe src="https://thestoryexchange.cartodb.com/viz/73667268-8c05-11e5-9224-0e98b61680bf/embed_map" width="100%" height="520" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <div id="1000Stories-Map">
+            <iframe src="https://thestoryexchange.cartodb.com/viz/73667268-8c05-11e5-9224-0e98b61680bf/embed_map" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
         
         <section class="articles">
@@ -74,11 +71,9 @@ Template Name: 1000 Stories
 
         </div>
         </section>
-    </div>
-
-    <div class="col-lg-4">
+        <div class="letter">
             <?php the_content(); ?>
-    </div> 
+        </div> 
     </div> 
     @endwhile    
 @endsection
