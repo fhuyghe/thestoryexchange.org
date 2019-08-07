@@ -6,6 +6,7 @@
     .content{
         margin-bottom: $grid-gutter * 3;
 
+        //Typography
         .page-header,
         h1,
         h2,
@@ -16,6 +17,14 @@
         p,
         ul{
             max-width: 800px;
+        }
+
+        ul{
+          margin: 0 auto;
+      
+          li{
+              margin-bottom: 1em;
+          }
         }
     }
 }
@@ -30,6 +39,12 @@
     .subtitle{
         font-size: 1.5em;
     }
+}
+
+header{
+  p{
+    margin-bottom: 0;
+  }
 }
 
 //Women in the news

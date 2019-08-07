@@ -1,4 +1,6 @@
-{{-- TEMPLATE NAME: Running Women --}}
+{{-- 
+	Template Name: Running Women 
+--}}
 
 @extends('layouts.app')
 

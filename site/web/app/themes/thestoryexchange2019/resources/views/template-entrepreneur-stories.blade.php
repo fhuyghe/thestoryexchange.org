@@ -1,6 +1,6 @@
-{{-- =============================================================================
-// TEMPLATE NAME: Entrepreneur Stories
-// =============================================================================--}}
+{{--
+Template Name: Entrepreneur Stories
+--}}
 
 @extends('layouts.app')
 
@@ -116,23 +116,47 @@
         <section id="new-lists">
             <div class="row">
            <div class="col-md-6">
-            <?php $leftBanner = get_field('largebanner_left'); ?>
-                <a  href="<?php the_field('largebanner_left_link'); ?>">
-                    <img src="<?php echo $leftBanner['sizes']['medium']; ?>" width="100%">
-                </a>
-                <h3><a href="<?php the_field('largebanner_left_link'); ?>"><?php the_field('largebanner_left_title'); ?></a></h3>
-                <p><?php the_field('largebanner_left_text'); ?></p>
-                <a class="btn" href="<?php the_field('largebanner_left_link'); ?>">Explore</a>
+                <article class="post-item">
+                    <div class="post-wrap">
+                        <div class="entry-thumbnail">
+                            <div class="thumbnail">
+                            <?php $leftBanner = get_field('largebanner_left'); ?>
+                            <a  href="<?php the_field('largebanner_left_link'); ?>">
+                                <div class="fill">
+                                    <img src="<?php echo $leftBanner['sizes']['medium']; ?>" width="100%">
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="entry-text">
+                            <h3><a href="<?php the_field('largebanner_left_link'); ?>"><?php the_field('largebanner_left_title'); ?></a></h3>
+                            <p><?php the_field('largebanner_left_text'); ?></p>
+                            <a class="btn" href="<?php the_field('largebanner_left_link'); ?>">Explore</a>
+                        </div>
+                    </div>
+                </article>
             </div>
             <div class="col-md-6">
-            <?php $rightBanner = get_field('largebanner_right'); ?>
-                <a  href="<?php the_field('largebanner_right_link'); ?>">
-                    <img src="<?php echo $rightBanner['sizes']['medium']; ?>" width="100%">
-                </a>
-                <h3><a href="<?php the_field('largebanner_right_link'); ?>"><?php the_field('largebanner_right_title'); ?></a></h3>
-                <p><?php the_field('largebanner_right_text'); ?></p>
-                <a class="btn" href="<?php the_field('largebanner_right_link'); ?>">Explore</a>
-            </div>
+                <article class="post-item">
+                        <div class="post-wrap">
+                            <div class="entry-thumbnail">
+                                <div class="thumbnail">
+                                    <?php $rightBanner = get_field('largebanner_right'); ?>
+                                    <a  href="<?php the_field('largebanner_right_link'); ?>">
+                                        <div class="fill">
+                                            <img src="<?php echo $rightBanner['sizes']['medium']; ?>" width="100%">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="entry-text">
+                                <h3><a href="<?php the_field('largebanner_right_link'); ?>"><?php the_field('largebanner_right_title'); ?></a></h3>
+                                <p><?php the_field('largebanner_right_text'); ?></p>
+                                <a class="btn" href="<?php the_field('largebanner_right_link'); ?>">Explore</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     

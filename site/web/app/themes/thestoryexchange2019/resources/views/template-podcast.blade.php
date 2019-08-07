@@ -1,4 +1,6 @@
-{{-- TEMPLATE NAME: Podcast --}}
+{{-- 
+  TEMPLATE NAME: Podcast 
+--}}
 
 @extends('layouts.app')
 
