@@ -3,12 +3,59 @@
 
     .audioplayer {
         //top: 0!important;
-        //border: 1px solid theme-color(darkgrey);
-        //background-color: theme-color(white);
+        border: 1px solid theme-color(darkgrey);
+        background-color: theme-color(white); 
         max-width: 400px;
 
-        .audioplayer-volume-adjust > div{
+        .audioplayer-playpause{
+            &:hover{
+                background-color: theme-color(white);
+                
+                a{
+                    border-left-color: theme-color(darkblue);
+                }
+            }
+        }
+
+        .audioplayer-bar{
             background-color: theme-color(lightgrey);
+
+            .audioplayer-bar-loaded{
+                background-color: theme-color(grey);
+            }
+
+            .audioplayer-bar-played{
+                background-color: theme-color(blue);
+            }
+        }
+
+        .audioplayer-volume{
+            .audioplayer-volume-button{
+                background: theme-color(white);
+                
+                a{
+                    filter: none;
+                }
+
+                &:hover,
+                &:active{
+                    background: theme-color(white);
+                }
+            }
+
+            .audioplayer-volume-adjust{
+                background: theme-color(white);
+                border: 1px solid theme-color(darkgrey);
+                border-bottom-color: theme-color(white);
+
+                div {
+                    background: theme-color(lightgrey);
+
+                    div{
+                        background: theme-color(blue);
+                    }
+                }
+            }
         }
     }
     .spp_player_textabove,

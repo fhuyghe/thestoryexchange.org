@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b21e2565de54272f2a9c68f733567f2",
+    "content-hash": "e20ee14a3d9918d42513299442c78219",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -993,6 +993,7 @@
             "homepage": "https://wordpress.org/plugins/official-facebook-pixel/"
         },
         {
+<<<<<<< HEAD
             "name": "wpackagist-plugin/really-simple-ssl",
             "version": "3.2.3",
             "source": {
@@ -1011,6 +1012,8 @@
             "homepage": "https://wordpress.org/plugins/really-simple-ssl/"
         },
         {
+=======
+>>>>>>> 8a408df8618f183bd8566917c523463c68ce88bd
             "name": "wpackagist-plugin/recent-posts-widget-extended",
             "version": "0.9.9.7",
             "source": {

@@ -90,7 +90,6 @@
     "wpackagist-plugin/jetpack":"^7.3.1",
     "wpackagist-plugin/mailchimp":"^1.5.7",
     "wpackagist-plugin/official-facebook-pixel":"^1.7.25",
-    "wpackagist-plugin/really-simple-ssl":"^3.1.5",
     "wpackagist-plugin/recent-posts-widget-extended":"^0.9.9.7",
     "wpackagist-plugin/relevanssi":"^4.1.4",
     "wpackagist-plugin/schema-and-structured-data-for-wp":"^1.8.3",
