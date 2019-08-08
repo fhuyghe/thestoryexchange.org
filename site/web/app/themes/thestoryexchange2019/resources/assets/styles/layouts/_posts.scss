@@ -12,5 +12,44 @@
         ul{
             max-width: 800px;
         }
+
+        // Header
+        .page-header{
+            h1{
+                margin-bottom: $grid-gutter / 2;
+            }
+
+            .subtitle{
+                font-size: 1.2em;
+                margin-bottom: 0;
+            }
+
+            time{
+                color: theme-color(grey);
+                margin-bottom: $grid-gutter;
+                display: block;
+            }
+
+            .author-meta{
+                display: flex;
+                align-items: center;
+
+                .author_thumbnail{
+                    width: 50px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    margin-right: $grid-gutter / 2;
+                }
+
+                a{
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        // Images
+        figure{
+            margin-bottom: $grid-gutter;
+        }
     }
 }
