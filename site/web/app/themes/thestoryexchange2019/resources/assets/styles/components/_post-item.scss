@@ -1,4 +1,23 @@
 article.post-item{
+
+    .entry-thumbnail{
+        position: relative;
+        .tags{
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            z-index: 2;
+
+            .tag{
+                background: theme-color(lightgrey);
+                padding: 5px 10px;
+                border-radius: 1em;
+                color: theme-color(darkgrey);
+                display: inline-block;
+            }
+        }
+    }
+
     .thumbnail{
         margin-bottom: $grid-gutter / 2;
         height: 0;
@@ -18,8 +37,13 @@ article.post-item{
     }
 
     .entry-text{
+
         .post-title{
             font-size: 1.3em;
+        }
+
+        p{
+            margin-bottom: 0;
         }
     }
 }
