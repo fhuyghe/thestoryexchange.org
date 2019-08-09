@@ -98,6 +98,8 @@ add_filter('get_search_form', function () {
     return $form;
   });
 
+
+// Renders the sidebar
 add_filter('sage/display_sidebar', function ($display) {
     static $display;
 
