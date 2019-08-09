@@ -83,7 +83,7 @@ class widget_video extends WP_Widget {
                 </div>
             </div>
         <?php endwhile; endif; ?>
-        <a class="bluebutton" href="<?php home_url(); ?>/category/entrepreneur-videos/">More videos</a>
+        <a class="blue bigbutton" href="<?php home_url(); ?>/category/entrepreneur-videos/">More videos</a>
 
     <?php
     echo $args['after_widget'];
@@ -163,7 +163,7 @@ class widget_podcast extends WP_Widget {
                </div>
                </div>
            <?php endwhile; endif; ?>
-           <a class="bluebutton" href="/podcast">More Episodes</a>
+           <a class="blue bigbutton" href="/podcast">More Episodes</a>
     
     <?php
     echo $args['after_widget'];

@@ -49,17 +49,33 @@ a{
         }
     }
 
-    &.bluebutton{
+    &.bigbutton{
         display: block;
         text-align: center;
-        color: theme-color(white);
-        background: theme-color(darkblue);
         text-transform: uppercase;
+        width: 100%;
+        border: 0;
         padding: 10px 25px;
         transition: .25s;
 
-        &:hover{
-            background: theme-color(blue);
+        &.blue{
+            color: theme-color(white);
+            background: theme-color(darkblue);
+
+            &:hover{
+                color: theme-color(white);
+                background: theme-color(blue);
+            }
+        }
+
+        &.yellow{
+            color: theme-color(black);
+            background: theme-color(yellow);
+
+            &:hover{
+                color: theme-color(black);
+                background: darken(theme-color(yellow), 10%);
+            }
         }
     }
 }
