@@ -1,5 +1,6 @@
 import initVideoPlayers from '../tools/videoPlayer';
 import stickyPosition from '../tools/stickyPosition';
+import sideMenu from '../tools/sideMenu';
 
 export default {
   init() {
@@ -10,5 +11,6 @@ export default {
     initVideoPlayers();
     const position = stickyPosition(['.nav-primary'], window)('stick-to-top');
     position.init()
+    sideMenu().init();
   },
 };
