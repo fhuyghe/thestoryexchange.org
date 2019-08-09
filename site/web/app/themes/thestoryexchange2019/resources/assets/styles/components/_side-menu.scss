@@ -1,0 +1,75 @@
+.side-menu {
+  &__body-wrap,
+  &__toggle-button,
+  &__container {
+    transition: transform 300ms ease-out, visibility 500ms;
+
+    @at-root .side-menu--open & {
+      transition: transform 250ms ease-out;
+    }
+  }
+
+  &__body-wrap {
+    position: relative;
+    z-index: 5;
+    background-color: theme-color(white);
+  }
+
+  &__toggle-button {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+
+    &::after {
+      content: "open";
+
+      @at-root .side-menu--open & {
+        content: "close";
+      }
+    }
+  }
+
+  &__container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: ($grid-gutter * 2) $grid-gutter;
+    margin: -$grid-gutter 0;
+    overflow: scroll;
+    background-color: theme-color(dark-yellow);
+    visibility: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -13px;
+      bottom: 0;
+      width: 12px;
+      box-shadow: 1px 0 100px theme-color(black);
+      transition: box-shadow 100ms 50ms ease-out;
+
+      @at-root .side-menu--open & {
+        box-shadow: -10px 0 20px theme-color(black);
+        transition: box-shadow 350ms 100ms ease-out;
+      }
+    }
+
+    .nav {
+      flex-flow: column nowrap;
+    }
+
+    .menu-item {
+      // flex: 1 0 100%;
+    }
+
+    .social-icons {
+      display: block;
+      position: static;
+    }
+  }
+}
