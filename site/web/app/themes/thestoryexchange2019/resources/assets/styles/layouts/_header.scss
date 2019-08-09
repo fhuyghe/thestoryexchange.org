@@ -18,6 +18,24 @@
     border-style: solid;
     border-width: 1px 0;
     overflow: visible;
+    background: theme-color(white);
+
+    &.stick-to-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1040;
+
+      & + .stick-to-top__placeholder {
+        display: block;
+      }
+    }
+
+    & + .stick-to-top__placeholder {
+      display: none;
+      min-height: 40px;
+    }
 
     .container{
       display: flex;
@@ -26,7 +44,7 @@
       .search{
         font-size: .7em;
         padding: 5px;
-        
+
         form{
           flex-flow: row;
           height: 100%;
@@ -51,7 +69,7 @@
         }
       }
     }
-  
+
     ul.nav{
       font-size: .9em;
 
@@ -64,7 +82,7 @@
 
         &.menu-item-has-children{
           cursor: default;
-          
+
           &> a:after{
             content: '▼';
             display: inline-block;
@@ -93,7 +111,7 @@
             display: flex;
           }
         }
-        
+
         &> a{
           @extend .nav-link;
           padding: .5rem 0;
@@ -101,7 +119,7 @@
           color: theme-color(black);
           border-bottom: 3px solid transparent;
         }
-  
+
         ul.sub-menu{
           position: absolute;
           display: none;
