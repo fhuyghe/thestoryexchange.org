@@ -66,15 +66,7 @@
     &.format-horizontal {
       .thumbnail {
         position: static;
-        height: 100%;
-        padding: 0;
         margin-bottom: 0;
-      }
-
-      .fill {
-        position: relative;
-
-        a { width: 100%; }
       }
 
       article {
