@@ -1,3 +1,11 @@
+%fixed_at_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+}
+
 .site-header{
   margin-bottom: $section-padding;
   overflow: visible;
@@ -21,11 +29,7 @@
     background: theme-color(white);
 
     &.stick-to-top {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1040;
+      @extend %fixed_at_top;
 
       & + .stick-to-top__placeholder {
         display: block;
@@ -34,7 +38,6 @@
 
     & + .stick-to-top__placeholder {
       display: none;
-      min-height: 40px;
     }
 
     .container{
