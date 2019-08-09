@@ -64,10 +64,6 @@
     }
 
     &.format-horizontal {
-      .thumbnail {
-        margin-bottom: 0;
-      }
-
       article {
         @extend .col-lg-12;
       }
@@ -85,6 +81,7 @@
         @extend .col-md-4;
         padding: 0;
         min-height: 180px;
+        margin-bottom: 0;
       }
 
       .entry-text {
@@ -100,14 +97,6 @@
 
     &.format-featured {
       article {
-        margin: 0 15px;
-        background-color: theme-color(darkblue);
-        color: theme-color(white);
-
-        &:hover {
-          background-color: lighten(theme-color(darkblue), 2);
-        }
-
         a {
           color: inherit;
         }
@@ -119,8 +108,24 @@
           letter-spacing: 1.2;
         }
 
+        .entry-thumbnail{
+          margin-bottom: 0;
+
+          .thumbnail{
+            &:hover img{
+              opacity: 1;
+            }
+          }
+        }
+
         .entry-text {
           padding: 20px;
+          background-color: theme-color(darkblue);
+          color: theme-color(white);
+
+          &:hover {
+            background-color: lighten(theme-color(darkblue), 2);
+          }
         }
       }
     }
