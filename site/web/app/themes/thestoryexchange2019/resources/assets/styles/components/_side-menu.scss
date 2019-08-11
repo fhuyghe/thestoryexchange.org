@@ -1,4 +1,8 @@
 .side-menu {
+  &--open {
+    overflow: hidden;
+  }
+
   &__body-wrap,
   &__toggle-button,
   &__container {
