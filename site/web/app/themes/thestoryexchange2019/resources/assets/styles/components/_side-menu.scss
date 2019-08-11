@@ -64,11 +64,20 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    padding: ($grid-gutter * 2) $grid-gutter;
     margin: -$grid-gutter 0;
-    overflow: scroll;
-    background-color: theme-color(dark-yellow);
+    overflow-x: hidden;
+    background-color: theme-color(yellow);
     visibility: hidden;
+    color: theme-color(black);
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        color: theme-color(darkblue);
+      }
+    }
 
     &::after {
       content: "";
@@ -87,17 +96,54 @@
       }
     }
 
-    .nav {
-      flex-flow: column nowrap;
+    &__inner {
+      padding: ($grid-gutter * 2) $grid-gutter;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
-    .menu-item {
-      // flex: 1 0 100%;
+    .site-name {
+      padding-right: 1em;
+      max-width: 250px;
+      margin: .25em 0 1.5em;
+      font-size: 30px;
+      font-weight: bold;
     }
 
     .social-icons {
-      display: block;
       position: static;
+      display: block;
+      margin: .5em 0;
+      text-align: center;
+
+      .social {
+        color: inherit;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0 -30px;
+    list-style: none;
+    color: theme-color(black);
+    font-size: 18px;
+
+    .menu-item {
+      a {
+        display: block;
+        padding: 10px 30px;
+      }
+    }
+
+    .sub-menu {
+      padding-left: 24px;
+      list-style: none;
+      color: theme-color(darkgrey);
+      font-size: 16px;
     }
   }
 }
