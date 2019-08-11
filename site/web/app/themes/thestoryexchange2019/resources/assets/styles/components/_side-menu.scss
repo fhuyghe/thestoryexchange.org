@@ -25,13 +25,37 @@
     top: 0;
     left: 0;
     z-index: 10;
+    font-size: 30px;
+    appearance: none;
+    border: 0;
     cursor: pointer;
 
-    &::after {
-      content: "open";
+    &:focus {
+      outline: 0;
+    }
+
+    &__icon {
+      &--close,
+      &--open {
+        position: absolute;
+        padding: 8px 14px;
+        background-color: theme-color(white);
+        transition: transform 200ms 200ms;
+        box-sizing: content-box;
+      }
+
+      &--close {
+        transform: scale(0);
+      }
 
       @at-root .side-menu--open & {
-        content: "close";
+        &--open {
+          transform: scale(0);
+        }
+
+        &--close {
+          transform: scale(1);
+        }
       }
     }
   }
