@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="site-header">
   <div class="brand container">
     <a class="header-icon" href="{{ home_url('/') }}">
       <img src="@asset('images/TSE-logo-160.png')">

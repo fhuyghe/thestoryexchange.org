@@ -9,7 +9,7 @@
   {{-- FEATURED POST --}}
 
   <section id="featured-post">
-    <div class="row post-group format-featured">
+    <div class="post-group format-featured">
       @php
         $featured = get_field('featured_post')
       @endphp

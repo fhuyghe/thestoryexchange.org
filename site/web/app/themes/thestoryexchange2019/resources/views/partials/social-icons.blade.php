@@ -1,5 +1,5 @@
 <div class="social-icons">
-  @foreach ($get_social_icons_object as $name => $icon)
+  @foreach (App::fetch_social_icons_object() as $name => $icon)
     <a
       href="{!! $icon['url'] !!}"
       itemProp="sameAs"

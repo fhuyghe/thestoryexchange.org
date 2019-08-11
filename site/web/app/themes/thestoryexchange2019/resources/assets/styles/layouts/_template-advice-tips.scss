@@ -12,11 +12,11 @@
         }
 
         .cat-menu{
-            margin: 50px 0;
+            margin: $grid-gutter 0;
 
             &.fixed{
                 position: fixed;
-                top: 50px;
+                top: $grid-gutter;
             }
 
             a{
@@ -32,7 +32,7 @@
 
     .right-content{
         position: relative;
-        padding: 50px 0;
+        padding: $grid-gutter 0;
 
         &:before{
             content: '';
@@ -79,7 +79,7 @@
                 }
 
                 & > p{
-                    margin-bottom: 50px;
+                    margin-bottom: $grid-gutter;
                 }
 
                 .posts{

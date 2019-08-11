@@ -2,6 +2,7 @@
   <div class="post-wrap">
     @if ( has_post_thumbnail() )
       <div class="entry-thumbnail">
+          @include('partials/post-tags')
           @include('partials/post-thumbnail')
       </div>
     @endif

@@ -2,7 +2,7 @@
 .category-entrepreneur-videos{
 
     .videos{
-        margin-bottom: 50px;
+        margin-bottom: $grid-gutter;
 
         .page-number{
             text-align: center;
@@ -58,7 +58,7 @@
         display: block;
 
         section{
-            margin-bottom: 50px;
+            margin-bottom: $grid-gutter;
             flex: 1 0 50%;
 
             h2{

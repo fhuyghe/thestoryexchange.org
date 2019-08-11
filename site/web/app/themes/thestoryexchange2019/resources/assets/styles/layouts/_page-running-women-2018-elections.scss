@@ -57,7 +57,7 @@
          }
 
          .organization{
-             margin-bottom: 50px;
+             margin-bottom: $grid-gutter;
 
              @include media-breakpoint-up(md){
                 margin-bottom: 100px;

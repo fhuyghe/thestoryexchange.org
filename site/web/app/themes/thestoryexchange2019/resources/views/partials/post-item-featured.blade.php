@@ -5,17 +5,22 @@
     setup_postdata( $post );
   @endphp
 <article id="post-{!! the_ID() !!}" {!! post_class('post-item') !!}>
-  <a href="{!! the_permalink() !!}">
   <div class="post-wrap">
-    @if ( $picture )
-      <img src="{!! $picture !!}" width="100%">
+      <div class="entry-thumbnail">
+      @if( $picture )
+          @include('partials/post-tags')
+          <div class="thumbnail">
+            <div class="fill">
+              <img src="{!! $picture !!}" width="100%">
+            </div>
+          </div>
     @else
       @if ( has_post_thumbnail() )
-        <div class="entry-thumbnail">
           @include('partials/post-thumbnail')
-        </div>
       @endif
     @endif
+    </div>
+    <a href="{!! the_permalink() !!}">
     <div class="entry-text">
         <h3 class="post-title">
             {!! the_title() !!}
@@ -24,8 +29,8 @@
           {!! the_excerpt() !!}
         </div>
     </div>
+    </a>
   </div>
-  </a>
 </article>
 
 @php

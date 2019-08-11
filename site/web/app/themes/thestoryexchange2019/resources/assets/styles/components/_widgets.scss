@@ -1,0 +1,75 @@
+.widget{
+    h3{
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: .03em;
+        font-weight: 100;
+        text-align: center;
+        border: 1px solid theme-color(grey);
+        padding: 10px;
+        margin: 0;
+        margin-bottom: $grid-gutter / 2;
+    }
+
+    .download-box{ //Needed for the podcast player to display properly
+        h6{
+            text-align: left;
+            margin-top: $grid-gutter / 2;
+        }
+
+        p{
+            text-align: left;
+        }
+    }
+}
+
+.testimonials-widget-testimonial{
+    max-width: 100%;
+
+    blockquote{
+        font-size: 1.2em;
+    }
+}
+
+.widget_custom_html{
+    label{
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"]{
+        display: block;
+        width: 100%;
+        margin-bottom: $grid-gutter / 3;
+        padding: $grid-gutter / 3;
+        border: 1px solid theme-color(grey);
+    }
+
+    input[type="submit"]{
+        @extend a.bigbutton;
+        @extend a.bigbutton.yellow;
+    }
+}
+
+.widget_widget_video{
+    h3{
+        margin-bottom: 0;
+    }
+}
+
+.widget_widget_podcast{
+    h3{
+        margin-bottom: 0;
+    }
+
+    .thumbnail{
+        height: 0;
+        padding-top: 60%;
+        position: relative;
+    }
+
+    .audioplayer{
+        top: 0;
+        max-width: none;
+    }
+}

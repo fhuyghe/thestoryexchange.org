@@ -1,15 +1,34 @@
 article.post-item{
-    .thumbnail{
+
+    .entry-thumbnail{
+        position: relative;
         margin-bottom: $grid-gutter / 2;
+
+        .tags{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 2;
+
+            .tag{
+                background: theme-color(lightgrey);
+                padding: 5px 10px;
+                border-radius: 1em;
+                color: theme-color(darkgrey);
+                display: inline-block;
+            }
+        }
+    }
+
+    .thumbnail{
         height: 0;
-        padding-top: 70%;
+        padding-top: 60%;
         position: relative;
         background-color: theme-color(blue);
 
         &:hover{
             img{
                 opacity: .8;
-                transform: scale(1.05);
             }
         }
 
@@ -19,8 +38,13 @@ article.post-item{
     }
 
     .entry-text{
+
         .post-title{
             font-size: 1.3em;
+        }
+
+        p{
+            margin-bottom: 0;
         }
     }
 }

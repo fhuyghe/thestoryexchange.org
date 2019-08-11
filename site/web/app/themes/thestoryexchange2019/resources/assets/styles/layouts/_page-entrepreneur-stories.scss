@@ -9,7 +9,7 @@
             @include media-breakpoint-up(md){
                 display: block;
                 position: absolute;
-                right: 50px;
+                right: $grid-gutter;
                 top: 50%;
                 transform: translateY(-50%);
             }
