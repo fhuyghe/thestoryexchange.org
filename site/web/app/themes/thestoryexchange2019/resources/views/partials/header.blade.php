@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="brand container">
     <a class="header-icon" href="{{ home_url('/') }}">
-      <img src="@asset('images/TSE-logo-160.png')">
+      <img src="@asset('images/TSE-logo-160.png')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
       <div class="title">
         <div class="name">{{ get_bloginfo('name', 'display') }}</div>
         <div class="description">{{ get_bloginfo('description', 'display') }}</div>

@@ -9,7 +9,7 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
     initVideoPlayers();
-    const position = stickyPosition(['.nav-primary'], window)('stick-to-top');
+    const position = stickyPosition(['.nav-primary', '.container.brand'], window)('stick-to-top');
     position.init()
     sideMenu().init();
   },

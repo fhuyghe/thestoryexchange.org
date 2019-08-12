@@ -25,10 +25,14 @@
     top: 0;
     left: 0;
     z-index: 10;
-    font-size: 30px;
+    font-size: 24px;
     appearance: none;
     border: 0;
     cursor: pointer;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    };
 
     &:focus {
       outline: 0;
@@ -64,6 +68,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
+    max-width: calc(100vw - 60px);
     margin: -$grid-gutter 0;
     overflow-x: hidden;
     background-color: theme-color(yellow);

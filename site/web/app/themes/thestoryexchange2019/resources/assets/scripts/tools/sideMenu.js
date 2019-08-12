@@ -2,30 +2,34 @@ import eventLoader from '../util/eventLoader';
 
 export default function sideMenu() {
   const {body} = document;
+  const {parentElement: htmlEl} = body;
   const button = document.querySelector('.side-menu__toggle-button');
   const menuContainer = document.querySelector('.side-menu__container');
   const contentContainer = document.querySelector('.side-menu__body-wrap');
 
   const getMenuWidth = () => Number(getComputedStyle(menuContainer).width.replace('px', ''));
 
-  const setTranslateX = (el, value) => el.style.transform = `translateX(${value}px)`;
+  const setTransform = (el, value) => el.style.transform = value;
+  const setTranslateXinPixels = (el, value) => setTransform(el, `translateX(${value}px)`);
   const setVisibility = (el, value) => el.style.visibility = value ? 'visible' : 'hidden';
 
   const openMenu = (width = getMenuWidth()) => {
     setVisibility(menuContainer, true)
-    setTranslateX(menuContainer, 0);
-    setTranslateX(contentContainer, width);
-    setTranslateX(button, width);
+    setTranslateXinPixels(menuContainer, 0);
+    setTranslateXinPixels(contentContainer, width);
+    setTranslateXinPixels(button, width);
     body.classList.add('side-menu--open');
+    htmlEl.style.overflow = 'hidden';
 
     return width;
   };
   const closeMenu = (width = getMenuWidth()) => {
-    setTranslateX(menuContainer, -width);
-    setTranslateX(contentContainer, 0);
-    setTranslateX(button, 0);
+    setTranslateXinPixels(menuContainer, -width);
+    setTranslateXinPixels(contentContainer, 0);
+    setTranslateXinPixels(button, 0);
     body.classList.remove('side-menu--open');
-    setVisibility(menuContainer, false)
+    htmlEl.style.overflow = '';
+    setVisibility(menuContainer, false);
 
     return width;
   };
@@ -35,6 +39,11 @@ export default function sideMenu() {
     let isTransitioning = false;
     let menuIsOpen = false;
     let width = 0;
+
+    contentContainer.addEventListener('transitionend', () => {
+      isTransitioning = false;
+      if (!menuIsOpen) setTransform(contentContainer, 'none');
+    })
 
     return () => {
       if (isTransitioning) return;
@@ -46,7 +55,7 @@ export default function sideMenu() {
         width = openMenu()
       }
       isTransitioning = true;
-      setTimeout(() => isTransitioning = false, 500);
+      // setTimeout(() => isTransitioning = false, 500);
     }
   }
 
