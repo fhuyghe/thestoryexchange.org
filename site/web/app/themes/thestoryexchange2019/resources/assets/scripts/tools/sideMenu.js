@@ -1,31 +1,39 @@
 import eventLoader from '../util/eventLoader';
+import * as dom from '../util/dom';
+
+const setTransform = dom.style('transform');
+const setTranslateXPixels = dom.style('transform', v => `translateX(${v}px)`);
+const setVisibility = dom.style('visibility', v => v ? 'visible' : 'hidden');
+const setOverflow = dom.style('overflow');
 
 export default function sideMenu() {
   const {body} = document;
-  const button = document.querySelector('.side-menu__toggle-button');
-  const menuContainer = document.querySelector('.side-menu__container');
-  const contentContainer = document.querySelector('.side-menu__body-wrap');
+  const {parentElement: htmlEl} = body;
+  const button = dom.sel.one('.side-menu__toggle-button');
+  const menuContainer = dom.sel.one('.side-menu__container');
+  const contentContainer = dom.sel.one('.side-menu__body-wrap');
 
   const getMenuWidth = () => Number(getComputedStyle(menuContainer).width.replace('px', ''));
 
-  const setTranslateX = (el, value) => el.style.transform = `translateX(${value}px)`;
-  const setVisibility = (el, value) => el.style.visibility = value ? 'visible' : 'hidden';
+  const bodyClass = dom.classSwitch('side-menu--open')(body);
 
   const openMenu = (width = getMenuWidth()) => {
     setVisibility(menuContainer, true)
-    setTranslateX(menuContainer, 0);
-    setTranslateX(contentContainer, width);
-    setTranslateX(button, width);
-    body.classList.add('side-menu--open');
+    setTranslateXPixels(menuContainer, 0);
+    setTranslateXPixels(contentContainer, width);
+    setTranslateXPixels(button, width);
+    bodyClass.on();
+    setOverflow(htmlEl, 'hidden')
 
     return width;
   };
   const closeMenu = (width = getMenuWidth()) => {
-    setTranslateX(menuContainer, -width);
-    setTranslateX(contentContainer, 0);
-    setTranslateX(button, 0);
-    body.classList.remove('side-menu--open');
-    setVisibility(menuContainer, false)
+    setTranslateXPixels(menuContainer, -width);
+    setTranslateXPixels(contentContainer, 0);
+    setTranslateXPixels(button, 0);
+    bodyClass.off();
+    setOverflow(htmlEl, '');
+    setVisibility(menuContainer, false);
 
     return width;
   };
@@ -35,6 +43,11 @@ export default function sideMenu() {
     let isTransitioning = false;
     let menuIsOpen = false;
     let width = 0;
+
+    contentContainer.addEventListener('transitionend', () => {
+      isTransitioning = false;
+      if (!menuIsOpen) setTransform(contentContainer, 'none');
+    })
 
     return () => {
       if (isTransitioning) return;
@@ -46,7 +59,6 @@ export default function sideMenu() {
         width = openMenu()
       }
       isTransitioning = true;
-      setTimeout(() => isTransitioning = false, 500);
     }
   }
 
