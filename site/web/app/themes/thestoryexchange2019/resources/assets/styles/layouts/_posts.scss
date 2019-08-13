@@ -1,7 +1,7 @@
-.single{
+
     .content{
         margin-bottom: $grid-gutter * 3;
-
+    }
         //Typography
         .page-header,
         h1, 
@@ -14,6 +14,18 @@
             max-width: 800px;
         }
 
+        h1.entry-title{
+            font-size: 30px;
+            background-color:green;
+            font-weight:400;
+            letter-spacing:-1px;
+            line-height:39px;
+            // margin-block-end: 10px;
+            // margin-block-start:0px;
+            margin-bottom: $grid-gutter / 2;
+            text-size-adjust: 100%;
+            
+        }
         ul{
             margin: 0 auto;
         
@@ -22,43 +34,43 @@
             }
         }
 
-        // Header
-        .page-header{
-            h1{
-                margin-bottom: $grid-gutter / 2;
-            }
+        // // Header
+        // .page-header{
+        //     h1{
+        //         margin-bottom: $grid-gutter / 2;
+        //         // font-size: 50px;
+        //     }
 
-            .subtitle{
-                font-size: 1.2em;
-                margin-bottom: 0;
-            }
+        //     .subtitle{
+        //         font-size: 1.2em;
+        //         margin-bottom: 0;
+        //     }
 
-            time{
-                color: theme-color(grey);
-                margin-bottom: $grid-gutter;
-                display: block;
-            }
+        //     time{
+        //         color: theme-color(grey);
+        //         margin-bottom: $grid-gutter;
+        //         display: block;
+        //     }
 
-            .author-meta{
-                display: flex;
-                align-items: center;
+        //     .author-meta{
+        //         display: flex;
+        //         align-items: center;
 
-                .author_thumbnail{
-                    width: 50px;
-                    border-radius: 100%;
-                    overflow: hidden;
-                    margin-right: $grid-gutter / 2;
-                }
+        //         .author_thumbnail{
+        //             width: 50px;
+        //             border-radius: 100%;
+        //             overflow: hidden;
+        //             margin-right: $grid-gutter / 2;
+        //         }
 
-                a{
-                    padding-left: 5px;
-                }
-            }
-        }
+        //         a{
+        //             padding-left: 5px;
+        //         }
+        //     }
+        // }
 
-        // Images
-        figure{
-            margin-bottom: $grid-gutter;
-        }
-    }
-}
+        // // Images
+        // figure{
+        //     margin-bottom: $grid-gutter;
+        // }
+    
