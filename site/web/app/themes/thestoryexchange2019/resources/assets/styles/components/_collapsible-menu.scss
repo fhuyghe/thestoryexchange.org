@@ -1,0 +1,11 @@
+.collapsible_menu {
+  &__sub-menu {
+    visibility: hidden;
+  }
+
+  &--open {
+    .collapsible_menu__sub-menu {
+      visibility: visible;
+    }
+  }
+}

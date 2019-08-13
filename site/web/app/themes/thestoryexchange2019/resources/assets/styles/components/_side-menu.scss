@@ -75,6 +75,61 @@
     visibility: hidden;
     color: theme-color(black);
 
+    .collapsible_menu {
+      &__trigger {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          padding: .25em;
+          margin-right: $grid-gutter;
+          border: 3px solid currentColor;
+          border-top: 0;
+          border-left: 0;
+          content: "";
+          transform: rotate(-45deg) translateY(-50%) translate(.5em, .5em);
+          transition: transform 300ms;
+        }
+      }
+
+      .sub-menu.collapsible_menu__sub-menu {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(25%);
+        transform-origin: top;
+        transition: visibility 240ms, transform 200ms, max-height 240ms, opacity 160ms;
+
+        li {
+          transform: translateY(-100%);
+          transition: transform 60ms 120ms;
+        }
+      }
+
+      &--open {
+        .collapsible_menu__trigger {
+          &::after {
+            transform: rotate(45deg) translateY(-50%) translate(0, -.2em);
+          }
+        }
+
+        .sub-menu.collapsible_menu__sub-menu {
+          overflow-y: scroll;
+          opacity: 1;
+          max-height: 100vh;
+          transform: scale(1);
+          transition: transform 160ms 40ms, max-height 80ms, opacity 160ms;
+
+          li {
+            transform: scale(1);
+            transition: transform 120ms;
+          }
+        }
+      }
+    }
+
     a {
       color: inherit;
 
