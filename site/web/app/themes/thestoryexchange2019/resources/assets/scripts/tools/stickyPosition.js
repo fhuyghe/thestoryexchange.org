@@ -1,39 +1,45 @@
 import {throttle} from 'lodash';
 import eventLoader from '../util/eventLoader';
+import * as dom from '../util/dom';
 const EVENTS = [
   'scroll',
   'resize',
 ];
+const setHeight = dom.style('height', v => `${v}px`);
 
 export default function stickyPosition(selectors, eventTarget = window) {
-  const elements = Array.from(document.querySelectorAll(selectors));
+  const elements = dom.sel.all(selectors);
   const loader = eventLoader(EVENTS, eventTarget);
 
   return stickyClassBase => {
-    const placeholderClass = `${stickyClassBase}__placeholder`;
+    const placeholderClass = dom.classSwitch(`${stickyClassBase}__placeholder`);
     const placeholderElements = elements.map(el => {
       const placeholder = document.createElement('div');
 
-      placeholder.classList.add(placeholderClass);
+      placeholderClass(placeholder).on()
 
       return [placeholder, el];
     });
 
+    const stickyClass = dom.classSwitch(stickyClassBase);
+
     const insertPlaceholder = ([p, el]) => el.insertAdjacentElement('afterEnd', p);
     const removePlaceholder = ([p]) => p.remove()
+
     const elementHandler = ([placeholder, el]) => {
-      const elHasClass = el.classList.contains(stickyClassBase);
+      const elStickyClass = stickyClass(el);
+      const elHasClass = elStickyClass.isOn();
       const elRect = el.getBoundingClientRect();
       const {y, height} = elHasClass ? placeholder.getBoundingClientRect() : elRect;
 
       if (elHasClass && y >= 0) {
-          el.classList.remove(stickyClassBase);
-          placeholder.style.height = 0;
+        elStickyClass.off();
+        setHeight(placeholder, 0);
       } else if (!elHasClass && y < 0) {
-        el.classList.add(stickyClassBase);
-        placeholder.style.height = `${height}px`;
+        elStickyClass.on();
+        setHeight(placeholder, height);
       } else if (elRect.height !== height) {
-        placeholder.style.height = `${elRect.height}px`;
+        setHeight(placeholder, elRect.height);
       }
     };
 
