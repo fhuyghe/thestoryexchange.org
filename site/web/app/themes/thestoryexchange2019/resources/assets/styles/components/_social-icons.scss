@@ -2,6 +2,9 @@
   position: absolute;
   right: $grid-gutter;
   bottom: 0;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
 
   .social {
     color: theme-color(grey);
@@ -17,6 +20,10 @@
     &:hover{
       color: theme-color(blue);
     }
+  }
+
+  @include media-breakpoint-down(lg) {
+    bottom: 40px;
   }
 
   @include media-breakpoint-down(sm) {

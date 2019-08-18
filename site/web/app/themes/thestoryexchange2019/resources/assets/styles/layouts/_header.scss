@@ -14,6 +14,7 @@
 
   .nav-primary{
     display: none;
+    position: relative;
     border-color: theme-color(grey);
     border-style: solid;
     border-width: 1px 0;
@@ -22,6 +23,7 @@
 
     &.stick-to-top {
       @include fixed_at_top;
+      border-top-color: theme-color(white);
 
       & + .stick-to-top__placeholder {
         display: block;
@@ -37,8 +39,17 @@
       justify-content: space-between;
 
       .search{
+        position: absolute;
+        height: 100%;
+        right: $grid-gutter;
         font-size: .7em;
         padding: 5px;
+        top: -45px;
+        width: 200px;
+
+        @include media-breakpoint-up(xl){
+          top: 0px;
+        }
 
         form{
           flex-flow: row;
@@ -51,6 +62,7 @@
           }
 
           input[type='search']{
+            flex: 1;
             line-height: 0;
             font-size: 1em;
             border-width: 1px;
@@ -160,6 +172,7 @@
   height: $grid-gutter;
   color: $black;
   margin: 5px 0;
+  z-index: 99;
 
   a{
     color: theme-color(black);
@@ -191,6 +204,7 @@
     margin: $grid-gutter auto;
     height: 110px;
     text-align: center;
+    z-index: 0;
 
     img{
       z-index: -1;
