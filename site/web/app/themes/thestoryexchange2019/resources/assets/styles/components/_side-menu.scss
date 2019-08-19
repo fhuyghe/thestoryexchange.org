@@ -30,7 +30,7 @@
     border: 0;
     cursor: pointer;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: none;
     };
 

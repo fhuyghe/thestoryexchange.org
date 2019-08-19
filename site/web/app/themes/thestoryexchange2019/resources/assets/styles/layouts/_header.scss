@@ -13,7 +13,7 @@
   }
 
   .container{
-    max-width: none;
+    //max-width: none;
   }
 
   .nav-primary{
@@ -41,18 +41,19 @@
     .container{
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       .search{
-        position: absolute;
-        height: 100%;
-        right: $grid-gutter;
         font-size: .7em;
-        padding: 5px;
-        top: -45px;
+        padding: 5px 0;
         width: 200px;
 
-        @include media-breakpoint-up(xl){
-          top: 0px;
+        @include media-breakpoint-down(lg){
+          position: absolute;
+          height: 100%;
+          max-height: 40px;
+          top: -45px;
+          right: $grid-gutter;
         }
 
         form{
@@ -140,9 +141,15 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     .nav-primary{
       display: block;
+    }
+  }
+
+  @include media-breakpoint-down(md){
+    .container{
+      max-width: none;
     }
   }
 }

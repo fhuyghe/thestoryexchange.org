@@ -1,7 +1,6 @@
 .single{
     .content{
-        margin-bottom: $grid-gutter * 3;
-        margin:0 auto;
+        margin:0 auto $grid-gutter * 2;
         
         article{
             margin:50px 0;
