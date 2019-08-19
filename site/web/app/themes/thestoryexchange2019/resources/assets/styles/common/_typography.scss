@@ -6,6 +6,10 @@ body{
 h1{
     font-size: 2em;
     margin: 0 auto 1em;
+
+    @include media-breakpoint-down(sm){
+        font-size: 1.6em;
+    }
 }
 
 h2{

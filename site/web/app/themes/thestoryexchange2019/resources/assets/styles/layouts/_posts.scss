@@ -1,7 +1,6 @@
 .single{
     .content{
         margin-bottom: $grid-gutter * 3;
-        max-width:900px;
         margin:0 auto;
         
         article{
@@ -9,46 +8,37 @@
         }
         //Typography
         .page-header,
+        p,
         h1, 
         h2,
         h3,
         h4,
         h5,
         h6,
+        .transcript-box,
         ul{
-            max-width: 900px;
+            max-width: 800px;
+        }
+
+        .transcript-box{
+            margin: 0 auto;
         }
 
     
         .page-header{
-            color:rgb(51,51,51);
-            font-family: "Lato","Helvetica Neue",Helvetica,sans-serif;
-            font-size: 16px;
-            font-weight:400;
-            line-height:28.8px;
-            margin:0 0 50px 0 !important;
             position:relative;
         }
         
-        h1.entry-title{
-            letter-spacing:-1px;
-            line-height:39px;
-            margin-bottom: $grid-gutter / 2;
-            text-size-adjust: 100%;
-        }
-        
         p.subtitle{
-            font-size:18px;
-            color:rgb(74,74,74);
-            line-height:21.6px;
-            height:42px;
+            font-size:1.2em;
+            line-height: 1.2em;
             margin-bottom:5px;
         }
 
         time{
+            color: theme-color(grey);
             display:block;
-            color:rgb(155,155,155);
-            margin-bottom:30px;
+            margin-bottom:$grid-gutter;
         }
 
         .author_thumbnail{
@@ -60,42 +50,14 @@
         }
 
         .video{
-            margin:50px 0;
+            margin: $grid-gutter 0;
 
-        }
-        .entry-content{
-            color:rgb(51,51,51);
-            line-height:28.8px;
-
-            p{
-                padding:0 50px;
-                margin-bottom:30px;
-            }
-            h5{
-                padding:0 50px;
-                margin:50px 0 30px;
-                font-size:24px;
-                font-weight:400;
-                height:33px;
-            }
         }
     }
 }
-//breakpoint copied from live site
-@media only screen and (min-width: 980px){
-    .single{
-        .content{
-            .page-header{
-                padding:0 100px;
-            }
 
-            .entry-content{
-                p, h5{
-                    padding:0 100px;
-                }
-            }
-        }
-    }
+@include media-breakpoint-up(md){
+   
 }
     
 
