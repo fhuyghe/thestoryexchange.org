@@ -48,6 +48,10 @@
                     &> div{
                         @extend .col-md-6;
                     }
+
+                    .tags{
+                      left: 25px;
+                    }
                 }
 
                 .entry-text{

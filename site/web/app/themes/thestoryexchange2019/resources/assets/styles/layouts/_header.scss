@@ -24,6 +24,7 @@
     border-width: 1px 0;
     overflow: visible;
     background: theme-color(white);
+    z-index: 99;
 
     &.stick-to-top {
       @include fixed_at_top;
