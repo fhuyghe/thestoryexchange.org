@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a1ebb9156d050b6e2b8af4ae4a3d3e3",
+    "content-hash": "eb1685875e05397a64632db80f3e5ba5",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",

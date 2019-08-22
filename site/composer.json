@@ -31,12 +31,12 @@
     "config": {
         "preferred-install": "dist"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://wpackagist.org"
         },
-        {
+        "1": {
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -52,24 +52,23 @@
                 }
             }
         },
-        {
+        "2": {
             "type": "composer",
             "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
         },
-        {
+        "3": {
             "type": "vcs",
             "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
         },
-        {
+        "4": {
             "type": "vcs",
             "url": "git@github.com:13milliseconds/simple-podcast-press.git"
         },
-        {
+        "my-yoast": {
             "type": "composer",
-            "url": "https://my.yoast.com/packages/",
-            "token": "bd4cea18633836a21b22260a12baaea5187ef0554d73958548cbdc105b0f16f5"
+            "url": "https://my.yoast.com/packages/"
         }
-    ],
+    },
     "require": {
         "php": ">=7.1",
         "composer/installers": "^1.4",
