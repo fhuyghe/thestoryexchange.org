@@ -7,6 +7,15 @@
 # Uncomment the lines below and replace `sage` with your theme folder
 #
 # ---
+
+- name: Create composer directory
+  file:
+    path: "/home/{{ ansible_user }}/.composer"
+    state: directory
+    owner: "{{ web_user }}"
+    group: "{{ web_group }}"
+    mode: 0775
+
 - name: Create compose auth.json for plugins
   template:
     src: "{{ playbook_dir }}/deploy-hooks/auth.json.j2"
