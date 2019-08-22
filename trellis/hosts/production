@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-the_env
+167.71.163.66
 
 [web]
-the_env
+167.71.163.66

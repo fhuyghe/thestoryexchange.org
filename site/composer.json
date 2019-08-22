@@ -1,131 +1,147 @@
 {
-  "name": "roots/bedrock",
-  "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.7.12",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+    "name": "roots/bedrock",
+    "type": "project",
+    "license": "MIT",
+    "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+    "homepage": "https://roots.io/bedrock/",
+    "authors": [
+        {
+            "name": "Scott Walkinshaw",
+            "email": "scott.walkinshaw@gmail.com",
+            "homepage": "https://github.com/swalkinshaw"
         },
-        "require": {
-          "composer/installers": "^1.4",
-          "ffraenz/private-composer-installer": "^2.0"
+        {
+            "name": "Ben Word",
+            "email": "ben@benword.com",
+            "homepage": "https://github.com/retlehs"
         }
-      }
-    },
-    {
-      "type": "composer",
-      "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:13milliseconds/simple-podcast-press.git"
-    }
-  ],
-  "require": {
-    "php": ">=7.1",
-    "composer/installers": "^1.4",
-    "13milliseconds/wp-fastest-cache-premium": "^1.4",
-    "13milliseconds/simple-podcast-press": "dev-master",
-    "vlucas/phpdotenv": "^3.0.0",
-    "oscarotero/env": "^1.1.0",
-    "roots/wordpress": "5.2",
-    "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0",
-    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
-    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
-    "deliciousbrains-plugin/wp-offload-media": "*",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
-    "wpackagist-plugin/accelerated-mobile-pages":"^0.9",
-    "wpackagist-plugin/amazon-s3-and-cloudfront":"^2.2",
-    "wpackagist-plugin/user-photo":"^0.9.10",
-    "wpackagist-plugin/akismet":"^4.1.1",
-    "wpackagist-plugin/seo-slugs":"^1.0",
-    "wpackagist-plugin/classic-editor":"^1.5",
-    "wpackagist-plugin/custom-banners":"^3.2",
-    "wpackagist-plugin/disqus-comment-system":"^3.0.17",
-    "wpackagist-plugin/duplicate-post":"^3.2.2",
-    "wpackagist-plugin/duracelltomi-google-tag-manager":"^1.9.2",
-    "wpackagist-plugin/easy-smooth-scroll-links":"^2.1.1",
-    "wpackagist-plugin/editorial-calendar":"^3.7.2",
-    "wpackagist-plugin/ewww-image-optimizer":"^4.7.4",
-    "wpackagist-plugin/jetpack":"^7.3.1",
-    "wpackagist-plugin/mailchimp":"^1.5.7",
-    "wpackagist-plugin/official-facebook-pixel":"^1.7.25",
-    "wpackagist-plugin/recent-posts-widget-extended":"^0.9.9.7",
-    "wpackagist-plugin/relevanssi":"^4.1.4",
-    "wpackagist-plugin/schema-and-structured-data-for-wp":"^1.8.3",
-    "wpackagist-plugin/shiftnav-responsive-mobile-menu":"^1.6.3",
-    "wpackagist-plugin/simple-tags":"^2.5.4",
-    "wpackagist-plugin/social-warfare":"^3.6.0",
-    "wpackagist-plugin/super-progressive-web-apps":"^2.0.2",
-    "wpackagist-plugin/subheading":"^1.8.1",
-    "wpackagist-plugin/svg-support":"^2.3.15",
-    "wpackagist-plugin/testimonials-widget":"^3.5.0",
-    "wpackagist-plugin/upprev":"^3.4.1",
-    "wpackagist-plugin/wordfence":"^7.3.2",
-    "wpackagist-plugin/wp-bitly":"^2.5.2",
-    "wpackagist-plugin/wp-disable":"^1.5.21",
-    "wpackagist-plugin/wp-fastest-cache":"^0.8.9.3",
-    "wpackagist-plugin/wp-maximum-execution-time-exceeded":"^1.0.2",
-    "wpackagist-plugin/wp-to-twitter":"^3.3.12"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.0.2",
-    "roave/security-advisories": "dev-master"
-  },
-  "extra": {
-    "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
     ],
-    "test": [
-      "phpcs"
-    ]
-  }
+    "keywords": [
+        "bedrock",
+        "composer",
+        "roots",
+        "wordpress",
+        "wp",
+        "wp-config"
+    ],
+    "support": {
+        "issues": "https://github.com/roots/bedrock/issues",
+        "forum": "https://discourse.roots.io/category/bedrock"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        "1": {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.8.3",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+                },
+                "require": {
+                    "composer/installers": "^1.4",
+                    "ffraenz/private-composer-installer": "^2.0"
+                }
+            }
+        },
+        "2": {
+            "type": "composer",
+            "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
+        },
+        "3": {
+            "type": "vcs",
+            "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
+        },
+        "4": {
+            "type": "vcs",
+            "url": "git@github.com:13milliseconds/simple-podcast-press.git"
+        },
+        "my-yoast": {
+            "type": "composer",
+            "url": "https://my.yoast.com/packages/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "^1.4",
+        "13milliseconds/wp-fastest-cache-premium": "^1.4",
+        "13milliseconds/simple-podcast-press": "dev-master",
+        "vlucas/phpdotenv": "^3.0.0",
+        "oscarotero/env": "^1.1.0",
+        "roots/wordpress": "5.2.2",
+        "roots/wp-config": "1.0.0",
+        "roots/wp-password-bcrypt": "1.0.0",
+        "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
+        "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
+        "deliciousbrains-plugin/wp-offload-media": "*",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
+        "wpackagist-plugin/accelerated-mobile-pages": "^0.9",
+        "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.2",
+        "wpackagist-plugin/user-photo": "^0.9.10",
+        "wpackagist-plugin/akismet": "^4.1.1",
+        "wpackagist-plugin/seo-slugs": "^1.0",
+        "wpackagist-plugin/classic-editor": "^1.5",
+        "wpackagist-plugin/custom-banners": "^3.2",
+        "wpackagist-plugin/disqus-comment-system": "^3.0.17",
+        "wpackagist-plugin/duplicate-post": "^3.2.2",
+        "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.9.2",
+        "wpackagist-plugin/easy-smooth-scroll-links": "^2.1.1",
+        "wpackagist-plugin/editorial-calendar": "^3.7.2",
+        "wpackagist-plugin/ewww-image-optimizer": "^4.9.2",
+        "wpackagist-plugin/jetpack": "^7.3.1",
+        "wpackagist-plugin/mailchimp": "^1.5.7",
+        "wpackagist-plugin/official-facebook-pixel": "^1.7.25",
+        "wpackagist-plugin/recent-posts-widget-extended": "^0.9.9.7",
+        "wpackagist-plugin/relevanssi": "^4.1.4",
+        "wpackagist-plugin/schema-and-structured-data-for-wp": "^1.8.3",
+        "wpackagist-plugin/shiftnav-responsive-mobile-menu": "^1.6.3",
+        "wpackagist-plugin/simple-tags": "^2.5.4",
+        "wpackagist-plugin/social-warfare": "^3.6.0",
+        "wpackagist-plugin/super-progressive-web-apps": "^2.0.2",
+        "wpackagist-plugin/subheading": "^1.8.1",
+        "wpackagist-plugin/svg-support": "^2.3.15",
+        "wpackagist-plugin/testimonials-widget": "^3.5.0",
+        "wpackagist-plugin/upprev": "^3.4.1",
+        "wpackagist-plugin/wordfence": "^7.3.2",
+        "wpackagist-plugin/wp-bitly": "^2.5.2",
+        "wpackagist-plugin/wp-disable": "^1.5.21",
+        "wpackagist-plugin/wp-fastest-cache": "^0.8.9.3",
+        "wpackagist-plugin/wp-maximum-execution-time-exceeded": "^1.0.2",
+        "wpackagist-plugin/wp-to-twitter": "^3.3.12",
+        "yoast/wordpress-seo-premium": "^11.9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0.2",
+        "roave/security-advisories": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "web/wp"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "test": [
+            "phpcs"
+        ]
+    }
 }
