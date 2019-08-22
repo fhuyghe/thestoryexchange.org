@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb1685875e05397a64632db80f3e5ba5",
+    "content-hash": "435ed623761a379507a0ad66a0daa57d",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -2474,6 +2474,83 @@
                 "issues": "https://github.com/Yoast/wp-helpscout/issues"
             },
             "time": "2019-04-18T09:45:54+00:00"
+        },
+        {
+            "name": "yoast/yoast-news-seo",
+            "version": "11.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/wpseo-news.git",
+                "reference": "b7980771596d4807efb13112772385b445f37a77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://my.yoast.com/packages/dist/yoast/yoast-news-seo/yoast-yoast-news-seo-b7980771596d4807efb13112772385b445f37a77-zip-b1f3fc.zip",
+                "reference": "b7980771596d4807efb13112772385b445f37a77",
+                "shasum": "65c9e295eb763e419ab68b6b4e40294db4e543f7"
+            },
+            "require": {
+                "php": ">=5.2",
+                "xrstf/composer-php52": "^1.0.20",
+                "yoast/i18n-module": "^3.1.1",
+                "yoast/wp-helpscout": "^1.0||^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.7 || ^6.0 || ^7.0",
+                "yoast/yoastcs": "^0.4.3"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/"
+                ]
+            },
+            "scripts": {
+                "config-yoastcs": [
+                    "@php ./vendor/squizlabs/php_codesniffer/scripts/phpcs --config-set installed_paths ../../../vendor/wp-coding-standards/wpcs,../../../vendor/yoast/yoastcs",
+                    "@php ./vendor/squizlabs/php_codesniffer/scripts/phpcs --config-set default_standard Yoast"
+                ],
+                "check-cs": [
+                    "@php ./vendor/squizlabs/php_codesniffer/scripts/phpcs"
+                ],
+                "fix-cs": [
+                    "@php ./vendor/squizlabs/php_codesniffer/scripts/phpcbf"
+                ],
+                "test": [
+                    "@php ./vendor/phpunit/phpunit/phpunit"
+                ],
+                "post-install-cmd": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ],
+                "post-update-cmd": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ],
+                "post-autoload-dump": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Google News plugin for the Yoast SEO plugin",
+            "homepage": "https://yoast.com/wordpress/plugins/news-seo/",
+            "support": {
+                "issues": "https://github.com/Yoast/wpseo-news/issues",
+                "source": "https://github.com/Yoast/wpseo-news"
+            },
+            "time": "2019-08-20T07:07:42+00:00"
         }
     ],
     "packages-dev": [

@@ -116,7 +116,8 @@
         "wpackagist-plugin/wp-fastest-cache": "^0.8.9.3",
         "wpackagist-plugin/wp-maximum-execution-time-exceeded": "^1.0.2",
         "wpackagist-plugin/wp-to-twitter": "^3.3.12",
-        "yoast/wordpress-seo-premium": "^11.9"
+        "yoast/wordpress-seo-premium": "^11.9",
+        "yoast/yoast-news-seo": "^11.9"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0.2",
