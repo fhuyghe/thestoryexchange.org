@@ -66,7 +66,8 @@
         },
         {
             "type": "composer",
-            "url": "https://my.yoast.com/packages/"
+            "url": "https://my.yoast.com/packages/",
+            "token": "bd4cea18633836a21b22260a12baaea5187ef0554d73958548cbdc105b0f16f5"
         }
     ],
     "require": {
