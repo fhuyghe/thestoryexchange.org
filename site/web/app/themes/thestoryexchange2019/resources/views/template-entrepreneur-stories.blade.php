@@ -105,7 +105,12 @@ Template Name: Entrepreneur Stories
               
         <section class="video-banner row">
             <div class="" >
-                <a href="<?php echo site_url(); ?>/category/the-stories/"><img src="http://thestoryexchange.org/wp-content/uploads/2016/12/TSE-bannervideo-trans.png" width="100%" /></a>
+                <a href="<?php echo site_url(); ?>/category/the-stories/">
+                        {!! $image = get_field('video_banner') !!}
+                        @if( !empty($image) )
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        @endif
+                </a>
             </div>
             <a href="<?php echo site_url(); ?>/category/the-stories/" class="btn">See Our Videos</a>
         </section>
