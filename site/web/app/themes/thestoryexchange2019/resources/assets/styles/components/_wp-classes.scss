@@ -40,6 +40,14 @@
   @extend .figure;
   max-width: 100%;
   margin-bottom: 1.5em;
+
+  &.alignleft{
+    margin-right: 1.5em;
+  }
+  
+  &.alignright{
+    margin-left: 1.5em;
+  }
 }
 
 .wp-caption img {
