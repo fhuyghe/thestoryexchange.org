@@ -104,15 +104,15 @@ Template Name: Entrepreneur Stories
         {{-- VIDEO BANNER --}}
               
         <section class="video-banner row">
-            <div class="" >
-                <a href="<?php echo site_url(); ?>/category/the-stories/">
-                        {!! $image = get_field('video_banner') !!}
+            <div>
+                <a href="{!! site_url() !!}/category/the-stories/">
+                        @php $image = get_field('video_banner') @endphp
                         @if( !empty($image) )
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" />
                         @endif
                 </a>
             </div>
-            <a href="<?php echo site_url(); ?>/category/the-stories/" class="btn">See Our Videos</a>
+            <a href="{!! site_url() !!}/category/the-stories/" class="btn">See Our Videos</a>
         </section>
     
     
