@@ -11,8 +11,8 @@ $link = home_url() . '/category/' . $cat->slug
     </div>
 
     <div class="cat-content col-lg-9">
-        <h2><a href="{{$link}}">{{$cat->name}}</a></h2>
-        <p>{{$cat->description}}</p>
+        <h2><a href="{{ $link }}">{!! $cat->name !!}</a></h2>
+        <p>{{ $cat->description }}</p>
 
         <div class="posts">
             <?php 
