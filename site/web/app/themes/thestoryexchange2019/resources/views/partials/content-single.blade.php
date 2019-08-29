@@ -1,8 +1,16 @@
 <article {!! post_class() !!}>
   <header class="page-header">
-    <h1 class="entry-title">{!! get_the_title() !!}</h1>
-    <p class="subtitle"><?php the_subheading(); ?></p>
-    @include('partials/entry-meta')
+    @if ( in_category(32) )
+    <a class="thousandStoriesLogo" href="/category/yse/">
+        <img src="@asset('images/TSE_1kPlusStories_Logo.jpg')" />
+    </a>
+    @endif
+
+    <div class="header-content">
+      <h1 class="entry-title">{!! get_the_title() !!}</h1>
+      <p class="subtitle"><?php the_subheading(); ?></p>
+      @include('partials/entry-meta')
+    </div>
   </header>
 
   @if ( in_category( 3 ))
