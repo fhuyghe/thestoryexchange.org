@@ -25,6 +25,13 @@
   <div class="entry-content">
     @php the_content() @endphp
   </div>
+
+  <section class="newsletter-banner">
+    <p>{!! the_field('newsletter_banner_title', 'option') !!}</p> 
+    <p>{!! the_field('newsletter_banner_text', 'option') !!}</p>
+    @include('partials/newsletter-signup-email')
+  </section>
+
   <footer>
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
   </footer>

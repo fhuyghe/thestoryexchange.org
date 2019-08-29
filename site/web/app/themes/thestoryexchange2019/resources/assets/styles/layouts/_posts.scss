@@ -93,6 +93,43 @@
             margin: $grid-gutter 0;
 
         }
+
+        .newsletter-banner{
+            background-color: theme-color(yellow);
+            text-align: center;
+            padding: $grid-gutter;
+
+            p{
+                margin-bottom: 0;
+                font-size: 1.2em;
+            }
+
+            #mc_embed_signup_scroll{
+                display: flex;
+                max-width: 600px;
+                margin: $grid-gutter / 2 auto 0;
+
+                input.email,
+                input.button{
+                    margin: 0;
+                    border-radius: 0;
+                    border: 0;
+                    height: 40px;
+                    padding: 0 20px;
+                }
+
+                input.email{
+                    flex: 1;
+                }
+
+                input.button{
+                    background: theme-color(blue);
+                    color: theme-color(white);
+                    text-transform: uppercase;
+                    width: auto;
+                }
+            }
+        }
     }
 }
 
