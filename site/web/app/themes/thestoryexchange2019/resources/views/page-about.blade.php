@@ -20,7 +20,7 @@
           <div class="feature col-md-3 col-6">
             <a href="{{ the_sub_field('link') }}">
                 @php $image = get_sub_field('logo') @endphp
-                <img src="{{ $image['url'] }}" alt="{!! $image['alt'] !!}" />
+                <img src="{{ $image['sizes']['partner-logo'] }}" alt="{!! $image['alt'] !!}" />
               </a>
             </div>
             @endwhile

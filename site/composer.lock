@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "435ed623761a379507a0ad66a0daa57d",
+    "content-hash": "e64694219c9670313ad12b90ecd4259f",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -1255,16 +1255,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.30",
+            "version": "v3.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41"
+                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
-                "reference": "ade939fe83d5ec5fcaa98628dc42d83232c8eb41",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2709bc2978ceb90f5180181f777f8a09125f2d89",
+                "reference": "2709bc2978ceb90f5180181f777f8a09125f2d89",
                 "shasum": ""
             },
             "require": {
@@ -1322,7 +1322,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-07-19T11:52:08+00:00"
+            "time": "2019-08-26T16:07:57+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1384,16 +1384,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.4.0",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+                "reference": "95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222",
+                "reference": "95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222",
                 "shasum": ""
             },
             "require": {
@@ -1407,7 +1407,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -1421,9 +1421,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -1432,19 +1437,19 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-15T22:40:20+00:00"
+            "time": "2019-08-27T17:00:38+00:00"
         },
         {
             "name": "wpackagist-plugin/accelerated-mobile-pages",
-            "version": "0.9.98.4",
+            "version": "0.9.98.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/accelerated-mobile-pages/",
-                "reference": "tags/0.9.98.4"
+                "reference": "tags/0.9.98.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1715,6 +1720,26 @@
             "homepage": "https://wordpress.org/plugins/official-facebook-pixel/"
         },
         {
+            "name": "wpackagist-plugin/otf-regenerate-thumbnails",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/otf-regenerate-thumbnails/",
+                "reference": "tags/0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/otf-regenerate-thumbnails.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/otf-regenerate-thumbnails/"
+        },
+        {
             "name": "wpackagist-plugin/recent-posts-widget-extended",
             "version": "0.9.9.7",
             "source": {
@@ -1736,15 +1761,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "4.3.1.1",
+            "version": "4.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/4.3.1.1"
+                "reference": "tags/4.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.4.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.4.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1756,15 +1781,15 @@
         },
         {
             "name": "wpackagist-plugin/schema-and-structured-data-for-wp",
-            "version": "1.9.1",
+            "version": "1.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/schema-and-structured-data-for-wp/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.9.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2036,15 +2061,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-fastest-cache",
-            "version": "0.8.9.6",
+            "version": "0.8.9.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
-                "reference": "tags/0.8.9.6"
+                "reference": "tags/0.8.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2076,15 +2101,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-twitter",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
-                "reference": "tags/3.4.0"
+                "reference": "tags/3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.4.1.zip",
                 "reference": null,
                 "shasum": null
             },

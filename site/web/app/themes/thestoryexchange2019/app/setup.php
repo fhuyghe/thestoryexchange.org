@@ -135,5 +135,6 @@ add_action('after_setup_theme', function () {
      * Add custom image sizes
      */
     add_image_size( 'toolbox-thumb', 150 ); // 150 pixels wide (and unlimited height)
+    add_image_size( 'partner-logo', 150, 60 ); // 150 pixels wide (and unlimited height)
     add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
 });
