@@ -1,4 +1,5 @@
-.page-template-default:not(.home){
+.page-template-default:not(.home),
+.page-template-page-about{
     .content{
         margin-bottom: $grid-gutter * 3;
 
