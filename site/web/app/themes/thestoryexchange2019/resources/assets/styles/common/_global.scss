@@ -25,25 +25,7 @@
 
   
 //Layout
-.shiftnav-wrap{
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column;
 
-    .container{
-        flex: 1;
-        
-        .main{
-            &>*:first-child{
-                margin-top: 0;
-            }
-        }
-
-        @include media-breakpoint-down(md){
-            max-width: none;
-        }
-    }
-}
 
 section{
     margin-bottom: $grid-gutter * 2;
