@@ -15,12 +15,17 @@
         h5,
         h6,
         .transcript-box,
+        .player_container,
         ul{
             max-width: 800px;
         }
 
         .transcript-box{
             margin: 0 auto;
+        }
+
+        .player_container{
+            margin: 0 auto $grid-gutter;
         }
 
         blockquote{
