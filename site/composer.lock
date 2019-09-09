@@ -48,12 +48,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/13milliseconds/tse-shortcodes.git",
-                "reference": "b716297cc51623159e3bceff48c1e569d2469e1b"
+                "reference": "9a67024061e098398f39badaebe91b996f95c027"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/13milliseconds/tse-shortcodes/zipball/b716297cc51623159e3bceff48c1e569d2469e1b",
-                "reference": "b716297cc51623159e3bceff48c1e569d2469e1b",
+                "url": "https://api.github.com/repos/13milliseconds/tse-shortcodes/zipball/9a67024061e098398f39badaebe91b996f95c027",
+                "reference": "9a67024061e098398f39badaebe91b996f95c027",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +76,7 @@
                 "source": "https://github.com/13milliseconds/tse-shortcodes/tree/master",
                 "issues": "https://github.com/13milliseconds/tse-shortcodes/issues"
             },
-            "time": "2019-09-09T19:33:12+00:00"
+            "time": "2019-09-09T20:07:20+00:00"
         },
         {
             "name": "13milliseconds/wp-fastest-cache-premium",
