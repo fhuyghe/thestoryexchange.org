@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e64694219c9670313ad12b90ecd4259f",
+    "content-hash": "1e3c6fa5df6a9be29d8b911682b65a0d",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -41,6 +41,42 @@
                 "issues": "https://github.com/13milliseconds/simple-podcast-press/issues"
             },
             "time": "2019-08-06T22:15:36+00:00"
+        },
+        {
+            "name": "13milliseconds/tse-shortcodes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/13milliseconds/tse-shortcodes.git",
+                "reference": "b716297cc51623159e3bceff48c1e569d2469e1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/tse-shortcodes/zipball/b716297cc51623159e3bceff48c1e569d2469e1b",
+                "reference": "b716297cc51623159e3bceff48c1e569d2469e1b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "13milliseconds",
+                    "homepage": "https://13milliseconds.com/"
+                }
+            ],
+            "description": "Short Codes for the Story Exchange Wordpress website",
+            "homepage": "https://github.com/13milliseconds/tse-shortcodes",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/tse-shortcodes/tree/master",
+                "issues": "https://github.com/13milliseconds/tse-shortcodes/issues"
+            },
+            "time": "2019-09-09T19:33:12+00:00"
         },
         {
             "name": "13milliseconds/wp-fastest-cache-premium",
@@ -1441,15 +1477,15 @@
         },
         {
             "name": "wpackagist-plugin/accelerated-mobile-pages",
-            "version": "0.9.98.5",
+            "version": "0.9.98.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/accelerated-mobile-pages/",
-                "reference": "tags/0.9.98.5"
+                "reference": "tags/0.9.98.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.0.9.98.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1661,15 +1697,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "7.6",
+            "version": "7.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/7.6"
+                "reference": "tags/7.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.7.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.7.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1781,15 +1817,15 @@
         },
         {
             "name": "wpackagist-plugin/schema-and-structured-data-for-wp",
-            "version": "1.9.3",
+            "version": "1.9.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/schema-and-structured-data-for-wp/",
-                "reference": "tags/1.9.3"
+                "reference": "tags/1.9.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.9.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/schema-and-structured-data-for-wp.1.9.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2850,6 +2886,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "13milliseconds/simple-podcast-press": 20,
+        "13milliseconds/tse-shortcodes": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

@@ -64,6 +64,10 @@
             "type": "vcs",
             "url": "git@github.com:13milliseconds/simple-podcast-press.git"
         },
+        "5": {
+            "type": "vcs",
+            "url": "git@github.com:13milliseconds/tse-shortcodes.git"
+        },
         "my-yoast": {
             "type": "composer",
             "url": "https://my.yoast.com/packages/"
@@ -74,6 +78,7 @@
         "composer/installers": "^1.4",
         "13milliseconds/wp-fastest-cache-premium": "^1.4",
         "13milliseconds/simple-podcast-press": "dev-master",
+        "13milliseconds/tse-shortcodes": "dev-master",
         "vlucas/phpdotenv": "^3.0.0",
         "oscarotero/env": "^1.1.0",
         "roots/wordpress": "5.2.2",
