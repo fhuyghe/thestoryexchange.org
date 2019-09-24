@@ -10,9 +10,9 @@
 
       <div class="row">
 
-        {{--#########################################################--}}
-        {{--VIDEO EPISODES ##########################################--}}
-        {{--#########################################################--}}
+        {{--#################################################--}}
+        {{--VIDEO EPISODES ##################################--}}
+        {{--#################################################--}}
 
         <div class="col-lg-8 videos">
           <div class="wrap">
@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          {{--PLAYLIST ########--}}
+          {{--PLAYLIST --}}
           <div class="playlist">
             <a class="playlist-link">Eco-friendly Entrepreneurs</a>
             <p>Watch how green business owners keep plastic out of the ocean, protect coastal cities, and even raise pigs sustainably.</p>
@@ -77,14 +77,14 @@
             </div>
           </div>
 
-          {{--PLAYLIST ########--}}
+          {{--PLAYLIST --}}
           <div class="playlist">
             <a class="playlist-link">Mission Driven Nonprofits</a>
             <p>Be the change you wish to see in the world. Meet women social entrepreneurs making an impact. </p>
             <div class="video-player">
               <div class="wrap">
                 <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g010XvjfSMjBHBF7II5B3Gc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/2t6rnCHDaWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
