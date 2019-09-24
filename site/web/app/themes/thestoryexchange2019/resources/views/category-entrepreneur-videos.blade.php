@@ -84,7 +84,7 @@
             <div class="video-player">
               <div class="wrap">
                 <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/2t6rnCHDaWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g010XvjfSMjBHBF7II5B3Gc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
