@@ -10,7 +10,7 @@ export default function initVideoPlayers() {
         $(this).attr('src', '');
     });
 
-    $('.video-post .thumbnail, .playlist .thumbnail').click(function(){
+    $('.video-post .thumbnail, .playlist .playlist-link').click(function(){
         $('.video-player', $(this).parent()).css('display', 'flex');
         var iframe = $('iframe', $(this).parent());
         var source = iframe.attr('src');
