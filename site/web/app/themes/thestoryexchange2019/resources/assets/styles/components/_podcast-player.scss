@@ -58,24 +58,39 @@
         }
     }
     .spp_player_textabove,
-    .spp-powered-by,
-    .sppbuttons{
+    .spp-powered-by{
         display: none;
     }
 }
 
 .sppbuttons {
+    display: none;
     margin-top: 0;
 }
-.sppbuttons a,
+
+.sppbuttons .button-download,
 .spp-powered-by,
 .spp_player_textabove {
     display: none;
 }
+
 .sppbuttons.bottom .button-itunes,
 .sppbuttons.bottom .button-stitcher {
     width: 49%;
     display: inline-block;
     margin-left: 0px!important;
     min-width: 0px !important;
+}
+
+.category-podcast{
+    .audioplayer {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .sppbuttons {
+        display: block;
+        margin-top: 10px;
+    }
+
 }
