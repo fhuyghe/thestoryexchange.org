@@ -66,6 +66,10 @@
 .sppbuttons {
     display: none;
     margin-top: 0;
+
+    a{
+        background-color: theme-color(blue);
+    }
 }
 
 .sppbuttons .button-download,
