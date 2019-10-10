@@ -18,7 +18,7 @@
       </div>
       <div class="share">
         {{ the_field('share_your_story_text') }}
-        @php $link = the_field('share_your_story_link') @endphp
+        @php $link = get_field('share_your_story_link') @endphp
         @if ($link)
           <a class="bigbutton yellow" target="_blank" href="{{ $link }}">Share Your Story</a>
         @endif
