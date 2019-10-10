@@ -8,7 +8,7 @@
 <div class="row">
   <div class="left-sidebar col-sm-4">
     @while(have_posts()) @php the_post() @endphp
-      <h2><?php the_title(); ?></h2>
+      <h2>{{ the_title() }}</h2>
       <?php the_content(); ?>
       <div class="buttonsWrap">
         <a class="button-itunes" target="_blank" style="" href="https://itunes.apple.com/us/podcast/the-story-exchange/id1036000689?mt=2">iTunes</a>
@@ -17,8 +17,11 @@
         <a class="button-spprss" target="_blank" href="http://thestoryexchange.libsyn.com/rss">RSS</a>	
       </div>
       <div class="share">
-        <p>And submit your startup story for a chance to be featured.</p>
-        <a class="btn" target="_blank" href="https://survey.qualtrics.com/SE/?SID=SV_ctGdaqj7QTBDSfP">Share Your Story</a>
+        {{ the_field('share_your_story_text') }}
+        @php $link = the_field('share_your_story_link') @endphp
+        @if ($link)
+          <a class="bigbutton yellow" target="_blank" href="{{ $link }}">Share Your Story</a>
+        @endif
       </div>
       @endwhile
   </div>
