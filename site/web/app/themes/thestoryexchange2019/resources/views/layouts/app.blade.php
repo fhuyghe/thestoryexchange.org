@@ -2,6 +2,7 @@
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
   <body @php body_class() @endphp>
+    @component('partials.tag-manager')
     @php do_action('get_header') @endphp
     @component('partials.side-menu')
       @include('partials.header')
