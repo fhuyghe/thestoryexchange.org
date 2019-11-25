@@ -12,11 +12,13 @@
         h5,
         h6,
         p,
-        ul{
+        ul,
+        ol{
             max-width: 800px;
         }
 
-        ul{
+        ul,
+        ol{
           margin: 0 auto;
 
           li{

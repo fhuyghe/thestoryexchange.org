@@ -97,10 +97,25 @@ p{
     }
 }
 
-ul{
+ol, ul{
     margin: 0 auto 1.5em; 
 
     li{
         margin-bottom: 1em;
+    }
+}
+
+ol{
+    list-style: none;
+    counter-reset: tse-counter;
+
+    li{
+        counter-increment: tse-counter;
+
+        &::before{
+            content: counter(tse-counter) ". ";
+            margin-right: 10px;
+            font-weight: 600;
+        }
     }
 }
