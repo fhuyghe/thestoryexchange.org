@@ -5,6 +5,7 @@
         border: 1px solid theme-color(darkgrey);
         background-color: theme-color(white); 
         max-width: 400px;
+        position: relative;
 
         .audioplayer-playpause{
             &:hover{

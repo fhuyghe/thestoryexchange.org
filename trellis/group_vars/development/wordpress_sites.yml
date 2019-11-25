@@ -5,7 +5,7 @@
 wordpress_sites:
   thestoryexchange.org:
     site_hosts:
-      - canonical: thestoryexchange.test
+      - canonical: storyexchange.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: francois@13milliseconds.com
     multisite:

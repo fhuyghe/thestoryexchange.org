@@ -27,14 +27,19 @@ class widget_video extends WP_Widget {
     if ( ! empty( $title ) )
     echo $args['before_title'] . $title . $args['after_title'];
 
-        $query_args=array(
-            'post_type' => 'post',
-            'post_status' => 'publish',
-            'posts_per_page' => 1,
-            'category_name' => 'entrepreneur-videos'
-        );
-        $video_query = new WP_Query( $query_args );
-            if ( $video_query -> have_posts() ) : while ( $video_query -> have_posts() ) : $video_query ->the_post(); ?>
+        // $query_args=array(
+        //     'post_type' => 'post',
+        //     'post_status' => 'publish',
+        //     'posts_per_page' => 1,
+        //     'category_name' => 'entrepreneur-videos'
+        // );
+        //$video_query = new WP_Query( $query_args );
+        //if ( $video_query -> have_posts() ) : while ( $video_query -> have_posts() ) : $video_query ->the_post(); 
+
+        $featured_video = get_field('featured_video_post', 'widget_' . $this->id);
+
+        setup_postdata( $GLOBALS['post'] =& $featured_video );
+        ?>
             <div class="download-box video-post">
                 <div class="thumbnail">
                 <div class="wrap-out">
@@ -82,7 +87,7 @@ class widget_video extends WP_Widget {
                     </div>
                 </div>
             </div>
-        <?php endwhile; endif; ?>
+        <?php //endwhile; endif; ?>
         <a class="blue bigbutton" href="<?php home_url(); ?>/category/entrepreneur-videos/">More videos</a>
 
     <?php
