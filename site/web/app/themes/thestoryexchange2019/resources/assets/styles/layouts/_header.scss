@@ -68,6 +68,12 @@
 
       li{
         margin-bottom: 0;
+
+        &.disabled{
+          & > a{
+            pointer-events: none;
+          }
+        }
       }
 
       &> li{
