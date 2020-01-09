@@ -9,10 +9,8 @@ export default {
 
     //Make all outbound links open in a new tab
     $('a').each(function () {
-        console.log('Checking links')
         var a = new RegExp('/' + window.location.host + '/');
         if (!a.test(this.href)) {
-          console.log(this);
           $(this).click(function(event) {
             event.preventDefault();
             event.stopPropagation();

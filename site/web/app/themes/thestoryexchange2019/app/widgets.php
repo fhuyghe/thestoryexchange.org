@@ -74,7 +74,7 @@ class widget_video extends WP_Widget {
                             $new_src = $cleanedsrc[0] . '?autoplay=1';
                             echo "<script>console.log( 'Debug Objects: " . $new_src . "' );</script>";
                             $iframe = str_replace($src, $new_src, $iframe);
-                            $iframe = str_replace('og-src', 'src', $iframe);
+                            $iframe = str_replace('src', 'og-src', $iframe);
                             // add extra attributes to iframe html
                             $attributes = 'frameborder="0"';
                             $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);

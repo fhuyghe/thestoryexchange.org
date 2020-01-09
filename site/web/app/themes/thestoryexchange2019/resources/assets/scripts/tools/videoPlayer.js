@@ -7,7 +7,7 @@ export default function initVideoPlayers() {
 
     $('.video-post iframe, .playlist iframe').each(function() {
         $(this).attr('og-src', $(this).attr('src'));
-        $(this).attr('src', '');
+        $(this).attr('src', 'javascript:void(0);');
     });
 
     $('.video-post .thumbnail, .playlist .playlist-link').click(function(){
