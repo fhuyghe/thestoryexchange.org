@@ -135,31 +135,54 @@
                 font-size: 1.2em;
             }
 
-            #mc_embed_signup_scroll{
-                display: flex;
-                max-width: 600px;
-                margin: $grid-gutter / 2 auto 0;
+            div > div{
+                width: 100%!important;
 
-                input.email,
-                input.button{
-                    margin: 0;
-                    border-radius: 0;
-                    border: 0;
-                    height: 40px;
-                    padding: 0 20px;
-                }
+                &> div{
+                    display: flex!important;
+                    width: 100%!important;
+                    max-width: 500px;
+                    margin: auto;
+    
+                    fieldset:nth-last-child(2){
+                        flex: 1;
+                    }
+    
+                    fieldset:nth-last-child(1){
+                        width: 140px;
 
-                input.email{
-                    flex: 1;
-                }
-
-                input.button{
-                    background: theme-color(blue);
-                    color: theme-color(white);
-                    text-transform: uppercase;
-                    width: auto;
+                        button{
+                            background-color: theme-color(darkblue)!important;
+                        }
+                    }
                 }
             }
+
+            // #mc_embed_signup_scroll{
+            //     display: flex;
+            //     max-width: 600px;
+            //     margin: $grid-gutter / 2 auto 0;
+
+            //     input.email,
+            //     input.button{
+            //         margin: 0;
+            //         border-radius: 0;
+            //         border: 0;
+            //         height: 40px;
+            //         padding: 0 20px;
+            //     }
+
+            //     input.email{
+            //         flex: 1;
+            //     }
+
+            //     input.button{
+            //         background: theme-color(blue);
+            //         color: theme-color(white);
+            //         text-transform: uppercase;
+            //         width: auto;
+            //     }
+            // }
         }
     }
 }
