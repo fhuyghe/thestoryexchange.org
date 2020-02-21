@@ -27,14 +27,6 @@ export default {
         totalRep = 0,
         totalDem = 0,
         ctx = $('#congressChart');
-    
-    
-
-    $(window).resize(function () {
-        if ($('.timeline').length) {
-            timelineResize();
-        }
-    });
 
     var updateNumbers = function (event) {
         $('.current').removeClass('current');
@@ -168,7 +160,11 @@ export default {
         
     $(window).load(function(){
         timelineResize();
-      });
+    });
+        
+    $(window).resize(function () {
+        timelineResize();
+    });
 },
 finalize() {
   // JavaScript to be fired on the home page, after the init JS
