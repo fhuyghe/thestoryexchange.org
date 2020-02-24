@@ -17,7 +17,8 @@
         .transcript-box,
         .player_container,
         ul,
-        ol{
+        ol,
+        section.video{
             max-width: 800px;
         }
 
@@ -125,7 +126,7 @@
         }
 
         .video{
-            margin: $grid-gutter 0;
+            margin: $grid-gutter auto;
 
         }
 
