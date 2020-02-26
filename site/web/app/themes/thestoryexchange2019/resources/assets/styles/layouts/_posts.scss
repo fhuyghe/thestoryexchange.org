@@ -16,6 +16,7 @@
         h6,
         .transcript-box,
         .player_container,
+        .wp-block-embed-youtube,
         ul,
         ol,
         section.video{
@@ -125,9 +126,16 @@
             }
         }
 
-        .video{
+        .video,
+        .wp-block-embed-youtube{
             margin: $grid-gutter auto;
 
+            &.alignleft{
+                @include media-breakpoint-up(md){
+                    margin: 0 .5rem;
+                    max-width: 500px;
+                }
+            }
         }
 
         .newsletter-banner{

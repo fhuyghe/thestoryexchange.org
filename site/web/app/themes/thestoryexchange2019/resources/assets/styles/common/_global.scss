@@ -44,12 +44,13 @@ img{
 }
 
 //Embed videos 
-.iframewrap{
+.iframewrap,
+.wp-block-embed__wrapper{
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.3%;
-    margin: $grid-gutter 0 10px;
+    //margin: $grid-gutter 0 10px;
 
     iframe{
         position: absolute;
