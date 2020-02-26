@@ -132,7 +132,16 @@
 
             &.alignleft{
                 @include media-breakpoint-up(md){
-                    margin: 0 .5rem;
+                    margin: 0;
+                    margin-right: .5rem;
+                    max-width: 500px;
+                }
+            }
+
+            &.alignright{
+                @include media-breakpoint-up(md){
+                    margin: 0;
+                    margin-left: .5rem;
                     max-width: 500px;
                 }
             }

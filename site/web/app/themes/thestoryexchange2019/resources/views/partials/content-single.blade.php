@@ -14,12 +14,15 @@
   </header>
 
   @if ( in_category( 3 ))
+    @php $video = get_field('video') @endphp
+    @if($video)
     <section class="video">
         <div class="iframewrap">
             <?php the_field('video'); ?>
         </div>
         <p class="caption"><?php the_field('video_caption'); ?></p>
     </section>
+    @endif
   @endif
 
   <div class="entry-content">
