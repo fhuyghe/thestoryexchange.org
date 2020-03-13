@@ -8,9 +8,14 @@
                 color: theme-color(white);
                 flex: 0 0 48%;
                 background-color: theme-color(blue);
+                transition: .25s;
                 text-align: center;
                 padding: 10px;
                 margin:1%;
+
+                &:hover{
+                    background-color: theme-color(darkblue);
+                }
             }
         }
     }
