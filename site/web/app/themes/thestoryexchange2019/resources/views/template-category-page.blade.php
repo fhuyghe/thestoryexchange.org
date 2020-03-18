@@ -1,5 +1,5 @@
 {{--
-  Template Name: Businesses Doing Good
+  Template Name: Category Page
 --}}
 
 @extends('layouts.app')
@@ -13,17 +13,18 @@
         @endwhile
     </section>
 
-    <section id="video-posts">     
+    <section id="video-posts">
+        @php $main_cat = get_field('category') @endphp
         @component('partials/post-group', [
             'posts_per_page' => 22,
-            'cat' => array(218), 
-            'tag' => 'video',
+            'cat' => array($main_cat),
             'format' => 'vertical', 
             'featured_post' => true
         ])@endcomponent
+        <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a>
     </section>
           
-    <section class="posts threecolumns">
+    {{-- <section class="posts threecolumns">
         <h2 class="section-title">Articles</h2>
         @component('partials/post-group', [
             'posts_per_page' => 3,
@@ -32,7 +33,7 @@
             'format' => 'vertical', 
             'featured_post' => false
         ])@endcomponent   
-        <a class="btn" href="{{ home_url() }}/category/focus-points/good-on-the-ground/">More Stories</a>
-    </section>
+        
+    </section> --}}
 
 @endsection
