@@ -52,7 +52,9 @@
         }
 
         .wp-block-embed-instagram{
-            margin: 0 auto!important;
+            iframe{
+                margin: 0 auto;
+            }
         }
 
         .caption{
@@ -89,6 +91,10 @@
                     }
                 }
             }
+        }
+
+        h3{
+            margin-top: $grid-gutter;
         }
         
         p.subtitle{
