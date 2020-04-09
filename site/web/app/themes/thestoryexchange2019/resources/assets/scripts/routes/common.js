@@ -8,16 +8,21 @@ export default {
     // JavaScript to be fired on all pages
 
     //Make all outbound links open in a new tab
-    $('article a').each(function () {
-        var a = new RegExp('/' + window.location.host + '/');
-        if (!a.test(this.href)) {
-          $(this).click(function(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            window.open(this.href, '_blank');
-          });
-        }
-      });
+    // $('a').each(function () {
+    //     var a = new RegExp('/' + window.location.host + '/');
+    //     if (!a.test(this.href)) {
+    //       $(this).click(function(event) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //         window.open(this.href, '_blank');
+    //       });
+    //     }
+    // });
+    $('article a').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      window.open(this.href, '_blank');
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
