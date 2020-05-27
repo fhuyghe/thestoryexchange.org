@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:13milliseconds/simple-podcast-press.git",
-                "reference": "3654321e07fee22a03924c50fbe14f75fdc52464"
+                "reference": "afa4d64d1b65785575c25811262d143c32c582cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/13milliseconds/simple-podcast-press/zipball/3654321e07fee22a03924c50fbe14f75fdc52464",
-                "reference": "3654321e07fee22a03924c50fbe14f75fdc52464",
+                "url": "https://api.github.com/repos/13milliseconds/simple-podcast-press/zipball/afa4d64d1b65785575c25811262d143c32c582cb",
+                "reference": "afa4d64d1b65785575c25811262d143c32c582cb",
                 "shasum": ""
             },
             "require": {
@@ -26,8 +26,8 @@
             "type": "wordpress-plugin",
             "authors": [
                 {
-                    "name": "Original Plugin Author's Name",
-                    "homepage": "https://originalpluginurl.com"
+                    "name": "Simple Podcast Press",
+                    "homepage": "https://simplepodcastpress.com/"
                 }
             ],
             "description": "Simple PodcastPress using composer",
@@ -40,7 +40,7 @@
                 "source": "https://github.com/13milliseconds/simple-podcast-press/tree/master",
                 "issues": "https://github.com/13milliseconds/simple-podcast-press/issues"
             },
-            "time": "2019-08-06T22:15:36+00:00"
+            "time": "2020-05-27T16:05:45+00:00"
         },
         {
             "name": "13milliseconds/tse-shortcodes",
@@ -1752,15 +1752,15 @@
         },
         {
             "name": "wpackagist-plugin/accelerated-mobile-pages",
-            "version": "1.0.50",
+            "version": "1.0.51",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/accelerated-mobile-pages/",
-                "reference": "tags/1.0.50"
+                "reference": "tags/1.0.51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.1.0.50.zip"
+                "url": "https://downloads.wordpress.org/plugin/accelerated-mobile-pages.1.0.51.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
