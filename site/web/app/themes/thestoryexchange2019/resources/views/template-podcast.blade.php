@@ -13,9 +13,9 @@
       <section class="buttonsWrap">
         {{ the_field('sharing_text') }}
         <a class="button-itunes" target="_blank" style="" href="https://itunes.apple.com/us/podcast/the-story-exchange/id1036000689?mt=2">iTunes</a>
-        <a class="button-stitcher" target="_blank" style="" href="http://www.stitcher.com/s?fid=72717&refid=stpr">Stitcher</a>
+        <a class="button-stitcher" target="_blank" style="" href="https://www.stitcher.com/s?fid=72717&refid=stpr">Stitcher</a>
         <a class="button-google spp-button-custom1" target="_blank" href="https://www.google.com/podcasts?feed=aHR0cDovL3RoZXN0b3J5ZXhjaGFuZ2UubGlic3luLmNvbS9yc3M%3D">Google</a>
-        <a class="button-spprss" target="_blank" href="http://thestoryexchange.libsyn.com/rss">RSS</a>	
+        <a class="button-spprss" target="_blank" href="https://thestoryexchange.libsyn.com/rss">RSS</a>	
         <a class="button-spotify" target="_blank" href="https://open.spotify.com/show/5lJgdFK8g9WWXLBYjWytyn?si=Q-8dIabRR4S3vN_xNfSfWg">Spotify</a>	
         <a class="button-pocketcasts" target="_blank" href="https://pca.st/B094">Pocket Casts</a>	
       </section>

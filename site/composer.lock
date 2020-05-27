@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e7f426edee9afe6b3659838f0c6c2b6",
+    "content-hash": "89ca1e8f55c9e6fb36bfbbf343628598",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:13milliseconds/simple-podcast-press.git",
-                "reference": "afa4d64d1b65785575c25811262d143c32c582cb"
+                "reference": "25dfe818881e3f925872e15b3e88d8726fabdbb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/13milliseconds/simple-podcast-press/zipball/afa4d64d1b65785575c25811262d143c32c582cb",
-                "reference": "afa4d64d1b65785575c25811262d143c32c582cb",
+                "url": "https://api.github.com/repos/13milliseconds/simple-podcast-press/zipball/25dfe818881e3f925872e15b3e88d8726fabdbb8",
+                "reference": "25dfe818881e3f925872e15b3e88d8726fabdbb8",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 "source": "https://github.com/13milliseconds/simple-podcast-press/tree/master",
                 "issues": "https://github.com/13milliseconds/simple-podcast-press/issues"
             },
-            "time": "2020-05-27T16:05:45+00:00"
+            "time": "2020-05-27T16:29:48+00:00"
         },
         {
             "name": "13milliseconds/tse-shortcodes",
@@ -1057,16 +1057,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.2.2",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.2.2"
+                "reference": "5.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.2",
-                "reference": "5.2.2"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.1",
+                "reference": "5.4.1"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -1090,7 +1090,13 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-06-18T17:53:14+00:00"
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-04-29T18:50:02+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
