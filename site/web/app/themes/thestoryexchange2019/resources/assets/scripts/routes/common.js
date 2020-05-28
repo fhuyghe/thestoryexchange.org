@@ -18,7 +18,7 @@ export default {
     //       });
     //     }
     // });
-    $('article a').click(function(event) {
+    $('article a:not(.play-pause)').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       window.open(this.href, '_blank');
