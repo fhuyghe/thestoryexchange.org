@@ -40,7 +40,7 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields/advanced-custom-fields-pro",
-                "version": "5.8.8",
+                "version": "5.8.11",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
@@ -101,7 +101,7 @@
         "wpackagist-plugin/easy-smooth-scroll-links": "^2.1.1",
         "wpackagist-plugin/editorial-calendar": "^3.7.2",
         "wpackagist-plugin/ewww-image-optimizer": "^5.3.2",
-        "wpackagist-plugin/jetpack": "^7.3.1",
+        "wpackagist-plugin/jetpack": "^8.6.1",
         "wpackagist-plugin/mailchimp": "^1.5.7",
         "wpackagist-plugin/official-facebook-pixel": "^2.0.2",
         "wpackagist-plugin/recent-posts-widget-extended": "^0.9.9.7",
