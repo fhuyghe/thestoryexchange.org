@@ -1,0 +1,17 @@
+ .page-template-page-100-years-of-power{
+
+    #intro{
+        max-width: 800px;
+        margin: $grid-gutter * 2 auto;
+
+        img{
+            margin-bottom: $grid-gutter;
+        }
+    }
+
+    #timeline{
+        .thumbnail{
+            margin-bottom: $grid-gutter;
+        }
+    }
+ }
