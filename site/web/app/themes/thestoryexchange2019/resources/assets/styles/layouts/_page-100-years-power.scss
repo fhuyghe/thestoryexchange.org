@@ -11,15 +11,60 @@
     }
 
     #episodes{
-        .episode{
-            .thumbnail{
-                height: 150px;
-                overflow: hidden;
-                filter: grayscale(1);
+        margin: $grid-gutter * 2 0;
 
-                img{
-                    min-height: 100%;
-                    width: auto;
+        @include media-breakpoint-up(md){
+            margin: $grid-gutter * 4 0;
+        }
+
+        .episode{
+            opacity: .8;
+
+            a{
+                display: block;
+                transition: .25s;
+            }
+
+            .thumbnail{
+                background-position: center;
+                background-size: cover;
+                padding-top: 60%;
+                height: 0;
+                filter: grayscale(1);
+            }
+
+            h4{
+                margin: 5px 0;
+                color: theme-color(darkgrey);
+            }
+
+            h5{
+                font-size: 1em;
+                color: theme-color(darkgrey);
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+
+            &:not(.active){
+                a{
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+
+            &.active{
+                opacity: 1;
+
+                .thumbnail{
+                    filter: none;
+                }
+
+                a:hover{
+                    opacity: .9;
+                }
+
+                h4{
+                    color: theme-color(darkblue);
                 }
             }
         }

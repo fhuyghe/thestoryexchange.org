@@ -13,21 +13,26 @@
 
 	<section id="intro">
 		<img src="<?php $image = get_field('main_image'); echo $image['url'] ?>">
-		{!! the_field('second_text') !!}
+		{!! the_field('second_text') !!} 
 	</section>
 
 	<section id="episodes" class="row">
 		@if( have_rows('podcast_episodes') )
-    	@while ( have_rows('podcast_episodes') ) @php the_row() @endphp
-		<div class="col-md-3 episode">
-			<div class="thumbnail">
-				@php $image = get_sub_field('thumbnail') @endphp
-				<img src="{!! $image['sizes']['medium'] !!}" alt="{!! $image['alt'] !!}" />
-			</div>
+		@foreach ( get_field('podcast_episodes') as $episode_row ) @php the_row() @endphp
+		@php $episode = get_sub_field('episode') @endphp
+		<div class="col-md-6 col-lg-3 episode @if($episode) active @endif">
+			@php $image = get_sub_field('thumbnail') @endphp
+			<a href="{{ the_permalink($episode->ID) }}">
+				<div class="thumbnail" style="background-image: url({!! $image['sizes']['medium'] !!})">
+				</div>
+			</a>
+			<a href="{{ the_permalink($episode->ID) }}">
+			<h5>Episode {{$loop->iteration}}</h5>
 			<h4>{{ the_sub_field('title') }}</h4>
+			</a>
 			<p>{{ the_sub_field('description') }}</p>
 		</div>
-    	@endwhile
+    	@endforeach
 		@endif
 	</section>
 
