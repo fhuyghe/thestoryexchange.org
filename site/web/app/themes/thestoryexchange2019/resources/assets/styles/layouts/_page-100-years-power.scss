@@ -1,11 +1,27 @@
- .page-template-page-100-years-of-power{
+ .page.page-id-43929{
 
     #intro{
         max-width: 800px;
+        text-align: center;
         margin: $grid-gutter * 2 auto;
 
         img{
             margin-bottom: $grid-gutter;
+        }
+    }
+
+    #episodes{
+        .episode{
+            .thumbnail{
+                height: 150px;
+                overflow: hidden;
+                filter: grayscale(1);
+
+                img{
+                    min-height: 100%;
+                    width: auto;
+                }
+            }
         }
     }
 
