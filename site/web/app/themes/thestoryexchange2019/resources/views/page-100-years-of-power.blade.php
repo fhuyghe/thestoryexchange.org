@@ -27,7 +27,12 @@
 				</div>
 			</a>
 			<a href="{{ the_permalink($episode->ID) }}">
-			<h5>Episode {{$loop->iteration}}</h5>
+			<h5>@if($loop->index == 0)
+				Trailer
+				@else
+				Episode {{$loop->index}}
+				@endif
+			</h5>
 			<h4>{{ the_sub_field('title') }}</h4>
 			</a>
 			<p>{{ the_sub_field('description') }}</p>
