@@ -72,7 +72,6 @@ export default {
         scrollForYears = scrollY + timelineBannerHeight + 38;
 
         //Lock the top info
-        console.log(timelineBannerOffset);
         if (scrollY >= timelineBannerOffset) {
             console.log('Fixed');
             timelineBanner.addClass('fixed');

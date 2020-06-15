@@ -12,6 +12,8 @@
               <?php the_content(); ?>
           </section>
 
+
+        @if( get_field('house_senate'))
           <section id="timeline-charts" class="clearfix">     
               <div class="house">
                   <h3>Number of women in the House</h3>
@@ -43,6 +45,8 @@
                   </div>
               </div>
           </section>
+        @endif
+
           <section id="timeline-content" class="">     
                 @if( $data['events'])
                     @php $lastYear = 0 @endphp
