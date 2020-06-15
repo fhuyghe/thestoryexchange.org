@@ -1,5 +1,5 @@
 {{-- =============================================================================
-// TEMPLATE NAME: Women in the News
+// TEMPLATE NAME: Women in Politics Timeline
 // =============================================================================--}}
 
 @extends('layouts.app')
@@ -82,7 +82,7 @@
                             <div class="text-wrap">
                                 {{ the_sub_field('text') }}
                                 @if($link) 
-                                    <a class='link' target='_blank' href='" . $link . "'>Read More<i class='fa fa-long-arrow-right' aria-hidden='true'></i></a>
+                                    <a class='link' target='_blank' href='{{$link}}'>Read More  <i class='fa fa-long-arrow-right' aria-hidden='true'></i></a>
                                 @endif
                             </div>
                             </div>
