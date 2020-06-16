@@ -47,3 +47,10 @@ add_action('admin_head', function() {
 });
 remove_filter('pre_user_description', 'wp_filter_kses');
 add_filter( 'pre_user_description', 'wp_filter_post_kses' );
+ 
+/**
+ * Add excerpt support to pages
+ */
+add_action('init', function() {
+    add_post_type_support( 'page', 'excerpt' );
+});
