@@ -1,5 +1,13 @@
  .page.page-id-43929{
 
+    h1{
+        margin-bottom: $grid-gutter;
+        
+        @include media-breakpoint-up(md){
+            font-size: 2.5em;
+        }
+    }
+
     #intro{
         max-width: 800px;
         text-align: center;
