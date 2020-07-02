@@ -56,5 +56,21 @@
 		</div>
 		@endif
 	</section>
+	
+	<section id="featuredPost" class="row">
+		@php $featuredPost = get_field('featured_page') @endphp
+		@if ($featuredPost)
+		<div class="thumbnail col-md-6">
+			<img src="{{ $featuredPost['image']['sizes'][ 'medium' ] }}">
+		</div>
+		<div class="text col-md-6">
+			<a href="{{ get_permalink($featuredPost['link']->ID) }}">
+				<h4>{{ $featuredPost['title'] }}</h4>
+			</a>
+			<p>{!! $featuredPost['text'] !!}</p>
+			<a class="btn" href="{{ get_permalink($featuredPost['link']->ID) }}">Explore</a>
+		</div>
+		@endif
+	</section>
 
 @endsection
