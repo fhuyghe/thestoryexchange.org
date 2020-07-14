@@ -38,7 +38,6 @@
           <section id="playlists">
           <h2>Featured Playlists</h2>
 
-          HEHE
           @php $term = get_queried_object(); @endphp
           @if( have_rows('video_playlists', $term) )
               @while( have_rows('video_playlists', $term) ) @php the_row() @endphp
