@@ -90,6 +90,20 @@
             </div>
           </div>
           
+          
+          {{--PLAYLIST --}}
+          <div class="playlist">
+            <a class="playlist-link">Advice and Tips</a>
+            <p>Interested in starting a business or growing the one you have? Explore our articles offering advice and tips for women entrepreneurs, as well as select resources curated by our editors, for every stage of the entrepreneurial journey.</p>
+            <div class="video-player">
+              <div class="wrap">
+                <div class="embed-container">
+                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g1pCGg-4MVnjUwerUh26nC3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          
            <a class="btn" href="https://www.youtube.com/user/StoryExchange?ob=0&feature=results_main" target="_blank">More on YouTube</a>
           </section>
 
