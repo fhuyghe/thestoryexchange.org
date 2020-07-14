@@ -38,71 +38,30 @@
           <section id="playlists">
           <h2>Featured Playlists</h2>
 
-            {{-- // PLAYLIST ######### --}}
-          <div class="playlist">
-            <a class="playlist-link">Business Ideas for Animal Lovers</a>
-            <p>Love creatures, great and small? We profile entrepreneurs inspired by dogs, bees, horses and more.</p>
-            <div class="video-player">
-              <div class="wrap">
-                <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed?listType=playlist&list=PLaK2UyNCu2g2gL1RE3ZjXDJq_bhYiMQuI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
+          HEHE
+          @php $term = get_queried_object(); @endphp
+          @if( have_rows('video_playlists', $term) )
+              @while( have_rows('video_playlists', $term) ) @php the_row() @endphp
+                @php
+                  $title = get_sub_field('title');
+                  $text = get_sub_field('text');
+                  $playlist_id = get_sub_field('playlist_id');
+                @endphp
 
-          {{--// PLAYLIST ######### --}}
-          <div class="playlist">
-            <a class="playlist-link">Health and Wellness</a>
-            <p>It's a hot industry. These women are running companies that put our minds and bodies in a better place.</p>
-            <div class="video-player">
-              <div class="wrap">
-                <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g0-Bv2VZYScyYQsb5OK3x5C" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <div class="playlist">
+                    <a class="playlist-link">{{ $title }}</a>
+                    <p>{{ $text }}</p>
+                    <div class="video-player">
+                      <div class="wrap">
+                        <div class="embed-container">
+                          <iframe width="640" height="360" og-src="https://www.youtube.com/embed?listType=playlist&list={{ $playlist_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-          {{--PLAYLIST --}}
-          <div class="playlist">
-            <a class="playlist-link">Eco-friendly Entrepreneurs</a>
-            <p>Watch how green business owners keep plastic out of the ocean, protect coastal cities, and even raise pigs sustainably.</p>
-            <div class="video-player">
-              <div class="wrap">
-                <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g32QTs9Ce6DR13ZdJNA87oB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {{--PLAYLIST --}}
-          <div class="playlist">
-            <a class="playlist-link">Mission Driven Nonprofits</a>
-            <p>Be the change you wish to see in the world. Meet women social entrepreneurs making an impact. </p>
-            <div class="video-player">
-              <div class="wrap">
-                <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g010XvjfSMjBHBF7II5B3Gc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          {{--PLAYLIST --}}
-          <div class="playlist">
-            <a class="playlist-link">Advice and Tips</a>
-            <p>Interested in starting a business or growing the one you have? Explore our articles offering advice and tips for women entrepreneurs, as well as select resources curated by our editors, for every stage of the entrepreneurial journey.</p>
-            <div class="video-player">
-              <div class="wrap">
-                <div class="embed-container">
-                  <iframe width="640" height="360" og-src="https://www.youtube.com/embed/videoseries?list=PLaK2UyNCu2g1pCGg-4MVnjUwerUh26nC3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
+              @endwhile
+          @endif
           
            <a class="btn" href="https://www.youtube.com/user/StoryExchange?ob=0&feature=results_main" target="_blank">More on YouTube</a>
           </section>
