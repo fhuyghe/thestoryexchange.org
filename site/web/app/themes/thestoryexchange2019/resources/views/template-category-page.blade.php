@@ -14,12 +14,32 @@
     </section>
 
     <section id="video-posts">
-        @php $main_cat = get_field('category') @endphp
+        @php 
+        global $post;
+        $post = get_field('pinned_post');
+         @endphp
+        @if($post)
+            @php setup_postdata( $post ) @endphp
+            <div class="post-group row format-vertical feature-first">
+                @include('partials/post-item')
+            </div>
+            @php wp_reset_postdata() @endphp
+        @endif
+
+        @php 
+            $main_cat = get_field('category');
+            if (get_field('pinned_post')){
+                $featured = false;
+            } else {
+                $featured = true;
+            }
+        @endphp
+
         @component('partials/post-group', [
             'posts_per_page' => 22,
             'cat' => array($main_cat),
             'format' => 'vertical', 
-            'featured_post' => true
+            'featured_post' => $featured
         ])@endcomponent
         <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a>
     </section>
