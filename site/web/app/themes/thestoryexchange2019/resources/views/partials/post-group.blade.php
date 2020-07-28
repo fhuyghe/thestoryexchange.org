@@ -14,7 +14,9 @@
             @if( $format == 'podcast' )
                 @include('partials/post-podcast')
             @else
-                @include('partials/post-item')
+                @if($pinned_post->ID !== get_the_id())
+                  @include('partials/post-item')
+                @endif
             @endif
             @php wp_reset_postdata() @endphp
         @endwhile

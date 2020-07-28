@@ -16,7 +16,8 @@
     <section id="video-posts">
         @php 
         global $post;
-        $post = get_field('pinned_post');
+        $pinnedPost = get_field('pinned_post');
+        $post = $pinnedPost;
          @endphp
         @if($post)
             @php setup_postdata( $post ) @endphp
@@ -36,24 +37,27 @@
         @endphp
 
         @component('partials/post-group', [
-            'posts_per_page' => 22,
+            'posts_per_page' => -1,
             'cat' => array($main_cat),
             'format' => 'vertical', 
-            'featured_post' => $featured
+            'featured_post' => $featured,
+            'pinned_post' => $pinnedPost
         ])@endcomponent
-        <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a>
+        {{-- <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a> --}}
     </section>
           
-    {{-- <section class="posts threecolumns">
-        <h2 class="section-title">Articles</h2>
+    <section class="posts threecolumns">
+        @php 
+            $extraCat = get_field('exra_category');
+        @endphp
+        <h2 class="section-title">{{$extraCat}}: {{ get_cat_name($extraCat) }}</h2>
         @component('partials/post-group', [
             'posts_per_page' => 3,
-            'cat' => array(218, -220), 
-            'tag' => 'video',
+            'cat' => array($extraCat, '-' . $main_cat), 
             'format' => 'vertical', 
             'featured_post' => false
         ])@endcomponent   
-        
-    </section> --}}
+        <a class="btn" href="{{ get_category_link($extraCat) }}">More Stories</a>
+    </section>
 
 @endsection
