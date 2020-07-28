@@ -48,12 +48,12 @@
           
     <section class="posts threecolumns">
         @php 
-            $extraCat = get_field('exra_category');
+            $extraCat = get_field('extra_category');
         @endphp
-        <h2 class="section-title">{{$extraCat}}: {{ get_cat_name($extraCat) }}</h2>
+        <h2 class="section-title">{{ get_cat_name($extraCat) }}</h2>
         @component('partials/post-group', [
             'posts_per_page' => 3,
-            'cat' => array($extraCat, '-' . $main_cat), 
+            'cat' => array($extraCat, '-' . $main_cat),
             'format' => 'vertical', 
             'featured_post' => false
         ])@endcomponent   
