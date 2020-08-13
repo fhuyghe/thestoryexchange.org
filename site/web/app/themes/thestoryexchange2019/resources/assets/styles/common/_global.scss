@@ -59,6 +59,11 @@ img{
     }
 }
 
+//Embed Twitter
+.twitter-tweet{
+    margin: $grid-gutter / 2 auto;
+}
+
 // Filling div with a background image
 .fill {
     display: flex;
