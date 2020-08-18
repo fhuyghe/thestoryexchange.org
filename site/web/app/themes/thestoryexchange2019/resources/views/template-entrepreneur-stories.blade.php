@@ -17,7 +17,7 @@ Template Name: Entrepreneur Stories
                 'featured_post' => true
             ])@endcomponent
         </div>
-        <a class="btn" href="<?php echo site_url(); ?>/category/role-models/">More Recent Stories</a>
+        <a class="btn" href="{{ home_url() }}/category/role-models/">More Recent Stories</a>
     </section>
     
         {{-- BUSINESSES DOING GOOD --}}
@@ -28,7 +28,7 @@ Template Name: Entrepreneur Stories
                     <img src="{!! the_field('good_on_the_ground_image') !!}" />
                 </div>
                 <div class="text col-lg-11 col-10">
-                    <h2 class="section-title"><a href="<?php echo site_url(); ?>/businesses-doing-good/">Businesses Doing Good</a></h2>
+                    <h2 class="section-title"><a href="{{ home_url() }}/businesses-doing-good/">Businesses Doing Good</a></h2>
                     <p>{!! the_field('good_on_the_ground_description') !!}</p>
                 </div>
             </header>
@@ -38,7 +38,7 @@ Template Name: Entrepreneur Stories
                     'format' => 'vertical', 
                     'featured_post' => false
                 ])@endcomponent
-            <a class="btn" href="<?php echo site_url(); ?>/businesses-doing-good/">More Stories</a>
+            <a class="btn" href="{{ home_url() }}/businesses-doing-good/">More Stories</a>
         </section>
     
         {{-- IMMIGRANT ENTREPRENEURS --}}
@@ -49,7 +49,7 @@ Template Name: Entrepreneur Stories
                     <img src="<?php the_field('immigrant_entrepreneurs_image'); ?>" />
                 </div>
                 <div class="text col-lg-11 col-10">
-                    <h2 class="section-title"><a href="<?php echo site_url(); ?>/immigrant-entrepreneurs/">Immigrant Entrepreneurs</a></h2>
+                    <h2 class="section-title"><a href="{{ home_url() }}/category/focus-points/all-in/immigrant-entrepreneurs/">Immigrant Entrepreneurs</a></h2>
                     <p><?php the_field('immigrant_entrepreneurs_description'); ?></p>
                 </div>
             </header>
@@ -59,7 +59,7 @@ Template Name: Entrepreneur Stories
                 'format' => 'vertical', 
                 'featured_post' => false
             ])@endcomponent
-            <a class="btn" href="<?php echo site_url(); ?>/immigrant-entrepreneurs/">More Immigrant Stories</a>
+            <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/immigrant-entrepreneurs/">More Immigrant Stories</a>
         </section>
     
     
@@ -73,12 +73,12 @@ Template Name: Entrepreneur Stories
                         <img src="<?php the_field('women_of_color_image'); ?>" />
                     </div>
                     <div class="text col-10">
-                        <h2 class="section-title"><a href="<?php echo site_url(); ?>/category/focus-points/all-in/women-of-color/">Women of Color</a></h2>
+                        <h2 class="section-title"><a href="{{ home_url() }}/category/focus-points/all-in/women-of-color/">Women of Color</a></h2>
                         <p>{!! the_field('women_of_color_description') !!}</p>
                     </div>
                 </header>
                 @component('partials/post-group', ['posts_per_page' => 1,'cat' => array(142)])@endcomponent
-                <a class="btn" href="<?php echo site_url(); ?>/category/focus-points/all-in/women-of-color/">More WOC Stories</a>
+                <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/women-of-color/">More WOC Stories</a>
             </div>
     
     
@@ -88,14 +88,14 @@ Template Name: Entrepreneur Stories
                             <img src="<?php the_field('lgbt_image'); ?>" />
                         </div>
                         <div class="text col-10">
-                            <h2 class="section-title"><a href="<?php echo site_url(); ?>/category/focus-points/all-in/lgbt-in-biz/">LGBT+ in Business</a></h2>
+                            <h2 class="section-title"><a href="{{ home_url() }}/category/focus-points/all-in/lgbt-in-biz/">LGBT+ in Business</a></h2>
                             <p><?php the_field('lgbt_description'); ?></p>
                         </div>
                   </header>
     
             @component('partials/post-group', ['posts_per_page' => 1,'cat' => array(146)])@endcomponent
             
-            <a class="btn" href="<?php echo site_url(); ?>/category/focus-points/all-in/lgbt-in-biz/">More LGBT+ Stories</a>
+            <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/lgbt-in-biz/">More LGBT+ Stories</a>
                 </div>
             </div>
         </section>
@@ -176,7 +176,7 @@ Template Name: Entrepreneur Stories
                     <img src="<?php the_field('banner_medium3_image'); ?>" />
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="<?php echo site_url(); ?>/three-good-women/">Three Good Women</a></h3>
+                    <h3><a href="{{ home_url() }}/three-good-women/">Three Good Women</a></h3>
                     <p>Stand-out entrepreneurs who are doing well and doing good (2016)</p>
                 </div>
             </div>
@@ -186,7 +186,7 @@ Template Name: Entrepreneur Stories
                     <img src="<?php the_field('banner_medium1_image'); ?>" />
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="<?php echo site_url(); ?>/power-list-landing-page/">The Power List</a></h3>
+                    <h3><a href="{{ home_url() }}/power-list-landing-page/">The Power List</a></h3>
                     <p>10 outstanding experienced entrepreneurs who are leading successful businesses (2015)</p>
                 </div>
             </div>
@@ -196,7 +196,7 @@ Template Name: Entrepreneur Stories
                     <img src="<?php the_field('banner_medium2_image'); ?>" />
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="<?php echo site_url(); ?>/young-women-watch/">Young Women to Watch</a></h3>
+                    <h3><a href="{{ home_url() }}/young-women-watch/">Young Women to Watch</a></h3>
                     <p>10 promising young entrepreneurs who are blowing through barriers (2014)</p>
                 </div>
             </div>
