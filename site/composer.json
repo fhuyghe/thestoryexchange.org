@@ -86,7 +86,7 @@
         "roots/wp-password-bcrypt": "1.0.0",
         "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
         "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
-        "deliciousbrains-plugin/wp-offload-media": "*",
+        "deliciousbrains-plugin/wp-offload-media": "2.3.2",
         "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
         "wpackagist-plugin/accelerated-mobile-pages": "^1.0.50",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.2",
