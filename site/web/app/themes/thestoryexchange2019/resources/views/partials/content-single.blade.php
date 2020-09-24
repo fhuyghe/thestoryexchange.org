@@ -8,7 +8,12 @@
 
     <div class="header-content">
       <h1 class="entry-title">{!! get_the_title() !!}</h1>
-      <p class="subtitle"><?php the_subheading(); ?></p>
+      @php $subheading = get_field('subheading') @endphp
+      @if($subheading)
+        <p class="subtitle">{{ $subheading }}</p>
+      @else
+        <p class="subtitle">{{ the_subheading() }}</p>
+      @endif
       @include('partials/entry-meta')
     </div>
   </header>
