@@ -52,5 +52,7 @@
 @import "layouts/template-1000-stories";
 
 // Import Slick
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
