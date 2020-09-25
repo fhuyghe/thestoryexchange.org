@@ -138,3 +138,25 @@ add_action('after_setup_theme', function () {
     add_image_size( 'partner-logo', 150, 60 ); // 150 pixels wide (and unlimited height)
     add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
 });
+
+/**
+ * Slideshow Block
+ */
+add_action('acf/init', __NAMESPACE__ . '\\slideshow_block');
+function slideshow_block() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'slideshow',
+            'title'             => __('Slideshow'),
+            'description'       => __('Photography slideshow'),
+            'render_template'   => template_path(locate_template('views/blocks/slideshow/slideshow')),
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'slideshow', 'carousel' ),
+        ));
+    }
+}

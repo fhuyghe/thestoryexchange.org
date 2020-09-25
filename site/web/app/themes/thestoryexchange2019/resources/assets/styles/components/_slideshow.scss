@@ -1,0 +1,48 @@
+.slideshow.slick-dotted.slick-slider{
+    margin-bottom: $grid-gutter * 2;
+
+    .slick-track{
+        display: flex;
+        align-items: center;
+    }
+
+    .slide{
+        text-align: center;
+
+        &:focus{
+            outline: 0;
+        }
+
+        img{
+            margin: 0 auto 10px;
+            width: auto;
+            max-height: 700px;
+        }
+
+        p{
+            color: theme-color(grey);
+            font-style: italic;
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-arrow{
+        z-index: 99;
+
+        &:before{
+            color: theme-color(blue);
+        }
+    }
+
+    .slick-next{
+        right: 10px;
+    }
+    
+    .slick-prev{
+        left: 10px;
+    }
+
+    .slick-dots{
+        max-width: none;
+    }
+}

@@ -12,6 +12,9 @@ import aboutUs from './routes/about';
 import templateTimeline from './routes/timeline';
 import runningWomen2018Elections from './routes/running-women'
 
+// Import Slick
+import 'slick-carousel/slick/slick.min';
+
 /** Populate Router instance with DOM routes */
 const routes = new Router({
   // All pages

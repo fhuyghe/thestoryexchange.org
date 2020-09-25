@@ -29,6 +29,7 @@
 @import "components/widgets";
 @import "components/side-menu";
 @import "components/collapsible-menu";
+@import "components/slideshow";
 
 
 @import "layouts/header";
@@ -49,3 +50,7 @@
 
 @import "layouts/template-advice-tips";
 @import "layouts/template-1000-stories";
+
+// Import Slick
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";

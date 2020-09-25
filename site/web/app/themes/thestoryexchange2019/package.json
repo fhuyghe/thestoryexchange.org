@@ -80,6 +80,7 @@
     "bootstrap": "v4.3.1",
     "jquery": "^3.5.0",
     "popper.js": "^1.14.7",
-    "scrollreveal": "^4.0.5"
+    "scrollreveal": "^4.0.5",
+    "slick-carousel": "^1.8.1"
   }
 }
