@@ -155,7 +155,7 @@ function slideshow_block() {
             'description'       => __('Photography slideshow'),
             'render_template'   => template_path(locate_template('views/blocks/slideshow/slideshow')),
             'category'          => 'formatting',
-            'icon'              => 'admin-comments',
+            'icon'              => 'images-alt2',
             'keywords'          => array( 'slideshow', 'carousel' ),
         ));
     }
