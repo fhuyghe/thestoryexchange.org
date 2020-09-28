@@ -1,4 +1,6 @@
 .slideshow{
+    display: none;
+
     .slick-track{
         display: flex;
         align-items: center;
@@ -42,6 +44,7 @@
 }
 
 .slideshow.slick-dotted.slick-slider{
+    display: block;
     margin-bottom: $grid-gutter * 2;
 
     .slick-dots{
