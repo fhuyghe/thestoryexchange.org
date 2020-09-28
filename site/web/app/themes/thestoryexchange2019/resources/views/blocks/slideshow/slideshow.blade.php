@@ -39,6 +39,7 @@ $photos = get_field('photos');
     @endif
 </div>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     jQuery(document).ready(function(){
         jQuery('.slideshow').slick({
