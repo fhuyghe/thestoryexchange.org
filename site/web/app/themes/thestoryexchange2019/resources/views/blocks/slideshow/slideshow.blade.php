@@ -43,7 +43,16 @@ $photos = get_field('photos');
 <script>
     jQuery(document).ready(function(){
         jQuery('.slideshow').slick({
-            dots: true
+            dots: true,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                breakpoint: 480,
+                settings: {
+                    adaptiveHeight: false
+                }
+                }
+            ]
         });
     });
 </script>

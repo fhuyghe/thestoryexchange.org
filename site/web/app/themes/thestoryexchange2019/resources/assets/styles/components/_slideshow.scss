@@ -51,3 +51,13 @@
         max-width: none;
     }
 }
+
+//Because Safari on mobile doesn't recognize the font
+@font-face {
+    font-family: 'slick-font';
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),  
+    url('../fonts/slick.woff') format('woff'), 
+    url('../fonts/slick.ttf')  format('truetype');
+    font-weight: normal;
+    font-display: swap;
+  }
