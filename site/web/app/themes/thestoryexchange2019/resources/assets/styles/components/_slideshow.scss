@@ -22,7 +22,11 @@
         p{
             color: theme-color(grey);
             font-style: italic;
-            margin-bottom: 0;
+            margin-bottom: $grid-gutter / 2;
+
+            strong{
+                color: theme-color(black);
+            }
         }
     }
 
