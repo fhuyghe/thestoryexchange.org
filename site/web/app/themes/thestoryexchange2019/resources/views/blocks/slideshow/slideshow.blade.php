@@ -44,12 +44,12 @@ $photos = get_field('photos');
     jQuery(document).ready(function(){
         jQuery('.slideshow').slick({
             dots: true,
-            adaptiveHeight: true,
+            adaptiveHeight: false,
             responsive: [
                 {
                 breakpoint: 480,
                 settings: {
-                    adaptiveHeight: false
+                    adaptiveHeight: true
                 }
                 }
             ]
