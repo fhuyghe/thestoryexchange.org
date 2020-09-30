@@ -45,6 +45,8 @@ $photos = get_field('photos');
         jQuery('.slideshow').slick({
             dots: true,
             adaptiveHeight: false,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-circle-left"></i></button',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-circle-right"></i></button',
             responsive: [
                 {
                 breakpoint: 480,

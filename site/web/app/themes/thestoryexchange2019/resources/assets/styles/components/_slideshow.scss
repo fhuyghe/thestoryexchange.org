@@ -36,10 +36,20 @@
 
     .slick-arrow{
         z-index: 99;
+        color: theme-color(blue);
+        font-size: 25px;
+        transition: .25s;
+
+        &:hover{
+            color: theme-color(darkblue);
+        }
+         
+        &:focus{
+            color: theme-color(blue);
+        }
 
         &:before{
-            color: theme-color(blue);
-            font-family: 'slick', 'slick-alternate';
+            content: '';
         }
     }
 
@@ -60,17 +70,11 @@
         max-width: none;
 
         button:before{
-            font-family: 'slick', 'slick-alternate';
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: theme-color(darkgrey);
+            border-radius: 10px;
         }
     }
 }
-
-//Because Safari on mobile doesn't recognize the font
-@font-face {
-    font-family: 'slick-alternate';
-    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),  
-    url('../fonts/slick.woff') format('woff'), 
-    url('../fonts/slick.ttf')  format('truetype');
-    font-weight: normal;
-    font-display: swap;
-  }
