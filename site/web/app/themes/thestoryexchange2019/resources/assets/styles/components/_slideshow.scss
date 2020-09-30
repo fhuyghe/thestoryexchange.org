@@ -39,6 +39,7 @@
 
         &:before{
             color: theme-color(blue);
+            font-family: 'slick', 'slick-alternate';
         }
     }
 
@@ -57,12 +58,16 @@
 
     .slick-dots{
         max-width: none;
+
+        button:before{
+            font-family: 'slick', 'slick-alternate';
+        }
     }
 }
 
 //Because Safari on mobile doesn't recognize the font
 @font-face {
-    font-family: 'slick-font';
+    font-family: 'slick-alternate';
     src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),  
     url('../fonts/slick.woff') format('woff'), 
     url('../fonts/slick.ttf')  format('truetype');
