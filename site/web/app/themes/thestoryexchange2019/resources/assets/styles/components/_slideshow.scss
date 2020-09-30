@@ -39,6 +39,8 @@
         color: theme-color(blue);
         font-size: 25px;
         transition: .25s;
+        height: 30px;
+        width: 30px;
 
         &:hover{
             color: theme-color(darkblue);
