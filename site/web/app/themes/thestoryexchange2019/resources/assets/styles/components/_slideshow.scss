@@ -1,13 +1,17 @@
 .slideshow{
     display: none;
 
-    .slick-track{
-        display: flex;
-        align-items: center;
+    @include media-breakpoint-up(md){
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
     }
 
     .slide{
-        text-align: center;
+        @include media-breakpoint-up(md){
+            text-align: center;
+        }
 
         &:focus{
             outline: 0;
