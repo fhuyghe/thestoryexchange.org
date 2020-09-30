@@ -138,6 +138,11 @@
         }
 
         .wp-block-image{
+            img{
+                margin: auto;
+                display: block;
+            }
+            
             figcaption{
                 color: theme-color(grey);
                 font-style: italic;
