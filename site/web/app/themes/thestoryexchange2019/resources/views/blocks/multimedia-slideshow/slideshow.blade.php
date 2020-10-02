@@ -40,7 +40,7 @@ $slides = get_field('slides');
         @elseif( get_row_layout() == 'video' )
             @php $video = get_sub_field('video') @endphp
             <div class="slide image">
-                <video muted autoplay no-controls>
+                <video loop muted autoplay no-controls>
                     <source src="{{ $video['url'] }}" type="video/mp4" />
                 </video>
                 <div class="text">
