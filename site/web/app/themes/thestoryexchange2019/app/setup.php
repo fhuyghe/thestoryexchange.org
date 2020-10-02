@@ -148,7 +148,7 @@ function slideshow_block() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
 
-        // register a testimonial block.
+        // register a Slideshow block.
         acf_register_block_type(array(
             'name'              => 'slideshow',
             'title'             => __('Slideshow'),
@@ -157,6 +157,17 @@ function slideshow_block() {
             'category'          => 'formatting',
             'icon'              => 'images-alt2',
             'keywords'          => array( 'slideshow', 'carousel' ),
+        ));
+
+        // register a Multimedia Slideshow block.
+        acf_register_block_type(array(
+            'name'              => 'multimedia_slideshow',
+            'title'             => __('Multimedia Slideshow'),
+            'description'       => __('Multimedia slideshow'),
+            'render_template'   => template_path(locate_template('views/blocks/multimedia-slideshow/slideshow')),
+            'category'          => 'formatting',
+            'icon'              => 'images-alt',
+            'keywords'          => array( 'multimedia', 'slideshow', 'carousel' ),
         ));
     }
 }

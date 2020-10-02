@@ -40,7 +40,7 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields/advanced-custom-fields-pro",
-                "version": "5.8.11",
+                "version": "5.9.1",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
@@ -118,7 +118,7 @@
         "wpackagist-plugin/wordfence": "^7.3.2",
         "wpackagist-plugin/wp-bitly": "^2.5.2",
         "wpackagist-plugin/wp-disable": "^1.5.21",
-        "wpackagist-plugin/wp-fastest-cache": "^0.9.0.6",
+        "wpackagist-plugin/wp-fastest-cache": "^0.9.1.0",
         "wpackagist-plugin/wp-maximum-execution-time-exceeded": "^1.0.2",
         "wpackagist-plugin/wp-to-twitter": "^3.3.12",
         "wpackagist-plugin/otf-regenerate-thumbnails":"0.3",
