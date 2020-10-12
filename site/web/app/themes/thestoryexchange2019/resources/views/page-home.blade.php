@@ -24,7 +24,7 @@
 
   <section id="latest-posts">
     @component('partials.post-group', [
-      'posts_per_page' => 5,
+      'posts_per_page' => 10,
       'cat' => '41, 187, 35',
       'additional_args' => [
         'post__not_in' => array($featured->ID)
