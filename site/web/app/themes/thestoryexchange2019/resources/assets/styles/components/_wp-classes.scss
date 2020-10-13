@@ -40,6 +40,8 @@
   @extend .figure;
   max-width: 100%;
   margin-bottom: 1.5em;
+  display: table;
+  width: auto!important;
 
   &.alignleft{
     margin-right: 1.5em;
@@ -47,6 +49,11 @@
   
   &.alignright{
     margin-left: 1.5em;
+  }
+
+  figcaption{
+    display: table-caption;
+    caption-side: bottom;
   }
 }
 
