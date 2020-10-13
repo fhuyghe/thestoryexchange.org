@@ -138,10 +138,6 @@
         }
 
         .wp-block-image{
-            display: table;
-            width: auto!important;
-            margin: auto;
-
             img{
                 margin: auto;
                 display: block;
@@ -150,6 +146,15 @@
             figcaption{
                 color: theme-color(grey);
                 font-style: italic;
+            }
+        }
+
+        figure.wp-block-image{
+            display: table;
+            width: auto!important;
+            margin: auto;
+            
+            figcaption{
                 display: table-caption;
                 caption-side: bottom;
             }
