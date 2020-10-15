@@ -138,6 +138,8 @@
         }
 
         .wp-block-image{
+            margin: $grid-gutter auto;
+            
             img{
                 margin: auto;
                 display: block;
@@ -152,7 +154,6 @@
         figure.wp-block-image{
             display: table;
             width: auto!important;
-            margin: auto;
             
             figcaption{
                 display: table-caption;
