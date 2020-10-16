@@ -89,6 +89,12 @@ header{
       @include media-breakpoint-up(lg) {
         padding-left: $grid-gutter;
       };
+
+      .swp_popular_post{
+        a b{
+          font-weight: 400;
+        }
+      }
     }
   }
 }
