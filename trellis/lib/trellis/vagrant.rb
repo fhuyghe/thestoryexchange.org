@@ -1,5 +1,5 @@
 # Set Ansible paths relative to Ansible directory
-ENV['ANSIBLE_CONFIG'] = ANSIBLE_PATH
+ENV['ANSIBLE_CONFIG'] = File.join(ANSIBLE_PATH, 'ansible.cfg')
 ENV['ANSIBLE_CALLBACK_PLUGINS'] = "~/.ansible/plugins/callback:/usr/share/ansible/plugins/callback:#{File.join(ANSIBLE_PATH, 'lib/trellis/plugins/callback')}"
 ENV['ANSIBLE_FILTER_PLUGINS'] = "~/.ansible/plugins/filter:/usr/share/ansible/plugins/filter:#{File.join(ANSIBLE_PATH, 'lib/trellis/plugins/filter')}"
 ENV['ANSIBLE_LIBRARY'] = "~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:#{File.join(ANSIBLE_PATH, 'lib/trellis/modules')}"
@@ -102,6 +102,7 @@ def update_ssh_config(main_hostname)
 
     File.write(config_file, content)
   else
+    FileUtils.mkdir_p(File.dirname(config_file), mode: 0700)
     File.write(config_file, vagrant_ssh_config)
   end
 end

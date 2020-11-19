@@ -2,7 +2,7 @@
 # - you must set a repository (no default)
 project_git_repo: "{{ project.repo }}"
 # - you can set the git ref to deploy (can be a branch, tag or commit hash)
-project_version: "{{ project.branch | default('master') }}"
+project_version: "{{ branch is defined | ternary(branch, project.branch) | default('master') }}"
 
 # The source_path is used to fetch the tags from git, or synchronise via rsync. This way
 # you do not have to download/sync the entire project on every deploy
@@ -20,6 +20,7 @@ project_templates:
   - name: .env config
     src: roles/deploy/templates/env.j2
     dest: .env
+    mode: '0600'
 
 # The shared_children is a list of all files/folders in your project that need to be linked to a path in `/shared`.
 # For example a sessions directory or an uploads folder. They are created if they don't exist, with the type
@@ -47,6 +48,11 @@ project_current_path: "{{ project.current_path | default('current') }}"
 
 # Whether to run `wp core update-db` at end of each deploy
 update_db_on_deploy: true
+
+# Most scripts are used in development instead of remote servers. Use with caution.
+composer_no_scripts: true
+# Whether to autoload classes from classmap only.
+composer_classmap_authoritative: true
 
 # Helpers
 project: "{{ wordpress_sites[site] }}"

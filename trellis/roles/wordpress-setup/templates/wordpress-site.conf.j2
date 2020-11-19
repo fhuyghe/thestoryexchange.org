@@ -92,7 +92,7 @@ server {
   ssl_certificate_key     {{ nginx_path }}/ssl/{{ item.value.ssl.key | basename }};
 
   {% elif item.value.ssl.provider | default('manual') == 'letsencrypt' -%}
-  ssl_certificate         {{ nginx_path }}/ssl/letsencrypt/{{ item.key }}-{{ letsencrypt_cert_ids[item.key] }}-bundled.cert;
+  ssl_certificate         {{ nginx_path }}/ssl/letsencrypt/{{ item.key }}-bundled.cert;
   ssl_certificate_key     {{ nginx_path }}/ssl/letsencrypt/{{ item.key }}.key;
 
   {% elif item.value.ssl.provider | default('manual') == 'self-signed' -%}
@@ -121,10 +121,44 @@ server {
     deny all;
   }
   {% endblock %}
-  
+
   {% block blade_twig_templates -%}
   # Prevent Blade and Twig templates from being accessed directly.
   location ~* \.(blade\.php|twig)$ {
+    deny all;
+  }
+  {% endblock %}
+
+  {% block dependency_managers -%}
+  # composer
+  location ~* composer\.(json|lock)$ {
+    deny all;
+  }
+
+  location ~* composer/installed\.json$ {
+    deny all;
+  }
+
+  location ~* auth\.json$ {
+    deny all;
+  }
+
+  # npm
+  location ~* package(-lock)?\.json$ {
+    deny all;
+  }
+
+  # yarn
+  location ~* yarn\.lock$ {
+    deny all;
+  }
+
+  # bundler
+  location ~* Gemfile(\.lock)?$ {
+    deny all;
+  }
+
+  location ~* gems\.(rb|locked)?$ {
     deny all;
   }
   {% endblock %}
@@ -180,6 +214,14 @@ server {
     set $x_frame_options "";
   }
   add_header X-Frame-Options $x_frame_options always;
+
+  {% endif -%}
+  {% endblock -%}
+
+  {% block robots_tag_header -%}
+  {% if robots_tag_header_enabled -%}
+  # Prevent search engines from indexing non-production environments
+  add_header X-Robots-Tag "noindex, nofollow" always;
 
   {% endif -%}
   {% endblock -%}

@@ -1,14 +1,17 @@
 ---
-- include_tasks: "{{ include_path }}"
+- name: Check if deploy_prepare_before scripts exist
+  stat:
+    path: "{{ item }}"
+  delegate_to: localhost
+  register: deploy_prepare_before_paths
   with_items: "{{ deploy_prepare_before | default([]) }}"
+
+- include_tasks: "{{ include_path.item }}"
+  with_items: "{{ deploy_prepare_before_paths.results }}"
   loop_control:
     loop_var: include_path
+  when: include_path.stat.exists
   tags: deploy-prepare-before
-
-- name: write unfinished file
-  file:
-    path: "{{ project_source_path }}/{{ deploy_helper.unfinished_filename }}"
-    state: touch
 
 - name: Check for project repo subtree
   stat:
@@ -24,22 +27,43 @@
 - name: Create new release dir
   file:
     path: "{{ deploy_helper.new_release_path }}"
+    mode: '0755'
     state: directory
 
 - name: Run git archive to populate new build dir
-  shell: git archive {{ project_version }} | tar xf - -C {{ deploy_helper.new_release_path }}
+  shell: |
+    set -eo pipefail
+    git archive {{ project_version }} | tar xf - -C {{ deploy_helper.new_release_path }}
   args:
     chdir: "{{ project_source_path }}"
+    executable: /bin/bash
   when: project.repo_subtree_path is not defined
 
 - name: Run git archive with subdirectory to populate new build dir
-  shell: git archive {{ project_version }} {{ project.repo_subtree_path }} | tar -x --strip-components {{ project.repo_subtree_path.split('/') | count }} -f - -C {{ deploy_helper.new_release_path }}
+  shell: |
+    set -eo pipefail
+    git archive {{ project_version }} {{ project.repo_subtree_path }} | tar -x --strip-components {{ project.repo_subtree_path.split('/') | count }} -f - -C {{ deploy_helper.new_release_path }}
   args:
     chdir: "{{ project_source_path }}"
+    executable: /bin/bash
   when: project.repo_subtree_path is defined
 
-- include_tasks: "{{ include_path }}"
+- name: write unfinished file
+  file:
+    path: "{{ deploy_helper.new_release_path }}/{{ deploy_helper.unfinished_filename }}"
+    mode: '0744'
+    state: touch
+
+- name: Check if deploy_prepare_after scripts exist
+  stat:
+    path: "{{ item }}"
+  delegate_to: localhost
+  register: deploy_prepare_after_paths
   with_items: "{{ deploy_prepare_after | default([]) }}"
+
+- include_tasks: "{{ include_path.item }}"
+  with_items: "{{ deploy_prepare_after_paths.results }}"
   loop_control:
     loop_var: include_path
+  when: include_path.stat.exists
   tags: deploy-prepare-after

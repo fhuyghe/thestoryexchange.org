@@ -1,3 +1,67 @@
+### HEAD
+* Validate that `letsencrypt_contact_emails` is a list ([#1250](https://github.com/roots/trellis/pull/1250))
+
+### 1.7.0: November 9th, 2020
+* Officially support Ubuntu 20.04 (and default Vagrant to it) ([#1197](https://github.com/roots/trellis/pull/1197))
+
+### 1.6.0: November 5th, 2020
+* Remove prestissimo for Composer 2.0 support ([#1247](https://github.com/roots/trellis/pull/1247))
+* Allow WP cron intervals to be configurable ([#1222](https://github.com/roots/trellis/pull/1222))
+* Remove default Vagrant SMB credentials ([#1215](https://github.com/roots/trellis/pull/1215))
+* Fix usage of `ANSIBLE_CONFIG` env var ([#1217](https://github.com/roots/trellis/pull/1217))
+* Update MariaDB package to 10.5 ([#1212](https://github.com/roots/trellis/pull/1212))
+* Switch to official Nginx Ubuntu package ([#1208](https://github.com/roots/trellis/pull/1208))
+
+### 1.5.0: August 5th, 2020
+* Improve Nginx reloading for failed Let's Encrypt certificates ([#1207](https://github.com/roots/trellis/pull/1207))
+* Add support for Lets Encrypt contact emails ([#1206](https://github.com/roots/trellis/pull/1206))
+* Support branch variable for deploys ([#1204](https://github.com/roots/trellis/pull/1204))
+* Removes ID from Lets Encrypt bundled certificate and make filename stable ([#834](https://github.com/roots/trellis/pull/834))
+* Make Fail2ban settings extensible ([#1177](https://github.com/roots/trellis/pull/1177))
+* Improve ip_whitelist in development ([#1183](https://github.com/roots/trellis/pull/1183))
+* Support Ansible 2.9 ([#1169](https://github.com/roots/trellis/pull/1169))
+* [BREAKING] Remove `nginx_includes_deprecated` feature ([#1173](https://github.com/roots/trellis/pull/1173))
+* Bump Ansible version_tested_max to 2.8.10 ([#1167](https://github.com/roots/trellis/pull/1167))
+* Bump Ansible requirement to 2.8.0 ([#1147](https://github.com/roots/trellis/pull/1147))
+* Update CircleCI Config ([#1184](https://github.com/roots/trellis/pull/1184))
+
+### 1.4.0: April 2nd, 2020
+* Update PHP to 7.4 ([#1164](https://github.com/roots/trellis/pull/1164))
+* Update `wp_cli_version` to 2.4.0 ([#1131](https://github.com/roots/trellis/pull/1131))
+* Fix `subjectAltName` for self-signed certificates ([#1128](https://github.com/roots/trellis/pull/1128))
+* `composer install` without `--no-scripts` during deploy ([#1133](https://github.com/roots/trellis/pull/1133))
+* Allow `composer install` with `--classmap-authoritative` during deploy ([#1132](https://github.com/roots/trellis/pull/1132))
+* Use modern SSL config for Nginx ([#1127](https://github.com/roots/trellis/pull/1127))
+* Fix `DEPLOY_UNFINISHED` not being copied over to `release` folder ([#1145](https://github.com/roots/trellis/pull/1145))
+* Deploy: Remove untracked files from project folder ([#1146](https://github.com/roots/trellis/pull/1146))
+* Nginx: Block `composer/installed.json` ([#1150](https://github.com/roots/trellis/pull/1150))
+* Run `git clean` after checking `git clone` is successful ([#1151](https://github.com/roots/trellis/pull/1151))
+* Lint: Fix: `[206] Variables should have spaces before and after: {{ var_name }}` ([#1152](https://github.com/roots/trellis/pull/1152))
+* Lint: Fix: `[306] Shells that use pipes should set the pipefail option ([#1153](https://github.com/roots/trellis/pull/1153))
+* Lint: Fix `[301] Commands should not change things if nothing needs doing ([#1139](https://github.com/roots/trellis/pull/1139))
+* Void rolled back releases ([#1148](https://github.com/roots/trellis/pull/1148))
+* Add `WP_DEBUG_LOG` to `.env` on deploy ([#1160](https://github.com/roots/trellis/pull/1160))
+
+### 1.3.0: December 7th, 2019
+* Add `git_sha` and `release_version` to `.env` on deploy ([#1124](https://github.com/roots/trellis/pull/1124))
+* Lower self-signed certificate expiry time for macOS Cataline support ([#1120](https://github.com/roots/trellis/pull/1120))
+* Block dependency manager files in Nginx ([#1116](https://github.com/roots/trellis/pull/1116))
+
+### 1.2.0: October 11th, 2019
+* Lets Encrypt ACME v2 support ([#1114](https://github.com/roots/trellis/pull/1114))
+* Fix self-signed certificates in Ansible 2.8 ([#1110](https://github.com/roots/trellis/pull/1110))
+* Update WP CLI to v2.3.0 ([#1109](https://github.com/roots/trellis/pull/1109))
+* Ansible 2.8.x support ([#1103](https://github.com/roots/trellis/pull/1103))
+* Bump galaxy dependency versions ([#1105](https://github.com/roots/trellis/pull/1105))
+* Fix issues with Vagrant ansible_local provisioner ([#1104](https://github.com/roots/trellis/pull/1104))
+* Bump ansible requirement to 2.7.12([#1102](https://github.com/roots/trellis/pull/1102))
+
+### 1.1.0: September 1st, 2019
+* Update swapfile role to v2.0.22 ([#1101](https://github.com/roots/trellis/pull/1101))
+* Add pip `requirements.txt` and rename `requirements.yml` to `galaxy.yml` ([#1100](https://github.com/roots/trellis/pull/1100))
+* Update apt packages before checking essentials task ([#1086](https://github.com/roots/trellis/pull/1086))
+* Setup composer HTTP basic authentication for multiple repositories ([#1091](https://github.com/roots/trellis/pull/1091))
+
 ### 1.0.3: April 30th, 2019
 * Prevent direct access for `.blade.php` files ([#1075](https://github.com/roots/trellis/pull/1075))
 * Show custom error message if external IP resolution fails ([#1078](https://github.com/roots/trellis/pull/1078))
