@@ -1,0 +1,66 @@
+[22-Nov-2020 16:48:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 16:48:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 17:00:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 17:00:08 UTC] PHP Fatal error:  Uncaught Error: Class 'WPSEO_News' not found in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php:61
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): __wpseo_news_main()
+#1 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-settings.php(409): do_action()
+#4 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('/srv/www/thesto...')
+#5 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(74): WP_CLI\Bootstrap\LaunchRunner->process()
+#8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
+[22-Nov-2020 17:15:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 17:15:03 UTC] PHP Fatal error:  Uncaught Error: Class 'WPSEO_News' not found in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php:61
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): __wpseo_news_main()
+#1 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-settings.php(409): do_action()
+#4 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('/srv/www/thesto...')
+#5 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(74): WP_CLI\Bootstrap\LaunchRunner->process()
+#8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
+[22-Nov-2020 17:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 17:30:03 UTC] PHP Fatal error:  Uncaught Error: Class 'WPSEO_News' not found in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php:61
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): __wpseo_news_main()
+#1 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-settings.php(409): do_action()
+#4 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('/srv/www/thesto...')
+#5 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(74): WP_CLI\Bootstrap\LaunchRunner->process()
+#8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
+[22-Nov-2020 17:45:03 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 17:45:03 UTC] PHP Fatal error:  Uncaught Error: Class 'WPSEO_News' not found in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php:61
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): __wpseo_news_main()
+#1 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-settings.php(409): do_action()
+#4 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('/srv/www/thesto...')
+#5 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(74): WP_CLI\Bootstrap\LaunchRunner->process()
+#8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
+[22-Nov-2020 17:54:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 17:54:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 19:00:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 19:00:03 UTC] PHP Fatal error:  Uncaught Error: Class 'WPSEO_News' not found in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php:61
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): __wpseo_news_main()
+#1 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-settings.php(409): do_action()
+#4 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('/srv/www/thesto...')
+#5 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
+#6 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(23): WP_CLI\Runner->start()
+#7 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php(74): WP_CLI\Bootstrap\LaunchRunner->process()
+#8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
+[22-Nov-2020 19:15:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 19:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
