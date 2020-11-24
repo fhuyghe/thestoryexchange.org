@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "266f962f838c463e1e06bbac86b25b54",
+    "content-hash": "dcab5a9ad6dc6f8ad13b73c9563a04fd",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -80,16 +80,16 @@
         },
         {
             "name": "13milliseconds/wp-fastest-cache-premium",
-            "version": "1.4.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git",
-                "reference": "8c5593413a3ef6c214d9cef164d439292137467c"
+                "reference": "148fd060c60b67ae8ee4276807fd84215960fe87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/13milliseconds/wp-fastest-cache-premium/zipball/8c5593413a3ef6c214d9cef164d439292137467c",
-                "reference": "8c5593413a3ef6c214d9cef164d439292137467c",
+                "url": "https://api.github.com/repos/13milliseconds/wp-fastest-cache-premium/zipball/148fd060c60b67ae8ee4276807fd84215960fe87",
+                "reference": "148fd060c60b67ae8ee4276807fd84215960fe87",
                 "shasum": ""
             },
             "require": {
@@ -109,17 +109,17 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/13milliseconds/wp-fastest-cache-premium/tree/1.4.4",
+                "source": "https://github.com/13milliseconds/wp-fastest-cache-premium/tree/master",
                 "issues": "https://github.com/13milliseconds/wp-fastest-cache-premium/issues"
             },
-            "time": "2019-07-12T22:23:40+00:00"
+            "time": "2020-11-24T00:14:06+00:00"
         },
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.9.1",
+            "version": "5.9.3",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.9.1"
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.9.3"
             },
             "require": {
                 "composer/installers": "^1.4",
@@ -1964,15 +1964,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "8.9.1",
+            "version": "9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/8.9.1"
+                "reference": "tags/9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.8.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2198,15 +2198,15 @@
         },
         {
             "name": "wpackagist-plugin/testimonials-widget",
-            "version": "3.5.1",
+            "version": "4.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/testimonials-widget/",
-                "reference": "tags/3.5.1"
+                "reference": "tags/4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/testimonials-widget.3.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/testimonials-widget.4.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2285,6 +2285,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-disable/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-fastest-cache",
+            "version": "0.9.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
+                "reference": "tags/0.9.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.9.1.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-fastest-cache/"
         },
         {
             "name": "wpackagist-plugin/wp-maximum-execution-time-exceeded",
@@ -2628,12 +2646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "cccf21d87ad9ab7e803eda3aa3454ba066a54913"
+                "reference": "563faed0e5e24a5b639fbd30d8f3921bb11fccc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/cccf21d87ad9ab7e803eda3aa3454ba066a54913",
-                "reference": "cccf21d87ad9ab7e803eda3aa3454ba066a54913",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/563faed0e5e24a5b639fbd30d8f3921bb11fccc0",
+                "reference": "563faed0e5e24a5b639fbd30d8f3921bb11fccc0",
                 "shasum": ""
             },
             "conflict": {
@@ -2741,8 +2759,8 @@
                 "nette/nette": ">=2,<2.0.19|>=2.1,<2.1.13",
                 "nystudio107/craft-seomatic": "<3.3",
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
-                "october/backend": ">=1.0.319,<1.0.467",
-                "october/cms": ">=1.0.319,<1.0.466",
+                "october/backend": ">=1.0.319,<1.0.470",
+                "october/cms": "= 1.0.469|>=1.0.319,<1.0.469",
                 "october/october": ">=1.0.319,<1.0.466",
                 "october/rain": ">=1.0.319,<1.0.468",
                 "onelogin/php-saml": "<2.10.4",
@@ -2859,8 +2877,8 @@
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.38|>=2,<2.7",
-                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.30|>=9,<9.5.20|>=10,<10.4.6",
-                "typo3/cms-core": ">=8,<8.7.30|>=9,<9.5.20|>=10,<10.4.6",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.38|>=9,<9.5.23|>=10,<10.4.10",
+                "typo3/cms-core": ">=8,<8.7.38|>=9,<9.5.23|>=10,<10.4.10",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "typo3/phar-stream-wrapper": ">=1,<2.1.1|>=3,<3.1.1",
@@ -2934,7 +2952,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-22T16:02:43+00:00"
+            "time": "2020-11-23T21:01:44+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -2991,6 +3009,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "13milliseconds/wp-fastest-cache-premium": 20,
         "13milliseconds/simple-podcast-press": 20,
         "13milliseconds/tse-shortcodes": 20,
         "roave/security-advisories": 20
