@@ -10,9 +10,14 @@
 
   <section id="featured-post">
     <div class="post-group format-featured">
-      @php
-        $featured = get_field('featured_post')
-      @endphp
+      
+      @php $featured = get_field('featured_post') ?: null @endphp
+      @if($featured)
+        @php $featuredID = $featured->ID @endphp
+      @else
+        @php $featuredID = '' @endphp
+      @endif
+
       @component('partials.post-item-featured', [
         'picture' => get_field('featured_image'),
         'post_object' => $featured
@@ -27,13 +32,14 @@
       'posts_per_page' => 10,
       'cat' => '41, 187, 35',
       'additional_args' => [
-        'post__not_in' => array($featured->ID)
+        'post__not_in' => array($featuredID)
       ],
-      'format' => 'horizontal'
+      'format' => 'horizontal',
+      'featured_post' => false
     ])@endcomponent
+    
     @component('partials.category-link', [
-      'name' => 'Entrepreneur Stories',
-      'link_class' => 'more-link'
+      'name' => 'Entrepreneur Stories'
     ])
       More Stories
     @endcomponent
@@ -60,7 +66,9 @@
     @component('partials.post-group', [
       'posts_per_page' => 3,
       'cat' => ['73'],
-      'format' => 'vertical'
+      'format' => 'vertical',
+      'featured_post' => false,
+      'pinned_post' => null
     ])@endcomponent
     @component('partials.btn-link', [
       'url' => get_page_link( get_post( 32841 ) ),

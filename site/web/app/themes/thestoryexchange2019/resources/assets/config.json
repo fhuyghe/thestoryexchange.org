@@ -10,7 +10,7 @@
     ]
   },
   "publicPath": "/app/themes/thestoryexchange2019",
-  "devUrl": "https://storyexchange.test",
+  "devUrl": "https://thestoryexchange.test",
   "proxyUrl": "https://localhost:3005",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

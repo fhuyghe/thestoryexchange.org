@@ -4,9 +4,7 @@
   isset($link_text) || $link_text = $name;
 @endphp
 {{-- TODO: ALIAS COMPONENT --}}
-@component('partials.btn-link', [
-  'url' => $cat_url,
-  'link_class' => 'category-link ' . ($link_class || '')
-])
+
+<a href="{!! $cat_url !!}" class="btn category-link more-link">
   {{ $slot ? $slot : $link_text }}
-@endcomponent
+</a>

@@ -35,7 +35,9 @@
         @component('partials/post-group', [
           'posts_per_page' => -1,
           'cat' => array(147), 
-          'format' => 'podcast'
+          'format' => 'podcast',
+          'featured_post' => false,
+            'pinned_post' => null
       ])@endcomponent
     </section>  
   </div>

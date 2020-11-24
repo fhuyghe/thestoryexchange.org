@@ -39,9 +39,11 @@
         @component('partials/post-group', [
             'posts_per_page' => -1,
             'cat' => array($main_cat),
+            'additional_args' => [
+                'post__not_in' => array($pinnedPost->ID)
+            ],
             'format' => 'vertical', 
-            'featured_post' => $featured,
-            'pinned_post' => $pinnedPost
+            'featured_post' => $featured
         ])@endcomponent
         {{-- <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a> --}}
     </section>

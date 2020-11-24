@@ -64,3 +64,93 @@ Stack trace:
 #8 phar:///usr/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php(27) in /srv/www/thestoryexchange.org/current/web/app/plugins/yoast-news-seo/wpseo-news.php on line 61
 [22-Nov-2020 19:15:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
 [22-Nov-2020 19:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[22-Nov-2020 22:56:03 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 22:56:03 UTC] PHP Notice:  Trying to access array offset on value of type null in /srv/www/thestoryexchange.org/current/web/app/mu-plugins/bedrock-autoloader.php on line 137
+[22-Nov-2020 23:45:04 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 00:00:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 00:15:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 00:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 00:45:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 22:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 22:45:01 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 22:45:44 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/thestoryexchange.org/current/web/wp/wp-includes/update.php on line 403
+[23-Nov-2020 22:46:04 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/thestoryexchange.org/current/web/wp/wp-includes/update.php on line 607
+[23-Nov-2020 22:46:24 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/thestoryexchange.org/current/web/wp/wp-includes/update.php on line 168
+[23-Nov-2020 22:47:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:47:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:48:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:48:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:49:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:49:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:50:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:50:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:51:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:51:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:52:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:52:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:53:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:53:34 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:54:04 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:54:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:55:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:55:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:56:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:56:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:57:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:57:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:58:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:58:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:59:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 22:59:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:00:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 23:00:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:00:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:01:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:01:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:02:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:02:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:03:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:03:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:04:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:04:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:05:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:05:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:06:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:06:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:07:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:07:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:08:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:08:35 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:09:05 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:09:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:10:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:10:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:11:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:11:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:12:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:12:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:13:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:13:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:14:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:14:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:15:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[23-Nov-2020 23:15:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:15:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:16:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:16:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:17:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:17:36 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:18:06 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:18:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:19:07 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:19:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:20:07 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:20:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:21:07 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:21:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:22:07 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:22:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:23:07 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:23:37 UTC] PHP Notice:  Undefined variable: pd_last_page in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/spp.php on line 3479
+[23-Nov-2020 23:30:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[24-Nov-2020 00:00:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/thestoryexchange.org/current/web/wp/wp-includes/update.php on line 168
