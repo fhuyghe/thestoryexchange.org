@@ -1,4 +1,4 @@
-composer_keep_updated: false
+composer_keep_updated: true
 apt_cache_valid_time: 3600
 apt_package_state: present
 apt_security_package_state: latest
