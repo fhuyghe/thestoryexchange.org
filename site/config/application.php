@@ -12,6 +12,12 @@ use Roots\WPConfig\Config;
 use function Env\env;
 
 /**
+ * Instruct Env\Env to read environment variables via $_ENV instead of getenv().
+ * The latter does not work with DotEnv 5 by default, see: https://github.com/oscarotero/env/issues/8
+ */
+\Env\Env::$options |= \Env\Env::USE_ENV_ARRAY;
+
+/**
  * Directory containing all of the site's files
  *
  * @var string
