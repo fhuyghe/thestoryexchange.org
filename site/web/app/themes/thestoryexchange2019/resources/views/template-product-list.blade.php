@@ -29,7 +29,7 @@
 
             @php $price = '' @endphp
             @if($list_item['price'])
-              @php $price = '$' . $list_item['price'] . '  -  ' @endphp
+              @php $price = $list_item['price'] . '  -  ' @endphp
             @endif
 
             <a class="btn" target="_blank" href="{{ $list_item['link'] }}">{{ $price }}Available here</a>
