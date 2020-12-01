@@ -26,7 +26,13 @@
             <div class="text">
             <h4>{{ $list_item['title'] }}</h4>
             {!! $list_item['blurb'] !!}
-              <a class="btn" target="_blank" href="{{ $list_item['link'] }}">Shop Now</a>
+
+            @php $price = '' @endphp
+            @if($list_item['price'])
+              @php $price = '$' . $list_item['price'] . '  -  ' @endphp
+            @endif
+
+            <a class="btn" target="_blank" href="{{ $list_item['link'] }}">{{ $price }}Available here</a>
             </div>
             </div>
           </div>
