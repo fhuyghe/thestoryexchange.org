@@ -15,6 +15,9 @@
 
   <div class="entry-content">
     @php the_content() @endphp
+  </div>
+
+  <div class="container">
     @if(function_exists('social_warfare'))
       @php social_warfare() @endphp
     @endif
