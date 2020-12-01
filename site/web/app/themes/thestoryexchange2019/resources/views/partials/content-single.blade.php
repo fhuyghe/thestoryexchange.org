@@ -15,6 +15,9 @@
 
   <div class="entry-content">
     @php the_content() @endphp
+    @if(function_exists('social_warfare'))
+      @php social_warfare() @endphp
+    @endif
   </div>
 
   <section class="newsletter-banner">
