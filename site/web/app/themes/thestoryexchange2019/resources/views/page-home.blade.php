@@ -30,7 +30,7 @@
   <section id="latest-posts">
     @component('partials.post-group', [
       'posts_per_page' => 10,
-      'cat' => '41, 187, 35',
+      'cat' => '41, 187, 35', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
       'additional_args' => [
         'post__not_in' => array($featuredID)
       ],
