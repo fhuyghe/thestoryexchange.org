@@ -11,11 +11,13 @@
           @include('partials/post-tags')
           <div class="thumbnail">
             <div class="fill">
-              <img src="{!! $picture !!}" width="100%">
+              <a href="{!! the_permalink() !!}">
+                <img src="{!! $picture !!}" width="100%">
+              </a>
             </div>
           </div>
     @else
-      @if ( has_post_thumbnail() )
+      @if( has_post_thumbnail() )
           @include('partials/post-thumbnail')
       @endif
     @endif
