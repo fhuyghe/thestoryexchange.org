@@ -25,6 +25,7 @@
     r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
   pintrk('load', '2613795781749', {em: '<user_email_address>'});
   pintrk('page');
+  pintrk('track', 'pagevisit');
   </script>
   <noscript>
   <img height="1" width="1" style="display:none;" alt=""
