@@ -1,0 +1,223 @@
+.site-header{
+  margin-bottom: $grid-gutter;
+  overflow: visible;
+  background: theme-color(white);
+  z-index: 99;
+
+  @include media-breakpoint-down(sm){
+    margin-bottom: 5px;
+  }
+
+  .nav li {
+    @extend .nav-item;
+  }
+
+  .container{
+    //max-width: none;
+  }
+
+  .nav-primary{
+    display: none;
+    position: relative;
+    border-color: theme-color(grey);
+    border-style: solid;
+    border-width: 1px 0;
+    overflow: visible;
+    background: theme-color(white);
+    z-index: 99;
+
+    &.stick-to-top {
+      @include fixed_at_top;
+      border-top-color: theme-color(white);
+
+      & + .stick-to-top__placeholder {
+        display: block;
+      }
+    }
+
+    & + .stick-to-top__placeholder {
+      display: none;
+    }
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .search{
+        font-size: .7em;
+        padding: 5px 0;
+        width: 200px;
+
+        @include media-breakpoint-down(lg){
+          position: absolute;
+          height: 100%;
+          max-height: 40px;
+          top: -45px;
+          right: $grid-gutter;
+        }
+
+        form{
+          height: 100%;
+        }
+      }
+    }
+
+    ul.nav{
+      font-size: .9em;
+
+      li{
+        margin-bottom: 0;
+
+        &.disabled{
+          & > a{
+            pointer-events: none;
+          }
+        }
+      }
+
+      &> li{
+        position: relative;
+
+        &.menu-item-has-children{
+          cursor: default;
+
+          &> a:after{
+            content: '▼';
+            display: inline-block;
+            padding-left: 5px;
+            font-size: .6em;
+          }
+        }
+
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3){
+          a{
+            color: theme-color(darkblue);
+          }
+        }
+
+        &:hover{
+
+          a{
+            color: theme-color(darkblue);
+            border-color: theme-color(darkblue);
+          }
+
+          ul.sub-menu{
+            opacity: 1;
+            display: flex;
+          }
+        }
+
+        &> a{
+          @extend .nav-link;
+          padding: .5rem 0;
+          margin-right: 1rem;
+          color: theme-color(black);
+          border-bottom: 3px solid transparent;
+        }
+
+        ul.sub-menu{
+          position: absolute;
+          display: none;
+          opacity: 0;
+          left: 0;
+          list-style: none;
+          padding: 0;
+          background: theme-color(white);
+          border-top: 1px solid theme-color(grey);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+          flex-flow: column;
+          transition: opacity .25s;
+
+          a{
+            padding: .5em 1em;
+            white-space: nowrap;
+            display: inline-block;
+            color: theme-color(dark);
+            width: 100%;
+
+            &:hover{
+              background: theme-color(yellow);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .nav-primary{
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-down(md){
+    .container{
+      max-width: none;
+    }
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: $grid-gutter;
+  color: $black;
+  margin: 5px 0;
+  z-index: 99;
+
+  a{
+    color: theme-color(black);
+  }
+
+  .title {
+    z-index: 2;
+    line-height: 1.4em;
+
+    .name {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+
+    .description {
+      display: none;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 70px;
+    top: 10%;
+    height: 80%;
+  }
+
+  @include media-breakpoint-up(md){
+    margin: $grid-gutter auto;
+    height: 110px;
+    text-align: center;
+    z-index: 0;
+
+    img{
+      z-index: -1;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 0;
+      height: 100%;
+    }
+
+    .title{
+      .description {
+        display: block;
+        font-size: 1em;
+        color: theme-color(darkgrey);
+      }
+    }
+  }
+}

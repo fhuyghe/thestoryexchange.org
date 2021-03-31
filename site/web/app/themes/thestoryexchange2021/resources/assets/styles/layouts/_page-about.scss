@@ -1,0 +1,44 @@
+.about-person{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto $grid-gutter;
+
+    .about-photo{
+        flex: 0 0 200px;
+
+        img{
+            width: 100%;
+            max-width: 200px;
+        }
+    } 
+
+    .about-text{
+        flex: 1;
+        padding-left: $grid-gutter;
+    }
+
+    @include media-breakpoint-down(sm){
+        flex-flow: column;
+
+        .about-photo{
+            padding-bottom: 10px;
+        }
+
+        .about-text{
+            padding-left: 0;
+        }
+    }
+}
+
+.features{
+    justify-content: center;
+    
+    .feature{
+        padding: $grid-gutter / 2;
+        text-align: center;
+
+        img{
+            max-height: $grid-gutter * 2;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+//General posts styles
+.post{
+    .post-title{
+        a{
+            color: theme-color(black);
+
+            &:hover{
+                color: theme-color(darkblue);
+            }
+        }
+    }
+}
