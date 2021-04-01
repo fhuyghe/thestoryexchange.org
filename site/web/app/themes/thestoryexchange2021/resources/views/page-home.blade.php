@@ -45,46 +45,7 @@
     @endcomponent
   </section>
 
-  {{-- ICONS --}}
+  {!! the_content() !!}
 
-  <section id="three-icons">
-    <div class="row">
-      @for ($i = 1; $i <= 3; $i++)
-        @component('partials.icon', [
-          'number' => $i
-          ])@endcomponent
-        @endfor
-    </div>
-  </section>
-
-  {{-- WOMEN IN THE NEWS/HAPPENING NOW --}}
-
-  <section id="happening-now">
-    <h2 class="section-heading">
-      Women in the News
-    </h2>
-    @component('partials.post-group', [
-      'posts_per_page' => 3,
-      'cat' => ['73'],
-      'format' => 'vertical',
-      'featured_post' => false,
-      'pinned_post' => null
-    ])@endcomponent
-    @component('partials.btn-link', [
-      'url' => get_page_link( get_post( 32841 ) ),
-    ])
-      More News
-    @endcomponent
-  </section>
-
-  {{-- BANNERS --}}
-
-  <section id="banners">
-    @for ($i = 3; $i <= 4; $i++)
-      @component('partials.banner', [
-        'number' => $i
-      ])@endcomponent
-    @endfor
-  </section>
 
 @endsection

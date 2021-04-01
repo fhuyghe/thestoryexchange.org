@@ -112,3 +112,18 @@ add_filter('sage/display_sidebar', function ($display) {
 
     return $display;
 });
+
+//  Featured Category data
+add_filter('sage/blocks/featured-category/data', function ($block) { 
+
+    $query_args=array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => 4,
+        'cat' => get_field('featured_category')->ID
+      );
+    $block['articles'] = get_posts($query_args);
+    $block['cat'] = get_field('featured_category');
+
+    return $block;
+ });

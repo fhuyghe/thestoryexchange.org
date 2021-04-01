@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a8faecfda40a18ec4314be0f9dd54d2",
+    "content-hash": "c3e1ad8bcf3573b74ba0223690a5f2b9",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -682,6 +682,51 @@
                 }
             ],
             "time": "2020-04-07T20:44:10+00:00"
+        },
+        {
+            "name": "mwdelaney/sage-acf-gutenberg-blocks",
+            "version": "0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MWDelaney/sage-acf-wp-blocks.git",
+                "reference": "795527e63b45c8426741a074270355953b28ce37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/795527e63b45c8426741a074270355953b28ce37",
+                "reference": "795527e63b45c8426741a074270355953b28ce37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "sage-acf-gutenberg-blocks.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael W. Delaney",
+                    "email": "michael@michaeldelaney.me"
+                },
+                {
+                    "name": "Nico Prat"
+                }
+            ],
+            "description": "Create Gutenberg blocks from Sage blade templates and ACF fields.",
+            "homepage": "https://github.com/MWDelaney/sage-acf-gutenberg-blocks",
+            "keywords": [
+                "advanced custom fields",
+                "gutenberg",
+                "wordpress"
+            ],
+            "time": "2021-01-13T21:07:25+00:00"
         },
         {
             "name": "nesbot/carbon",

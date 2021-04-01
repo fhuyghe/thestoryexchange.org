@@ -10,6 +10,10 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+$hamburger-padding-x: 5px;
+$hamburger-padding-y: 5px;
+$hamburger-types     : (squeeze);
+@import "~hamburgers/dist/hamburgers.min.css";
 
 /** Import theme styles */
 @import "common/global";

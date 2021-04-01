@@ -76,8 +76,6 @@ header{
     @extend .row;
 
     .main {
-      @extend .col-lg-8;
-
       .section-heading {
         margin-bottom: 10px;
       }
@@ -195,4 +193,10 @@ header{
   .btn {
     margin-top: auto;
   }
+}
+
+// Blocks
+section.featured-category{
+  border-top: 2px solid theme-color(blue);
+  padding: $grid-gutter 0;
 }

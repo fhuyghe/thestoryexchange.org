@@ -305,3 +305,46 @@ Stack trace:
 [31-Mar-2021 15:00:02 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
 [31-Mar-2021 15:15:03 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
 [31-Mar-2021 15:30:03 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SubHeading has a deprecated constructor in /srv/www/thestoryexchange.org/current/web/app/plugins/subheading/subheading.php on line 13
+[31-Mar-2021 20:00:04 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Unrecognized extension in file:  in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/view/Factory.php:281
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/view/Factory.php(250): Illuminate\View\Factory->getEngineFromPath()
+#1 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/view/Factory.php(112): Illuminate\View\Factory->viewInstance()
+#2 [internal function]: Illuminate\View\Factory->file()
+#3 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/roots/sage-lib/Template/Blade.php(138): call_user_func_array()
+#4 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/roots/sage-lib/Template/Blade.php(69): Roots\Sage\Template\Blade->__call()
+#5 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/app/helpers.php(66): Roots\Sage\Template\Blade->compiledPath()
+#6 / in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/view/Factory.php on line 281
+[31-Mar-2021 20:45:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\FeaturedCategory does not exist in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php:121
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php(121): ReflectionClass->__construct()
+#1 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php(49): Sober\Controller\Loader->setClassesAlias()
+#2 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/controller.php(41): Sober\Controller\Loader->__construct()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): Sober\Controller\loader()
+#4 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#5 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#6 /s in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php on line 121
+[31-Mar-2021 21:00:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\FeaturedCategory does not exist in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php:121
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php(121): ReflectionClass->__construct()
+#1 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php(49): Sober\Controller\Loader->setClassesAlias()
+#2 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/controller.php(41): Sober\Controller\Loader->__construct()
+#3 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(287): Sober\Controller\loader()
+#4 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#5 /srv/www/thestoryexchange.org/current/web/wp/wp-includes/plugin.php(478): WP_Hook->do_action()
+#6 /s in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/soberwp/controller/src/Loader.php on line 121
+[31-Mar-2021 21:15:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class sage.blade does not exist in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php:767
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(767): ReflectionClass->__construct()
+#1 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(646): Illuminate\Container\Container->build()
+#2 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(601): Illuminate\Container\Container->resolve()
+#3 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(589): Illuminate\Container\Container->make()
+#4 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/app/helpers.php(23): Illuminate\Container\Container->makeWith()
+#5 /srv/www/thestoryexchange.org/ in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php on line 767
+[31-Mar-2021 21:30:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class sage.blade does not exist in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php:767
+Stack trace:
+#0 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(767): ReflectionClass->__construct()
+#1 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(646): Illuminate\Container\Container->build()
+#2 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(601): Illuminate\Container\Container->resolve()
+#3 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(589): Illuminate\Container\Container->make()
+#4 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/app/helpers.php(23): Illuminate\Container\Container->makeWith()
+#5 /srv/www/thestoryexchange.org/ in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php on line 767

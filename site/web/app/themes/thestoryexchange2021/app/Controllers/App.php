@@ -11,7 +11,7 @@ class App extends Controller
     use Partials\Banner;
     use Partials\SocialIcons;
 
-    public function siteName()
+    public static function siteName()
     {
         return get_bloginfo('name');
     }
