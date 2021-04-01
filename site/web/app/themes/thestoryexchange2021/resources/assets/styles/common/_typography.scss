@@ -30,12 +30,16 @@ h2{
 }
 
 h3{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0.1em auto .5em;
+    line-height: 1.3em;
+    letter-spacing: .05em;
 }
 
 h4{
-    margin: .5em auto;
+    font-family: 'Graphik', sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
 }
 
 h5{

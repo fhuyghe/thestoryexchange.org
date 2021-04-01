@@ -15,7 +15,7 @@
 
     <div class="brand">
       <a class="header-icon" href="{{ home_url('/') }}">
-        <img src="@asset('images/TSE-logo-160.png')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
+        <img src="@asset('images/TSE_MASTERLOGO.svg')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
       </a>
     </div>
 
@@ -26,7 +26,8 @@
         @endif
       </nav>
       <div class="search">
-        <?php get_search_form(); ?>
+        <i class="far fa-search"></i>
+        <?php //get_search_form(); ?>
       </div>
   </div>
 </div>

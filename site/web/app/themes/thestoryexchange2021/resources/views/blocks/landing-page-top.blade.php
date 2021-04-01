@@ -44,6 +44,7 @@
     ])@endcomponent
     </div>
     <div class="col-md-3">
+      <h4>The Latest</h4>
       @component('partials.post-group', [
       'posts_per_page' => 5,
       'offset' => 3,
