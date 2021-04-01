@@ -36,7 +36,7 @@
 
     .slick-arrow{
         z-index: 99;
-        color: theme-color(blue);
+        color: theme-color(darkblue);
         font-size: 25px;
         transition: .25s;
         height: 30px;
@@ -47,7 +47,7 @@
         }
          
         &:focus{
-            color: theme-color(blue);
+            color: theme-color(darkblue);
         }
 
         &:before{

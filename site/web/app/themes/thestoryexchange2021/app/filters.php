@@ -127,3 +127,11 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
 
     return $block;
  });
+
+ //  Featured Video data
+add_filter('sage/blocks/featured-video/data', function ($block) { 
+
+    $block['featured_video'] = get_field('featured_video');
+
+    return $block;
+ });

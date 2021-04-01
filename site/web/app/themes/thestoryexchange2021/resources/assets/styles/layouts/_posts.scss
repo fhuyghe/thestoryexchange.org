@@ -39,7 +39,7 @@
                 padding: 0 0;
                 
                 &:first-child{
-                    color: theme-color(blue);
+                    color: theme-color(darkblue);
                     font-size: 1.5em;
                     font-weight: 300;
                     margin-bottom: 10px;
@@ -216,32 +216,6 @@
                     }
                 }
             }
-
-            // #mc_embed_signup_scroll{
-            //     display: flex;
-            //     max-width: 600px;
-            //     margin: $grid-gutter / 2 auto 0;
-
-            //     input.email,
-            //     input.button{
-            //         margin: 0;
-            //         border-radius: 0;
-            //         border: 0;
-            //         height: 40px;
-            //         padding: 0 20px;
-            //     }
-
-            //     input.email{
-            //         flex: 1;
-            //     }
-
-            //     input.button{
-            //         background: theme-color(blue);
-            //         color: theme-color(white);
-            //         text-transform: uppercase;
-            //         width: auto;
-            //     }
-            // }
         }
     }
 }

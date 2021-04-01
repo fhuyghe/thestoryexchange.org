@@ -3,6 +3,7 @@ article.post-item{
     .entry-thumbnail{
         position: relative;
         margin-bottom: $grid-gutter / 2;
+        border-bottom: 5px solid theme-color(yellow);
 
         .tags{
             position: absolute;
@@ -24,7 +25,7 @@ article.post-item{
         height: 0;
         padding-top: 60%;
         position: relative;
-        background-color: theme-color(blue);
+        background-color: theme-color(lightgrey);
 
         &:hover{
             img{

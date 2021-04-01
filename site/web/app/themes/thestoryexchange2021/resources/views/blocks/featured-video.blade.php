@@ -1,5 +1,5 @@
 {{--
-  Title: Featured Category
+  Title: Featured Video
   Category: formatting
   Icon: admin-comments
   Keywords: testimonial quote
@@ -19,17 +19,14 @@ $format = null;
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
   <div class="section-title">
-    <h2>{{ $block['cat']->name }}</h2>
+    <h2>Video</h2>
   </div>
   
-  @if($block['articles'])
-  <div class="row">
-    @foreach ($block['articles'] as $post) @php setup_postdata($post) @endphp
-      <div class="col-md-3">
-        @include('partials.post-item')
-      </div>
-      @php wp_reset_postdata() @endphp
-      @endforeach
+    @if($block['featured_video'])
+    <div class="row">
+      @php setup_postdata($block['featured_video']); @endphp
+          @include('partials.post-item')
+        @php wp_reset_postdata() @endphp
     </div>
-  @endif
+    @endif
   </div>

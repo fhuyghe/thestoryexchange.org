@@ -108,10 +108,8 @@
         }
 
         p {
-          margin: 0;
-          max-width: none;
-          font-size: 1.1em;
-          letter-spacing: 1.2;
+          font-size: 1em;
+          line-height: 1.3em;
         }
 
         .entry-thumbnail{
@@ -124,13 +122,11 @@
           }
         }
 
-        .entry-text {
-          padding: 20px;
-          background-color: theme-color(darkblue);
-          color: theme-color(white);
+        .entry-text{
+          padding-top: 20px;
 
-          &:hover {
-            background-color: lighten(theme-color(darkblue), 2);
+          h3{
+            font-size: 1.5em;
           }
         }
       }

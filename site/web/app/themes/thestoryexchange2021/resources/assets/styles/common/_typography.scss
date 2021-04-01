@@ -17,12 +17,12 @@ h1{
 }
 
 h2{
-    margin: 0 auto .5em;
+    margin: 0 auto 1em;
 
     &.blue-title{
         display: inline-block;
         padding: 5px 10px;
-        background: theme-color(blue);
+        background: theme-color(darkblue);
         color: theme-color(white);
         font-size: 1.5em;
         margin-bottom: 25px;
@@ -38,6 +38,8 @@ h3{
 
 h4{
     font-family: 'Graphik', sans-serif;
+    padding: 0;
+    margin-bottom: $grid-gutter / 2;
     font-size: .8em;
     text-transform: uppercase;
 }
@@ -47,7 +49,7 @@ h5{
 }
 
 a{
-    color: theme-color(darkblue);
+    color: inherit;
     
     &:hover{
         text-decoration: none;
@@ -80,7 +82,7 @@ a{
 
             &:hover{
                 color: theme-color(white);
-                background: theme-color(blue);
+                background: theme-color(darkblue);
             }
         }
 
@@ -127,3 +129,40 @@ ol{
         }
     }
 }
+
+@font-face {
+    font-family: 'Cardinal Photo';
+    src: url('../fonts/cardinalphotoweb-medium.woff') format('woff'),  
+    url('../fonts/cardinalphotoweb-medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Corda Light';
+    src: url('../fonts/CordaLight/font.woff') format('woff'),  
+    url('../fonts/CordaLight/font.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Corda Light';
+    src: url('../fonts/CordaLightItalic/font.woff') format('woff'),  
+    url('../fonts/CordaLightItalic/font.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),  
+    url('../fonts/Graphik-Medium.woff') format('woff'), 
+    url('../fonts/Graphik-Medium.ttf')  format('truetype'), 
+    url('../fonts/Graphik-Medium.svg#Graphik-Regular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+  }

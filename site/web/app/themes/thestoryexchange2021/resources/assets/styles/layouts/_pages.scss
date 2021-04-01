@@ -78,8 +78,8 @@ header{
     @extend .row;
 
     .main {
-      .section-heading {
-        margin-bottom: 10px;
+      .wp-block{
+        float: none;
       }
     }
 
@@ -198,13 +198,74 @@ header{
 }
 
 // Blocks
-section.featured-category{
-  border-top: 2px solid theme-color(blue);
+.section-title{
+  border-top: 1px solid theme-color(darkblue);
+  padding-top: $grid-gutter / 2;
+
+  h2{
+    color: theme-color(darkblue);
+  }
+}
+
+.featured-category{
   padding: $grid-gutter 0;
 }
 
-section.landing-page-top{
+.landing-page-top{
+  .left-column{
+    padding-right: $grid-gutter;
+
+    .podcast{
+      border-top: 1px solid theme-color(green);
+
+      h2{
+        color: theme-color(green);
+      }
+
+      .post-item{
+        .post-wrap{
+          flex-flow: row-reverse;
+          align-items: center;
+
+          .entry-text{
+            padding-left: 100px;
+            padding-right: $grid-gutter / 2
+          }
+
+          .entry-thumbnail{
+            border-bottom: 0;
+
+            .thumbnail{
+              padding-top: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .latest-posts{
+    padding-left: $grid-gutter;
+
+    .post-item{
+      .post-wrap{
+        border-bottom: 1px solid theme-color(grey);
+        padding-bottom: $grid-gutter / 2;
+      }
+    }
+  }
+
   .post-group.format-vertical{
     flex-flow: column;
+  }
+}
+
+.featured-video{
+  .section-title{
+    border-top-color: theme-color(red);
+  }
+
+  h2{
+    color: theme-color(red);
   }
 }

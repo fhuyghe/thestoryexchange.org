@@ -13,9 +13,9 @@
 
 @php global $post @endphp
 
-<section id="{{ $block['id'] }}" class="{{ $block['classes'] }}">
+<div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 left-column">
       <div class="post-group format-featured">
       
         @php $featured = get_field('featured_post') ?: null @endphp
@@ -30,7 +30,23 @@
           'post_object' => $featured
         ])@endcomponent
       </div>
+
+      {{-- PODCAST --}}
+      <div class="podcast">
+        <h2>Podcast</h2>
+        @component('partials.post-group', [
+        'posts_per_page' => 1,
+        'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
+        'additional_args' => [
+          'post__not_in' => array($featuredID)
+        ],
+        'format' => 'horizontal',
+        'post_classes' => 'col-12',
+        'featured_post' => false
+      ])@endcomponent
+      </div>
     </div>
+
     <div class="col-md-3">
       @component('partials.post-group', [
       'posts_per_page' => 3,
@@ -43,7 +59,8 @@
       'featured_post' => false
     ])@endcomponent
     </div>
-    <div class="col-md-3">
+
+    <div class="col-md-3 latest-posts">
       <h4>The Latest</h4>
       @component('partials.post-group', [
       'posts_per_page' => 5,
@@ -53,9 +70,9 @@
         'post__not_in' => array($featuredID)
       ],
       'format' => 'minimal',
-      'post_classes' => '',
+      'post_classes' => 'col-12',
       'featured_post' => false
     ])@endcomponent
     </div>
   </div>
-</section>
+</div>
