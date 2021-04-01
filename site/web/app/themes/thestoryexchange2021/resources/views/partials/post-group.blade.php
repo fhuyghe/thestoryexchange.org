@@ -14,7 +14,7 @@
             @if( $format == 'podcast' )
                 @include('partials/post-podcast')
             @else
-              @include('partials/post-item')
+              @include('partials/post-item') 
             @endif
             @php wp_reset_postdata() @endphp
         @endwhile

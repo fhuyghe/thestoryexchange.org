@@ -58,6 +58,8 @@ header{
         margin-bottom: $grid-gutter;
     }
 }
+
+// Landing Page
 .home{
   .container {
     //width: 100%;
@@ -199,4 +201,10 @@ header{
 section.featured-category{
   border-top: 2px solid theme-color(blue);
   padding: $grid-gutter 0;
+}
+
+section.landing-page-top{
+  .post-group.format-vertical{
+    flex-flow: column;
+  }
 }

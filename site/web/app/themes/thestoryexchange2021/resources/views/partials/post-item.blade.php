@@ -1,6 +1,6 @@
-<article id="post-{!! the_ID() !!}" {!! post_class('post-item') !!}>
+<article id="post-{!! the_ID() !!}" {!! post_class('post-item ' . $post_classes) !!}>
   <div class="post-wrap">
-    @if ( has_post_thumbnail() )
+    @if ( has_post_thumbnail() && $format !== 'minimal' )
       <div class="entry-thumbnail">
           @include('partials/post-tags')
           @include('partials/post-thumbnail')

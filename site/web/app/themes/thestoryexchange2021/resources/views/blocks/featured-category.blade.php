@@ -4,13 +4,18 @@
   Icon: admin-comments
   Keywords: testimonial quote
   Mode: edit
-  Align: left
+  Align: wide
   PostTypes: page post
+  SupportsAlign: false
   SupportsMode: false
   SupportsMultiple: true
 --}}
 
-@php global $post @endphp
+@php 
+global $post;
+$post_classes = null;
+$format = null;
+@endphp
 
 <section id="{{ $block['id'] }}" class="{{ $block['classes'] }}">
   <h2>{{ $block['cat']->name }}</h2>

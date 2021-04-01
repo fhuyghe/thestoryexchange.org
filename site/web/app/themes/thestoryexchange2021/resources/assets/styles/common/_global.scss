@@ -1,24 +1,26 @@
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.ttf')  format('truetype'), url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
-    font-weight: bold;
+    font-family: 'Cardinal Photo';
+    src: url('../fonts/cardinalphotoweb-medium.woff') format('woff'),  
+    url('../fonts/cardinalphotoweb-medium.woff2') format('woff2');
+    font-weight: medium;
     font-style: normal;
     font-display: swap;
   }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf')  format('truetype'), url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
-    font-weight: normal;
+  @font-face {
+    font-family: 'Corda Light';
+    src: url('../fonts/CordaLight/font.woff') format('woff'),  
+    url('../fonts/CordaLight/font.woff2') format('woff2');
+    font-weight: light;
     font-style: normal;
     font-display: swap;
   }
 
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/Lato-Italic.woff') format('woff'), url('../fonts/Lato-Italic.ttf')  format('truetype'), url('../fonts/Lato-Italic.svg#Lato-Italic') format('svg');
-    font-weight: normal;
+  @font-face {
+    font-family: 'Corda Light';
+    src: url('../fonts/CordaLightItalic/font.woff') format('woff'),  
+    url('../fonts/CordaLightItalic/font.woff2') format('woff2');
+    font-weight: light;
     font-style: italic;
     font-display: swap;
   }
