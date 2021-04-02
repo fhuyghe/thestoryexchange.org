@@ -1,4 +1,4 @@
-<div class="post-group row format-{{ $format }} @if($featured_post)feature-first @endif">
+  <div class="post-group row format-{{ $format }} @if($featured_post)feature-first @endif">
     @php
       $args=App::group_query_params(
         array(

@@ -13,7 +13,9 @@
             'cat' => array(73, -219, -667), 
             'format' => 'vertical', 
             'featured_post' => true,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
         ])@endcomponent
         <a class="btn" href="{{ home_url() }}/category/happening-now/">More News & Analysis</a>
     </section>
@@ -66,7 +68,9 @@
             'cat' => array(667),
             'format' => 'vertical', 
             'featured_post' => true,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
         ])@endcomponent
         <a class="btn" href="{{ home_url() }}/category/5-crowdfunders-to-watch/">Previous Columns</a>
     </section>
@@ -83,7 +87,9 @@
             'cat' => array(219),
             'format' => 'vertical', 
             'featured_post' => true,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
         ])@endcomponent
         <a class="btn" href="{{ home_url() }}/the-independent-life/">More Stories</a>
     </section>

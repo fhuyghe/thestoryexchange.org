@@ -15,7 +15,9 @@ Template Name: Entrepreneur Stories
                 'cat' => array(74), 
                 'format' => 'vertical', 
                 'featured_post' => false,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
             ])@endcomponent
         </div>
         <a class="btn" href="{{ home_url() }}/category/role-models/">More Recent Stories</a>
@@ -38,7 +40,9 @@ Template Name: Entrepreneur Stories
                     'cat' => array(218),
                     'format' => 'vertical', 
                     'featured_post' => false,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
                 ])@endcomponent
             <a class="btn" href="{{ home_url() }}/businesses-doing-good/">More Stories</a>
         </section>
@@ -60,7 +64,9 @@ Template Name: Entrepreneur Stories
                 'cat' => array(107),
                 'format' => 'vertical', 
                 'featured_post' => false,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
             ])@endcomponent
             <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/immigrant-entrepreneurs/">More Immigrant Stories</a>
         </section>
@@ -85,7 +91,9 @@ Template Name: Entrepreneur Stories
                     'posts_per_page' => 1,
                     'cat' => array(142),
                     'featured_post' => false,
-                    'pinned_post' => null
+                    'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
                 ])@endcomponent
                 <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/women-of-color/">More WOC Stories</a>
             </div>
@@ -106,7 +114,9 @@ Template Name: Entrepreneur Stories
                 'posts_per_page' => 1,
                 'cat' => array(146),
                 'featured_post' => false,
-                'pinned_post' => null
+                'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
             ])@endcomponent
             
             <a class="btn" href="{{ home_url() }}/category/focus-points/all-in/lgbt-in-biz/">More LGBT+ Stories</a>

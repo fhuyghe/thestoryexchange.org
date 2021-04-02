@@ -43,7 +43,9 @@
                 'post__not_in' => array($pinnedPost->ID)
             ],
             'format' => 'vertical', 
-            'featured_post' => $featured
+            'featured_post' => $featured,
+            'showExcerpt' => false,
+            'post_classes' => null
         ])@endcomponent
         {{-- <a class="btn" href="{{ get_category_link($main_cat) }}">More Stories</a> --}}
     </section>
@@ -57,7 +59,9 @@
             'posts_per_page' => 3,
             'cat' => array($extraCat, '-' . $main_cat),
             'format' => 'vertical', 
-            'featured_post' => false
+            'featured_post' => false,
+            'showExcerpt' => false,
+            'post_classes' => null
         ])@endcomponent   
         <a class="btn" href="{{ get_category_link($extraCat) }}">More Stories</a>
     </section>

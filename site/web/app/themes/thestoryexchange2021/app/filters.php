@@ -135,3 +135,12 @@ add_filter('sage/blocks/featured-video/data', function ($block) {
 
     return $block;
  });
+
+  //  Newsletter Subscribe
+add_filter('sage/blocks/newsletter-subscribe/data', function ($block) { 
+
+    $block['title'] = get_field('title');
+    $block['text'] = get_field('text');
+
+    return $block;
+ });

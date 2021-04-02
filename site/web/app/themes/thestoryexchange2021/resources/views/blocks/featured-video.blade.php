@@ -12,19 +12,22 @@
 --}}
 
 @php 
-global $post;
-$post_classes = null;
-$format = null;
+  global $post;
+  $post_classes = null;
+  $format = null;
+  $showExcerpt = true;
 @endphp
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
   <div class="section-title">
     <h2>Video</h2>
   </div>
-  
+
     @if($block['featured_video'])
     <div class="row">
-      @php setup_postdata($block['featured_video']); @endphp
+      @php $post = $block['featured_video'] @endphp
+      @php setup_postdata($post); @endphp
+      @php $format = 'horizontal' @endphp
           @include('partials.post-item')
         @php wp_reset_postdata() @endphp
     </div>

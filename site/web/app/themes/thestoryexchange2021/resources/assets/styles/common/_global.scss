@@ -1,5 +1,9 @@
 //Layout
-
+.container{
+    @include media-breakpoint-up(xl){
+        max-width: 1500px;
+    }
+}
 
 section{
     margin-bottom: $grid-gutter * 2;

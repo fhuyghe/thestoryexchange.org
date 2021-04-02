@@ -15,6 +15,7 @@
 global $post;
 $post_classes = null;
 $format = null;
+$showExcerpt = false;
 @endphp
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">

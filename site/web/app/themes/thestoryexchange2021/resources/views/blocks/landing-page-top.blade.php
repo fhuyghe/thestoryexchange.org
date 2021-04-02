@@ -33,7 +33,9 @@
 
       {{-- PODCAST --}}
       <div class="podcast">
-        <h2>Podcast</h2>
+        <div class="section-title">
+          <h2>Podcast</h2>
+        </div>
         @component('partials.post-group', [
         'posts_per_page' => 1,
         'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
@@ -42,7 +44,8 @@
         ],
         'format' => 'horizontal',
         'post_classes' => 'col-12',
-        'featured_post' => false
+        'featured_post' => false,
+            'showExcerpt' => false
       ])@endcomponent
       </div>
     </div>
@@ -56,7 +59,8 @@
       ],
       'format' => 'vertical',
       'post_classes' => '',
-      'featured_post' => false
+      'featured_post' => false,
+      'showExcerpt' => false
     ])@endcomponent
     </div>
 
@@ -71,7 +75,8 @@
       ],
       'format' => 'minimal',
       'post_classes' => 'col-12',
-      'featured_post' => false
+      'featured_post' => false,
+      'showExcerpt' => false
     ])@endcomponent
     </div>
   </div>

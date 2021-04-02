@@ -37,7 +37,9 @@
           'cat' => array(147), 
           'format' => 'podcast',
           'featured_post' => false,
-            'pinned_post' => null
+            'pinned_post' => null,
+            'showExcerpt' => false,
+            'post_classes' => null
       ])@endcomponent
     </section>  
   </div>

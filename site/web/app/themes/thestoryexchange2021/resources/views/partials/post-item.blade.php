@@ -12,9 +12,11 @@
             {!! the_title() !!}
           </a>
         </h3>
-        {{-- <div class="entry-content excerpt">
-          {!! the_excerpt() !!}
-        </div> --}}
+        @if($showExcerpt)
+          <div class="entry-content excerpt">
+            {!! the_excerpt() !!}
+          </div>
+        @endif
     </div>
   </div>
 </article>
