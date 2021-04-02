@@ -1,4 +1,6 @@
 <div class="social-icons">
+  <h4>Follow</h4>
+  <div class="wrap">
   @foreach (App::fetch_social_icons_object() as $name => $icon)
     <a
       href="{!! $icon['url'] !!}"
@@ -9,4 +11,5 @@
       <i class="fab fa-{!! $icon['icon_class'] !!} "></i>
     </a>
   @endforeach
+  </div>
 </div>

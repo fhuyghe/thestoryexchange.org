@@ -1,8 +1,37 @@
 footer.content-info{
     background-color: theme-color(yellow);
-    padding: 1em 0;
-    font-size: .7em;
+    padding: $grid-gutter 0 $grid-gutter / 2;
     text-transform: uppercase;
+
+    .footer-main{
+        display: flex;
+        align-items: center;
+        padding-bottom: $grid-gutter / 2;
+        margin-bottom: $grid-gutter / 2;
+        border-bottom: 1px solid theme-color(grey);
+
+        .logo{
+            img{
+                width: 100px;
+            }
+        }
+
+        .menu{
+            flex: 1;
+
+            .nav{
+                justify-content: center;
+
+                a{
+                    margin: 0 $grid-gutter;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        font-size: .7em;
+    }
     
     .row{
         justify-content: center;

@@ -2,7 +2,7 @@
 .container{
     @include media-breakpoint-up(xl){
         max-width: 1500px;
-        padding: 0 $grid-gutter;
+        padding: 0 $grid-gutter * 2;
     }
 }
 

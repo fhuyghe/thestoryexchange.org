@@ -130,6 +130,16 @@ ol{
     }
 }
 
+//Menu items
+.nav{
+    a{
+        font-family: 'Graphik', sans-serif;
+        text-transform: uppercase;
+        color: theme-color(black);
+        font-size: .8em;
+      }
+}
+
 @font-face {
     font-family: 'Cardinal Photo';
     src: url('../fonts/cardinalphotoweb-medium.woff') format('woff'),  

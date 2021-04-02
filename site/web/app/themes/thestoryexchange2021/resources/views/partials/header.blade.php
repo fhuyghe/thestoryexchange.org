@@ -1,5 +1,6 @@
 <header class="site-header">
   <div class="container">
+    <div class="row">
     <div class="top-left">
       <button class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
@@ -30,6 +31,7 @@
         <?php //get_search_form(); ?>
       </div>
   </div>
+</div>
 </div>
 {{-- Full menu accessible with hamburger --}}
   <div id="fullMenu">
