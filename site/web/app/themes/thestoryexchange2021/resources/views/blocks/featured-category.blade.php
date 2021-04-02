@@ -33,4 +33,4 @@ $showExcerpt = false;
       @endforeach
     </div>
   @endif
-  </div>
+</div>

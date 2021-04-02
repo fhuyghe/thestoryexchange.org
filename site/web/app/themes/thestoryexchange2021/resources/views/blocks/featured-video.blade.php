@@ -23,13 +23,13 @@
     <h2>Video</h2>
   </div>
 
-    @if($block['featured_video'])
-    <div class="row">
-      @php $post = $block['featured_video'] @endphp
-      @php setup_postdata($post); @endphp
-      @php $format = 'horizontal' @endphp
-          @include('partials.post-item')
-        @php wp_reset_postdata() @endphp
-    </div>
-    @endif
+  @if($block['featured_video'])
+  <div class="row">
+    @php $post = $block['featured_video'] @endphp
+    @php setup_postdata($post); @endphp
+    @php $format = 'horizontal' @endphp
+        @include('partials.post-item')
+      @php wp_reset_postdata() @endphp
   </div>
+  @endif
+</div>

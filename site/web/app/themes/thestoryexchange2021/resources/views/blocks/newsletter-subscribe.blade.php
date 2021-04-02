@@ -15,4 +15,4 @@
     <h2>{{ $block['title'] }}</h2>
     {!! $block['text'] !!}
     Newsletter Form
-  </div>
+</div>

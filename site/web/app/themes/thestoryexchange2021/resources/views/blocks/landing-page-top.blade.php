@@ -11,7 +11,7 @@
   SupportsMultiple: true
 --}}
 
-@php global $post
+@php global $post;
     $post_classes = ''; 
     $format = '';
 @endphp

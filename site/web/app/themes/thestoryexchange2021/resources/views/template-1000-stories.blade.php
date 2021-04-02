@@ -5,13 +5,13 @@ Template Name: 1000 Stories
 @extends('layouts.app')
 
 @php 
+global $post;
 $post_classes = null;
 $format = null;
 $showExcerpt = false;
 @endphp
 
 @section('content')
-@php global $post @endphp
 @while(have_posts()) @php the_post() @endphp
         <section class="page-header">
                 <h1>{!! the_title() !!}</h1>
