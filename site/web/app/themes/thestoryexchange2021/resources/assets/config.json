@@ -9,7 +9,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/thestoryexchange2019",
+  "publicPath": "/app/themes/thestoryexchange2021",
   "devUrl": "https://thestoryexchange.test",
   "proxyUrl": "https://localhost:3005",
   "cacheBusting": "[name]_[hash:8]",
