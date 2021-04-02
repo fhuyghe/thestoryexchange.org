@@ -2,6 +2,13 @@
 
 @section('content')
 
+
+@php 
+$post_classes = null;
+$format = null;
+$showExcerpt = false;
+@endphp
+
 <?php 
 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 ?>

@@ -4,6 +4,12 @@ Template Name: 1000 Stories
 
 @extends('layouts.app')
 
+@php 
+$post_classes = null;
+$format = null;
+$showExcerpt = false;
+@endphp
+
 @section('content')
 @php global $post @endphp
 @while(have_posts()) @php the_post() @endphp
@@ -27,7 +33,7 @@ Template Name: 1000 Stories
             @while ( have_rows('findings') ) 
                 @php the_row(); $post_object = get_sub_field('post');@endphp
                 @if( $post_object )
-                    @php $post = $post_object; setup_postdata( $post ); @endphp
+                    @php $post = $post_object; setup_postdata( $post ); @endphp 
                     @include('partials.post-item')
                     @php wp_reset_postdata() @endphp
                 @endif

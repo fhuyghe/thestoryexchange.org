@@ -11,13 +11,16 @@
   <section class="posts">
     <div class="post-group row format-vertical">
       @while(have_posts()) @php the_post() @endphp
+      @php 
+          $post_classes = 'col-md-3'; 
+          $format = '';
+          $showExcerpt = false;
+      @endphp
         @include('partials.post-item')
       @endwhile
-
-      <div class="page-number">
-        @php echo paginate_links() @endphp
-      </div>
-
+    </div>
+    <div class="page-number">
+      @php echo paginate_links() @endphp
     </div>
   </section>
 

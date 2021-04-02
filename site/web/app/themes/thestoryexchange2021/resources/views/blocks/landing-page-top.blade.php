@@ -11,7 +11,10 @@
   SupportsMultiple: true
 --}}
 
-@php global $post @endphp
+@php global $post
+    $post_classes = ''; 
+    $format = '';
+@endphp
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
   <div class="row">

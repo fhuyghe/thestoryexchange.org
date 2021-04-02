@@ -18,6 +18,8 @@
         global $post;
         $pinnedPost = get_field('pinned_post');
         $post = $pinnedPost;
+        $post_classes = 'col-md-3';
+        $showExcerpt = false;
          @endphp
         @if($post)
             @php setup_postdata( $post ) @endphp
