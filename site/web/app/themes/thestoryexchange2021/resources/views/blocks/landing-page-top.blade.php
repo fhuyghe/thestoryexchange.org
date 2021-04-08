@@ -56,7 +56,6 @@
     <div class="col-md-3">
       @component('partials.post-group', [
       'posts_per_page' => 3,
-      'cat' => '41, 187, 35', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
       'additional_args' => [
         'post__not_in' => array($featuredID)
       ],
@@ -71,9 +70,8 @@
       <h4>The Latest</h4>
       @component('partials.post-group', [
       'posts_per_page' => 5,
-      'offset' => 3,
-      'cat' => '41, 187, 35', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
       'additional_args' => [
+        'offset' => 3,
         'post__not_in' => array($featuredID)
       ],
       'format' => 'minimal',

@@ -1,22 +1,15 @@
+.page{
+  .wrap.container{
+    max-width: $content-width;
+  }
+}
+
 .page-template-default:not(.home),
 .page-template-page-about{
     .content{
         margin-bottom: $grid-gutter * 3;
 
         //Typography
-        .page-header,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        ul,
-        ol{
-            max-width: 800px;
-        }
-
         ul,
         ol{
           margin: 0 auto;
@@ -61,11 +54,8 @@ header{
 
 // Landing Page
 .home{
-  .container {
-    //width: 100%;
-    //max-width: 1500px;
-    //padding: 0;
-    margin: 0 auto;
+  .wrap.container {
+    max-width: 1500px;
 
     section:first-of-type {
       margin-top: 0;

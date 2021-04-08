@@ -1,4 +1,8 @@
 .single{
+    .wrap.container{
+        max-width: $content-width;
+    }
+    
     .content{
         margin:0 auto $grid-gutter * 2;
         
@@ -6,22 +10,6 @@
             margin:50px 0;
         }
         //Typography
-        .page-header,
-        p,
-        h1, 
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .transcript-box,
-        .player_container,
-        .wp-block-embed-youtube,
-        ul,
-        ol,
-        section.video{
-            max-width: 800px;
-        }
 
         .transcript-box{
             margin: 0 auto;
@@ -32,7 +20,6 @@
         }
 
         blockquote{
-            max-width: 800px;
             margin: $grid-gutter auto;
 
             p{

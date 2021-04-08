@@ -3,8 +3,8 @@
       $args=App::group_query_params(
         array(
           'posts_per_page' => $posts_per_page,
-          'cat' => $cat
         ),
+        isset($cat) ? array('cat' => $cat) : [],
         isset($additional_args) ? $additional_args : []
       );
       $my_query = new WP_Query( $args );
