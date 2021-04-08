@@ -14,5 +14,5 @@
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
     <h2>{{ $block['title'] }}</h2>
     {!! $block['text'] !!}
-    Newsletter Form
+    @include('partials.mailchimp-form')
 </div>

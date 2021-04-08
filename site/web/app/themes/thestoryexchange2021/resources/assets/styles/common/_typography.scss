@@ -1,4 +1,6 @@
 //Typography
+$graphik: 'Graphik', sans-serif;
+
 body{
     font-family: 'Corda Light', serif;
 }
@@ -133,7 +135,7 @@ ol{
 //Menu items
 .nav{
     a{
-        font-family: 'Graphik', sans-serif;
+        font-family: $graphik;
         text-transform: uppercase;
         color: theme-color(black);
         font-size: .8em;

@@ -2,8 +2,10 @@
   <div class="post-wrap">
     @if ( has_post_thumbnail() && $format !== 'minimal' )
       <div class="entry-thumbnail">
-          @include('partials/post-tags')
           @include('partials/post-thumbnail')
+          @if(in_category('entrepreneur-videos'))
+          @include('partials.icon-play')
+          @endif
       </div>
     @endif
     <div class="entry-text">
@@ -18,5 +20,8 @@
           </div>
         @endif
     </div>
+    @if(in_category('podcast'))
+      @include('partials.icon-play')
+    @endif
   </div>
 </article>

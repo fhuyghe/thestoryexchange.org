@@ -3,7 +3,6 @@ article.post-item{
     .entry-thumbnail{
         position: relative;
         margin-bottom: $grid-gutter / 2;
-        border-bottom: 5px solid theme-color(yellow);
 
         .tags{
             position: absolute;
@@ -26,6 +25,7 @@ article.post-item{
         padding-top: 60%;
         position: relative;
         background-color: theme-color(lightgrey);
+        border-bottom: 5px solid theme-color(yellow);
 
         &:hover{
             img{
@@ -42,6 +42,62 @@ article.post-item{
 
         p{
             margin-bottom: 0;
+        }
+    }
+
+    .play{
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid theme-color(black);
+        padding-left: 3px;
+
+        .triangle{
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent; 
+            border-left:15px solid theme-color(black); 
+        }
+    }
+
+    // Categories
+    &.category-entrepreneur-videos{
+        .entry-thumbnail .thumbnail{
+            border-color: theme-color(red);
+        }
+
+        .play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            border-color: theme-color(white);
+            
+            .triangle{
+                border-left-color: theme-color(white);
+            }
+        }
+    }
+    
+    &.category-podcast{
+        .entry-thumbnail .thumbnail{
+            border-color: theme-color(green);
+        }
+    }
+
+    &.category-advice-tips{
+        .entry-thumbnail .thumbnail{
+            border-color: theme-color(darkblue);
+        }
+    }
+    
+    &.category-yse{
+        .entry-thumbnail .thumbnail{
+            border-color: theme-color(pink);
         }
     }
 }
