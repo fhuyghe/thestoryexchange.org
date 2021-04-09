@@ -137,6 +137,14 @@ add_filter('sage/blocks/featured-video/data', function ($block) {
     return $block;
  });
 
+//  Featured Video data
+add_filter('sage/blocks/related-post/data', function ($block) { 
+
+    $block['related_post'] = get_field('related_post');
+
+    return $block;
+ });
+
   //  Newsletter Subscribe
 add_filter('sage/blocks/newsletter-subscribe/data', function ($block) { 
 
