@@ -52,7 +52,14 @@
       .post-item{
         .post-wrap{
           border-bottom: 1px solid theme-color(grey);
-          padding-bottom: $grid-gutter / 2;
+          padding-bottom: $grid-gutter / 2;  
+        }
+
+        &:last-child{
+          .post-wrap{
+            border-bottom: 0;
+            padding-bottom: 0;
+          }
         }
       }
     }

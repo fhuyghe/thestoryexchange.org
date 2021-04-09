@@ -69,7 +69,7 @@
     <div class="col-md-3 latest-posts">
       <h4>The Latest</h4>
       @component('partials.post-group', [
-      'posts_per_page' => 5,
+      'posts_per_page' => 6,
       'additional_args' => [
         'offset' => 3,
         'post__not_in' => array($featuredID)
