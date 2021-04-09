@@ -1,6 +1,4 @@
 //Typography
-$graphik: 'Graphik', sans-serif;
-
 body{
     font-family: 'Corda Light', serif;
 }
@@ -32,7 +30,7 @@ h2{
 }
 
 h3{
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0.1em auto .5em;
     line-height: 1.3em;
     letter-spacing: .05em;
@@ -142,39 +140,3 @@ ol{
       }
 }
 
-@font-face {
-    font-family: 'Cardinal Photo';
-    src: url('../fonts/cardinalphotoweb-medium.woff') format('woff'),  
-    url('../fonts/cardinalphotoweb-medium.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Corda Light';
-    src: url('../fonts/CordaLight/font.woff') format('woff'),  
-    url('../fonts/CordaLight/font.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Corda Light';
-    src: url('../fonts/CordaLightItalic/font.woff') format('woff'),  
-    url('../fonts/CordaLightItalic/font.woff2') format('woff2');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Graphik';
-    src: url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),  
-    url('../fonts/Graphik-Medium.woff') format('woff'), 
-    url('../fonts/Graphik-Medium.ttf')  format('truetype'), 
-    url('../fonts/Graphik-Medium.svg#Graphik-Regular') format('svg');
-    font-weight: 600;
-    font-style: normal;
-  }

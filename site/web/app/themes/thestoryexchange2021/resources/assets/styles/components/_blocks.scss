@@ -8,10 +8,97 @@
     }
   }
   
+  //Featured Categories
   .featured-category{
     padding: $grid-gutter 0;
+
+    &.style-2{
+      .post-group{
+        @extend .row;
+      }
+
+      .left{
+        .post-wrap{
+          flex-flow: row-reverse;
+
+          .entry-thumbnail{
+            @extend .col-md-7;
+          }
+
+          .entry-text{
+            @extend .col-md-5;
+            padding-left: 0;
+          }
+        }
+      }
+      
+      .right{
+        .post-item{
+          padding-bottom: $grid-gutter / 2;
+          border-bottom: 1px solid theme-color(grey);
+
+          &:last-child{
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+        }
+
+        .post-wrap{
+          flex-flow: row-reverse;
+
+          .entry-text{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    
+    &.style-3{
+      .left{
+        border-right: 1px solid theme-color(grey);
+      }
+      
+      .right{
+        padding-left: $grid-gutter;
+
+        .post-group{
+          @extend .row;
+          flex-flow: column;
+          height: 100%;
+        }
+
+        .post-item{
+          flex: 1;
+          
+          .post-wrap{
+            flex-flow: row-reverse;
+
+            .entry-text{
+              @extend .col-md-6;
+              padding-left: 0;
+            }
+
+            .entry-thumbnail{
+              @extend .col-md-6;
+            }
+          }
+
+          &:first-child{
+            padding-bottom: $grid-gutter;
+            border-bottom: 1px solid theme-color(grey);
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
-  
+
+
+  // Landing Page Top
   .landing-page-top{
     .left-column{
       padding-right: $grid-gutter;
@@ -105,26 +192,5 @@
   flex-flow: column;
   justify-content: center;
   padding: $grid-gutter;
-
-  input{
-    border: 0;
-    width: 100%;
-    font-family: $graphik;
-    padding: 10px;
-    border-radius: 0;
-  }
-
-  input[type="submit"]{
-    background-color: theme-color(red);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: .8em;
-    color: theme-color(white);
-    transition: .25s;
-    
-    &:hover{
-      background-color: darken(theme-color(red), 10);
-    }
-  }
 }
   

@@ -26,7 +26,7 @@
   <section class="newsletter-banner">
     <p>{!! the_field('newsletter_banner_title', 'option') !!}</p> 
     <p>{!! the_field('newsletter_banner_text', 'option') !!}</p>
-    @include('partials/newsletter-signup-email')
+    @include('partials/mailchimp-form')
   </section>
 
   <footer>
