@@ -20,7 +20,9 @@ $showExcerpt = true;
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }} style-{{ $block['style'] }}">
   <div class="section-title">
+    <a href="{{ get_category_link($block['cat']) }}">
     <h2>{{ $block['cat']->name }}</h2>
+    </a>
   </div>
   
   @if($block['articles'])

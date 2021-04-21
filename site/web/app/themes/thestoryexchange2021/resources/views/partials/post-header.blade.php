@@ -12,7 +12,7 @@
         <p class="subtitle">{{ $subheading }}</p>
       @else
         @if(function_exists('the_subheading'))
-          <p class="subtitle">{{ the_subheading() }}</p>
+          <p class="subtitle old">{{ print_r(get_the_subheading()) }}</p>
         @endif
       @endif
       @include('partials/entry-meta')

@@ -18,15 +18,16 @@ $format = null;
 $showExcerpt = true;
 @endphp
 
-@if($block['article'])
+@if($block['related_post'])
   <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
     <div class="section-title">
       <h3>Related</h3>
     </div>
-
-    @foreach ($block['article'] as $post) @php setup_postdata($post) @endphp
-        @include('partials.post-item')
-      @php wp_reset_postdata() @endphp
-    @endforeach
+    @php 
+      $post = $block['related_post'];
+      setup_postdata($post) 
+    @endphp
+    @include('partials.post-item')
+    @php wp_reset_postdata() @endphp
   </div>
 @endif
