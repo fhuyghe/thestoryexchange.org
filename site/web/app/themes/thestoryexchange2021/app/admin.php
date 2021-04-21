@@ -41,7 +41,7 @@ add_action('admin_head', function() {
             'media_buttons' => false,
             'quicktags' => false,
         );
-        $description = get_user_meta( $user->ID, 'description', true);
+        $description = isset($user) && get_user_meta( $user->ID, 'description', true);
         wp_editor( $description, 'description', $settings );
     }
 });
