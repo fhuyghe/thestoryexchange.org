@@ -2,7 +2,7 @@
 <div class="author-meta">
     <div class="author_thumbnail">
       @if(function_exists('userphoto_the_author_thumbnail'))
-        {!! userphoto_the_author_thumbnail($post_author) !!}
+        {!! userphoto_the_author_thumbnail($post->post_author) !!}
       @endif
     </div>
     {!! _e( 'By ', 'continuum' ) !!}

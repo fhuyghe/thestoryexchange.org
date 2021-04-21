@@ -15,7 +15,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 
   <section class="author-header">
         <div class="thumbnail">
-            {!! userphoto_the_author_photo($post_author) !!}
+            {!! userphoto_the_author_photo() !!} 
         </div>
         <h1>{{ get_the_author() }}</h1>
         <p>{!! the_author_meta( 'description' ) !!}</p>

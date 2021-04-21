@@ -7,13 +7,9 @@
 
     <div class="header-content">
       <h1 class="entry-title">{!! get_the_title() !!}</h1>
-      @php $subheading = get_field('subheading') @endphp
+      @php $subheading = get_field('subheading') ? get_field('subheading') :  get_post_meta($post->ID, '_subheading')[0] @endphp
       @if($subheading)
         <p class="subtitle">{{ $subheading }}</p>
-      @else
-        @if(function_exists('the_subheading'))
-          <p class="subtitle old">{{ print_r(get_the_subheading()) }}</p>
-        @endif
       @endif
       @include('partials/entry-meta')
     </div>
