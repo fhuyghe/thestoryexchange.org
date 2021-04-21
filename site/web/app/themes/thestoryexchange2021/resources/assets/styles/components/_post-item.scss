@@ -39,9 +39,12 @@ article.post-item{
     }
 
     .entry-text{
-
         p{
             margin-bottom: 0;
+        }
+
+        .excerpt{
+            display: none;
         }
     }
 

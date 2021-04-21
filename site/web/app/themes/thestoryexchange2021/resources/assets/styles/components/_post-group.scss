@@ -131,4 +131,14 @@
         }
       }
     }
+
+    &.feature-first{
+      article:first-child{
+        .entry-text{
+          .excerpt{
+            display: block;
+          }
+        }
+      }
+    }
 }

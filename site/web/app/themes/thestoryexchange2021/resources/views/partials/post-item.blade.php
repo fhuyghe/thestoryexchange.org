@@ -14,11 +14,9 @@
             {!! the_title() !!}
           </a>
         </h3>
-        @if($showExcerpt)
-          <div class="entry-content excerpt">
-            {!! the_excerpt() !!}
-          </div>
-        @endif
+        <div class="entry-content excerpt">
+          {!! the_excerpt() !!}
+        </div>
     </div>
     @if(in_category('podcast'))
       @include('partials.icon-play')
