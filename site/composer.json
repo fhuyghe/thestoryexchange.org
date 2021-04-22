@@ -80,7 +80,7 @@
         "vlucas/phpdotenv": "^5.2",
         "oscarotero/env": "^2.1",
         "roots/bedrock-autoloader": "^1.0",
-        "roots/wordpress": "5.5.3",
+        "roots/wordpress": "5.7.1",
         "roots/wp-config": "1.0.0",
         "roots/wp-password-bcrypt": "1.0.0",
         "13milliseconds/wp-fastest-cache-premium": "dev-master",
@@ -110,7 +110,8 @@
         "wpackagist-plugin/wp-fastest-cache": "^0.9.1.7",
         "wpackagist-plugin/wp-to-twitter": "^3.3.12",
         "yoast/yoast-news-seo": "^12.6",
-        "yoast/wordpress-seo-premium": "^15.3"
+        "yoast/wordpress-seo-premium": "^15.3",
+        "wpackagist-plugin/ajax-load-more":"5.4.5"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5.6",

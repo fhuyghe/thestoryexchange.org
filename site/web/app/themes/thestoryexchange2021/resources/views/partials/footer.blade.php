@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info" id="mainFooter">
   <div class="container">
     <div class="footer-main">
     <div class="logo">

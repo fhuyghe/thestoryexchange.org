@@ -63,13 +63,10 @@ header{
   }
 
   .content {
-    display: flex;
-    flex-flow: row wrap;
-    @extend .row;
-
     .main {
       .wp-block{
         float: none;
+        margin-right: 0;
       }
     }
 

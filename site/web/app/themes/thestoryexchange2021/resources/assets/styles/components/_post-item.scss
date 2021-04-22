@@ -67,25 +67,7 @@ article.post-item{
         }
     }
 
-    // Categories
-    &.category-entrepreneur-videos{
-        .entry-thumbnail .thumbnail{
-            border-color: theme-color(red);
-        }
-
-        .play{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); 
-            border-color: theme-color(white);
-            
-            .triangle{
-                border-left-color: theme-color(white);
-            }
-        }
-    }
-    
+    // Categories   
     &.category-podcast{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(green);
@@ -101,6 +83,24 @@ article.post-item{
     &.category-yse{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(pink);
+        }
+    }
+
+    &.category-entrepreneur-videos{
+        .entry-thumbnail .thumbnail{
+            border-color: theme-color(red);
+        }
+
+        .play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            border-color: theme-color(white);
+            
+            .triangle{
+                border-left-color: theme-color(white);
+            }
         }
     }
 }

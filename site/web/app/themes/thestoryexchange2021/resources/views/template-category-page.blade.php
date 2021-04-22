@@ -23,7 +23,7 @@
          @endphp
         @if($post)
             @php setup_postdata( $post ) @endphp
-            <div class="post-group row format-vertical feature-first">
+            <div class="post-group format-vertical feature-first">
                 @include('partials/post-item')
             </div>
             @php wp_reset_postdata() @endphp

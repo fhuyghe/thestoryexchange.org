@@ -8,8 +8,8 @@
     <p>{!! $cat->description !!}</p>
   </section>
 
-  <section class="posts">
-    <div class="post-group row format-vertical feature-first">
+  <section class="posts" id="content">
+    <div class="post-group format-vertical feature-first">
       @while(have_posts()) @php the_post() @endphp
 
         @include('partials.post-item', [

@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3" id="middleColumn">
       @component('partials.post-group', [
       'posts_per_page' => 3,
       'additional_args' => [
@@ -66,7 +66,7 @@
     ])@endcomponent
     </div>
 
-    <div class="col-md-3 latest-posts">
+    <div class="col-md-3" id="latest-posts">
       <h4>The Latest</h4>
       @component('partials.post-group', [
       'posts_per_page' => 6,
@@ -80,5 +80,23 @@
       'showExcerpt' => false
     ])@endcomponent
     </div>
+
+    {{-- PODCAST MOBILE --}}
+    <div class="podcast" id="podcastMobile">
+        <div class="section-title">
+          <h2>Podcast</h2>
+        </div>
+        @component('partials.post-group', [
+        'posts_per_page' => 1,
+        'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
+        'additional_args' => [
+          'post__not_in' => array($featuredID)
+        ],
+        'format' => 'horizontal',
+        'post_classes' => 'col-12',
+        'featured_post' => false,
+            'showExcerpt' => false
+      ])@endcomponent
+      </div>
   </div>
 </div>

@@ -87,3 +87,26 @@ img{
         }
       }
 }
+
+//Slick Carousel
+.slick-slider{
+    .slick-dots{
+    li{
+        button:before{
+            content: ""!important;
+            background-color: theme-color(white);
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            border: 1px solid theme-color(black);
+        }
+
+        &.slick-active{
+            button:before{
+                background-color: theme-color(yellow);
+                border: 0;
+            }
+        }
+    }
+}
+}

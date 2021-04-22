@@ -1,5 +1,6 @@
 .post-group{
-    flex-wrap: wrap;
+  @extend .row;
+  flex-wrap: wrap;
 
     article{
         margin-bottom: $grid-gutter;
@@ -16,12 +17,10 @@
 
     &.format-vertical{
       flex-direction: row;
-      padding: 0 7.5px;
 
         article{
             display: flex;
             flex-flow: column;
-            padding: 0 7.5px;
         }
 
         .post-wrap {
@@ -123,11 +122,19 @@
         }
 
         .entry-text{
-          padding-top: 20px;
-
+          padding-top: 10px;
+          
           h3{
-            font-size: 1.5em;
+            font-size: 1.2em;
           }
+          
+          @include media-breakpoint-up(md){
+              padding-top: 20px;
+
+              h3{
+                font-size: 1.5em;
+              }
+            }
         }
       }
     }

@@ -29,7 +29,7 @@ $showExcerpt = false;
         <div class="row">
 
         @if( have_rows('findings') )
-            <div class="post-group row format-vertical">
+            <div class="post-group format-vertical">
             @while ( have_rows('findings') ) 
                 @php the_row(); $post_object = get_sub_field('post');@endphp
                 @if( $post_object )

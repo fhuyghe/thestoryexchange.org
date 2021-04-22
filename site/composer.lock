@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "963d6e1df30ee81ff8e50f954c7effd3",
+    "content-hash": "9ad5c33ab8cd1ed4473911f009864adb",
     "packages": [
         {
             "name": "13milliseconds/simple-podcast-press",
@@ -1153,16 +1153,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.5.3",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.5.3"
+                "reference": "5.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.5.3",
-                "reference": "5.5.3"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/refs/tags/5.7.1",
+                "reference": "5.7.1"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -1196,7 +1196,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-10-30T20:40:02+00:00"
+            "time": "2021-04-15T02:11:19+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -2008,6 +2008,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/accelerated-mobile-pages/"
+        },
+        {
+            "name": "wpackagist-plugin/ajax-load-more",
+            "version": "5.4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ajax-load-more/",
+                "reference": "tags/5.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ajax-load-more.5.4.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ajax-load-more/"
         },
         {
             "name": "wpackagist-plugin/akismet",

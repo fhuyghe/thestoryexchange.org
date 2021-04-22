@@ -14,11 +14,22 @@
     display: flex;
     font-family: 'Graphik', sans-serif;
     align-items: center;
+    display: none;
+
+      @include media-breakpoint-up(md){
+        display: flex;
+      }
 
     nav{
-      ul li{
-        margin-bottom: 0;
-        padding: 0 10px;
+      display: none;
+
+      @include media-breakpoint-up(md){
+        display: block;
+        
+        ul li{
+          margin-bottom: 0;
+          padding: 0 10px;
+        }
       }
     }
   }
@@ -42,14 +53,34 @@
   }
 
   .brand{
-    padding: 10px 0;
+    padding: 10px;
 
     img{
-      width: 180px;
+      width: 120px;
+    }
+
+    @include media-breakpoint-up(md){
+      padding: 10px 0;
+
+      img{
+        width: 180px;
+      } 
     }
   }
 }
 
 #fullMenu{
   display: none;
+}
+
+//Side Menu
+.side-menu__toggle-button{
+  right: 50px;
+  left: auto;
+  top: 10px;
+  background-color: theme-color(white);
+  
+  .side-menu__toggle-button__icon--open{
+    background-color: theme-color(white);
+  }
 }

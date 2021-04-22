@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
     <div class="top-left">
-      <button class="hamburger hamburger--collapse" type="button">
+      {{-- <button class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
-      </button>
+      </button> --}}
       <nav class="nav-left">
         @if (has_nav_menu('top_left'))
           {!! wp_nav_menu(['theme_location' => 'top_left', 'menu_class' => 'nav nav-left']) !!}

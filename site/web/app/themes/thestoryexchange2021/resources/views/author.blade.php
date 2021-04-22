@@ -23,7 +23,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 
   <section class="posts">
     <h3>Posts by {{ get_the_author() }}</h3>
-    <div class="post-group row format-vertical">
+    <div class="post-group format-vertical">
       @while(have_posts()) @php the_post() @endphp
         @include('partials.post-item')
       @endwhile
