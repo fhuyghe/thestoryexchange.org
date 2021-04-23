@@ -1,4 +1,8 @@
 .page-template-template-startup-tips{
+    h1{
+        color: theme-color(darkblue);
+    }
+
     &.filtered{
         .featured-posts{
             display: none;
