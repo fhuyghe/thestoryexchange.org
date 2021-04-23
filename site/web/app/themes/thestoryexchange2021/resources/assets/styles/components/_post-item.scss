@@ -20,6 +20,25 @@ article.post-item{
         }
     }
 
+    &:hover .thumbnail{
+
+        &:after,
+        &:before{
+            animation-name: border-sides;
+            animation-duration: .25s;
+        }
+        
+        &:before{
+            animation-delay: .5s;
+        }
+        
+        a:before{
+            animation-delay: .25s;
+            animation-duration: .25s;
+            animation-name: border-top;
+        }
+    }
+
     .thumbnail{
         height: 0;
         padding-top: 60%;
@@ -27,14 +46,36 @@ article.post-item{
         background-color: theme-color(lightgrey);
         border-bottom: 5px solid theme-color(yellow);
 
-        &:hover{
-            img{
-                opacity: .8;
-            }
+        &:after,
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 0%;
+            width: 5px;
+            background: theme-color(yellow);
+            animation-fill-mode: forwards;
+            transition: .25s;
+            z-index: 2;
+        }
+        
+        &:before{
+            left: 0;
+            top: 0;
         }
 
-        img{
-            transition: .25s;
+        a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0%;
+            height: 5px;
+            background: theme-color(yellow);
+            animation-fill-mode: forwards;
+            transition: .35s;
+            z-index: 2;
         }
     }
 
@@ -121,3 +162,13 @@ article.post-item{
         }
     }
 }
+
+@keyframes border-sides {
+    from {height: 0%;}
+    to {height: 100%;}
+  }
+
+@keyframes border-top {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
