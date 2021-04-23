@@ -116,12 +116,14 @@ add_filter('sage/display_sidebar', function ($display) {
 //  Featured Category data
 add_filter('sage/blocks/featured-category/data', function ($block) { 
 
+    $cat = get_field('featured_category');
+
     $block['style'] = get_field('style');
     $query_args=array(
         'post_type' => 'post',
         'post_status' => 'publish',
         'posts_per_page' => $block['style'] == 3 ? 3 : 4,
-        'cat' => get_field('featured_category')->ID
+        'cat' => $cat
       );
     $block['articles'] = get_posts($query_args);
     $block['cat'] = get_field('featured_category');
