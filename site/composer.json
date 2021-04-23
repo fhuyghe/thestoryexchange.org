@@ -92,7 +92,7 @@
         "13milliseconds/tse-shortcodes": "dev-master",
         "13milliseconds/ajax-load-more-pro": "dev-master",
         "deliciousbrains-plugin/wp-migrate-db-pro": "1.9.13",
-        "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
+        "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "1.4.15",
         "deliciousbrains-plugin/wp-offload-media": "2.3.2",
         "advanced-custom-fields/advanced-custom-fields-pro": "^5.9.5",
         "wpackagist-plugin/accelerated-mobile-pages": "^1.0.76.13",
