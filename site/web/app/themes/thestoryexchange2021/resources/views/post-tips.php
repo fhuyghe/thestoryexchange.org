@@ -12,9 +12,8 @@
         </div>
         <?php endif; ?>
       <div class="entry-text">
-        <?php  if($format == 'advice'): ?>
             <div class="cats">
-                <?php $cats = wp_get_post_categories( $post->ID );
+                <?php $cats = wp_get_post_categories( get_the_ID() );
             foreach($cats as $id):
                 if(cat_is_ancestor_of(35, $id)):
                 $cat = get_category( $id );
@@ -22,7 +21,6 @@
                 endif;
             endforeach; ?>              
             </div>
-        <?php endif ?>
           <h3 class="post-title">
           <a href="<?php the_permalink() ?>">
             <?php  the_title() ?>

@@ -153,3 +153,29 @@ add_filter('sage/blocks/newsletter-subscribe/data', function ($block) {
 
     return $block;
  });
+
+ // Defining the category for Tips
+ add_filter('alm_filters_tips_category', function(){ 
+   
+    // Define empty array
+    $values = []; 
+
+    // Add All Item
+    $values[] = array( 
+        'label' => 'All Categories',
+        'value' => ''
+     );	
+    
+    $terms = array(196, 127, 7964, 198, 7962, 7963, 197, 7965, 195);
+     // Loop terms
+       foreach( $terms as $term_id ) { 
+           $term = get_category($term_id);
+          $values[] = array(
+             'label' => $term->name,
+             'value' => $term->slug
+          );
+       }		
+       	
+
+    return $values; // Return values	
+ });
