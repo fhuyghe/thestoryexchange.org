@@ -20,7 +20,9 @@
           <div class="about-person col-md-6">
             <div class="about-photo">
               @php $image = get_sub_field('photo') @endphp
-              <img src="{{ $image['sizes']['medium'] }}" alt="{!! $image['alt'] !!}" />
+              @if($image){
+                <img src="{{ $image['sizes']['medium'] }}" alt="{!! $image['alt'] !!}" />
+              }
             </div>
             <div class="about-text">
               <h3>{!! the_sub_field('name') !!}</h3>
