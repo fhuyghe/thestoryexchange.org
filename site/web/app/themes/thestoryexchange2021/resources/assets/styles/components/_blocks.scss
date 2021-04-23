@@ -38,6 +38,13 @@
     }
 
     &.style-2{
+
+      .left{
+        .excerpt{
+          display: block;
+        }
+      }
+
       .right{
         article{
           @extend .col-6;
@@ -122,6 +129,10 @@
       .left{
         border-right: 1px solid theme-color(grey);
         margin-bottom: $grid-gutter / 2;
+
+        .excerpt{
+          display: block;
+        }
       }
       
       .right{
@@ -187,6 +198,19 @@
       .format-featured{
         article{
           @extend .col-12;
+
+          h3{
+            margin-bottom: 5px;
+          }
+
+          .excerpt{
+            display: block;
+            font-size: 1.1em;
+            
+            p{
+              line-height: 1.5em;
+            }
+          }
         }
       }
       }
@@ -339,6 +363,10 @@
   
         .entry-text{
           @extend .col-md-4;
+
+          .excerpt{
+            display: block;
+          }
         }
   
         .entry-thumbnail{
