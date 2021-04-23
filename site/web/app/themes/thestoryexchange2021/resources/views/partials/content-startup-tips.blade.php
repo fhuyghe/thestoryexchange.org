@@ -12,18 +12,18 @@
 </section>
 
 <section class="featured-posts">
-            @foreach ($posts as $post)
-@php setup_postdata($post) @endphp
-@include('partials.post-item', [
-    'post_classes' => '',
-    'format' => 'advice',
-    'showExcerpt' => false,
-  ])
-  @if($loop->iteration == 4)
-    <div class="clearfix"></div>
-  @endif
-@endforeach
-@php wp_reset_postdata() @endphp
+    @foreach ($posts as $post)
+        @php setup_postdata($post) @endphp
+        @include('partials.post-item', [
+            'post_classes' => '',
+            'format' => 'advice',
+            'showExcerpt' => $loop->iteration == 1 ? true : false,
+        ])
+        @if($loop->iteration == 4)
+            <div class="clearfix"></div>
+        @endif
+    @endforeach
+    @php wp_reset_postdata() @endphp
 </section>
 
 <section class="page-content">

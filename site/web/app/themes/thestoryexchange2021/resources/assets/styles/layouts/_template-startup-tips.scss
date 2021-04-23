@@ -4,7 +4,7 @@
             display: none;
         }
     }
-    
+
     .wrap.container{
         max-width: 1200px;
     }
@@ -29,26 +29,39 @@
 
             &:first-child{
                 width: 50%;
+
+                .excerpt{
+                    display: block;
+                }
             }
 
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4){
                 width: 50%;
+                border-bottom: 1px solid theme-color(grey);
 
                 .post-wrap{
                     display: flex;
+                    flex-flow: row-reverse;
+
+                    .entry-text{
+                        padding-right: $grid-gutter / 2;
+                    }
 
                     .entry-thumbnail{
-                        width: 200px;
-                        padding-right: $grid-gutter / 2;
+                        flex: 0 0 150px;
                     }
 
                     button{
                         margin-top: 0;
                     }
                 }
-            }              
+            }       
+
+            &:nth-child(4){
+                border-bottom: 0;
+            }
             }                
         }
     }
@@ -84,10 +97,6 @@
 
             .entry-thumbnail{
                 margin-bottom: 5px;
-
-                .thumbnail{
-                    border-bottom: 0;
-                }
             }
         }
 }
