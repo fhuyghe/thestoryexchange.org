@@ -28,7 +28,7 @@
             'filters' => 'true',
             'post_type' => 'post',
             'posts_per_page' => '6',
-            'category' => 'advice-tips',
+            'category' => 'startup-tips',
             'button_label' => 'Show More Posts',
             'button_loading_label' => 'Loading...',
             'loading_style' => "infinite ring",

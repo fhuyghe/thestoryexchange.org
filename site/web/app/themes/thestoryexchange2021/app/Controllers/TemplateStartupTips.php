@@ -5,7 +5,7 @@ namespace App\Controllers;
 use Sober\Controller\Controller;
 use WP_Query;
 
-class TemplateAdviceTips extends Controller
+class TemplateStartupTips extends Controller
 {
     public function data()
     {
@@ -20,7 +20,7 @@ class TemplateAdviceTips extends Controller
             'tax_query'      => [ 
                 [
                     'taxonomy' => 'category',
-                    'terms'    => [ '193' ],
+                    'terms'    => [ '35' ],
                     'field'    => 'term_id',
                 ],
             ],
