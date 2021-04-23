@@ -100,10 +100,12 @@ a{
     
     &.wp-block-button__link{
         background: theme-color(yellow);
+        color: theme-color(black);
         font-family: 'Graphik', sans-serif;
         transition: .25s;
-
+        
         &:hover{
+            color: theme-color(black);
             background: darken(theme-color(yellow), 10%);
         }
     }
