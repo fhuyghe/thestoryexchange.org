@@ -67,6 +67,18 @@ article.post-item{
         }
     }
 
+    .cats{
+        button{
+            font-family: 'Graphik', sans-serif;
+            background-color: transparent;
+            border: 0;
+            padding: 0 0 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .8em;
+        }
+    }
+
     // Categories   
     &.category-podcast{
         .entry-thumbnail .thumbnail{
@@ -77,6 +89,10 @@ article.post-item{
     &.category-advice-tips{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(darkblue);
+        }
+
+        .cats button{
+            color: theme-color(darkblue);
         }
     }
     

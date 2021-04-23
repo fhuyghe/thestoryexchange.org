@@ -69,6 +69,10 @@
             "type": "vcs",
             "url": "git@github.com:13milliseconds/tse-shortcodes.git"
         },
+        "6": {
+            "type": "vcs",
+            "url": "git@github.com:13milliseconds/ajax-load-more-pro.git"
+          },
         "my-yoast": {
             "type": "composer",
             "url": "https://my.yoast.com/packages/"
@@ -86,6 +90,7 @@
         "13milliseconds/wp-fastest-cache-premium": "dev-master",
         "13milliseconds/simple-podcast-press": "dev-master",
         "13milliseconds/tse-shortcodes": "dev-master",
+        "13milliseconds/ajax-load-more-pro": "dev-master",
         "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
         "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
         "deliciousbrains-plugin/wp-offload-media": "2.3.2",

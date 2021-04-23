@@ -9,6 +9,17 @@
       </div>
     @endif
     <div class="entry-text">
+      @if($format == 'advice')
+      <div class="cats">
+        @php $cats = wp_get_post_categories( $post->ID ) @endphp
+        @foreach ($cats as $id)
+          @if(cat_is_ancestor_of(35, $id)) 
+            @php $cat = get_category( $id ) @endphp
+            <button class="category" data-cat="{{ $cat->slug }}">{!! $cat->name !!}</button>
+          @endif
+        @endforeach
+            </div>
+      @endif
         <h3 class="post-title">
           <a href="{!! the_permalink() !!}">
             {!! the_title() !!}

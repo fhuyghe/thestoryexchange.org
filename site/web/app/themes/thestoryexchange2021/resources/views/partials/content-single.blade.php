@@ -1,3 +1,4 @@
+<div id="post-container">
 <article {!! post_class() !!}>
   @include('partials/post-header')
 
@@ -34,3 +35,18 @@
   </footer>
   {{--@php comments_template('/partials/comments.blade.php') @endphp--}}
 </article>
+</div>
+
+@php
+$args = array(
+	'single_post' 			=> 'true',
+	'single_post_id' 		=> get_the_ID(),
+	'single_post_target'	=> '#post-container',
+	'post_type' 			=> 'post',
+	'pause_override' 		=> 'true',
+);	
+ 
+if( function_exists( 'alm_render' ) ){
+	alm_render($args);
+}
+@endphp
