@@ -90,11 +90,21 @@ a{
         &.yellow{
             color: theme-color(black);
             background: theme-color(yellow);
-
+            
             &:hover{
                 color: theme-color(black);
                 background: darken(theme-color(yellow), 10%);
             }
+        }
+    }
+    
+    &.wp-block-button__link{
+        background: theme-color(yellow);
+        font-family: 'Graphik', sans-serif;
+        transition: .25s;
+
+        &:hover{
+            background: darken(theme-color(yellow), 10%);
         }
     }
 }

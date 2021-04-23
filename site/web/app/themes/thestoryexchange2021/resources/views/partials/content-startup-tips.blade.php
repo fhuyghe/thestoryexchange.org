@@ -19,9 +19,6 @@
             'format' => 'advice',
             'showExcerpt' => $loop->iteration == 1 ? true : false,
         ])
-        @if($loop->iteration == 4)
-            <div class="clearfix"></div>
-        @endif
     @endforeach
     @php wp_reset_postdata() @endphp
 </section>
