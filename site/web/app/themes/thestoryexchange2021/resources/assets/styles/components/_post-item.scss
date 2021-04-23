@@ -125,12 +125,24 @@ article.post-item{
     &.category-podcast{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(green);
+            
+            &:before,
+            &:after,
+            a:before{
+                background-color: theme-color(green);
+            }
         }
     }
 
     &.category-startup-tips{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(darkblue);
+
+            &:before,
+            &:after,
+            a:before{
+                background-color: theme-color(darkblue);
+            }
         }
 
         .cats button{
@@ -141,12 +153,24 @@ article.post-item{
     &.category-yse{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(pink);
+
+            &:before,
+            &:after,
+            a:before{
+                background-color: theme-color(pink);
+            }
         }
     }
 
     &.category-entrepreneur-videos{
         .entry-thumbnail .thumbnail{
             border-color: theme-color(red);
+
+            &:before,
+            &:after,
+            a:before{
+                background-color: theme-color(red);
+            }
         }
 
         .play{

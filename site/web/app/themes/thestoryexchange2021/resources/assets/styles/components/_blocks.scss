@@ -212,8 +212,9 @@
             align-items: center;
             
             .entry-thumbnail{
-              @extend .col-6;
+              @extend .col-4;
               border-bottom: 0;
+              max-width: 200px;
   
               .thumbnail{
                 padding-top: 100%;
@@ -337,11 +338,11 @@
         flex-flow: row-reverse;
   
         .entry-text{
-          @extend .col-md-6;
+          @extend .col-md-4;
         }
   
         .entry-thumbnail{
-          @extend .col-md-6;
+          @extend .col-md-8;
         }
       }
     }

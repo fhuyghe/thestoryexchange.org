@@ -4,7 +4,7 @@
         <div id="mc_embed_signup_scroll">
         
     <div class="mc-field-group">
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
     </div>
         <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
