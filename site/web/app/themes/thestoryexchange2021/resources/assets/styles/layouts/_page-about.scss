@@ -11,11 +11,6 @@
         }
     } 
 
-    .about-text{
-        flex: 1;
-        padding-left: $grid-gutter;
-    }
-
     @include media-breakpoint-down(sm){
         flex-flow: column;
 
