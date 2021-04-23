@@ -16,7 +16,7 @@ class TemplateStartupTips extends Controller
     public function posts(){
         $args = array(
             'post_type' => 'post',
-            'showposts' => 16,
+            'showposts' => 4,
             'tax_query'      => [ 
                 [
                     'taxonomy' => 'category',

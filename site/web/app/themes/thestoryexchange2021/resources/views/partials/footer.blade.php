@@ -3,7 +3,7 @@
     <div class="footer-main">
     <div class="logo">
       <a class="header-icon" href="{{ home_url('/') }}">
-        <img src="@asset('images/TSE_MASTERLOGO.svg')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
+        <img width="200px" src="@asset('images/TSE_MASTERLOGO.svg')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
       </a>
     </div>
     <div class="menu">
