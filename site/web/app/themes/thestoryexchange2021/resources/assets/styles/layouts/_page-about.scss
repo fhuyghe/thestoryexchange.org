@@ -3,13 +3,17 @@
     margin: 0 auto $grid-gutter;
 
     .about-photo{
-        flex: 0 0 200px;
+        flex: 0 0 100px;
 
         img{
             width: 100%;
-            max-width: 200px; 
+            max-width: 200px;
         }
     } 
+
+    .about-text{
+        padding-left: $grid-gutter;
+    }
 
     @include media-breakpoint-down(sm){
         flex-flow: column;

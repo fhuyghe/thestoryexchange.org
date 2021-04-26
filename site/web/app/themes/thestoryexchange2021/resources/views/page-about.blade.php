@@ -16,13 +16,13 @@
       <h2>Who We Are</h2>
       @if( have_rows('who_we_are') )
       <div class="row">
-        @while ( have_rows('who_we_are') ) @php the_row() @endphp
+        @while( have_rows('who_we_are') ) @php the_row() @endphp
           <div class="about-person col-md-6">
             <div class="about-photo">
               @php $image = get_sub_field('photo') @endphp
-              @if($image){
+              @if($image)
                 <img src="{{ $image['sizes']['medium'] }}" alt="{!! $image['alt'] !!}" />
-              }
+              @endif
             </div>
             <div class="about-text">
               <h3>{!! the_sub_field('name') !!}</h3>
