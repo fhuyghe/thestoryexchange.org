@@ -1,8 +1,8 @@
 {{--
-  Title: Related Post
+  Title: Listicle
   Category: formatting
   Icon: admin-comments
-  Keywords: testimonial quote
+  Keywords: listicle article
   Mode: edit
   Align: wide
   PostTypes: page post
@@ -18,16 +18,19 @@ $format = null;
 $showExcerpt = true;
 @endphp
 
-@if($block['related_post'])
+@if($block['listicle'])
   <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
-    <div class="section-title">
-      <h3>Related</h3>
-    </div>
-    @php 
-      $post = $block['related_post'];
-      setup_postdata($post) 
-    @endphp
-    @include('partials.post-item')
-    @php wp_reset_postdata() @endphp
+    @foreach ($block['list'] as $item)
+        <div class="row">
+        <div class="col-md-6 photo">
+          <div class="number">{{ $loop->iteration }}</div>
+          <img src="{{ $item['photo']['sizes']['medium'] }}"/>
+        </div>
+        <div class="col-md-6 text">
+          <h2>{{ $item['title'] }}</h2>
+          {!! $item['text'] !!}
+        </div>
+        </div>
+    @endforeach
   </div>
 @endif
