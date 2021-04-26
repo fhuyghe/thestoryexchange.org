@@ -23,6 +23,22 @@ export default {
       event.stopPropagation();
       window.open(this.href, '_blank');
     });
+
+    //Newsletter Popup
+    $('.open-popup').on('click', function () {
+      $('#newsletterPopup').addClass('active');
+    })
+
+    $('#newsletterPopup').on('click', function (e) {
+      if (e.target !== this)
+        return;
+      
+      $('#newsletterPopup').removeClass('active');
+    })
+    $('.close').on('click', function (e) {
+      $('#newsletterPopup').removeClass('active');
+    })
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
