@@ -388,3 +388,36 @@
   padding: $grid-gutter;
 }
   
+
+.wp-block.listicle{
+  .row{
+    border-bottom: 1px solid theme-color(black);
+    padding-bottom: $grid-gutter * 2;
+    margin-bottom: $grid-gutter * 2;
+
+    .photo{
+      padding: $grid-gutter;
+      position: relative;
+
+      .number{
+        @extend h1;
+        font-size: 3em;
+        position: absolute;
+        top: 0;
+        left: $grid-gutter * 2;
+      }
+    }
+
+    &:nth-child(even){
+
+      @include media-breakpoint-up(md){
+        flex-flow: row-reverse;
+      }
+    }
+
+    &:last-child{
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}

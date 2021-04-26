@@ -18,7 +18,7 @@ $format = null;
 $showExcerpt = true;
 @endphp
 
-@if($block['listicle'])
+@if($block['list'])
   <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
     @foreach ($block['list'] as $item)
         <div class="row">
