@@ -1,5 +1,5 @@
 {{--
-  Title: Featured Category
+  Title: Featured Section
   Category: formatting
   Icon: admin-comments
   Keywords: testimonial quote
@@ -20,9 +20,8 @@ $showExcerpt = true;
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }} style-{{ $block['style'] }}">
   <div class="section-title">
-    <a href="{{ get_category_link($block['cat']) }}">
-    <h2>{{ get_cat_name($block['cat']) }}</h2>
-    </a>
+    <h2>{{ $block['title'] }}</h2>
+    {!! $block['text'] !!}
   </div>
   
   @if($block['articles'])

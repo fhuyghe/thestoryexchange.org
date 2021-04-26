@@ -116,17 +116,27 @@ add_filter('sage/display_sidebar', function ($display) {
 //  Featured Category data
 add_filter('sage/blocks/featured-category/data', function ($block) { 
 
-    $cat = get_field('featured_category');
+    $cat = '';
+    $tag = '';
+
+    if(get_field('category_or_tag') == 'category'){
+        $cat = get_field('featured_category');
+        $query_tax = array('cat' => $cat);
+    } else {
+        $tag = get_field('featured_tag');
+        $query_tax = array('tag_id' => $tag);
+    }
 
     $block['style'] = get_field('style');
-    $query_args=array(
+    $query_args= array_merge($query_tax, array(
         'post_type' => 'post',
         'post_status' => 'publish',
-        'posts_per_page' => $block['style'] == 3 ? 3 : 4,
-        'cat' => $cat
-      );
+        'posts_per_page' => $block['style'] == 3 ? 3 : 4
+      ));
     $block['articles'] = get_posts($query_args);
-    $block['cat'] = get_field('featured_category');
+    $block['tax'] = get_field('category_or_tag') == 'category' ? $cat : $tag;
+    $block['title'] = get_field('title') ? get_field('title') : get_term($block['tax'])->name;
+    $block['text'] = get_field('text');
 
     return $block;
  });
