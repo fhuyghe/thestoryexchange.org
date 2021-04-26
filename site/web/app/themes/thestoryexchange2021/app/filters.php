@@ -147,6 +147,14 @@ add_filter('sage/blocks/related-post/data', function ($block) {
     return $block;
  });
 
+ //  Listicle data
+add_filter('sage/blocks/listicle/data', function ($block) { 
+
+    $block['list'] = get_field('list');
+
+    return $block;
+ });
+
   //  Newsletter Subscribe
 add_filter('sage/blocks/newsletter-subscribe/data', function ($block) { 
 
