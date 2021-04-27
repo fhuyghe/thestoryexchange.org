@@ -103,6 +103,7 @@
         "wpackagist-plugin/disqus-comment-system": "^3.0.17",
         "wpackagist-plugin/duplicate-post":"3.2.6",
         "wpackagist-plugin/editorial-calendar": "^3.7.2",
+        "wpackagist-plugin/term-management-tools":"2.0.1",
         "wpackagist-plugin/ewww-image-optimizer": "^6.1.2",
         "wpackagist-plugin/jetpack": "^9.1",
         "wpackagist-plugin/recent-posts-widget-extended": "^1.0.0",
