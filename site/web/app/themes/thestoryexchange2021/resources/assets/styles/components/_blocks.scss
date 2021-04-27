@@ -126,13 +126,13 @@
     }
     
     &.style-3{
+      .excerpt{
+        display: block;
+      }
+      
       .left{
         border-right: 1px solid theme-color(grey);
         margin-bottom: $grid-gutter / 2;
-
-        .excerpt{
-          display: block;
-        }
       }
       
       .right{
