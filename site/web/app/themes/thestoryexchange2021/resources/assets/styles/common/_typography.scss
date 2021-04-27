@@ -50,11 +50,11 @@ h5{
 }
 
 a{
-    color: inherit;
+    color: theme-color(darkblue);
     
     &:hover{
-        text-decoration: none;
-        color: inherit;
+        text-decoration: underline;
+        //color: inherit;
     }
 
     &.btn{

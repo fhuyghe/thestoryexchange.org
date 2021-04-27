@@ -12,6 +12,16 @@
   .featured-category{
     padding: $grid-gutter 0;
 
+    .section-title{
+      margin-bottom: $grid-gutter;
+      h2{
+        margin-bottom: 10px;
+      }
+  
+      p{
+        font-size: 1.2em;
+      }
+    }
     
     &.style-1,
     &.style-{
