@@ -34,33 +34,34 @@
         ])@endcomponent
       </div>
 
+      
       {{-- PODCAST --}}
       <div class="podcast">
         <div class="section-title">
           <h2>Podcast</h2>
         </div>
         @component('partials.post-group', [
-        'posts_per_page' => 1,
-        'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
-        'additional_args' => [
-          'post__not_in' => array($featuredID),
-          'exclude_categories' => $exclude_categories
-        ],
-        'format' => 'horizontal',
-        'post_classes' => 'col-12',
-        'featured_post' => false,
-            'showExcerpt' => false
-      ])@endcomponent
+          'posts_per_page' => 1,
+          'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
+          'additional_args' => [
+            'post__not_in' => array($featuredID)
+          ],
+          'format' => 'horizontal',
+          'post_classes' => 'col-12',
+          'featured_post' => false,
+          'showExcerpt' => false
+          ])@endcomponent
       </div>
     </div>
-
+    
     @php $exclude_categories = get_field('exclude_categories') @endphp
 
     <div class="col-md-3" id="middleColumn">
       @component('partials.post-group', [
       'posts_per_page' => 3,
       'additional_args' => [
-        'post__not_in' => array($featuredID)
+        'post__not_in' => array($featuredID),
+        'category__not_in' => $exclude_categories
       ],
       'format' => 'vertical',
       'post_classes' => '',
@@ -76,7 +77,7 @@
       'additional_args' => [
         'offset' => 3,
         'post__not_in' => array($featuredID),
-        'exclude_categories' => $exclude_categories
+        'category__not_in' => $exclude_categories
       ],
       'format' => 'minimal',
       'post_classes' => 'col-12',
