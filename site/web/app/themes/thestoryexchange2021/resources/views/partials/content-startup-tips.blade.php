@@ -7,7 +7,7 @@
             {!! the_content() !!}
         </div>
         <div class="col-md-6">
-            {!! do_shortcode('[ajax_load_more_filters id="tips" target="tips_load_more" transition_container="false"]') !!}
+            {!! do_shortcode('[ajax_load_more_filters id="tips" target="tips_load_more"]') !!}
         </div>
 </section>
 
@@ -32,6 +32,7 @@
             'post_type' => 'post',
             'posts_per_page' => '6',
             'category' => 'startup-tips',
+            'offset' => '4',
             'button_label' => 'Show More Posts',
             'button_loading_label' => 'Loading...',
             'loading_style' => "infinite ring",
