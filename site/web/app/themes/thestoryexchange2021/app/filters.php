@@ -186,7 +186,10 @@ add_filter('sage/blocks/newsletter-subscribe/data', function ($block) {
         'value' => ''
      );	
     
-    $terms = array(196, 127, 7964, 198, 7962, 7963, 197, 7965, 195);
+    $terms = get_terms([
+        'taxonomy' => 'category',
+        'child_of' => '35'
+        ]);
      // Loop terms
        foreach( $terms as $term_id ) { 
            $term = get_category($term_id);
