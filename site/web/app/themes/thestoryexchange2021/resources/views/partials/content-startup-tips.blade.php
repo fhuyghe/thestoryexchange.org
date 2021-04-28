@@ -7,6 +7,7 @@
             {!! the_content() !!}
         </div>
         <div class="col-md-6">
+            {{-- filter options are defined in filters.php --}}
             {!! do_shortcode('[ajax_load_more_filters id="tips" target="tips_load_more"]') !!}
         </div>
 </section>

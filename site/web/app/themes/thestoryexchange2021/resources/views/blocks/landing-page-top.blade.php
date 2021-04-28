@@ -43,7 +43,8 @@
         'posts_per_page' => 1,
         'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
         'additional_args' => [
-          'post__not_in' => array($featuredID)
+          'post__not_in' => array($featuredID),
+          'exclude_categories' => $exclude_categories
         ],
         'format' => 'horizontal',
         'post_classes' => 'col-12',
@@ -52,6 +53,8 @@
       ])@endcomponent
       </div>
     </div>
+
+    @php $exclude_categories = get_field('exclude_categories') @endphp
 
     <div class="col-md-3" id="middleColumn">
       @component('partials.post-group', [
@@ -72,7 +75,8 @@
       'posts_per_page' => 6,
       'additional_args' => [
         'offset' => 3,
-        'post__not_in' => array($featuredID)
+        'post__not_in' => array($featuredID),
+        'exclude_categories' => $exclude_categories
       ],
       'format' => 'minimal',
       'post_classes' => 'col-12',
