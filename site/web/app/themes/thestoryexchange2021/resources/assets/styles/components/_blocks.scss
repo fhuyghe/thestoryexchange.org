@@ -14,7 +14,7 @@
 
     .section-title{
       margin-bottom: $grid-gutter;
-      
+
       h2{
         margin-bottom: 10px;
       }
@@ -226,6 +226,33 @@
         }
       }
       }
+
+      .secondary{
+        article{
+          padding-top: $grid-gutter;
+          border-top: 1px solid theme-color(darkgrey);
+          margin-bottom: $grid-gutter;
+
+          .excerpt{
+            display: block;
+          }
+
+          @include media-breakpoint-up(md){
+          .post-wrap{
+            display: flex;
+            flex-flow: row;
+
+            .entry-thumbnail{
+              flex: 0 0 40%;
+            }
+
+            .entry-text{
+              padding-left: $grid-gutter;
+            }
+          }
+        }
+        }
+      }
   
       .podcast{
         display: none;
@@ -267,6 +294,7 @@
     #middleColumn{
       article{
         padding: 0 $grid-gutter / 2;
+        width: 100%;
       }
     }
   

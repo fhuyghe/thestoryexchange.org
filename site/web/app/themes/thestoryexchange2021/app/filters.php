@@ -141,6 +141,14 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
     return $block;
  });
 
+ // Landing Page Top data
+add_filter('sage/blocks/landing-page-top/data', function ($block) { 
+
+    $block['secondary_featured'] = get_field('secondary_featured');
+
+    return $block;
+ });
+
  //  Featured Video data
 add_filter('sage/blocks/featured-video/data', function ($block) { 
 
