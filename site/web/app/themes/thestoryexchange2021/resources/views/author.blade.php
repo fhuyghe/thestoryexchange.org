@@ -10,6 +10,7 @@ $showExcerpt = false;
 @endphp
 
 <?php 
+$author = get_the_author();
 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 ?>
 
@@ -22,10 +23,12 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
   </section>
 
   <section class="posts">
-    <h3>Posts by {{ get_the_author() }}</h3>
+    <h2>Posts by {{ get_the_author() }}</h2>
     <div class="post-group format-vertical">
       @while(have_posts()) @php the_post() @endphp
+      <div class="col-md-4">
         @include('partials.post-item')
+      </div>
       @endwhile
 
       <div class="page-number">

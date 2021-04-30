@@ -7,7 +7,7 @@
 
     <div class="header-content">
       <h1 class="entry-title">{!! get_the_title() !!}</h1>
-      @php $subheading = get_field('subheading') ? get_field('subheading') :  get_post_meta($post->ID, '_subheading')[0] @endphp
+      @php $subheading = get_field('subheading') @endphp
       @if($subheading)
         <p class="subtitle">{{ $subheading }}</p>
       @endif
