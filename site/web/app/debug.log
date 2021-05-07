@@ -348,3 +348,4 @@ Stack trace:
 #3 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php(589): Illuminate\Container\Container->make()
 #4 /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/app/helpers.php(23): Illuminate\Container\Container->makeWith()
 #5 /srv/www/thestoryexchange.org/ in /srv/www/thestoryexchange.org/current/web/app/themes/thestoryexchange2021/vendor/illuminate/container/Container.php on line 767
+[04-May-2021 10:45:20 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54

@@ -30,7 +30,7 @@
   </div>
 
   <div class="right-content  col-sm-8">
-  {{-- POCAST EPISODES --}}
+  {{-- PODCAST EPISODES --}}
     <section class="podcasts">
         @component('partials/post-group', [
           'posts_per_page' => -1,
