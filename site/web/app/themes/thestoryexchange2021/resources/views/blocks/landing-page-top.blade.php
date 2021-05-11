@@ -36,14 +36,16 @@
 
       
       @if($block['secondary_featured'])
+      @php $secondFeaturedID = $block['secondary_featured']->ID @endphp
       {{-- Secondary Feature --}}
       <div class="secondary">
         @component('partials.post-item-featured', [
           'picture' => '',
           'post_object' => $block['secondary_featured']
-        ])@endcomponent
+          ])@endcomponent
       </div>
       @else
+      @php $secondFeaturedID = ''; @endphp
 
         {{-- PODCAST --}}
         <div class="podcast">
@@ -54,7 +56,7 @@
             'posts_per_page' => 1,
             'cat' => '147', //Entrepreneur Stories, Focus Points and "Articles Offering Advice and Tips to Women Entrepreneurs”
             'additional_args' => [
-              'post__not_in' => array($featuredID)
+              'post__not_in' => array($featuredID, $secondFeaturedID)
             ],
             'format' => 'horizontal',
             'post_classes' => 'col-12',
@@ -71,7 +73,7 @@
       @component('partials.post-group', [
       'posts_per_page' => 3,
       'additional_args' => [
-        'post__not_in' => array($featuredID),
+        'post__not_in' => array($featuredID, $secondFeaturedID),
         'category__not_in' => $exclude_categories
       ],
       'format' => 'vertical',
