@@ -295,12 +295,6 @@
       article{
         padding: 0 $grid-gutter / 2;
         width: 100%;
-
-        &.category-podcast{
-          .play{
-            display: none;
-          }
-        }
       }
     }
   
@@ -316,12 +310,6 @@
 
       .post-item{
         border-right: 1px solid theme-color(grey);
-
-        &.category-podcast{
-          .play{
-            display: none;
-          }
-        }
 
         .post-wrap{
           border-bottom: 1px solid theme-color(grey);
@@ -380,6 +368,7 @@
       }
 
       .play{
+        display: flex;
         border-color: theme-color(white);
         position: absolute;
         right: 25%;
