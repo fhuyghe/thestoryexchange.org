@@ -131,7 +131,8 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
     $query_args= array_merge($query_tax, array(
         'post_type' => 'post',
         'post_status' => 'publish',
-        'posts_per_page' => $block['style'] == 3 ? 3 : 4
+        'posts_per_page' => $block['style'] == 3 ? 3 : 4,
+        'post__not_in' => get_field('posts_to_ignore'),
       ));
     $block['articles'] = get_posts($query_args);
     $block['tax'] = get_field('category_or_tag') == 'category' ? $cat : $tag;
