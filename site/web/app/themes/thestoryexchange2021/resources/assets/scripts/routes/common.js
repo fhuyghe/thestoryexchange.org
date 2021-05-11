@@ -39,6 +39,11 @@ export default {
       $('#newsletterPopup').removeClass('active');
     })
 
+    $('.search-toggle').on('click', function () {
+      console.log(this);
+      $('.search').toggleClass('active');
+    });
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

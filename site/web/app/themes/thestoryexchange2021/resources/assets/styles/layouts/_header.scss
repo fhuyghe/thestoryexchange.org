@@ -42,6 +42,7 @@
 
   .top-right{
     justify-content: flex-end;
+    position: relative;
 
     li:last-child{
       a{
@@ -71,6 +72,47 @@
 
 #fullMenu{
   display: none;
+}
+
+.search{
+
+  svg{
+    cursor: pointer;
+    
+    &:hover{
+      color: theme-color(yellow);
+    }
+  }
+
+  &.active{
+    svg{
+      color: theme-color(yellow);
+    }
+
+    .search-wrap{
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .search-wrap{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 0px;
+    right: 25px;
+    height: 30px;
+    width: calc(100% - 50px);
+  
+    input[type="search"]{
+      border: 0;
+      height: 30px;
+    }
+  
+    input[type="submit"]{
+      display: none;
+    }
+  }
 }
 
 //Side Menu

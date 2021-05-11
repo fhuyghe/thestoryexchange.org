@@ -27,8 +27,12 @@
         @endif
       </nav>
       <div class="search">
-        <i class="far fa-search"></i>
-        <?php //get_search_form(); ?>
+        <div class="search-toggle">
+          <i class="far fa-search"></i>
+        </div>
+        <div class="search-wrap">
+          <?php get_search_form(); ?>
+        </div>
       </div>
   </div>
 </div>
