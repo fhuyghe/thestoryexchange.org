@@ -10,7 +10,9 @@
       @php $subheading = get_field('subheading') @endphp
       @if($subheading)
         <p class="subtitle">{{ $subheading }}</p>
-      @endif
+        @else
+        <p class="subtitle">{{ the_excerpt() }}</p>
+        @endif
       @include('partials/entry-meta')
     </div>
   </header>
