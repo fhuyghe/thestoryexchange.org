@@ -27,6 +27,7 @@
       @php wp_reset_postdata() @endphp
       @endif
       </div>
+      <a class="btn" href="/category/yse">All Stories</a>
     </section>
   @endwhile
 @endsection
