@@ -1,6 +1,6 @@
 <header class="page-header">
     @if ( in_category(32) )
-    <a class="thousandStoriesLogo" href="/category/yse/">
+    <a class="thousandStoriesLogo" href="/stories/">
         <img src="@asset('images/TSE_1kPlusStories_Logo.jpg')" />
     </a>
     @endif
