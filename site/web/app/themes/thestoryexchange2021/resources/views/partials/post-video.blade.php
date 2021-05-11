@@ -9,10 +9,10 @@
         </div>
       </div>
     </div>
-    <div class="content  col-lg-8">
+    <div class="content col-lg-8">
       @php $cat = get_field('main_category') @endphp
           @if ($cat)
-            <div class="tag"><a href="/category/{{$cat->slug}}">{{$cat->name}}</a></div>
+            <div class="main-cat"><a href="/category/{{$cat->slug}}">{{$cat->name}}</a></div>
           @endif
       <h3 class="post-title"><a href="{{ the_permalink() }}">{{ the_title() }}</a></h3>
       {{ the_excerpt() }}
