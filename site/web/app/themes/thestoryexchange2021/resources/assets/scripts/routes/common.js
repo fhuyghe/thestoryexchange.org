@@ -40,7 +40,6 @@ export default {
     })
 
     $('.search-toggle').on('click', function () {
-      console.log(this);
       $('.search').toggleClass('active');
     });
 
