@@ -462,3 +462,37 @@
     }
   }
 }
+
+// Related Posts
+.wp-block.related-post{
+  max-width: 500px;
+  margin: $grid-gutter 0;
+  
+  @include media-breakpoint-up(md){
+    
+    margin: $grid-gutter * 2 0;
+  }
+
+  .section-title{
+    padding-top: 5px;
+  }
+
+  .post-wrap{
+    display: flex;
+    align-items: flex-start;
+
+    .thumbnail img{
+      max-width: 80px;
+      height: auto;
+    }
+
+    .entry-text{
+      padding-left: $grid-gutter;
+
+      h3{
+        margin: 0;
+        font-weight: 400;
+      }
+    }
+  }
+}
