@@ -39,7 +39,7 @@ $graphik: 'Graphik', sans-serif;
 }
 
 @font-face {
-  font-family: 'Corda Light';
+  font-family: 'Corda';
   src: url('../fonts/CordaLight/font.woff') format('woff'),  
   url('../fonts/CordaLight/font.woff2') format('woff2');
   font-weight: 200;
@@ -48,11 +48,20 @@ $graphik: 'Graphik', sans-serif;
 }
 
 @font-face {
-  font-family: 'Corda Light';
+  font-family: 'Corda';
   src: url('../fonts/CordaLightItalic/font.woff') format('woff'),  
   url('../fonts/CordaLightItalic/font.woff2') format('woff2');
   font-weight: 200;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('../fonts/CordaMedium/font.woff') format('woff'),  
+  url('../fonts/CordaMedium/font.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 
