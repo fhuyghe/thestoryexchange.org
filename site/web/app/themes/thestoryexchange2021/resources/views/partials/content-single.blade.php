@@ -16,6 +16,14 @@
 
   <div class="entry-content">
     @php the_content() @endphp
+
+    @php $postsNotes = get_field('posts_notes', 'option') @endphp
+    @if ($postsNotes && $postsNotes['message_on'])
+      <div class="posts-notes">
+          {!! $postsNotes['message'] !!}
+      </div>
+    @endif
+
   </div>
 
   <div class="container">
