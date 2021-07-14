@@ -20,13 +20,21 @@ $showExcerpt = true;
 
 @if($block['list'])
   <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
-    {{$block['test']}}
     @foreach ($block['list'] as $item)
         <div class="row">
-        <div class="col-md-6 photo">
-          <div class="number">{{ $loop->iteration }}</div>
-          <img src="{{ $item['photo']['sizes']['medium'] }}"/>
-        </div>
+        @if($item['photo_or_video'] == 'photo')
+          <div class="col-md-6 photo">
+            <div class="number">{{ $loop->iteration }}</div>
+            <img src="{{ $item['photo']['sizes']['medium'] }}"/>
+          </div>
+        @else
+          <div class="col-md-6 video">
+            <div class="number">{{ $loop->iteration }}</div>
+            <div class="iframewrap">
+              {!! $item['video'] !!}
+            </div>
+          </div>
+        @endif
         <div class="col-md-6 text">
           <h2>{{ $item['title'] }}</h2>
           {!! $item['text'] !!}

@@ -558,3 +558,4 @@ Stack trace:
 [08-Jun-2021 22:33:43 UTC] PHP Notice:  Undefined index: translations in /srv/www/thestoryexchange.org/current/web/wp/wp-includes/update.php on line 443
 [09-Jun-2021 15:45:22 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
 [09-Jun-2021 15:47:09 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
+[14-Jul-2021 17:30:51 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54

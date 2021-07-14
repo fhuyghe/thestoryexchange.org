@@ -436,6 +436,7 @@
     padding-bottom: $grid-gutter * 2;
     margin-bottom: $grid-gutter * 2;
 
+    .video,
     .photo{
       padding: $grid-gutter;
       position: relative;
@@ -446,6 +447,15 @@
         position: absolute;
         top: 0;
         left: $grid-gutter * 2;
+        padding: 0 10px;
+        background-color: theme-color(yellow);
+        z-index: 2;
+      }
+    }
+
+    .video{
+      .iframewrap{
+        margin-top: $grid-gutter / 2;
       }
     }
 
