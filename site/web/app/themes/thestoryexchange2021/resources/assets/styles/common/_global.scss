@@ -117,20 +117,20 @@ img{
 }
 
 //Videos
-.wp-block-embed__wrapper {
-    position: relative; 
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
+// .wp-block-embed__wrapper {
+//     position: relative; 
+//     padding-bottom: 56.25%;
+//     overflow: hidden;
+//     max-width: 100%;
+//     height: auto;
 
-    iframe,
-    object,
-    embed { 
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%!important;
-        height: 100%!important;
-    }
-} 
+//     iframe,
+//     object,
+//     embed { 
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%!important;
+//         height: 100%!important;
+//     }
+// } 
