@@ -5,6 +5,10 @@
       <a class="header-icon" href="{{ home_url('/') }}">
         <img width="200px" src="@asset('images/TSE_MASTERLOGO.svg')" alt="{!! get_bloginfo('description', 'display') !!}" class="site-logo">
       </a>
+      @php $footer_description = get_field('footer_description', 'option') @endphp
+      @if($footer_description)
+        <p>{{ $footer_description }}</p>
+      @endif
     </div>
     <div class="menu">
       @if (has_nav_menu('footer'))
