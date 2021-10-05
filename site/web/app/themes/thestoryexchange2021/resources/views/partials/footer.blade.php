@@ -7,7 +7,7 @@
       </a>
       @php $footer_description = get_field('footer_description', 'option') @endphp
       @if($footer_description)
-        <p>{{ $footer_description }}</p>
+        <p class="description">{{ $footer_description }}</p>
       @endif
     </div>
     <div class="menu">

@@ -1,7 +1,6 @@
 footer.content-info{
     background-color: theme-color(yellow);
     padding: $grid-gutter 0 $grid-gutter / 2;
-    text-transform: uppercase;
 
     .footer-main{
         display: flex;
@@ -29,8 +28,14 @@ footer.content-info{
         }
     }
 
+    .description{
+        font-style: italic;
+        margin-top: .5em;
+    }
+
     .copyright{
         font-size: .7em;
+        text-transform: uppercase;
     }
     
     .row{
