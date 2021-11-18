@@ -201,8 +201,6 @@
 // Product List
 .post-template-template-product-list{
     .wrap.container{
-        max-width: none!important;
-        padding: 0;
 
         .content{
             margin-bottom: 0;
@@ -211,10 +209,9 @@
 }
 
 #productList{
-    background: theme-color(lightgrey);
-    margin: $grid-gutter * 2 0 0;
-    padding: $grid-gutter * 2 0;
-    border-top: 1px solid theme-color(grey);
+    margin: $grid-gutter 0 0;
+    // background: theme-color(lightgrey);
+    // padding: $grid-gutter;
     
     .product{
         margin-bottom: $grid-gutter;

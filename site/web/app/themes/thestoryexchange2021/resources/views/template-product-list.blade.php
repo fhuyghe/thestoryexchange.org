@@ -14,7 +14,6 @@
     </div>
 
     <section id="productList">
-      <div class="container">
         <div class="row">
           @foreach ($data['list_items'] as $list_item)
               
@@ -38,7 +37,6 @@
           </div>
 
           @endforeach
-        </div>
       </div>
     </section>
   @endwhile
