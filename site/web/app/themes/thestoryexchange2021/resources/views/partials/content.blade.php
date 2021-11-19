@@ -1,3 +1,4 @@
+<div class="container">
 <article @php post_class() @endphp>
   <header>
     <h6 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h6>
@@ -7,3 +8,4 @@
     @php the_excerpt() @endphp
   </div>
 </article>
+</div>

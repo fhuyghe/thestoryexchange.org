@@ -13,6 +13,7 @@ $showExcerpt = false;
 $author = get_the_author();
 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 ?>
+<div class="container">
 
   <section class="author-header">
         <div class="thumbnail">
@@ -36,6 +37,6 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
       </div>
 
     </div>
-  </section>
-
+  </section>  
+</div>
 @endsection

@@ -5,6 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
 <div class="row">
   <div class="left-sidebar col-sm-4">
     @while(have_posts()) @php the_post() @endphp
@@ -44,6 +45,5 @@
     </section>  
   </div>
 </div>
-
-
+</div>
 @endsection

@@ -5,6 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
           <div id="timelinePage">
             <h1>{!! the_title() !!}</h1>
           
@@ -106,5 +107,5 @@
               </div>
           </section>
       </div>
-
+    </div>
 @endsection

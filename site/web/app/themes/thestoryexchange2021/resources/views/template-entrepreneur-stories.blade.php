@@ -5,6 +5,7 @@ Template Name: Entrepreneur Stories
 @extends('layouts.app')
 
 @section('content')
+    <div class="container">
     <h1>{!! the_title() !!}</h1>
     <p class="blurb">{!! the_field('blurb') !!}</p>
     
@@ -262,9 +263,6 @@ Template Name: Entrepreneur Stories
                     <p>A collection of TSE videos and articles featured in The Times' "Who's the Boss" blog.</p>
                 </div>
             </div>
-    
-        </section> 
-              
-    
-          
+        </section>     
+    </div>
 @endsection

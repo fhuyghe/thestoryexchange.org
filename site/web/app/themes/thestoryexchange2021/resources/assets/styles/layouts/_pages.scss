@@ -1,5 +1,5 @@
 .page{
-  .wrap.container{
+  #content .container{
     max-width: $content-width;
   }
 }
@@ -54,7 +54,7 @@ header{
 
 // Landing Page
 .home{
-  .wrap.container {
+  #content .container {
     max-width: 1500px;
 
     section:first-of-type {
@@ -185,7 +185,7 @@ header{
 }
 
 .archive.category{
-  .wrap.container{
+  #content .container{
     max-width: 1000px;
   }
 }

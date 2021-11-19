@@ -7,7 +7,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<div class="container">
       <div class="row">
 
         {{--#################################################--}}
@@ -121,10 +121,7 @@
             @endwhile
           </section>
 
-         
-
-        </div>
-          
-      </div>
-
+        </div>      
+    </div>
+  </div>
 @endsection

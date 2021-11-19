@@ -559,3 +559,5 @@ Stack trace:
 [09-Jun-2021 15:45:22 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
 [09-Jun-2021 15:47:09 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
 [14-Jul-2021 17:30:51 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
+[13-Oct-2021 10:45:20 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54
+[04-Nov-2021 17:30:41 UTC] PHP Notice:  Undefined property: stdClass::$post_parent in /srv/www/thestoryexchange.org/current/web/app/plugins/simple-podcast-press/draftnotify/draft-notify.php on line 54

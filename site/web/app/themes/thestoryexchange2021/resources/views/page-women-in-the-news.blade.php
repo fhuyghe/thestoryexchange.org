@@ -5,6 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>{!! the_title() !!}</h1>
 
     <section id="women-news">
@@ -93,5 +94,5 @@
         ])@endcomponent
         <a class="btn" href="{{ home_url() }}/the-independent-life/">More Stories</a>
     </section>
-
+</div>
 @endsection

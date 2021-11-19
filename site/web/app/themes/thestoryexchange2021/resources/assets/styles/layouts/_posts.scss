@@ -1,5 +1,5 @@
 .single{
-    .wrap.container{
+    #content .container{
         max-width: 900px;
     }
     
@@ -200,7 +200,7 @@
 
 // Product List
 .post-template-template-product-list{
-    .wrap.container{
+    #content .container{
 
         .content{
             margin-bottom: 0;
@@ -208,10 +208,14 @@
     }
 }
 
-#productList{
+.single #productList{
     margin: $grid-gutter 0 0;
     // background: theme-color(lightgrey);
     // padding: $grid-gutter;
+
+    .container{
+        max-width: 1200px;
+    }
     
     .product{
         margin-bottom: $grid-gutter;

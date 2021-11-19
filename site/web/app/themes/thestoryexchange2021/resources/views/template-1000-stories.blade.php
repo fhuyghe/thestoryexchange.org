@@ -13,6 +13,7 @@ $showExcerpt = false;
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
+<div class="container">
         <section class="page-header">
                 <h1>{!! the_title() !!}</h1>
                 <p>{!! the_field('subtitle') !!}</p>
@@ -48,4 +49,5 @@ $showExcerpt = false;
         </div> 
     </div> 
     @endwhile    
+</div> 
 @endsection

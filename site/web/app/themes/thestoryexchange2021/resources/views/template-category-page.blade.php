@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-          
+<div class="container">
     <section class="page-header">
         @while(have_posts()) @php the_post() @endphp
             <h1>{!! the_title() !!}</h1>
@@ -67,5 +67,5 @@
         ])@endcomponent   
         <a class="btn" href="{{ get_category_link($extraCat) }}">More Stories</a>
     </section>
-
+</div>
 @endsection

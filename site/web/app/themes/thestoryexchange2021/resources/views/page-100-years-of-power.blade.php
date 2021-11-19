@@ -5,6 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
+	<div class="container">
 				
 	<section class="page-header text-center">
 		<h1>{{ the_title() }}</h1>
@@ -72,5 +73,6 @@
 		</div>
 		@endif
 	</section>
+	</div>
 
 @endsection

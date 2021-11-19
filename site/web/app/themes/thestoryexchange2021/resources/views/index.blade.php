@@ -2,6 +2,7 @@
 
 @section('content')
   {{-- @include('partials.page-header') --}}
+  <div class="container">
 
   @if (!have_posts())
     <div class="alert alert-warning">
@@ -15,4 +16,5 @@
   @endwhile
 
   {!! get_the_posts_navigation() !!}
+  </div>
 @endsection

@@ -3,6 +3,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
   @while(have_posts()) @php the_post() @endphp
     @include('partials.page-header')
 
@@ -30,4 +31,5 @@
       <a class="btn" href="/category/yse">All Stories</a>
     </section>
   @endwhile
+</div>
 @endsection

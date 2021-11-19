@@ -1,4 +1,4 @@
-<div id="post-container">
+<div id="post-container" class="container">
 <article {!! post_class() !!}>
   @include('partials/post-header')
 

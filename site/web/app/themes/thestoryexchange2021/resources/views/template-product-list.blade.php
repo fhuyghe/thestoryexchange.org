@@ -10,14 +10,17 @@
     @include('partials/post-header')
 
     <div class="entry-content">
-      @php the_content() @endphp
+      <div class="container">
+        @php the_content() @endphp
+      </div>
     </div>
 
     <section id="productList">
+      <div class="container">
         <div class="row">
           @foreach ($data['list_items'] as $list_item)
               
-          <div class="product col-md-6">
+          <div class="product col-md-6 @if(count($data['list_items']) % 3 == 0) col-xl-4 @endif">
             <div class="product-wrap">
             <div class="thumbnail">
               <img src="{{ $list_item['image']['url'] }}" alt="{{ $list_item['image']['alt'] }}" />
@@ -37,6 +40,7 @@
           </div>
 
           @endforeach
+      </div>
       </div>
     </section>
   @endwhile

@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-				
+<div class="container">
 	<section class="page-header text-center">
 		<h1>Running Women</h1>
 		<p class="subtitle">The Drive to Elect More Women in 2018</p>
@@ -152,5 +152,5 @@
 		</div>
 	</div>
 </div>
-
+</div>
 @endsection

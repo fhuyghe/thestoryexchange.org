@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<div class="container">
   <section class="category-header">
     @php $cat = get_queried_object() @endphp
     <h1>{!! $cat->name !!}</h1>
@@ -23,5 +23,5 @@
       @php echo paginate_links() @endphp
     </div>
   </section>
-
+</div>
 @endsection
