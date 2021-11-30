@@ -477,9 +477,16 @@
 .wp-block.related-post{
   max-width: 500px;
   margin: $grid-gutter 0;
+  padding-bottom: $grid-gutter / 2;
+  border-bottom: 1px solid theme-color(black);
+
   
   @include media-breakpoint-up(md){
     margin: $grid-gutter * 2 0;
+  }
+  
+  @include media-breakpoint-up(xl){
+    margin-left: - $grid-gutter * 4;
   }
 
   .section-title{

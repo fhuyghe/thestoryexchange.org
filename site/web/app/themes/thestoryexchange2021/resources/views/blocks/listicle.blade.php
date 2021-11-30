@@ -26,6 +26,9 @@ $showExcerpt = true;
           <div class="col-md-6 photo">
             <div class="number">{{ $loop->iteration }}</div>
             <img src="{{ $item['photo']['sizes']['medium'] }}"/>
+            @if($item['photo']['caption'])
+              <p class="caption">{{ $item['photo']['caption'] }}</p>
+            @endif
           </div>
         @else
           <div class="col-md-6 video">
