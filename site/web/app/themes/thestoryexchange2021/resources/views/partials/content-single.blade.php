@@ -1,5 +1,6 @@
-<div id="post-container" class="container">
+<div id="post-container">
 <article {!! post_class() !!}>
+  <div class="container" >
   @include('partials/post-header')
 
   @if ( in_category( 3 ))
@@ -41,7 +42,7 @@
   <footer>
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
   </footer>
-  {{--@php comments_template('/partials/comments.blade.php') @endphp--}}
+</div>
 </article>
 </div>
 
