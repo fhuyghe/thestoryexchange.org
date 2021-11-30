@@ -3,8 +3,8 @@
 @if(!$hideTheAuthor)
 <div class="author-meta">
     <div class="author_thumbnail">
-      @if(function_exists('userphoto_the_author_thumbnail'))
-        {!! userphoto_the_author_thumbnail($post->post_author) !!}
+      @if(function_exists('userphoto_the_author_photo'))
+        {!! userphoto_the_author_photo($post->post_author) !!}
       @endif
     </div>
     {!! _e( 'By ', 'continuum' ) !!}
