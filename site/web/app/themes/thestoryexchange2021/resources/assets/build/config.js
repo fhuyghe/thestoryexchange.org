@@ -14,7 +14,7 @@ const rootPath = (userConfig.paths && userConfig.paths.root)
 const config = merge({
   open: true,
   copy: 'images/**/*',
-  proxyUrl: 'https://localhost:3005',
+  proxyUrl: 'http://localhost:3005',
   cacheBusting: '[name]_[hash]',
   paths: {
     root: rootPath,

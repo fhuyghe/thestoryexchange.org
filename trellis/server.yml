@@ -16,7 +16,7 @@
   roles:
     - { role: python_interpreter, tags: [always] }
 
-- name: WordPress Server - Install LEMP Stack with PHP 7.4 and MariaDB MySQL
+- name: WordPress Server - Install LEMP Stack with PHP and MariaDB MySQL
   hosts: web:&{{ env }}
   become: yes
   roles:
@@ -33,7 +33,7 @@
     - { role: memcached, tags: [memcached] }
     - { role: nginx, tags: [nginx] }
     - { role: logrotate, tags: [logrotate] }
-    - { role: composer, tags: [composer]}
+    - { role: composer, tags: [composer] }
     - { role: wp-cli, tags: [wp-cli] }
     - { role: letsencrypt, tags: [letsencrypt], when: sites_using_letsencrypt | count }
     - { role: wordpress-setup, tags: [wordpress, wordpress-setup, letsencrypt] }

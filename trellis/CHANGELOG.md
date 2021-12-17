@@ -1,5 +1,47 @@
 ### HEAD
+* Fix #1319 - Improve how ssh_args are loaded ([#1337](https://github.com/roots/trellis/pull/1337))
+* Fix #1331 - Improve passlib instructions([#1336](https://github.com/roots/trellis/pull/1336))
+
+### 1.11.0: December 10th, 2021
+* Bump minimum ansible version to `2.10.0` and add `ansible-base` to requirements ([#1334](https://github.com/roots/trellis/pull/1334))
+* Fix Ansible `2.10.16` - set default for `ansible_ssh_extra_args` ([#1333](https://github.com/roots/trellis/pull/1333))
+* Set max supported Vagrant version to `< 2.2.19` ([#1332](https://github.com/roots/trellis/pull/1332))
+* Bump `vagrant_ansible_version` to `2.10.7` ([#1329](https://github.com/roots/trellis/pull/1329))
+* Remove Nginx `ssl_dhparam` directive and Diffie-Hellman params group ([#1326](https://github.com/roots/trellis/pull/1326))
+* Add PHP 8.1 support ([#1325](https://github.com/roots/trellis/pull/1325))
+
+### 1.10.0: November 28th, 2021
+* Default to PHP 8.0 ([#1322](https://github.com/roots/trellis/pull/1322))
+* Add GitHub SSH ed25519 key to known hosts ([#1324](https://github.com/roots/trellis/pull/1324))
+* Enable pipelining for local Ansible connections ([#1323](https://github.com/roots/trellis/pull/1323))
+
+### 1.9.1: November 11th, 2021
+* Update MariaDB mirror source ([#1320](https://github.com/roots/trellis/pull/1320))
+* Remove explicit arch deb options for MariaDB (improves ARM support) ([#1318](https://github.com/roots/trellis/pull/1318))
+
+### 1.9.0: October 27th, 2021
+* Bump max tested Ansible version to `2.10.7` ([#1317](https://github.com/roots/trellis/pull/1317))
+* Fix display color output in logs ([#1316](https://github.com/roots/trellis/pull/1316))
+* Define `composer_authentications` default ([#1315](https://github.com/roots/trellis/pull/1315))
+* Fix #1311 - Remove explicit permission for site directory ([#1314](https://github.com/roots/trellis/pull/1314))
+* Fix #1277 - Disable PHP CLI memory limit ([#1278](https://github.com/roots/trellis/pull/1278))
+* Fix #1285 - Improve handling of WP-CLI failed verification ([#1295](https://github.com/roots/trellis/pull/1295))
+* Fix #1284 - Update logrotate postrotate Nginx command ([#1293](https://github.com/roots/trellis/pull/1293))
+* Replace php-gd with php-imagick ([#1292](https://github.com/roots/trellis/pull/1292))
+* Improve handling of PHP versions and support PHP 8.0 (default is still 7.4) ([#1284](https://github.com/roots/trellis/pull/1284))
+
+### 1.8.0: February 12th, 2021
+* Set permissions on all file related tasks ([#1270](https://github.com/roots/trellis/pull/1270))
+* Use Python 3 for `ansible_local` Vagrant provisioner ([#1269](https://github.com/roots/trellis/pull/1269))
+* Bump `vagrant_ansible_version` to `2.9.10` ([#1268](https://github.com/roots/trellis/pull/1268))
+* Migrate to Xdebug 3 ([#1260](https://github.com/roots/trellis/pull/1260))
+
+### 1.7.1: January 20th, 2021
+* Improved repo connection failure message on deploys ([#1265](https://github.com/roots/trellis/pull/1265))
+* Fix #1263 - Remove deprecated PHP option `track_errors` ([#1264](https://github.com/roots/trellis/pull/1264))
 * Validate that `letsencrypt_contact_emails` is a list ([#1250](https://github.com/roots/trellis/pull/1250))
+* Add config for PHP CLI ([#1261](https://github.com/roots/trellis/pull/1261))
+* Fix security issue with empty password ([#1256](https://github.com/roots/trellis/pull/1256))
 
 ### 1.7.0: November 9th, 2020
 * Officially support Ubuntu 20.04 (and default Vagrant to it) ([#1197](https://github.com/roots/trellis/pull/1197))
