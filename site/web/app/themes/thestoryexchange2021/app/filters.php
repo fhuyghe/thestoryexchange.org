@@ -142,6 +142,17 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
     return $block;
  });
 
+ //  Featured Posts data
+add_filter('sage/blocks/featured-posts/data', function ($block) { 
+
+    $block['style'] = get_field('style');
+    $block['posts'] = get_field('posts');
+    $block['title'] = get_field('title') ? get_field('title') : get_term($block['tax'])->name;
+    $block['text'] = get_field('text');
+
+    return $block;
+ });
+
  // Landing Page Top data
 add_filter('sage/blocks/landing-page-top/data', function ($block) { 
 
