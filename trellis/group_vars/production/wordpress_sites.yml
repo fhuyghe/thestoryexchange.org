@@ -16,7 +16,8 @@ wordpress_sites:
       enabled: false
     ssl:
       enabled: true
-      provider: letsencrypt
+      stapling_enabled: false
+      provider: cloudflare-origin-ca
     cache:
       enabled: true
       duration: 30s
