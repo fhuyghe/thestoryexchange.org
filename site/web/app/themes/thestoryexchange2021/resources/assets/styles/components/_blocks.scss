@@ -8,8 +8,8 @@
     }
   }
   
-  //Featured Categories
-  .featured-category{
+//Featured Categories
+.featured-category{
     padding: $grid-gutter 0;
 
     .section-title{
@@ -198,6 +198,42 @@
       }
     }
   }
+
+//Featured Categories
+.featured-posts{
+  padding: $grid-gutter 0;
+
+  .section-title{
+    margin-bottom: $grid-gutter;
+
+    h2{
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-size: 1.2em;
+    }
+  }
+
+  &.style-1{
+    .left{
+      article{
+        margin-bottom: $grid-gutter;
+        
+        @include media-breakpoint-up(md){
+          margin-bottom: 0;
+        }
+      }
+    }
+    .right{
+      article{
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: $grid-gutter / 2;
+      }
+    }
+  }
+}
 
 
   // Landing Page Top
