@@ -52,6 +52,9 @@
 </noscript>
 <!-- End Facebook Pixel Code -->
 
+  {{-- Pixel Tag --}}
+  <meta name="facebook-domain-verification" content="pwk29ogyzb77613blf8xkj6sf63v8e" />
+
   <!-- Google Tag Manager begins -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
