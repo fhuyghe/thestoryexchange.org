@@ -189,3 +189,14 @@ header{
     max-width: 1000px;
   }
 }
+
+.error404{
+  .content{
+    min-height: calc(100vh - 160px);
+
+    .alert,
+    form{
+      max-width: 600px;
+    }
+  }
+}
