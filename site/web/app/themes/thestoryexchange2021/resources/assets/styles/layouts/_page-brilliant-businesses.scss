@@ -1,0 +1,26 @@
+//////////////////////////////
+// Template
+// Brilliant Businesses
+//////////////////////////////
+
+.page.template-brilliant-businesses{
+    .business-section{
+        margin-top: $grid-gutter;
+
+        .row{
+            justify-content: center;
+
+            .entry-thumbnail{
+                margin-bottom: 10px;
+            }
+        }
+        
+        @include media-breakpoint-up(md){
+            margin-top: $grid-gutter * 2;
+        }
+    }
+
+    h2{
+        text-align: center;
+    }
+}
