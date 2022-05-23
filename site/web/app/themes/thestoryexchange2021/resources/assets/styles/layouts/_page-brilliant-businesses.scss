@@ -12,15 +12,32 @@
             line-height: 1.3em;
         }
     }
+    
+    .page-content{
+        margin-bottom: $grid-gutter
+    }
 
     .business-section{
-        margin-top: $grid-gutter;
+        .post-item{
+            margin-bottom: $grid-gutter
+        }
 
         .row{
             justify-content: center;
 
             .entry-thumbnail{
-                //margin-bottom: 10px;
+                display: flex;
+                height: 280px;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @include media-breakpoint-up(md){
+                    height: 180px;
+                }
             }
         }
 
