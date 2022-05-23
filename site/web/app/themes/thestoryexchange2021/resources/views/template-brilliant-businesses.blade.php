@@ -29,11 +29,9 @@ Template Name: Brilliant Businesses
                                     @php setup_postdata($post) @endphp
                                     <article id="post-{!! the_ID() !!}" class="post-item">
                                         <div class="post-wrap">
-                                          @if ( has_post_thumbnail())
                                             <div class="entry-thumbnail">
                                                 <img src="{{ $item['thumbnail']['sizes']['medium']}}">
                                             </div>
-                                          @endif
                                           <div class="entry-text">
                                               <h3 class="post-title">
                                                 <a href="{!! the_permalink() !!}">
