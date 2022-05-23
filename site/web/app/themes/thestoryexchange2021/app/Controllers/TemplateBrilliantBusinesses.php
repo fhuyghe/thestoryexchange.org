@@ -10,6 +10,7 @@ class TemplateBrilliantBusinesses extends Controller
     {
         $data = [];
         $data['sections'] = get_field('sections');
+        $data['subheading'] = get_field('subheading');
 
         return $data;
     }

@@ -4,6 +4,15 @@
 //////////////////////////////
 
 .page.template-brilliant-businesses{
+    .page-header{
+        text-align: center;
+        max-width: 600px;
+
+        .subtitle{
+            line-height: 1.3em;
+        }
+    }
+
     .business-section{
         margin-top: $grid-gutter;
 
@@ -13,6 +22,10 @@
             .entry-thumbnail{
                 margin-bottom: 10px;
             }
+        }
+
+        .excerpt{
+            display: block;
         }
         
         @include media-breakpoint-up(md){

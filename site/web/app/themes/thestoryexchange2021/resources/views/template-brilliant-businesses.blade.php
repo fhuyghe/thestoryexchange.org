@@ -6,8 +6,16 @@ Template Name: Brilliant Businesses
 
 @section('content')
     <div class="container">
-    <h1>{!! the_title() !!}</h1>
-    {!! the_content() !!}
+        <section class="page-header">
+            <h1>{!! the_title() !!}</h1>
+            @if($data['subheading'])
+            <p class="subtitle">{{ $data['subheading'] }}</p>
+            @endif
+        </section>
+        
+        <section class="page-content">
+            {!! the_content() !!}
+        </section>
     
         <section id="businesses" class="">
             <div class="wrap">
@@ -19,11 +27,25 @@ Template Name: Brilliant Businesses
                                 <div class="col-md-4">
                                     @php $post=$item['story'] @endphp
                                     @php setup_postdata($post) @endphp
-                                    @include('partials.post-item', [
-                                        'post_classes' => '',
-                                        'format' => '',
-                                        'showExcerpt' => false,
-                                    ])
+                                    <article id="post-{!! the_ID() !!}" class="post-item">
+                                        <div class="post-wrap">
+                                          @if ( has_post_thumbnail())
+                                            <div class="entry-thumbnail">
+                                                <img src="{{ $item['thumbnail']['sizes']['medium']}}"
+                                            </div>
+                                          @endif
+                                          <div class="entry-text">
+                                              <h3 class="post-title">
+                                                <a href="{!! the_permalink() !!}">
+                                                  {{ $item['title'] }}
+                                                </a>
+                                              </h3>
+                                              <div class="entry-content excerpt">
+                                                {{ $item['blurb'] }}
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </article>
                                 @php wp_reset_postdata() @endphp
                                 </div>
                                 @endforeach
