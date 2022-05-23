@@ -10,6 +10,7 @@ web/app/wflogs
 # WordPress
 web/wp
 web/.htaccess
+web/app/debug.log
 
 # Dotenv
 .env

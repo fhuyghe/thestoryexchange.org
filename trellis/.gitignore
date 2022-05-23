@@ -4,3 +4,5 @@ vagrant.local.yml
 vendor/roles
 *.py[co]
 *.retry
+.trellis
+
