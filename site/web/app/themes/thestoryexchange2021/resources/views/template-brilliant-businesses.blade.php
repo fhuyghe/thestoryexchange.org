@@ -31,7 +31,7 @@ Template Name: Brilliant Businesses
                                         <div class="post-wrap">
                                           @if ( has_post_thumbnail())
                                             <div class="entry-thumbnail">
-                                                <img src="{{ $item['thumbnail']['sizes']['medium']}}"
+                                                <img src="{{ $item['thumbnail']['sizes']['medium']}}">
                                             </div>
                                           @endif
                                           <div class="entry-text">
