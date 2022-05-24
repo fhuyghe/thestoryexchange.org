@@ -2,6 +2,21 @@
   #content .container{
     max-width: $content-width;
   }
+
+  .wp-block-image{
+    margin: $grid-gutter auto;
+    
+    img{
+        margin: auto;
+        display: block;
+        height: auto;
+    }
+    
+    figcaption{
+        color: theme-color(grey);
+        font-style: italic;
+    }
+  }
 }
 
 .page-template-default:not(.home),
