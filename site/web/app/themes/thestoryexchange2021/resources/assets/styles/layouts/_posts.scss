@@ -38,10 +38,9 @@
             }
         }
 
-        .wp-block-embed-instagram{
-            iframe{
+        iframe.instagram-media,
+        .wp-block-embed-instagram iframe{
                 margin: 0 auto!important;
-            }
         }
 
         .caption{
