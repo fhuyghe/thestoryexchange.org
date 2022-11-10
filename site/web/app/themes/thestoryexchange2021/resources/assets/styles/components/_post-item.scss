@@ -98,6 +98,7 @@ article.post-item{
         justify-content: center;
         border: 1px solid theme-color(black);
         padding-left: 3px;
+        pointer-events: none;
 
         .triangle{
             width: 0; 
