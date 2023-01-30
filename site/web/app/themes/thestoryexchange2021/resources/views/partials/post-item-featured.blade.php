@@ -21,6 +21,9 @@
           @include('partials/post-thumbnail')
       @endif
     @endif
+      @if(in_category('entrepreneur-videos'))
+        @include('partials.icon-play')
+      @endif
     </div>
     <a href="{!! the_permalink() !!}">
     <div class="entry-text">
