@@ -50,7 +50,7 @@
     <div class="popup-wrap">
       <h2>{!! the_field('newsletter_banner_title', 'option') !!}</h2> 
       <p>{!! the_field('newsletter_banner_text', 'option') !!}</p>
-      @include('partials/mailchimp-form')
+      @include('partials/newsletter-signup-email')
       <div class="close">
         <i class="fal fa-times-circle"></i>
       </div>
