@@ -116,6 +116,7 @@
         "wpackagist-plugin/wp-fastest-cache": "^1.0.3",
         "wpackagist-plugin/wp-to-twitter": "^3.3.12",
         "wpackagist-plugin/benchmark-email-lite":"4.1",
+        "wpackagist-plugin/instagram-feed":"6.1.3",
         "yoast/yoast-news-seo": "^13.1",
         "yoast/wordpress-seo-premium": "^18.1",
         "wpackagist-plugin/ajax-load-more":"5.5.0.1"
@@ -126,7 +127,12 @@
       },
       "config": {
         "optimize-autoloader": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "ffraenz/private-composer-installer": true,
+            "roots/wordpress-core-installer": true
+        }
       },
       "minimum-stability": "dev",
       "prefer-stable": true,
