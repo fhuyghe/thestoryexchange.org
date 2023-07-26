@@ -1,11 +1,4 @@
 ---
-- name: Set ansible_python_interpreter
-  hosts: web:&development
-  gather_facts: false
-  become: yes
-  roles:
-    - { role: python_interpreter, tags: [always] }
-
 - name: "WordPress Server: Install LEMP Stack with PHP and MariaDB MySQL"
   hosts: web:&development
   become: yes
@@ -18,7 +11,7 @@
     - { role: ntp, tags: [ntp] }
     - { role: sshd, tags: [sshd] }
     - { role: mariadb, tags: [mariadb] }
-    - { role: mailhog, tags: [mailhog, mail] }
+    - { role: mailpit, tags: [mailpit, mailhog, mail] }
     - { role: php, tags: [php] }
     - { role: xdebug, tags: [php, xdebug] }
     - { role: memcached, tags: [memcached] }

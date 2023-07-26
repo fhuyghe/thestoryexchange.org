@@ -1,9 +1,0 @@
-cache/
-ewww/debug.log
-wflogs/config-livewaf.php
-wflogs/config-synced.php
-wflogs/config-transient.php
-wflogs/rules.php
-wflogs/.fuse*
-themes/x-child-ethos/
-wflogs/

@@ -1,12 +1,11 @@
-# Documentation: https://roots.io/trellis/docs/local-development-setup/
-# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
-# Define accompanying passwords/secrets in group_vars/development/vault.yml
+# Created by trellis-cli v1.10.1
+# Documentation: https://docs.roots.io/trellis/master/wordpress-sites/
 
 wordpress_sites:
   thestoryexchange.org:
     site_hosts:
-      - canonical: thestoryexchange.test
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    - canonical: thestoryexchange.test
+    local_path: ../site
     admin_email: francois@13milliseconds.com
     multisite:
       enabled: false

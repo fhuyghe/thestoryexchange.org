@@ -15,7 +15,7 @@ server {
   {% endblock %}
 
   {% block server_basic -%}
-  root  {{ www_root }}/{{ item.key }}/{{ item.value.current_path | default('current') }}/web;
+  root  {{ www_root }}/{{ item.key }}/{{ item.value.current_path | default('current') }}/{{ item.value.public_path | default('web') }};
   index index.php index.htm index.html;
   add_header Fastcgi-Cache $upstream_cache_status;
 
@@ -36,6 +36,12 @@ server {
   {% if item.value.cache is defined and item.value.cache.enabled | default(false) -%}
   # Fastcgi cache conditions
   set $skip_cache 0;
+
+  # Skip requests with HTTP methods that should not be cached: DELETE, OPTIONS, PATCH, POST, PUT
+  if ($request_method !~ ^(GET|HEAD)$) {
+    set $skip_cache 1;
+  }
+
   if ($query_string != "") {
     set $skip_cache 1;
   }
@@ -78,7 +84,7 @@ server {
   ssl_buffer_size 1400; # 1400 bytes to fit in one MTU
 
   {% if item.value.ssl.provider | default('manual') != 'self-signed' -%}
-  add_header Strict-Transport-Security "max-age={{ [hsts_max_age, hsts_include_subdomains, hsts_preload] | reject('none') | join('; ') }}";
+  add_header Strict-Transport-Security "max-age={{ [hsts_max_age, hsts_include_subdomains, hsts_preload] | reject('none') | join('; ') | trim }}";
   {% endif -%}
 
   {% if item.value.ssl.client_cert_url is defined -%}
@@ -116,7 +122,7 @@ server {
 
   {% block location_uploads_php -%}
   # Prevent PHP scripts from being executed inside the uploads folder.
-  location ~* /app/uploads/.*\.php$ {
+  location ~* /{{ item.value.upload_path | default('app/uploads') }}/.*\.php$ {
     deny all;
   }
   {% endblock %}
@@ -168,6 +174,14 @@ server {
   }
   {% endblock %}
 
+  {% block disable_xmlrpc -%}
+    {% if item.value.xmlrpc.enabled is defined and item.value.xmlrpc.enabled == false %}
+      location ~* xmlrpc\.php$ {
+        return 444;
+      }
+    {% endif %}
+  {% endblock %}
+
   {% block h5bp -%}
   {% if h5bp_cache_file_descriptors_enabled -%}
   include h5bp/directive-only/cache-file-descriptors.conf;
@@ -190,11 +204,11 @@ server {
   {% endif -%}
 
   {% if h5bp_cross_domain_fonts_enabled -%}
-  include h5bp/location/cross-domain-fonts.conf;
+  include h5bp/directive-only/cross-origin-requests.conf;
   {% endif -%}
 
   {% if h5bp_expires_enabled -%}
-  include h5bp/location/expires.conf;
+  expires $expires;
   {% endif -%}
 
   {% if h5bp_protect_system_files_enabled -%}
@@ -206,14 +220,7 @@ server {
   {% block embed_security -%}
   {% if item.value.nginx_embed_security | default(nginx_embed_security | default(true)) -%}
   add_header Content-Security-Policy "frame-ancestors 'self'" always;
-
-  # Conditional X-Frame-Options until https://core.trac.wordpress.org/ticket/40020 is resolved
-  set $x_frame_options SAMEORIGIN;
-  if ($arg_customize_changeset_uuid) {
-    set $x_frame_options "";
-  }
-  add_header X-Frame-Options $x_frame_options always;
-
+  add_header X-Frame-Options SAMEORIGIN always;
   {% endif -%}
   {% endblock -%}
 

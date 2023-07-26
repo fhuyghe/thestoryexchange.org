@@ -1,8 +1,6 @@
 # Documentation: https://roots.io/trellis/docs/mail/
-mail_smtp_server: smtp.thestoryexchange.org:587
-mail_admin: admin@thestoryexchange.org
-mail_hostname: thestoryexchange.org
+mail_smtp_server: smtp.example.com:587
+mail_admin: admin@example.com
+mail_hostname: example.com
 mail_user: smtp_user
 mail_password: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml
-letsencrypt_contact_emails:
-    - francois@13milliseconds.com

@@ -1,22 +1,21 @@
-- name: composer
-  src: geerlingguy.composer
-  version: 1.9.0
+---
+roles:
+  - name: composer
+    src: geerlingguy.composer
+    version: 1.9.0
 
-- name: ntp
-  src: geerlingguy.ntp
-  version: 2.2.0
+  - name: ntp
+    src: geerlingguy.ntp
+    version: 2.3.1
 
-- name: logrotate
-  src: nickhammond.logrotate
-  version: v0.0.5
+  - name: logrotate
+    src: nickhammond.logrotate
+    version: v0.0.5
 
-- name: swapfile
-  src: oefenweb.swapfile
-  version: v2.0.32
+  - name: swapfile
+    src: oefenweb.swapfile
+    version: v2.0.36
 
-- name: mailhog
-  src: geerlingguy.mailhog
-  version: 2.2.0
-
-- src: TypistTech.trellis-cloudflare-origin-ca
-  version: 0.8.0
+  - name: mailpit
+    src: roots.mailpit
+    version: v1.0.0

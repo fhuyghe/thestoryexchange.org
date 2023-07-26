@@ -3,7 +3,7 @@
   group:
     name: "{{ item }}"
     state: present
-  with_items: "{{ users | sum(attribute='groups', start=[]) | list | unique }}"
+  loop: "{{ users | sum(attribute='groups', start=[]) | list | unique }}"
 
 - name: Ensure sudo group has sudo privileges
   lineinfile:
@@ -37,7 +37,9 @@
     state: present
     shell: /bin/bash
     update_password: "{{ item.update_password | default('always') }}"
-  with_items: "{{ users }}"
+  loop: "{{ users }}"
+  loop_control:
+    label: "{{ item.name }}"
 
 - name: Add web user sudoers items for services
   template:
@@ -49,13 +51,19 @@
     validate: "/usr/sbin/visudo -cf %s"
   when: web_sudoers[0] is defined
 
-- name: Add SSH keys
+- name: Add user SSH keys
   authorized_key:
     user: "{{ item.0.name }}"
     key: "{{ item.1 }}"
-  with_subelements:
-    - "{{ users | default([]) }}"
-    - keys
+  loop: "{{ users | default([]) | subelements('keys') }}"
+  loop_control:
+    label: "{{ item.0.name }}"
+
+- name: Add deploy SSH keys
+  authorized_key:
+    user: "{{ web_user }}"
+    key: "{{ lookup('file', item) }}"
+  with_fileglob: 'public_keys/*.pub'
 
 - name: Check whether Ansible can connect as admin_user
   command: ansible {{ inventory_hostname }} -m ping -u {{ admin_user }} {{ cli_options | default('') }}

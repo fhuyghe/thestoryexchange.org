@@ -9,13 +9,6 @@
   roles:
     - { role: connection, tags: [connection, always] }
 
-- name: Set ansible_python_interpreter
-  hosts: web:&{{ env }}
-  gather_facts: false
-  become: yes
-  roles:
-    - { role: python_interpreter, tags: [always] }
-
 - name: WordPress Server - Install LEMP Stack with PHP and MariaDB MySQL
   hosts: web:&{{ env }}
   become: yes
@@ -36,5 +29,4 @@
     - { role: composer, tags: [composer] }
     - { role: wp-cli, tags: [wp-cli] }
     - { role: letsencrypt, tags: [letsencrypt], when: sites_using_letsencrypt | count }
-    - { role: wordpress-setup, tags: [wordpress, wordpress-setup, letsencrypt, cloudflare-origin-ca] }
-    - { role: TypistTech.trellis-cloudflare-origin-ca, tags: [cloudflare-origin-ca, wordpress-setup], when: sites_using_cloudflare_origin_ca | count }
+    - { role: wordpress-setup, tags: [wordpress, wordpress-setup, letsencrypt] }

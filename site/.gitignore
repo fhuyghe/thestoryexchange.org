@@ -2,21 +2,23 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
+web/app/themes/twentytwentythree/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
-web/app/wflogs
+web/app/cache/*
 
 # WordPress
 web/wp
 web/.htaccess
-web/app/debug.log
+
+# Logs
+*.log
 
 # Dotenv
 .env
 .env.*
 !.env.example
-auth.json
 
 # Composer
 /vendor
