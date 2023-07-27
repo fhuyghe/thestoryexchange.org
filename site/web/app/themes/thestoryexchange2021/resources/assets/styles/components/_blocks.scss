@@ -431,6 +431,14 @@
     width: 100%;
     margin-bottom: $grid-gutter;
     
+    .entry-text{
+      @extend .col-md-4;
+    }
+    
+    .entry-thumbnail{
+      @extend .col-md-8;
+    }
+
     @include media-breakpoint-up(md){
       margin-bottom: 0;
 
@@ -439,15 +447,9 @@
         flex-flow: row-reverse;
   
         .entry-text{
-          @extend .col-md-4;
-
           .excerpt{
             display: block;
           }
-        }
-  
-        .entry-thumbnail{
-          @extend .col-md-8;
         }
       }
     }

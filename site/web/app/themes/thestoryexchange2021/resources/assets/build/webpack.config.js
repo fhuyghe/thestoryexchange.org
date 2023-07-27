@@ -5,9 +5,7 @@ const webpack = require('webpack');
 const { merge, mergeWithCustomize, customizeArray } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('@soda/friendly-errors-webpack-plugin'); // maintained fork for webpack 5
 
 const desire = require('./util/desire');
@@ -133,10 +131,6 @@ let webpackConfig = {
     jquery: 'jQuery',
   },
   plugins: [
-    new ESLintPlugin({
-      failOnWarning: false,
-      failOnError:   true,
-    }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [config.paths.dist],
       verbose: false,
@@ -170,10 +164,6 @@ let webpackConfig = {
     }),
     new MiniCssExtractPlugin({
       filename: `styles/${assetsFilenames}.css`,
-    }),
-    new StyleLintPlugin({
-      failOnError: !config.enabled.watcher,
-      syntax: 'scss',
     }),
     new FriendlyErrorsWebpackPlugin(),
   ],

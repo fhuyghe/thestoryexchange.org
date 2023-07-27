@@ -4891,10 +4891,10 @@ colors@latest:
   languageName: node
   linkType: hard
 
-"hamburger@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "hamburger@npm:0.1.1"
-  checksum: 018ee39712864fc3a3b0e096c6ec1448cc7f55178636812397b567d97d5fbaa96e3e8513157be171339e14d3550e40f8dc246dc972ea9e8a1bed0b7ac20dee02
+"hamburgers@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "hamburgers@npm:1.2.1"
+  checksum: f43d9f4309933e84b3ffe1c85d0e9fd858170339c9001f2481646547bdfa223ab44c8c2532802b8585c77738ef0271737db7d016dc134f9dcddc8fc72426a9f0
   languageName: node
   linkType: hard
 
@@ -9259,7 +9259,7 @@ colors@latest:
     eslint-plugin-import: ^2.14.0
     eslint-webpack-plugin: ^2.4.1
     file-loader: ^6.2.0
-    hamburger: ^0.1.1
+    hamburgers: ^1.2.1
     imagemin-mozjpeg: ^9.0.0
     imagemin-webpack-plugin: ^2.4.2
     import-glob: ~1.5
@@ -9273,12 +9273,13 @@ colors@latest:
     rimraf: ^3.0.2
     sass: ^1.41.0
     sass-loader: ^12.0.0
+    slick-carousel: ^1.8.1
     style-loader: ^2.0.0
     stylelint: ^13.7.2
     stylelint-config-standard: ^22.0.0
     stylelint-webpack-plugin: ^2.1.1
     url-loader: ^4.1.1
-    webpack: ^5.88.2
+    webpack: ^5.11.1
     webpack-assets-manifest: ^5.0.0
     webpack-cli: ^4.3.0
     webpack-dev-middleware: ^5.0.0
@@ -9631,6 +9632,15 @@ colors@latest:
     astral-regex: ^2.0.0
     is-fullwidth-code-point: ^3.0.0
   checksum: 4a82d7f085b0e1b070e004941ada3c40d3818563ac44766cca4ceadd2080427d337554f9f99a13aaeb3b4a94d9964d9466c807b3d7b7541d1ec37ee32d308756
+  languageName: node
+  linkType: hard
+
+"slick-carousel@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "slick-carousel@npm:1.8.1"
+  peerDependencies:
+    jquery: ">=1.8.0"
+  checksum: acaad391e4d8bc1c7fdb8d361faa1f1d60829b31d618b54bc38c0550a59b26de36537e0ab4bc0364176ec11d1a61d0cf11e99d8d5b1285d656673c9a1a719257
   languageName: node
   linkType: hard
 
@@ -11249,7 +11259,7 @@ colors@latest:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.88.2":
+"webpack@npm:^5.11.1":
   version: 5.88.2
   resolution: "webpack@npm:5.88.2"
   dependencies:

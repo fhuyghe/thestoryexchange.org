@@ -46,8 +46,8 @@
     }
 
     input[type="submit"]{
-        @extend a.bigbutton;
-        @extend a.bigbutton.yellow;
+        @extend .bigbutton;
+        @extend .yellow;
     }
 }
 
