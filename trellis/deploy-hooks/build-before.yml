@@ -7,38 +7,30 @@
 # and replace `sage` with your theme folder
 #
 # ---
-# - name: Install npm dependencies
-#   command: yarn
-#   delegate_to: localhost
-#   args:
-#     chdir: "{{ project_local_path }}/web/app/themes/sage"
-#
-# - name: Install Composer dependencies
-#   command: composer install --no-ansi --no-dev --no-interaction --no-progress --optimize-autoloader --no-scripts --classmap-authoritative
-#   args:
-#     chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/sage"
-#
-# - name: Compile assets for production
-#   command: yarn build
-#   delegate_to: localhost
-#   args:
-#     chdir: "{{ project_local_path }}/web/app/themes/sage"
-#
-# - name: Check for entrypoints
-#   stat:
-#     path: "{{ project_local_path }}/web/app/themes/sage/public/entrypoints.json"
-#   delegate_to: localhost
-#   register: entrypoints_data
+# # Placeholder `deploy_build_before` hook for building theme assets on the
+# host machine and then copying the files to the remote server
 
-# - name: Entrypoints missing
-#   ansible.builtin.fail:
-#     msg: "The theme is missing the public/entrypoints.json file"
-#   when: not entrypoints_data.stat.exists
-#
-# - name: Copy production assets
-#   synchronize:
-#     src: "{{ project_local_path }}/web/app/themes/sage/public"
-#     dest: "{{ deploy_helper.new_release_path }}/web/app/themes/sage"
-#     group: no
-#     owner: no
-#     rsync_opts: --chmod=Du=rwx,--chmod=Dg=rx,--chmod=Do=rx,--chmod=Fu=rw,--chmod=Fg=r,--chmod=Fo=r
+- name: Install npm dependencies
+    command: yarn
+    delegate_to: localhost
+    args:
+      chdir: "{{ project_local_path }}/web/app/themes/thestoryexchange2021"
+
+  - name: Install Composer dependencies
+    command: composer install --no-ansi --no-dev --no-interaction --no-progress --optimize-autoloader --no-scripts --classmap-authoritative
+    args:
+      chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/thestoryexchange2021"
+
+  - name: Compile assets for production
+    command: yarn build:production
+    delegate_to: localhost
+    args:
+      chdir: "{{ project_local_path }}/web/app/themes/thestoryexchange2021"
+
+  - name: Copy production assets
+    synchronize:
+      src: "{{ project_local_path }}/web/app/themes/thestoryexchange2021/dist"
+      dest: "{{ deploy_helper.new_release_path }}/web/app/themes/thestoryexchange2021"
+      group: no
+      owner: no
+      rsync_opts: --chmod=Du=rwx,--chmod=Dg=rx,--chmod=Do=rx,--chmod=Fu=rw,--chmod=Fg=r,--chmod=Fo=r
