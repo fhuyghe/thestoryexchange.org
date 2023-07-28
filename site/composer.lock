@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e800680950d9b25e5ac8edfe9466c087",
+    "content-hash": "81e4f2c9f41a8f92619e3265dffd8b4a",
     "packages": [
         {
             "name": "13milliseconds/ajax-load-more-pro",
@@ -156,7 +156,7 @@
         },
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.12.2",
+            "version": "6.1.7",
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
@@ -1561,15 +1561,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "6.1.5",
+            "version": "6.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/6.1.5"
+                "reference": "tags/6.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.1.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.1.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1579,15 +1579,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "9.9.2",
+            "version": "12.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/9.9.2"
+                "reference": "tags/12.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.9.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.12.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
