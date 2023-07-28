@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3a8ff4b1a16a4a0b727fab4d8ae806f",
+    "content-hash": "14ae829d1e53e3aa0bb35a4751234250",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -790,6 +790,55 @@
                 }
             ],
             "time": "2020-04-07T20:44:10+00:00"
+        },
+        {
+            "name": "mwdelaney/sage-acf-gutenberg-blocks",
+            "version": "0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MWDelaney/sage-acf-wp-blocks.git",
+                "reference": "795527e63b45c8426741a074270355953b28ce37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MWDelaney/sage-acf-wp-blocks/zipball/795527e63b45c8426741a074270355953b28ce37",
+                "reference": "795527e63b45c8426741a074270355953b28ce37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "sage-acf-gutenberg-blocks.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael W. Delaney",
+                    "email": "michael@michaeldelaney.me"
+                },
+                {
+                    "name": "Nico Prat"
+                }
+            ],
+            "description": "Create Gutenberg blocks from Sage blade templates and ACF fields.",
+            "homepage": "https://github.com/MWDelaney/sage-acf-gutenberg-blocks",
+            "keywords": [
+                "advanced custom fields",
+                "gutenberg",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/MWDelaney/sage-acf-wp-blocks/issues",
+                "source": "https://github.com/MWDelaney/sage-acf-wp-blocks/tree/0.7"
+            },
+            "time": "2021-01-13T21:07:25+00:00"
         },
         {
             "name": "nesbot/carbon",
