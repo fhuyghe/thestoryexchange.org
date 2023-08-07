@@ -11,6 +11,21 @@
   SupportsMultiple: true
 --}}
 
+@php 
+global $post;
+@endphp
+
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
-  <h2>Posts List</h2>
+    <div class="row">
+  @php $posts = get_field('posts') @endphp
+  @foreach ($posts as $post)
+    @php setup_postdata($post) @endphp
+      @include('partials/post-item',[
+      'post_classes' => 'col-md-4',
+      'format' => '',
+      'showExcerpt' => true,
+      ]) 
+    @php wp_reset_postdata() @endphp
+  @endforeach
+  </div>
 </div>
