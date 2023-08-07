@@ -8,6 +8,8 @@ ntp_timezone: Etc/UTC
 ntp_manage_config: true
 www_root: /srv/www
 max_journal_size: 512M
+php_extensions_custom:
+  php7.4-gd: "{{ apt_package_state }}"
 letsencrypt_contact_emails:
   - francois@13milliseconds.com
 
