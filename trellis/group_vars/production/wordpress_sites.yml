@@ -5,16 +5,14 @@ wordpress_sites:
   thestoryexchange.org:
     site_hosts:
     - canonical: thestoryexchange.org
-      redirects:
-      - www.thestoryexchange.org
     local_path: ../site
-    branch: master
-    repo: git@github.com:example/example.com.git
+    branch: new-trellis
+    repo: git@github.com:13milliseconds/thestoryexchange.org.git
     repo_subtree_path: site
     multisite:
       enabled: false
     ssl:
-      enabled: false
+      enabled: true
       provider: letsencrypt
     cache:
-      enabled: false
+      enabled: true
