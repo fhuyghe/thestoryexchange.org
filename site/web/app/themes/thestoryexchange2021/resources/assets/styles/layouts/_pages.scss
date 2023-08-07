@@ -215,3 +215,17 @@ header{
     }
   }
 }
+
+nav.posts-navigation{
+  margin-bottom: $grid-gutter;
+
+  .nav-previous a{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: theme-color(yellow);
+
+    &:hover{
+      color: darken(theme-color(yellow), .5);
+    }
+  }
+}
