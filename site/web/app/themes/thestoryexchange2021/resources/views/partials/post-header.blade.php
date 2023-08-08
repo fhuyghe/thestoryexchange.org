@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header @if(get_field('center')) center @endif">
   <div class="container">
     @if ( in_category(32) )
     <a class="thousandStoriesLogo" href="/stories/">
