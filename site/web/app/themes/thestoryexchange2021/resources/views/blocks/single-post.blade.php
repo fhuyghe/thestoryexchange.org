@@ -16,7 +16,7 @@ global $post;
 @endphp
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
-  @php $posts = get_field('post') @endphp
+  @php $post = get_field('post') @endphp
     @php setup_postdata($post) @endphp
       @include('partials/post-item',[
       'post_classes' => '',
