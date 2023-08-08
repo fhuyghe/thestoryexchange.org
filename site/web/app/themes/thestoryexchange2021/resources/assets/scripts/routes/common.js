@@ -35,7 +35,7 @@ export default {
       
       $('#newsletterPopup').removeClass('active');
     })
-    $('.close').on('click', function (e) {
+    $('.close').on('click', function () {
       $('#newsletterPopup').removeClass('active');
     })
 
