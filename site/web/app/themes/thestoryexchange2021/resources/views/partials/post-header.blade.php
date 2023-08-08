@@ -1,5 +1,4 @@
 <header class="page-header @if(get_field('center')) center @endif">
-  <div class="container">
     @if ( in_category(32) )
     <a class="thousandStoriesLogo" href="/stories/">
         <img src="@asset('images/TSE_1kPlusStories_Logo.jpg')" />
@@ -15,6 +14,5 @@
         <p class="subtitle">{{ the_excerpt() }}</p>
         @endif
       @include('partials/entry-meta')
-    </div>
     </div>
   </header>

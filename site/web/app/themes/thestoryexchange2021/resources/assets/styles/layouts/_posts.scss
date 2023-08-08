@@ -48,6 +48,13 @@
             color: theme-color(grey);
         }
 
+        .page-header.center .header-content{
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
     
         .page-header .container{
             position:relative;
@@ -77,6 +84,8 @@
                     }
                 }
             }
+
+            
         }
 
         h2, 
