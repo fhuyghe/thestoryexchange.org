@@ -43,6 +43,30 @@ export default {
       $('.search').toggleClass('active');
     });
 
+    //
+    if($('.scrolling-story')){
+      let options = {
+        rootMargin: '100px',
+        threshold: .8,
+      };
+
+      const textWrapper = document.querySelector('.scrolling-story-text')
+
+      let callback = (entries) => {
+        entries.forEach((entry) => {
+          console.log('Changed!', entry)
+          textWrapper.innerHTML = entry.target.dataset.text
+        });
+      };
+      
+      let observer = new IntersectionObserver(callback, options);
+
+      let slides = document.querySelectorAll('.scrolling-story-slide')
+      if(slides) slides.forEach(slide => {
+        observer.observe(slide);
+      });
+    }
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

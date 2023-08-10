@@ -59,6 +59,10 @@ $hamburger-layer-spacing       : 4px;
 
 @import "layouts/template-startup-tips";
 @import "layouts/template-1000-stories";
+@import "layouts/template-afghan-women";
+
+@import "blocks/scrolling-story";
+@import "blocks/footer-cta";
 
 // Import Slick
 $slick-font-path: "~slick-carousel/slick/fonts/";

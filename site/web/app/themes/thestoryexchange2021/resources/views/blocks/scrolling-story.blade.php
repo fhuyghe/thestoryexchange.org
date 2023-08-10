@@ -1,0 +1,31 @@
+{{--
+  Title: Scrolling Story
+  Category: formatting
+  Icon: admin-page
+  Keywords: animation slideshow slide
+  Mode: edit
+  Align: wide
+  PostTypes: page post
+  SupportsAlign: false
+  SupportsMode: false
+  SupportsMultiple: true
+--}}
+@php $slides = get_field('slides')@endphp
+
+<section id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
+    <div class="scrolling-story-text">
+        {{ $slides[0]['text'] }}
+    </div>
+  @foreach ($slides as $slide)
+  <div class="scrolling-story-slide @if(!$slide['images'])no-image @endif" 
+    data-text="{{ $slide['text'] }}"
+    data-secondary-text="{{ $slide['secondary_text'] }}"
+    >
+        @if ($slide['images'])
+            @foreach ($slide['images'] as $image)
+                {!! wp_get_attachment_image( $image['id'], 'large' ) !!}
+            @endforeach
+            @endif
+        </div>
+  @endforeach
+</section>

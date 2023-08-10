@@ -57,12 +57,17 @@ a{
         color: inherit;
     }
 
+    &.button,
     &.btn{
         background: theme-color(yellow);
         padding: 10px 25px;
         border: 0;
         border-radius: 0;
         font-family: 'Graphik', sans-serif;
+        
+        &.red{
+            background: theme-color(red);
+        }
 
         &:hover{
             background-color: darken(theme-color(yellow), 10%);
