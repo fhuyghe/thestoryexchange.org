@@ -1,5 +1,5 @@
 .wp-block.scrolling-story{
-
+    // margin-top: 50vh;
 }
 
 .scrolling-story-text{
@@ -8,8 +8,9 @@
     width: 80%;
     position: sticky;
     top: 50%;
-    margin: 50vh auto 0;
+    margin: auto;
     z-index: 3;
+    max-width: 700px;
 }
 
 .scrolling-story-slide{
@@ -17,15 +18,16 @@
     display: flex;
     align-items: center;
 
-    &.no-image{
-        height: 50vh;
+    &:nth-child(2){
         margin-top: -50vh;
     }
 
-    img{
-        flex: 1;
-        width: 60%;
+    .image{
+        width: 100%;
+        text-align: center;
+    }
 
+    img{
         &:nth-child(2){
             transform: translate(-10%, 7rem);
         }

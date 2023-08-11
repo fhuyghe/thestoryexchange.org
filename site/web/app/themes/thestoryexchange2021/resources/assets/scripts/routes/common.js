@@ -2,22 +2,14 @@ import initVideoPlayers from '../tools/videoPlayer';
 import stickyPosition from '../tools/stickyPosition';
 import sideMenu from '../tools/sideMenu';
 import collapsibleMenu from '../tools/collapsibleMenu';
+import Lenis from '@studio-freight/lenis'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default {
   init() {
     // JavaScript to be fired on all pages
 
-    //Make all outbound links open in a new tab
-    // $('a').each(function () {
-    //     var a = new RegExp('/' + window.location.host + '/');
-    //     if (!a.test(this.href)) {
-    //       $(this).click(function(event) {
-    //         event.preventDefault();
-    //         event.stopPropagation();
-    //         window.open(this.href, '_blank');
-    //       });
-    //     }
-    // });
     $('article a:not(.play-pause):not(.accordion-toggle)').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
@@ -50,11 +42,43 @@ export default {
         threshold: .8,
       };
 
+      // Parralax images
+      gsap.registerPlugin(ScrollTrigger);
+      const lenis = new Lenis({
+        lerp: 0.1,
+        smooth: true,
+      })
+
+      const raf = (time) => {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+      requestAnimationFrame(raf)
+
+      const images = document.querySelectorAll('.scrolling-story .image')
+      images.forEach(item => {
+
+        const image = item.querySelector('img');
+    
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: true,
+        },
+        })
+        .to(image, {
+          ease: 'none',
+          y: -200 * item.dataset.speed,
+        });
+    
+      });
+
       const textWrapper = document.querySelector('.scrolling-story-text')
 
       let callback = (entries) => {
         entries.forEach((entry) => {
-          console.log('Changed!', entry)
           textWrapper.innerHTML = entry.target.dataset.text
         });
       };

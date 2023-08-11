@@ -460,6 +460,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@studio-freight/lenis@npm:^1.0.19":
+  version: 1.0.19
+  resolution: "@studio-freight/lenis@npm:1.0.19"
+  checksum: 552844b23ebf8af0dedf655a102bfaf453d80a7d2b702e7632c28f65cec0d673d138776a937119470442ffda50132827d806dead19d92b896d1fbedb35b0f1b9
+  languageName: node
+  linkType: hard
+
 "@stylelint/postcss-css-in-js@npm:^0.37.2":
   version: 0.37.3
   resolution: "@stylelint/postcss-css-in-js@npm:0.37.3"
@@ -4818,6 +4825,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.12.2":
+  version: 3.12.2
+  resolution: "gsap@npm:3.12.2"
+  checksum: e3e9709f9ca60cee0ef7fd91f45a232a48b550f95b6df090dfffe2511fccc651408476de575b69c1c2ce80b6089b6ad0d4854beb58ea427f14e51a30b0640a70
+  languageName: node
+  linkType: hard
+
 "hamburgers@npm:^1.2.1":
   version: 1.2.1
   resolution: "hamburgers@npm:1.2.1"
@@ -8997,6 +9011,7 @@ __metadata:
   resolution: "sage@workspace:."
   dependencies:
     "@soda/friendly-errors-webpack-plugin": ^1.8.0
+    "@studio-freight/lenis": ^1.0.19
     autoprefixer: ^10.0.1
     bootstrap: ^4.5.3
     browser-sync: ^2.26.13
@@ -9012,6 +9027,7 @@ __metadata:
     eslint-plugin-import: ^2.14.0
     eslint-webpack-plugin: ^2.4.1
     file-loader: ^6.2.0
+    gsap: ^3.12.2
     hamburgers: ^1.2.1
     imagemin-mozjpeg: ^9.0.0
     imagemin-webpack-plugin: ^2.4.2
