@@ -2,6 +2,36 @@
     #content .container{
         max-width: 900px;
     }
+
+    .page-header{
+        position:relative;
+        display: flex;
+
+        .thousandStoriesLogo{
+            display: block;
+            flex: 0 0 150px;
+            padding-right: $grid-gutter;
+        }
+
+        @include media-breakpoint-down(sm){
+            flex-flow: column;
+
+            .thousandStoriesLogo{
+                flex: 1;
+
+                img{
+                    display: none;
+                }
+
+                &:before{
+                    content: "1,000+ Stories";
+                    text-transform: uppercase;
+                    color: theme-color(darkblue);
+                    letter-spacing: .05em;
+                }
+            }
+        }        
+    }
     
     .content{
         margin:0 auto $grid-gutter * 2;
@@ -56,37 +86,7 @@
         }
 
     
-        .page-header .container{
-            position:relative;
-            display: flex;
-
-            .thousandStoriesLogo{
-                display: block;
-                flex: 0 0 150px;
-                padding-right: $grid-gutter;
-            }
-
-            @include media-breakpoint-down(sm){
-                flex-flow: column;
-
-                .thousandStoriesLogo{
-                    flex: 1;
-
-                    img{
-                        display: none;
-                    }
-
-                    &:before{
-                        content: "1,000+ Stories";
-                        text-transform: uppercase;
-                        color: theme-color(darkblue);
-                        letter-spacing: .05em;
-                    }
-                }
-            }
-
-            
-        }
+        
 
         h2, 
         h3{
