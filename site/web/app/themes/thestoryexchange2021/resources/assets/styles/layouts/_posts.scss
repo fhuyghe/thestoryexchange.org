@@ -206,12 +206,20 @@
     }
 }
 
+#post-container{
+    article{
+        margin: 50px 0;
+    }
+}
+
 .content{
     margin:0 auto $grid-gutter * 2;
 
     .container{
         max-width: 900px;
     }
+
+    
 
     .container-fluid{
         display: flex;
