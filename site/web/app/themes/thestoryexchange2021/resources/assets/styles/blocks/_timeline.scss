@@ -8,9 +8,13 @@
         display: block;
         width: .25rem;
         height: 100%;
-        left: 50%;
+        left: 0;
         top: 0;
         background-color: theme-color(black);
+        
+        @include media-breakpoint-up(md){
+            left: 50%;
+        }
     }
     
     .content-wrap{
@@ -72,8 +76,11 @@
     position: sticky;
     top: 1rem;
     margin-bottom: $grid-gutter;
-    text-align: center;
     z-index: 99;
+    
+    @include media-breakpoint-up(md){
+        text-align: center;
+    }
 }
 
 .timeline-year-wrap{
@@ -81,6 +88,10 @@
     padding: 5px 10px;
     background: black;
     color: white;
+}
+
+.timeline-text{
+    padding: 0 $grid-gutter;
 }
 
 .timeline-link{
