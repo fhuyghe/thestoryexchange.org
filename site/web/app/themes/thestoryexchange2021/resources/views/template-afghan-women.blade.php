@@ -10,13 +10,14 @@ Template Post Type: post
     <div class="page-header afghan-header">
         <div class="container">
             <h1>{!! App::title() !!}</h1>
-            {{ get_field('subheading') }}
-            {!! the_post_thumbnail() !!}
-            <p>A Paragraph</p>
+            <p class="afghan-header-subheading">{{ get_field('subheading') }}</p>
+            <div class="afghan-header-thumbnail">
+              {!! the_post_thumbnail() !!}
+            </div>
+            {!! get_field('intro') !!}
             {!! do_shortcode('[spp-player ctabuttons="off"]')!!}
-            <p>The player</p>
           </div>
-            <div class="read-more">
+            <div class="read-more" onclick="scrollNext(event)">
               Continue Reading
               <div class="arrow-down"><i class="fa-light fa-arrow-down"></i></div>
             </div>
@@ -25,3 +26,15 @@ Template Post Type: post
     @include('partials.content-page')
   @endwhile
 @endsection
+
+<script>
+  //Scroll Next
+    //
+    function scrollNext(e){
+      window.scrollTo({
+        top: window.innerHeight,
+        left: 0,
+        behavior: "smooth",
+      })
+    }
+</script>

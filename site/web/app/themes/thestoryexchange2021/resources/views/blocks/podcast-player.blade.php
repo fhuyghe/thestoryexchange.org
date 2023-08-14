@@ -23,7 +23,6 @@
     {!! do_shortcode("[spp-player ctabuttons='off']") !!}
     @php wp_reset_postdata() @endphp      
   @else
-    {{-- Doesn't work --}}
     {!! do_shortcode('[spp-player ctabuttons="off" url="' . get_field("mp3_file") . '" image="' . get_field("cover_image") .'" title="' . get_field("title") . '"]') !!}
   @endif
 </div>

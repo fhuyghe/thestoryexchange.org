@@ -2,6 +2,13 @@
     .container-fluid > .player_container{
         display: none;
     }
+
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
 }
 
 .page-header.afghan-header{
@@ -23,6 +30,9 @@
     .read-more{
         margin-bottom: -3rem;
         text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 
     .arrow-down{
@@ -40,4 +50,12 @@
         padding-top: .5rem;
         cursor: pointer;
     }
+}
+
+.afghan-header-subheading{
+    font-size: 1.2rem;
+}
+
+.afghan-header-thumbnail{
+    margin-bottom: $grid-gutter;
 }

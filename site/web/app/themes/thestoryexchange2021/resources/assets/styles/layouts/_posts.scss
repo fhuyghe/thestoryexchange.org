@@ -40,25 +40,6 @@
             margin: 0 auto $grid-gutter;
         }
 
-        blockquote{
-            margin: $grid-gutter auto;
-
-            p{
-                padding: 0 0;
-                
-                &:first-child{
-                    color: theme-color(darkblue);
-                    font-size: 1.5em;
-                    font-weight: 300;
-                    margin-bottom: 10px;
-                }
-
-                &:last-child{
-                    text-align: right;
-                }
-            }
-        }
-
         iframe.instagram-media,
         .wp-block-embed-instagram iframe{
                 margin: 0 auto!important;
@@ -242,6 +223,7 @@
         
         & > .scrolling-story,
         & > .wp-block.timeline,
+        & > .wp-block.timeline-cta,
         & > .wp-block-separator,
         & > .wp-block-pullquote{
             max-width: 1200px!important;
@@ -251,7 +233,8 @@
 
 // Separator
 .wp-block-separator{
-    margin: 5rem auto;
+    width: 100%;
+    margin: 3rem auto;
 }
 
 // Product List
@@ -301,6 +284,44 @@
             .text{
                 padding: $grid-gutter;
             }
+        }
+    }
+}
+
+// Blockquote
+.wp-block-pullquote{
+    width: 100%;
+    border: 1px solid theme-color(black);
+    border-width: 1px 0;
+    margin: 5rem 0;
+}
+
+blockquote{
+    max-width: 900px;
+    margin: $grid-gutter auto;
+
+    p{
+        padding: 0 0;
+        
+        &:first-child{
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        &:last-child{
+            text-align: right;
+        }
+    }
+
+    cite{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-style: initial;
+
+        &:before{
+            content: "—";
         }
     }
 }
