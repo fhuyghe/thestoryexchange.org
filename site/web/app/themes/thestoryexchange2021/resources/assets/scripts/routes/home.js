@@ -18,13 +18,13 @@ export default {
         [
           {
             breakpoint: 9999,
-            settings: "unslick"
+            settings: 'unslick',
           }, {
             breakpoint: 768,
             settings: {
-              slidesToShow: 1
-            }
-          }]
+              slidesToShow: 1,
+            },
+          }],
     });
     
     $('#middleColumn .post-group').slick({
@@ -37,13 +37,13 @@ export default {
         [
           {
             breakpoint: 9999,
-            settings: "unslick"
+            settings: 'unslick',
           }, {
             breakpoint: 768,
             settings: {
-              slidesToShow: 1
-            }
-          }]
+              slidesToShow: 1,
+            },
+          }],
     });
     
   },

@@ -17,8 +17,7 @@ Template Post Type: post
             {!! get_field('intro') !!}
             {!! do_shortcode('[spp-player ctabuttons="off"]')!!}
           </div>
-            <div class="read-more" onclick="scrollNext(event)">
-              Continue Reading
+            <div class="read-more" onclick="window.scrollTo({top: window.innerHeight, left: 0, behavior: 'smooth'})">
               <div class="arrow-down"><i class="fa-light fa-arrow-down"></i></div>
             </div>
       </div>
@@ -26,15 +25,3 @@ Template Post Type: post
     @include('partials.content-page')
   @endwhile
 @endsection
-
-<script>
-  //Scroll Next
-    //
-    function scrollNext(e){
-      window.scrollTo({
-        top: window.innerHeight,
-        left: 0,
-        behavior: "smooth",
-      })
-    }
-</script>
