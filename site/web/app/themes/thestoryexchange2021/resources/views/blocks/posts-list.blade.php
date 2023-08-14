@@ -18,14 +18,20 @@ global $post;
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
     <div class="row">
   @php $posts = get_field('posts') @endphp
-  @foreach ($posts as $post)
+  @if ($posts)
+    @foreach ($posts as $post)
     @php setup_postdata($post) @endphp
-      @include('partials/post-item',[
+    @include('partials/post-item',[
       'post_classes' => 'col-md-4',
       'format' => '',
       'showExcerpt' => true,
       ]) 
-    @php wp_reset_postdata() @endphp
-  @endforeach
+      @php wp_reset_postdata() @endphp
+      @endforeach
+  @else
+    <div class="col-12">
+      {{ __('No post selected', 'sage')}}
+    </div>
+  @endif
   </div>
 </div>

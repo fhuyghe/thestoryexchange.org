@@ -13,7 +13,7 @@ Template Post Type: post
             {{ get_field('subheading') }}
             {!! the_post_thumbnail() !!}
             <p>A Paragraph</p>
-            {!! do_shortcode('[spp-player]')!!}
+            {!! do_shortcode('[spp-player ctabuttons="off"]')!!}
             <p>The player</p>
           </div>
             <div class="read-more">

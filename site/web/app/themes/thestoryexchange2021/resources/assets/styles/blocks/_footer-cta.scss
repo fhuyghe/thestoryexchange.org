@@ -1,8 +1,13 @@
 .footer-cta{
-    text-align: center;
-    color: theme-color(white);
     background-color: theme-color(black);
     background-size: cover;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    background-position: center;
+    margin-top: $grid-gutter;
+    margin-bottom: calc(-2 * $grid-gutter);
+    
+    .wrap{
+        text-align: center;
+        color: theme-color(white);
+        padding: 5rem 1rem;
+    }
 }

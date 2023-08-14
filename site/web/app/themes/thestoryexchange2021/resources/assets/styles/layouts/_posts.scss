@@ -213,15 +213,16 @@
         max-width: 900px;
     }
 
-    article{
-        margin:50px 0;
-    }
-
     .container-fluid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
 
         & > p,
         & > .wp-block,
+        & > .wp-block-heading,
+        & > .player_container,
         & > blockquote{
             @extend .container;
             max-width: 900px;
@@ -231,10 +232,17 @@
             max-width: 100%!important;
         }
         
-        & > .scrolling-story{
+        & > .scrolling-story,
+        & > .wp-block-separator,
+        & > .wp-block-pullquote{
             max-width: 1200px!important;
         }
     }
+}
+
+// Separator
+.wp-block-separator{
+    margin: 5rem auto;
 }
 
 // Product List
