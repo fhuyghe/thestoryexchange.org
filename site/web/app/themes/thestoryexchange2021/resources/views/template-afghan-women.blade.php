@@ -8,18 +8,18 @@ Template Post Type: post
 @section('content')
   @while(have_posts()) @php the_post() @endphp
     <div class="page-header afghan-header">
-        <div class="row">
-          <div class="col-md-6 afghan-header-image">
-            Image
-          </div>
-          <div class="col-md-6 afghan-header-text">
+        <div class="container">
             <h1>{!! App::title() !!}</h1>
             {{ get_field('subheading') }}
-            <hr/>
-            Some text
-            <button>Button</button>
+            {!! the_post_thumbnail() !!}
+            <p>A Paragraph</p>
+            {!! do_shortcode('[spp-player]')!!}
+            <p>The player</p>
           </div>
-        </div>
+            <div class="read-more">
+              Continue Reading
+              <div class="arrow-down"><i class="fa-light fa-arrow-down"></i></div>
+            </div>
       </div>
   
     @include('partials.content-page')

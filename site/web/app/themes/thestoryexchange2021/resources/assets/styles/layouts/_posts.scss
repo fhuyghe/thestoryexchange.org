@@ -1,8 +1,4 @@
 .single{
-    #content .container{
-        max-width: 900px;
-    }
-
     .page-header{
         position:relative;
         display: flex;
@@ -35,11 +31,6 @@
     
     .content{
         margin:0 auto $grid-gutter * 2;
-        
-        article{
-            margin:50px 0;
-        }
-        //Typography
 
         .transcript-box{
             margin: 0 auto;
@@ -211,6 +202,37 @@
                     font-size: 1em;
                 }
             }
+        }
+    }
+}
+
+.content{
+    margin:0 auto $grid-gutter * 2;
+
+    .container{
+        max-width: 900px;
+    }
+
+    article{
+        margin:50px 0;
+    }
+
+    .container-fluid{
+        padding: 0;
+
+        & > p,
+        & > .wp-block,
+        & > blockquote{
+            @extend .container;
+            max-width: 900px;
+        }
+
+        & > .footer-cta{
+            max-width: 100%!important;
+        }
+        
+        & > .scrolling-story{
+            max-width: 1200px!important;
         }
     }
 }

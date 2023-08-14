@@ -1,10 +1,37 @@
-.afghan-header{
+.page-header.afghan-header{
     margin-top: -30px;
     min-height: 10rem;
-}
-
-.afghan-header-text{
+    display: block;
     background-color: theme-color(yellow);
-    padding: 3rem;
-    min-height: 20rem;
+    min-height: calc(100vh - 103px);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    .container{
+        margin: 3rem auto;
+    }
+
+    .read-more{
+        margin-bottom: -3rem;
+        text-align: center;
+    }
+
+    .arrow-down{
+        color: theme-color(white);
+        background-color: theme-color(black);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: .5rem;
+        padding-top: .5rem;
+        cursor: pointer;
+    }
 }
