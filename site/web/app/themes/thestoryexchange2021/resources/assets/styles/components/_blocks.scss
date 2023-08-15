@@ -513,10 +513,14 @@
 
 // Related Posts
 .wp-block.related-post{
-  max-width: 500px;
   margin: $grid-gutter 0;
-  padding-bottom: $grid-gutter / 2;
-  border-bottom: 1px solid theme-color(black);
+  
+  .wrap{
+    max-width: 500px;
+    border: 1px solid theme-color(black);
+    border-width: 1px 0;
+    padding-bottom: $grid-gutter / 3;
+  }
 
   
   @include media-breakpoint-up(md){
@@ -529,6 +533,7 @@
 
   .section-title{
     padding-top: 5px;
+    border: 0;
   }
 
   .post-wrap{

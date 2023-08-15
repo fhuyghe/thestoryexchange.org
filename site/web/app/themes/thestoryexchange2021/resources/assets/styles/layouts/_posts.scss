@@ -159,30 +159,37 @@
                 }
             }
         }
+    }
+}
 
-        .newsletter-banner{
-            background-color: theme-color(yellow);
-            text-align: center;
-            padding: $grid-gutter;
-            margin: $grid-gutter 0 0;
+.social-links{
+    margin-top: $grid-gutter;
+}
 
-            p{
-                font-size: 1.1em;
-            }
+.newsletter-banner{
+    margin: $grid-gutter 0 0;
+    
+    .container{
+        background-color: theme-color(yellow);
+        text-align: center;
+        padding: $grid-gutter;
+    }
 
-            #embed_signup_scroll{
-                display: flex;
-                max-width: 400px;
-                margin: auto;
+    p{
+        font-size: 1.1em;
+    }
 
-                .mc-field-group{
-                    flex: 1;
-                }
+    #embed_signup_scroll{
+        display: flex;
+        max-width: 400px;
+        margin: auto;
 
-                input[type="submit"]{
-                    font-size: 1em;
-                }
-            }
+        .mc-field-group{
+            flex: 1;
+        }
+
+        input[type="submit"]{
+            font-size: 1em;
         }
     }
 }
@@ -225,6 +232,7 @@
         & > .wp-block.timeline,
         & > .wp-block.timeline-cta,
         & > .wp-block-separator,
+        & > .wp-block.related-post,
         & > .wp-block-pullquote{
             max-width: 1200px!important;
         }

@@ -57,7 +57,7 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-
+    
     img {
         //flex-shrink: 0;
         width: 100%;
@@ -67,7 +67,21 @@ img{
     }
 }
 
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 //newsletter forms
+#embed_signup{
+    max-width: 30rem;
+    margin: auto;
+}
+
 #embed_signup,
 .newsletter-subscribe{
     [class*="formbox-editor"]{

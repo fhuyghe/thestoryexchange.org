@@ -20,6 +20,7 @@ $showExcerpt = true;
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
   @if($block['related_post'])
+    <div class="wrap">
     <div class="section-title">
       <h4>Related</h4>
     </div>
@@ -46,5 +47,6 @@ $showExcerpt = true;
     </div>
 
     @php wp_reset_postdata() @endphp
+    </div>
     @endif
 </div>

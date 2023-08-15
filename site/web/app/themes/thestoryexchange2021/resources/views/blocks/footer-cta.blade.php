@@ -11,7 +11,10 @@
   SupportsMultiple: true
 --}}
 @php $backgroundImage = get_field('image') @endphp
-  <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}" style="background-image: url({{ $backgroundImage['url'] }});">
+  <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }}">
+    @if( !empty( $backgroundImage ) )
+        <img class="background-image" src="<?php echo esc_url($backgroundImage['url']); ?>" alt="<?php echo esc_attr($backgroundImage['alt']); ?>" />
+    @endif
     <div class="wrap">
       <h2>{{ the_field('title') }}</h2>
       <p>{{ the_field('text') }}</p>

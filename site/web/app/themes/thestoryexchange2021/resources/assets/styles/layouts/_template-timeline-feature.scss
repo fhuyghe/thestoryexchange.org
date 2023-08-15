@@ -1,6 +1,5 @@
-.post-template-template-timeline-feature{
-    
-}
+// Variables
+$timelineHeaderPadding: 15vh;
 
 .timeline-header{
     position: relative;
@@ -15,7 +14,7 @@
     align-items: center;
     justify-content: center; 
     width: 100%;
-    padding: 8rem $grid-gutter;
+    padding: $timelineHeaderPadding $grid-gutter;
     overflow: hidden;
 }
 
@@ -23,6 +22,7 @@
     z-index: 2;
     text-align: center;
     color: theme-color(white);
+    padding: $grid-gutter;
 
     &:after,
     &:before{
@@ -36,7 +36,7 @@
         background-color: theme-color(white);
         
         @include media-breakpoint-up(md){
-            height: 6rem;
+            height: $timelineHeaderPadding;
             left: 50%;
         }
     }

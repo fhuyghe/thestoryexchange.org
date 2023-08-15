@@ -94,6 +94,11 @@
     padding: 0 $grid-gutter;
 }
 
+.timeline-image-caption{
+    @extend .caption;
+    margin-top: .25rem;
+}
+
 .timeline-link{
     padding: 5px 10px;
     background-color: $blue;

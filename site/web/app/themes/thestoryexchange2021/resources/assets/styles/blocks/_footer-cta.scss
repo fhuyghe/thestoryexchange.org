@@ -3,11 +3,17 @@
     background-size: cover;
     background-position: center;
     margin-top: $grid-gutter;
-    margin-bottom: calc(-2 * $grid-gutter);
+    position: relative;
     
     .wrap{
         text-align: center;
         color: theme-color(white);
         padding: 5rem 1rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    img{
+        opacity: .8;
     }
 }
