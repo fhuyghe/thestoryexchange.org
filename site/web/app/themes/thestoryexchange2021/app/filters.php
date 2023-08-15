@@ -118,6 +118,11 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
 
     $cat = '';
     $tag = '';
+    $postsNumber = (object) array(
+        '1' => get_field('number_of_posts'),
+        '2' => 4,
+        '3' => 3,
+    );
 
     if(get_field('category_or_tag') == 'category'){
         $cat = get_field('featured_category');
@@ -131,7 +136,7 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
     $query_args= array_merge($query_tax, array(
         'post_type' => 'post',
         'post_status' => 'publish',
-        'posts_per_page' => $block['style'] == 3 ? 3 : 4,
+        'posts_per_page' => $postsNumber->{$block['style']},
         'post__not_in' => get_field('posts_to_ignore'),
       ));
     $block['articles'] = get_posts($query_args);
