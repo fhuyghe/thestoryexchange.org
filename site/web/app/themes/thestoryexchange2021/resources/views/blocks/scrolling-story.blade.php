@@ -25,6 +25,9 @@
             @foreach ($slide['images'] as $image)
                 <div class="image" data-scroll data-speed="{{ $loop->index }}">
                     {!! wp_get_attachment_image( $image['id'], 'large' ) !!}
+                    <div class="caption">
+                      {{ $image['caption'] }}
+                    </div>
                 </div>
             @endforeach
             @endif
