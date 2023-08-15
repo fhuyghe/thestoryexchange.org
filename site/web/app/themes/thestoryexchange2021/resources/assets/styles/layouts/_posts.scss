@@ -1,12 +1,52 @@
 .single{
     .page-header{
         position:relative;
-        display: flex;
+        
+        .container{
+            display: flex;
+        }
 
         .thousandStoriesLogo{
             display: block;
             flex: 0 0 150px;
             padding-right: $grid-gutter;
+        }
+
+        p.subtitle{
+            font-size:1.2em;
+            line-height: 1.2em;
+            margin-bottom:5px;
+        }
+
+        time{
+            color: theme-color(grey);
+            display:block;
+            margin-bottom:$grid-gutter;
+        }
+
+        .author-meta{
+            display: flex;
+            align-items: center;
+
+            .author_thumbnail{
+                display:inline-block;
+                width:40px;
+                height:40px;
+                border-radius:50%;
+                margin-right:10px;
+                overflow: hidden;
+                font-size: 0;
+
+                img{
+                    min-width: 100%;
+                    min-height: 100%;
+                    height: auto;
+                }
+            }
+
+            a{
+                margin-left: 5px;
+            }
         }
 
         @include media-breakpoint-down(sm){
@@ -57,53 +97,8 @@
             align-items: center;
         }
 
-    
-        
-
-        h2, 
-        h3{
-            margin-top: $grid-gutter;
-        }
-
         h2{
             font-size: 1.5em;
-        }
-        
-        p.subtitle{
-            font-size:1.2em;
-            line-height: 1.2em;
-            margin-bottom:5px;
-        }
-
-        time{
-            color: theme-color(grey);
-            display:block;
-            margin-bottom:$grid-gutter;
-        }
-
-        .author-meta{
-            display: flex;
-            align-items: center;
-
-            .author_thumbnail{
-                display:inline-block;
-                width:40px;
-                height:40px;
-                border-radius:50%;
-                margin-right:10px;
-                overflow: hidden;
-                font-size: 0;
-
-                img{
-                    min-width: 100%;
-                    min-height: 100%;
-                    height: auto;
-                }
-            }
-
-            a{
-                margin-left: 5px;
-            }
         }
 
         .wp-block-image{
@@ -162,6 +157,10 @@
     }
 }
 
+.wp-block-heading{
+    margin-top: $grid-gutter;
+}
+
 .social-links{
     margin-top: $grid-gutter;
 }
@@ -191,12 +190,6 @@
         input[type="submit"]{
             font-size: 1em;
         }
-    }
-}
-
-#post-container{
-    article{
-        margin: 50px 0;
     }
 }
 
@@ -232,6 +225,7 @@
         & > .wp-block.timeline-cta,
         & > .wp-block-separator,
         & > .wp-block.related-post,
+        & > .wp-block.featured-category,
         & > .wp-block-pullquote{
             max-width: 1200px!important;
         }
