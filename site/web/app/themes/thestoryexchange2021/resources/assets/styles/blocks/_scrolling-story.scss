@@ -25,9 +25,7 @@
     .image{
         width: 100%;
         text-align: left; 
-    }
 
-    img{
         &:nth-child(2){
             transform: translate(-10%, 7rem);
         }

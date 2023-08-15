@@ -225,9 +225,11 @@
         & > .wp-block.timeline-cta,
         & > .wp-block-separator,
         & > .wp-block.related-post,
+        & > .wp-block-columns,
         & > .wp-block.featured-category,
         & > .wp-block-pullquote{
             max-width: 1200px!important;
+            width: 100%;
         }
     }
 }

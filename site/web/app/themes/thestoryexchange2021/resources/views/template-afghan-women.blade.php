@@ -18,6 +18,7 @@ Template Post Type: post
             {!! do_shortcode('[spp-player ctabuttons="off"]')!!}
           </div>
             <div class="read-more" onclick="window.scrollTo({top: window.innerHeight, left: 0, behavior: 'smooth'})">
+              {{ __('Continue Reading', 'sage')}}
               <div class="arrow-down"><i class="fa-light fa-arrow-down"></i></div>
             </div>
       </div>
