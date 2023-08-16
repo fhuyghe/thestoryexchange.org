@@ -89,6 +89,7 @@
         &.style-{
         article{
             @extend .col-6;
+            @extend .col-md-3;
 
             &:nth-child(4){
             display: block;
