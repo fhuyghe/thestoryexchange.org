@@ -1,19 +1,26 @@
 .wp-block.scrolling-story{
     margin-top: 50vh;
+    scroll-snap-type: y mandatory;
 }
 
 .scrolling-story-text{
-    padding: 2rem;
-    background-color: theme-color(yellow);
     width: 80%;
     position: sticky;
     top: 50%;
     margin: auto;
+    height: 0;
     z-index: 3;
-    max-width: 700px;
+    
+    .wrap{
+        padding: 2rem;
+        background-color: theme-color(yellow);
+        transform: translateY(-50%);
+        max-width: 700px;
+    }
 }
 
 .scrolling-story-slide{
+    scroll-snap-align: start;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -21,16 +28,24 @@
     &:nth-child(2){
         margin-top: -50vh;
     }
+}
 
-    .image{
+.scrolling-story-image{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5rem;
+
+    img{
         width: 100%;
-        text-align: left; 
+    }
 
-        img{
-            width: 100%;
-        }
+    &:nth-child(2){
+        display: none;
+    }
 
+    @include media-breakpoint-up(lg){
         &:nth-child(2){
+            display: block;
             transform: translate(-10%, 7rem);
         }
     }

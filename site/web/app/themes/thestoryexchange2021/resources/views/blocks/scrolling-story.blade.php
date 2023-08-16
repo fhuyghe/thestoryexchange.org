@@ -14,7 +14,9 @@
 
 <section id="{{ $block['id'] }}" data-scroll-container class="wp-block {{ $block['classes'] }}">
     <div class="scrolling-story-text">
+      <div class="wrap">
         {{ $slides[0]['text'] }}
+      </div>
     </div>
   @foreach ($slides as $slide)
   <div class="scrolling-story-slide @if(!$slide['images'])no-image @endif"
@@ -23,7 +25,7 @@
     >
         @if ($slide['images'])
             @foreach ($slide['images'] as $image)
-                <div class="image" data-scroll data-speed="{{ $loop->index }}">
+                <div class="scrolling-story-image" data-scroll data-speed="{{ $loop->index }}">
                     {!! wp_get_attachment_image( $image['id'], 'large' ) !!}
                     <div class="caption">
                       {{ $image['caption'] }}

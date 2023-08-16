@@ -55,7 +55,7 @@ export default {
       }
       requestAnimationFrame(raf)
 
-      const images = document.querySelectorAll('.scrolling-story .image')
+      const images = document.querySelectorAll('.scrolling-story-image')
       images.forEach(item => {
     
         gsap.timeline({
