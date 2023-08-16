@@ -14,7 +14,7 @@
 
 <section id="{{ $block['id'] }}" data-scroll-container class="wp-block {{ $block['classes'] }}">
     <div class="scrolling-story-text">
-      <div class="wrap">
+      <div class="scrolling-story-wrap">
         {{ $slides[0]['text'] }}
       </div>
     </div>

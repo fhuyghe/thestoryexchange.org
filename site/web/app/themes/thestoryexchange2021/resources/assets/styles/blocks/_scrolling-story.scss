@@ -1,26 +1,24 @@
 .wp-block.scrolling-story{
     margin-top: 50vh;
-    scroll-snap-type: y mandatory;
 }
 
 .scrolling-story-text{
     width: 80%;
     position: sticky;
-    top: 50%;
+    top: 40%;
     margin: auto;
     height: 0;
     z-index: 3;
     
-    .wrap{
-        padding: 2rem;
-        background-color: theme-color(yellow);
-        transform: translateY(-50%);
-        max-width: 700px;
-    }
+}
+
+.scrolling-story-wrap{
+    padding: 2rem;
+    background-color: theme-color(yellow);
+    max-width: 700px;
 }
 
 .scrolling-story-slide{
-    scroll-snap-align: start;
     min-height: 100vh;
     display: flex;
     align-items: center;
