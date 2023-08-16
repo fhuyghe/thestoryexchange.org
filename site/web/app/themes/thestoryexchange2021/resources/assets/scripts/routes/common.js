@@ -57,8 +57,6 @@ export default {
 
       const images = document.querySelectorAll('.scrolling-story .image')
       images.forEach(item => {
-
-        const image = item.querySelector('img');
     
         gsap.timeline({
           scrollTrigger: {
@@ -68,7 +66,7 @@ export default {
             scrub: true,
         },
         })
-        .to(image, {
+        .to(item, {
           ease: 'none',
           y: -200 * item.dataset.speed,
         });
