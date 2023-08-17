@@ -232,7 +232,8 @@ nav.posts-navigation{
 }
 
 .page.ways-to-support{
-  .page-header .container{
+  .content .container,
+  .wp-block-columns{
     max-width: 900px!important;
   }
 }

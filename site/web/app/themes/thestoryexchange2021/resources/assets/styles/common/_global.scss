@@ -2,7 +2,6 @@
 .container{
     @include media-breakpoint-up(xl){
         max-width: 1500px;
-        padding: 0 $grid-gutter * 2;
     }
 }
 
@@ -166,22 +165,3 @@ html.lenis {
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
-
-//Videos
-// .wp-block-embed__wrapper {
-//     position: relative; 
-//     padding-bottom: 56.25%;
-//     overflow: hidden;
-//     max-width: 100%;
-//     height: auto;
-
-//     iframe,
-//     object,
-//     embed { 
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%!important;
-//         height: 100%!important;
-//     }
-// } 

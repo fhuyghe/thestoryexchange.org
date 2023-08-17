@@ -4,6 +4,11 @@
     background-position: center;
     margin-top: $grid-gutter;
     position: relative;
+    margin-bottom: -2*$grid-gutter;
+
+    h2{
+        font-size: 2rem;
+    }
     
     .wrap{
         text-align: center;
@@ -16,4 +21,8 @@
     img{
         opacity: .8;
     }
+}
+
+.alm-single-post .footer-cta{
+    margin-bottom: $grid-gutter;
 }
