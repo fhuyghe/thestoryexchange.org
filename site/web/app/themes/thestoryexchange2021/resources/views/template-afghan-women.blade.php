@@ -16,6 +16,7 @@ Template Post Type: post
             </div>
             {!! get_field('intro') !!}
             {!! do_shortcode('[spp-player ctabuttons="off"]')!!}
+            {!! do_shortcode('[spp-transcript]')!!}
           </div>
             <div class="read-more" onclick="window.scrollTo({top: window.innerHeight, left: 0, behavior: 'smooth'})">
               {{ __('Continue Reading', 'sage')}}
