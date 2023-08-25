@@ -16,11 +16,14 @@ global $post;
 $post_classes = null;
 $format = null;
 $showExcerpt = true;
+$titleLink = $block['title_link'];
 @endphp
 
 <div id="{{ $block['id'] }}" class="wp-block {{ $block['classes'] }} style-{{ $block['style'] }}">
   <div class="section-title">
-    <h2>{{ $block['title'] }}</h2>
+    @if ($titleLink) <a href="{{ $titleLink }}"> @endif
+      <h2>{{ $block['title'] }}</h2>
+    @if ($titleLink) </a> @endif
     {!! $block['text'] !!}
   </div>
   
