@@ -142,6 +142,7 @@ add_filter('sage/blocks/featured-category/data', function ($block) {
     $block['articles'] = get_posts($query_args);
     $block['tax'] = get_field('category_or_tag') == 'category' ? $cat : $tag;
     $block['title'] = get_field('title') ? get_field('title') : get_term($block['tax'])->name;
+    $block['title_link'] = get_field('title_link');
     $block['text'] = get_field('text');
 
     return $block;
@@ -153,6 +154,7 @@ add_filter('sage/blocks/featured-posts/data', function ($block) {
     $block['style'] = get_field('style');
     $block['posts'] = get_field('posts');
     $block['title'] = get_field('title');
+    $block['title_link'] = get_field('title_link');
     $block['text'] = get_field('text');
 
     return $block;
