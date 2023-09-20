@@ -241,6 +241,7 @@
         & > .wp-block,
         & > .wp-block-heading,
         & > .wp-block-image,
+        & > .wp-block-embed,
         & > .player_container,
         & > blockquote{
             @extend .container;
@@ -255,7 +256,6 @@
         & > .wp-block.timeline,
         & > .wp-block.timeline-cta,
         & > .wp-block-separator,
-        & > .wp-block-embed,
         & > .wp-block.related-post,
         & > .wp-block-columns,
         & > .wp-block.featured-category,
