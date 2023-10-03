@@ -5,12 +5,13 @@
   @php wp_head() @endphp
 
   {{-- FAVICON --}}
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@asset('images/favicon/apple-touch-icon-144x144.png')" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@asset('images/favicon/apple-touch-icon-152x152.png')" />
-  <link rel="icon" type="image/png" href="@asset('images/favicon/favicon-32x32.png')" sizes="32x32" />
-  <link rel="icon" type="image/png" href="@asset('images/favicon/favicon-16x16.png')" sizes="16x16" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="@asset('images/favicon/mstile-144x144.png')" />
+  <link rel="apple-touch-icon" sizes="180x180" href="@asset('images/favicon/apple-touch-icon.png')">
+  <link rel="icon" type="image/png" sizes="32x32" href="@asset('images/favicon/favicon-32x32.png')">
+  <link rel="icon" type="image/png" sizes="16x16" href="@asset('images/favicon/favicon-16x16.png')">
+  <link rel="manifest" href="@asset('images/favicon/site.webmanifest')">
+  <link rel="mask-icon" href="@asset('images/favicon/safari-pinned-tab.svg')" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffd032">
+  <meta name="theme-color" content="#ffffff">
 
   {{-- FONT AWESOME --}}
   <script src="https://kit.fontawesome.com/800e21cc29.js"></script>
