@@ -69,6 +69,10 @@
         }        
     }
 
+    article.type-post{
+        font-size: 1.25rem;
+    }
+
     .featured-category{
         margin: 2rem auto;
         
@@ -109,7 +113,6 @@
     
     .content{
         margin: 0 auto $grid-gutter * 2;
-        font-size: 1.25rem;
 
         .transcript-box{
             margin: 0 auto;
