@@ -5,151 +5,157 @@
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
-      {
-          "name": "Scott Walkinshaw",
-          "email": "scott.walkinshaw@gmail.com",
-          "homepage": "https://github.com/swalkinshaw"
-      },
-      {
-          "name": "Ben Word",
-          "email": "ben@benword.com",
-          "homepage": "https://github.com/retlehs"
-      }
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
   ],
   "keywords": [
-      "bedrock",
-      "composer",
-      "roots",
-      "wordpress",
-      "wp",
-      "wp-config"
+    "bedrock",
+    "composer",
+    "roots",
+    "wordpress",
+    "wp",
+    "wp-config"
   ],
   "support": {
-      "issues": "https://github.com/roots/bedrock/issues",
-      "forum": "https://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
   },
   "repositories": {
-      "my-yoast": {
-          "type": "composer",
-          "url": "https://my.yoast.com/packages/"
-      },
-      "0": {
-          "type": "composer",
-          "url": "https://wpackagist.org",
-          "only": [
-              "wpackagist-plugin/*",
-              "wpackagist-theme/*"
-          ]
-      },
-      "1": {
-          "type": "package",
-          "package": {
-              "name": "advanced-custom-fields/advanced-custom-fields-pro",
-              "version": "6.1.7",
-              "type": "wordpress-plugin",
-              "dist": {
-                  "type": "zip",
-                  "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
-              },
-              "require": {
-                  "composer/installers": "^1.9",
-                  "ffraenz/private-composer-installer": "^5.0"
-              }
-          }
-      },
-      "2": {
-          "type": "composer",
-          "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
-      },
-      "3": {
-          "type": "vcs",
-          "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
-      },
-      "4": {
-          "type": "vcs",
-          "url": "git@github.com:13milliseconds/simple-podcast-press.git"
-      },
-      "5": {
-          "type": "vcs",
-          "url": "git@github.com:13milliseconds/tse-shortcodes.git"
-      },
-      "6": {
-          "type": "vcs",
-          "url": "git@github.com:13milliseconds/ajax-load-more-pro.git"
-        }
-  },
-  "require": {
-      "php": ">=7.1",
-      "composer/installers": "^1.12",
-      "vlucas/phpdotenv": "^5.3",
-      "oscarotero/env": "^2.1",
-      "roots/bedrock-autoloader": "^1.0",
-      "roots/bedrock-disallow-indexing": "^2.0",
-      "roots/wordpress": "^6.0",
-      "roots/wp-config": "1.0.0",
-      "roots/wp-password-bcrypt": "1.1.0",
-      "13milliseconds/wp-fastest-cache-premium": "dev-master",
-      "13milliseconds/simple-podcast-press": "dev-master",
-      "13milliseconds/tse-shortcodes": "dev-master",
-      "13milliseconds/ajax-load-more-pro": "dev-master",
-      "deliciousbrains-plugin/wp-migrate-db-pro": "2.6.9",
-      "deliciousbrains-plugin/wp-offload-media": "2.4.1",
-      "advanced-custom-fields/advanced-custom-fields-pro": "^6.1.7",
-      "wpackagist-plugin/accelerated-mobile-pages": "^1.0.76.13",
-      "wpackagist-plugin/amazon-s3-and-cloudfront": "^3.2.2",
-      "wpackagist-plugin/user-photo": "^0.9.10",
-      "wpackagist-plugin/akismet": "^5.1",
-      "wpackagist-plugin/custom-banners": "^3.2",
-      "wpackagist-plugin/disqus-comment-system": "^3.0.17",
-      "wpackagist-plugin/duplicate-post":"4.5",
-      "wpackagist-plugin/editorial-calendar": "^3.7.2",
-      "wpackagist-plugin/term-management-tools":"2.0.1",
-      "wpackagist-plugin/ewww-image-optimizer": "^7.0.1",
-      "wpackagist-plugin/jetpack": "^12.3",
-      "wpackagist-plugin/recent-posts-widget-extended": "^2.0.2",
-      "wpackagist-plugin/relevanssi": "^4.1.4",
-      "wpackagist-plugin/schema-and-structured-data-for-wp": "^1.9.54",
-      "wpackagist-plugin/social-warfare": "^4.0.1",
-      "wpackagist-plugin/super-progressive-web-apps": "^2.0.2",
-      "wpackagist-plugin/upprev": "^4.0.7",
-      "wpackagist-plugin/wordfence": "^7.5.11",
-      "wpackagist-plugin/wp-fastest-cache": "^1.0.3",
-      "wpackagist-plugin/wp-to-twitter": "^3.3.12",
-      "wpackagist-plugin/benchmark-email-lite":"4.1",
-      "wpackagist-plugin/instagram-feed":"6.1.6",
-      "wpackagist-plugin/ajax-load-more":"5.6.0.5",
-      "yoast/wordpress-seo-premium": "^20.12",
-      "yoast/yoast-news-seo": "^13.1"
-  },
-  "require-dev": {
-      "squizlabs/php_codesniffer": "^3.6.0",
-      "roave/security-advisories": "dev-latest"
+    "my-yoast": {
+      "type": "composer",
+      "url": "https://my.yoast.com/packages/"
     },
-    "config": {
-      "optimize-autoloader": true,
-      "preferred-install": "dist",
-      "allow-plugins": {
-          "composer/installers": true,
-          "ffraenz/private-composer-installer": true,
-          "roots/wordpress-core-installer": true
+    "0": {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    "1": {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "6.1.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+        },
+        "require": {
+          "composer/installers": "^1.9",
+          "ffraenz/private-composer-installer": "^5.0"
+        }
       }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "extra": {
-      "installer-paths": {
-        "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-        "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-        "web/app/themes/{$name}/": ["type:wordpress-theme"]
-      },
-      "wordpress-install-dir": "web/wp"
+    "2": {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
     },
-    "scripts": {
-      "post-root-package-install": [
-        "php -r \"copy('.env.example', '.env');\""
-      ],
-      "test": [
-        "phpcs"
-      ]
+    "3": {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/wp-fastest-cache-premium.git"
+    },
+    "4": {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/simple-podcast-press.git"
+    },
+    "5": {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/tse-shortcodes.git"
+    },
+    "6": {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/ajax-load-more-pro.git"
     }
+  },
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "^1.12",
+    "vlucas/phpdotenv": "^5.3",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "^6.0",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "13milliseconds/wp-fastest-cache-premium": "dev-master",
+    "13milliseconds/simple-podcast-press": "dev-master",
+    "13milliseconds/tse-shortcodes": "dev-master",
+    "13milliseconds/ajax-load-more-pro": "dev-master",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "2.6.9",
+    "deliciousbrains-plugin/wp-offload-media": "2.4.1",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^6.1.7",
+    "wpackagist-plugin/accelerated-mobile-pages": "^1.0.76.13",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "^3.2.2",
+    "wpackagist-plugin/user-photo": "^0.9.10",
+    "wpackagist-plugin/akismet": "^5.1",
+    "wpackagist-plugin/custom-banners": "^3.2",
+    "wpackagist-plugin/disqus-comment-system": "^3.0.17",
+    "wpackagist-plugin/duplicate-post": "4.5",
+    "wpackagist-plugin/editorial-calendar": "^3.7.2",
+    "wpackagist-plugin/term-management-tools": "2.0.1",
+    "wpackagist-plugin/ewww-image-optimizer": "^7.0.1",
+    "wpackagist-plugin/jetpack": "^12.3",
+    "wpackagist-plugin/recent-posts-widget-extended": "^2.0.2",
+    "wpackagist-plugin/relevanssi": "^4.1.4",
+    "wpackagist-plugin/schema-and-structured-data-for-wp": "^1.9.54",
+    "wpackagist-plugin/social-warfare": "^4.0.1",
+    "wpackagist-plugin/super-progressive-web-apps": "^2.0.2",
+    "wpackagist-plugin/upprev": "^4.0.7",
+    "wpackagist-plugin/wordfence": "^7.5.11",
+    "wpackagist-plugin/wp-fastest-cache": "^1.0.3",
+    "wpackagist-plugin/wp-to-twitter": "4.1.0",
+    "wpackagist-plugin/benchmark-email-lite": "4.1",
+    "wpackagist-plugin/instagram-feed": "6.1.6",
+    "wpackagist-plugin/ajax-load-more": "5.6.0.5",
+    "yoast/wordpress-seo-premium": "^20.12",
+    "yoast/yoast-news-seo": "^13.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6.0",
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "ffraenz/private-composer-installer": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
   }
+}
