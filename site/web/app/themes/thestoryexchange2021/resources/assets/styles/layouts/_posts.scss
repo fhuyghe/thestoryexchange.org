@@ -1,385 +1,388 @@
-.single{
-    .page-header{
-        position:relative;
-        
-        .container{
-            display: flex;
-        }
+.single {
+  .page-header {
+    position: relative;
 
-        .thousandStoriesLogo{
-            display: block;
-            flex: 0 0 150px;
-            padding-right: $grid-gutter;
-        }
-
-        p.subtitle{
-            font-size:1.2em;
-            line-height: 1.2em;
-            margin-bottom:5px;
-        }
-
-        time{
-            color: theme-color(grey);
-            display:block;
-            margin-bottom:$grid-gutter;
-        }
-
-        .author-meta{
-            display: flex;
-            align-items: center;
-
-            .author_thumbnail{
-                display:inline-block;
-                width:40px;
-                height:40px;
-                border-radius:50%;
-                margin-right:10px;
-                overflow: hidden;
-                font-size: 0;
-
-                img{
-                    min-width: 100%;
-                    min-height: 100%;
-                    height: auto;
-                }
-            }
-
-            a{
-                margin-left: 5px;
-            }
-        }
-
-        @include media-breakpoint-down(sm){
-            flex-flow: column;
-
-            .thousandStoriesLogo{
-                flex: 1;
-
-                img{
-                    display: none;
-                }
-
-                &:before{
-                    content: "1,000+ Stories";
-                    text-transform: uppercase;
-                    color: theme-color(darkblue);
-                    letter-spacing: .05em;
-                }
-            }
-        }        
+    .container {
+      display: flex;
     }
 
-    article.type-post{
-        font-size: 1.25rem;
+    .thousandStoriesLogo {
+      display: block;
+      flex: 0 0 150px;
+      padding-right: $grid-gutter;
     }
 
-    .featured-category{
-        margin: 2rem auto;
-        
-        @include media-breakpoint-up(md){
-            margin: 5rem auto;
-        }
-
-        .section-title{
-            border-top: 0;
-
-            h2{
-                color: theme-color(black);
-                font-size: 2rem;
-            }
-        }
-
-        &.style-1,
-        &.style-{
-        article{
-            @extend .col-6;
-            @extend .col-md-3;
-            margin-bottom: 1rem;
-            
-            @include media-breakpoint-up(md){
-                margin-bottom: 2rem;
-            }
-
-            &:nth-child(4){
-            display: block;
-            }
-        }
-        }
+    p.subtitle {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      margin-bottom: 5px;
     }
 
-    h2{
-        font-size: 1.5em;
-    }
-    
-    .content{
-        margin: 0 auto $grid-gutter * 2;
-
-        .transcript-box{
-            margin: 0 auto;
-        }
-
-        .player_container{
-            margin: 0 auto $grid-gutter;
-        }
-
-        iframe.instagram-media,
-        .wp-block-embed-instagram iframe{
-                margin: 0 auto!important;
-        }
-
-        .page-header.center .header-content{
-            text-align: center;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
-
-        .wp-block-image{
-            margin: $grid-gutter auto;
-
-            figure{
-                width: 100%;
-                background-color: theme-color(lightgrey);
-            }
-            
-            img{
-                margin: auto;
-                display: block;
-                height: auto;
-            }
-            
-            figcaption{
-                color: theme-color(grey);
-                background-color: theme-color(white);
-                font-style: italic;
-                margin: 0;
-                padding: 10px 0;
-            }
-        }
-
-        figure.wp-block-image{
-            display: table;
-            width: auto!important;
-            
-            figcaption{
-                display: table-caption;
-                caption-side: bottom;
-            }
-        }
-
-        .video,
-        .wp-block-embed-youtube{
-            margin: $grid-gutter auto;
-
-            &.alignleft{
-                @include media-breakpoint-up(md){
-                    margin: 0;
-                    margin-right: .5rem;
-                    max-width: 500px;
-                }
-            }
-
-            &.alignright{
-                @include media-breakpoint-up(md){
-                    margin: 0;
-                    margin-left: .5rem;
-                    max-width: 500px;
-                }
-            }
-        }
-    }
-}
-
-.wp-block-heading{
-    margin-top: $grid-gutter;
-}
-
-.social-links{
-    margin-top: $grid-gutter;
-}
-
-.newsletter-banner{
-    margin: $grid-gutter 0 0;
-    
-    .container{
-        background-color: theme-color(yellow);
-        text-align: center;
-        padding: $grid-gutter;
+    time {
+      color: theme-color(grey);
+      display: block;
+      margin-bottom: $grid-gutter;
     }
 
-    p{
-        font-size: 1.1em;
+    .author-meta {
+      display: flex;
+      align-items: center;
+
+      .author_thumbnail {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        overflow: hidden;
+        font-size: 0;
+
+        img {
+          min-width: 100%;
+          min-height: 100%;
+          height: auto;
+        }
+      }
+
+      a {
+        margin-left: 5px;
+      }
     }
 
-    #embed_signup_scroll{
-        display: flex;
-        max-width: 400px;
+    @include media-breakpoint-down(sm) {
+      flex-flow: column;
+
+      .thousandStoriesLogo {
+        flex: 1;
+
+        img {
+          display: none;
+        }
+
+        &:before {
+          content: "1,000+ Stories";
+          text-transform: uppercase;
+          color: theme-color(darkblue);
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+
+  article.type-post {
+    font-size: 1.25rem;
+  }
+
+  .featured-category {
+    margin: 2rem auto;
+
+    @include media-breakpoint-up(md) {
+      margin: 5rem auto;
+    }
+
+    .section-title {
+      border-top: 0;
+
+      h2 {
+        color: theme-color(black);
+        font-size: 2rem;
+      }
+    }
+
+    &.style-1,
+    &.style- {
+      article {
+        @extend .col-6;
+        @extend .col-md-3;
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 2rem;
+        }
+
+        &:nth-child(4) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .content {
+    margin: 0 auto $grid-gutter * 2;
+
+    .transcript-box {
+      margin: 0 auto;
+    }
+
+    .player_container {
+      margin: 0 auto $grid-gutter;
+    }
+
+    iframe.instagram-media,
+    .wp-block-embed-instagram iframe {
+      margin: 0 auto !important;
+    }
+
+    .page-header.center .header-content {
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .wp-block-image {
+      margin: $grid-gutter auto;
+
+      figure {
+        width: 100%;
+        background-color: theme-color(lightgrey);
+      }
+
+      img {
         margin: auto;
+        display: block;
+        height: auto;
+      }
 
-        .mc-field-group{
-            flex: 1;
-        }
-
-        input[type="submit"]{
-            font-size: 1em;
-        }
+      figcaption {
+        color: theme-color(grey);
+        background-color: theme-color(white);
+        font-style: italic;
+        margin: 0;
+        padding: 10px 0;
+      }
     }
+
+    figure.wp-block-image {
+      display: table;
+      width: auto !important;
+
+      figcaption {
+        display: table-caption;
+        caption-side: bottom;
+      }
+    }
+
+    .video,
+    .wp-block-embed-youtube {
+      margin: $grid-gutter auto;
+
+      &.alignleft {
+        @include media-breakpoint-up(md) {
+          margin: 0;
+          margin-right: 0.5rem;
+          max-width: 500px;
+        }
+      }
+
+      &.alignright {
+        @include media-breakpoint-up(md) {
+          margin: 0;
+          margin-left: 0.5rem;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+.wp-block-heading {
+  margin-top: $grid-gutter;
+}
+
+.social-links {
+  margin-top: $grid-gutter;
+}
+
+.newsletter-banner {
+  margin: $grid-gutter 0 0;
+
+  .container {
+    background-color: theme-color(yellow);
+    text-align: center;
+    padding: $grid-gutter;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  #embed_signup_scroll {
+    display: flex;
+    max-width: 400px;
+    margin: auto;
+
+    .mc-field-group {
+      flex: 1;
+    }
+
+    input[type="submit"] {
+      font-size: 1em;
+    }
+  }
 }
 
 #ajax-load-more,
-.content{
-    margin:0 auto $grid-gutter * 2;
+.content {
+  margin: 0 auto $grid-gutter * 2;
 
-    .container{
-        max-width: 900px;
+  .container {
+    max-width: 900px;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    & > p,
+    & > ul,
+    & > .wp-block,
+    & > .wp-block-heading,
+    & > .wp-block-image,
+    & > .wp-block-embed,
+    & > .player_container,
+    & > blockquote {
+      @extend .container;
+      max-width: 900px;
     }
 
-    .container-fluid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-
-        & > p,
-        & > ul,
-        & > .wp-block,
-        & > .wp-block-heading,
-        & > .wp-block-image,
-        & > .wp-block-embed,
-        & > .player_container,
-        & > blockquote{
-            @extend .container;
-            max-width: 900px;
-        }
-
-        & > .footer-cta{
-            max-width: 100%!important;
-        }
-        
-        & > .scrolling-story,
-        & > .wp-block.timeline,
-        & > .wp-block.timeline-cta,
-        & > .wp-block-separator,
-        & > .wp-block.related-post,
-        & > .wp-block-columns,
-        & > .wp-block.featured-category,
-        & > .wp-block-pullquote{
-            max-width: 1200px!important;
-            width: 100%;
-        }
+    & > .footer-cta {
+      max-width: 100% !important;
     }
+
+    & > .scrolling-story,
+    & > .wp-block.timeline,
+    & > .wp-block.timeline-cta,
+    & > .wp-block-separator,
+    & > .wp-block.related-post,
+    & > .wp-block-columns,
+    & > .wp-block.featured-category,
+    & > .wp-block-pullquote {
+      max-width: 1200px !important;
+      width: 100%;
+    }
+  }
 }
 
 // Separator
-.wp-block-separator{
-    width: 100%;
-    margin: 3rem auto;
-    border-bottom: 0;
+.wp-block-separator {
+  width: 100%;
+  margin: 3rem auto;
+  border-bottom: 0;
 }
 
 // Product List
-.post-template-template-product-list{
-    #content .container{
-
-        .content{
-            margin-bottom: 0;
-        }
+.post-template-template-product-list {
+  #content .container {
+    .content {
+      margin-bottom: 0;
     }
+  }
 }
 
-.single #productList{
-    margin: $grid-gutter 0 0;
-    // background: theme-color(lightgrey);
-    // padding: $grid-gutter;
+.single #productList {
+  margin: $grid-gutter 0 0;
+  // background: theme-color(lightgrey);
+  // padding: $grid-gutter;
 
-    .container{
-        max-width: 1200px;
+  .container {
+    max-width: 1200px;
+
+    & > .row {
+      justify-content: center;
     }
-    
-    .product{
-        margin-bottom: $grid-gutter;
+  }
 
-        .product-wrap{
-            background-color: theme-color(white);
-            box-shadow: 0px 0px 10px 0px rgba(theme-color(grey), .2);
-            padding: 0;
-            height: 100%;
+  .product {
+    margin-bottom: $grid-gutter;
 
-            .thumbnail{
-                position: relative;
-                background: theme-color(lightgrey);
-                height: 0;
-                padding-top: 52.4%;
-                overflow: hidden;
+    .product-wrap {
+      background-color: theme-color(white);
+      box-shadow: 0px 0px 10px 0px rgba(theme-color(grey), 0.2);
+      padding: 0;
+      height: 100%;
 
-                img{
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    height: 100%;
-                }
-            }
+      .thumbnail {
+        position: relative;
+        background: theme-color(lightgrey);
+        height: 0;
+        padding-top: 52.4%;
+        overflow: hidden;
 
-            .text{
-                padding: $grid-gutter;
-            }
+        img {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          height: 100%;
         }
+      }
+
+      .text {
+        padding: $grid-gutter;
+      }
     }
+  }
 }
 
-.caption{
-    font-style: italic;
-    color: theme-color(grey);
-    font-size: .8rem;
-    margin-top: 0.2rem;
+.caption {
+  font-style: italic;
+  color: theme-color(grey);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
 }
 
 // Blockquote
-.wp-block-pullquote{
-    width: 100%;
-    border: 1px solid theme-color(black);
-    border-width: 1px 0;
-    margin: 5rem 0;
+.wp-block-pullquote {
+  width: 100%;
+  border: 1px solid theme-color(black);
+  border-width: 1px 0;
+  margin: 5rem 0;
 }
 
-blockquote{
-    display: flex;
-    flex-flow: column;
-    max-width: 900px;
-    margin: $grid-gutter auto;
-    padding: 0 1rem;
+blockquote {
+  display: flex;
+  flex-flow: column;
+  max-width: 900px;
+  margin: $grid-gutter auto;
+  padding: 0 1rem;
 
-    p{
-        padding: 0 0;
-        margin-bottom: 0;
-        line-height: 2rem;
-        
-        &:first-child{
-            font-size: 1.25rem;
-            font-weight: 300;
-            margin-bottom: 10px;
-            text-wrap: balance;
-            text-align: center;
-            
-            @include media-breakpoint-up(lg){
-                font-size: 1.5rem;
-            }
-        }
+  p {
+    padding: 0 0;
+    margin-bottom: 0;
+    line-height: 2rem;
 
-        &:last-child{
-            text-align: right;
-        }
+    &:first-child {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+      text-wrap: balance;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1.5rem;
+      }
     }
 
-    cite{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-style: initial;
-
-        &:before{
-            content: "—";
-        }
+    &:last-child {
+      text-align: right;
     }
+  }
+
+  cite {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-style: initial;
+
+    &:before {
+      content: "—";
+    }
+  }
 }
