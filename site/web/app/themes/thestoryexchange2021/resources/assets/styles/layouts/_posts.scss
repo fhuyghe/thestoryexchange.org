@@ -293,10 +293,10 @@
 
   .container {
     max-width: 1200px;
+  }
 
-    & > .row {
-      justify-content: center;
-    }
+  .row {
+    justify-content: center;
   }
 
   .product {
