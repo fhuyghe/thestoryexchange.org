@@ -1,19 +1,20 @@
-.author-header{
-    max-width: 900px;
-    margin: $grid-gutter auto $grid-gutter * 2;
-    text-align: center;
+.author-header {
+  max-width: 900px;
+  margin: $grid-gutter auto $grid-gutter * 2;
+  text-align: center;
 
-    .thumbnail{
-        overflow: hidden;
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        margin: 0 auto 1.5em;
+  .thumbnail {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5em;
 
-        img{
-            min-width: 100%;
-            min-height: 100%;
-            height: auto;
-        }
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      object-fit: cover;
     }
+  }
 }

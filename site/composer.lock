@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15ac3e22e3ee95673652c35a7bc4d6c5",
+    "content-hash": "1769032bc06c48d07fb05d13aa40416a",
     "packages": [
         {
             "name": "13milliseconds/ajax-load-more-pro",
@@ -1594,24 +1594,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jetpack/"
-        },
-        {
-            "name": "wpackagist-plugin/publishpress-authors",
-            "version": "4.2.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/publishpress-authors/",
-                "reference": "tags/4.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/publishpress-authors.4.2.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/publishpress-authors/"
         },
         {
             "name": "wpackagist-plugin/recent-posts-widget-extended",
