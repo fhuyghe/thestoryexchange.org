@@ -95,6 +95,7 @@
     "deliciousbrains-plugin/wp-migrate-db-pro": "2.6.9",
     "deliciousbrains-plugin/wp-offload-media": "2.4.1",
     "advanced-custom-fields/advanced-custom-fields-pro": "^6.1.7",
+    "wpackagist-plugin/publishpress-authors": "4.2.1",
     "wpackagist-plugin/accelerated-mobile-pages": "^1.0.76.13",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "^3.2.2",
     "wpackagist-plugin/user-photo": "^0.9.10",
