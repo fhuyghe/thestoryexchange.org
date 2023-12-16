@@ -153,13 +153,17 @@
         background-color: theme-color(white);
         font-style: italic;
         margin: 0;
-        padding: 10px 0;
+        padding: 1rem;
+
+        @include media-breakpoint-up(lg) {
+          padding: 1rem 0;
+        }
       }
     }
 
     figure.wp-block-image {
       display: table;
-      width: auto !important;
+      padding: 0;
       background-color: theme-color(lightgrey);
 
       figcaption {
