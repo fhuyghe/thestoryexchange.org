@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   @php wp_head() @endphp
 
+  <script src="https://cdn.pagesense.io/js/thestoryexchange/6e0e11de9b2446fe88e65adbf9ff34fe.js"></script>
+
   {{-- FAVICON --}}
   <link rel="apple-touch-icon" sizes="180x180" href="@asset('images/favicon/apple-touch-icon.png')">
   <link rel="icon" type="image/png" sizes="32x32" href="@asset('images/favicon/favicon-32x32.png')">
